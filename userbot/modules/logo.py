@@ -1,8 +1,8 @@
 # Thanks Full To Team Ultroid
 #
-# Geez - Projects <https://github.com/Vckyou/Geez-UserBot/>
+# Gemoy - Projects <https://github.com/Vckyou/Gemoy-UserBot/>
 # Ported By Vcky @VckyouuBitch
-# Copyright (c) 2021 Geez - Projects
+# Copyright (c) 2021 Gemoy - Projects
 #
 
 import glob
@@ -40,7 +40,7 @@ async def logo_gen(event):
     else:
         pics = []
         async for i in event.client.iter_messages(
-            "@GeezLogo", filter=InputMessagesFilterPhotos
+            "@GemoyLogo", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
@@ -50,7 +50,7 @@ async def logo_gen(event):
     if not bg_:
         pics = []
         async for i in event.client.iter_messages(
-            "@GeezLogo", filter=InputMessagesFilterPhotos
+            "@GemoyLogo", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
@@ -83,7 +83,7 @@ async def logo_gen(event):
     y = (image_height - h) / 2
     draw.text((x, y), name, font=font, fill="white",
               stroke_width=strke, stroke_fill="black")
-    flnme = f"geez.png"
+    flnme = f"Gemoy.png"
     img.save(flnme, "png")
     await xx.edit("`Done!`")
     if os.path.exists(flnme):
