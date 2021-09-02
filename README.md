@@ -1,11 +1,11 @@
 <p align="center">
-   <a href="https://github.com/brut69/tree/Gemoy-UserBot"><img src="https://telegra.ph/file/6f95912d305ad85457f39.jpg" alt="Queen Gemoy Projects" width=400px></a>
+   <a href="https://github.com/brut69/Gemoy-UserBot"><img src="https://telegra.ph/file/6f95912d305ad85457f39.jpg" alt="Queen Gemoy Projects" width=400px></a>
    <br>
    <br>
 </p>
 
 ## DEPLOY TO HEROKU ⚠️
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut-ctrl/Gemoy-Userbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut69/tree/Gemoy-Userbot)
 
 ### Generate String Using Replit⤵️
 
