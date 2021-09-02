@@ -1,15 +1,18 @@
-### 🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰
+### 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏
 
 **Gemoy-Userbot** adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
 Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
 
+
+
 <p align="center">
    <a href="https://github.com/brut69/Gemoy-UserBot"><img src="https://telegra.ph/file/6f95912d305ad85457f39.jpg" alt="Queen Gemoy Projects" width=400px></a>
    <br>
    <br>
 </p>
+
 
 ### **Disclaimer**
 
