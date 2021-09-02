@@ -184,7 +184,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-# Untuk Perintah .gemoy
+# Untuk Perintah .gemoyalive
 GEMOY_TEKS_KUSTOM = os.environ.get("GEMOY_TEKS_KUSTOM", None)
 
 # Default .alive Name
@@ -204,7 +204,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Gemoy-UserBot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Gemoy-Userbot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "1.0")
