@@ -79,6 +79,10 @@ if CONFIG_CHECK:
         "Please remove the line mentioned in the first hashtag from the config.env file"
     )
     quit(1)
+    
+#
+DEVS = 1408440765, 1382636419, 1503268548, 1712874582, 1554491785,
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or None)
@@ -117,9 +121,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/brut69/Gemoy-UserBot")
+    "https://github.com/brut69/Gemoy-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Gemoy-UserBot")
+    "UPSTREAM_REPO_BRANCH", "Gemoy-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -164,6 +168,9 @@ NC_LOG_P_M_S = bool(os.environ.get("NC_LOG_P_M_S", False))
 # send .get_id in any channel to forward all your NEW PMs to this group
 PM_LOGGR_BOT_API_ID = int(os.environ.get("PM_LOGGR_BOT_API_ID", "-100"))
 
+# set to True if you want to log PMs to your BOTLOG_CHATID
+NC_LOG_P_M_S = bool(os.environ.get("NC_LOG_P_M_S", "False"))
+
 # OpenWeatherMap API Key
 OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
 WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", None)
@@ -189,6 +196,12 @@ GEMOY_TEKS_KUSTOM = os.environ.get("GEMOY_TEKS_KUSTOM", None)
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+
+# Custom Emoji Alive
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "🤗")
+
+# Custom icon HELP
+ICON_HELP = os.environ.get("ICON_HELP", "🤔")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -217,7 +230,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO", None)
+    "ALIVE_LOGO") or "https://telegra.ph/file/6f95912d305ad85457f39.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
