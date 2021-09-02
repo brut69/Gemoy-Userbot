@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://github.com/brut69/Gemoy-UserBot"><img src="https://telegra.ph/file/6f95912d305ad85457f39.jpg" alt="Queen Gemoy Projects" width=400px></a>
+   <a href="https://github.com/brut69/tree/Gemoy-UserBot"><img src="https://telegra.ph/file/6f95912d305ad85457f39.jpg" alt="Queen Gemoy Projects" width=400px></a>
    <br>
    <br>
 </p>
