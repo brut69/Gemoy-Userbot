@@ -1,6 +1,6 @@
 {
-  "name": "🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰",
-  "description": "🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰 Telegram.",
+  "name": "𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏",
+  "description": "𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Telegram.",
   "logo": "https://telegra.ph/file/6f95912d305ad85457f39.jpg",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/brut69/Gemoy-UserBot",
+  "repository": "https://github.com/brut69/Gemoy-Userbot/tree/Gemoy-Userbot",
   "telegram": "https://t.me/dunottagme",
   "success_url": "https://t.me/fantaestheticgang",
   "stack": "container",

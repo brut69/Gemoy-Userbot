@@ -1,7 +1,7 @@
 # We're using Ubuntu 20.10
 FROM vckyouuu/geezprojects:buster
 
-RUN git clone -b Gemoy-UserBot https://github.com/brut69/Gemoy-UserBot /root/userbot
+RUN git clone -b Gemoy-Userbot https://github.com/brut69/Gemoy-Usernot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
