@@ -5,7 +5,7 @@
 </p>
 
 ## DEPLOY TO HEROKU ⚠️
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut69/Gemoy-Userbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut-ctrl/Gemoy-Userbot)
 
 ### Generate String Using Replit⤵️
 
