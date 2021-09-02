@@ -5,7 +5,7 @@
 </p>
 
 ## DEPLOY TO HEROKU ⚠️
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/brut69/Gemoy-Userbot/tree/Gemoy-Userbot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut69/Gemoy-Userbot)
 
 ### Generate String Using Replit⤵️
 
