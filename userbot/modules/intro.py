@@ -1,4 +1,5 @@
 from time import sleep
+from userbot import CMD_HELP
 from userbot.events import register
 from userbot import ALIVE_NAME, WEATHER_DEFCITY
 
@@ -6,13 +7,14 @@ from userbot import ALIVE_NAME, WEATHER_DEFCITY
 @register(outgoing=True, pattern='^.saya(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit(f"`Hai Perkenalkan Namaku {ALIVE_NAME}`")
+    await typew.edit("`Hai Perkenalkan Namaku {ALIVE_NAME}`")
     sleep(3)
-    await typew.edit(f"`Umurku 17 y.o`")
+    await typew.edit("`Umurku 17 y.o`")
     sleep(2)
-    await typew.edit(f"`Saya pengguna  `")
+    await typew.edit("`Saya pengguna  `")
     sleep(1)
-    await typew.edit(f"`Tinggal Di {WEATHER_DEFCITY}, Salam Kenal Semua :)`")
+    await typew.edit("`Tinggal Di {WEATHER_DEFCITY}, Salam Kenal Semua :)`")
+    
 # Create by myself @localheart
 
 
@@ -27,6 +29,7 @@ async def typewriter(typew):
     await typew.edit("`I LOVE YOU 💞`")
     sleep(1)
     await typew.edit("`I LOVE YOU SO MUCH 🥰`")
+    
 # Create by myself @localheart
 
 
@@ -40,6 +43,7 @@ async def typewriter(typew):
     await typew.edit("`Dan Selalu Bersyukur`")
     sleep(1)
     await typew.edit("`Alhamdulillah..`")
+    
 # Create by myself @localheart
 
 
@@ -51,18 +55,19 @@ async def typewriter(typew):
     await typew.edit("`Jangan Main Main`")
     sleep(2)
     await typew.edit("`Aku Gban Nangesss Ntar Lu. Bhaks`")
+    
 # Create by myself @localheart
+
+
 
 CMD_HELP.update({
     "intro":
     ": `.saya`\
-\n : ketik `.Intro userbot.\
+\n : Intro saja.\
 \n\n: `.kamu`\
-\n : Kamu, iya kamu.\
+\n : Kamu iya kamu.\
 \n\n: `.semangat`\
-\n : Bersyukur saja.\
+\n : Neber stop to learn.\
 \n\n: `.aku`\
-\n : Intro aja sih. Cuma beda versi bhaha.\
-"
-}
-)
+\n : Lmao."
+})
