@@ -39,14 +39,9 @@ from telethon.sessions import StringSession
 from telethon import Button, events, functions, types
 from telethon.utils import get_display_name
 
-from .storage import Storage
-
-STORAGE = (lambda n: Storage(Path("data") / n))
+redis_db = None
 
 load_dotenv("config.env")
-
-
-redis_db = None
 
 StartTime = time.time()
 
