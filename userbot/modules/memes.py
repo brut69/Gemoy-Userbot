@@ -1860,6 +1860,19 @@ async def emoji_tengkorak(e):
     if emoji:
         tengkorak = tengkorak.replace("😂", emoji)
     await e.edit(tengkorak)
+    
+
+@register(outgoing=True, pattern='^.aku(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit(f"`Hai Perkenalkan Namaku {ALIVE_NAME}`")
+    sleep(3)
+    await typew.edit(f"`Aku pengguna 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏`")
+    sleep(2)
+    await typew.edit(f"`Umurku 17 y.o`")
+    sleep(1)
+    await typew.edit(f"`Tinggal Di {WEATHER_DEFCITY}, Salam Kenal Semua:)`")
+# Create by myself @localheart
 
 
 CMD_HELP.update(
@@ -1923,5 +1936,5 @@ CMD_HELP.update(
         "\n\n> `.nou` `.bot` `.rock` `.gey` `.tf` `.paw` `.tai` `.nih`"
         "\n> `.fag` `.gtfo`; `.stfu` `.lol` `.lool` `.fail` `.leave`"
         "\n> `.iwi` `.sayhi` `.koc` `.gas` `.earth` `.love` `.rain`"
-        "\n> `.penis` `.emo` `.fuck` `.skull`  `.monyet`\nUsage: Cobain aja"
-        "\n\n\n**Semoga Harimu Menyenangkan**\n➥ `Alvin`"})
+        "\n> `.penis` `.emo` `.fuck` `.skull` `.aku` `.monyet`\nUsage: Cobain aja"
+        "\n\n\n**Semoga Harimu Menyenangkan**\n➥ `@queengemoy_userbot`"})
