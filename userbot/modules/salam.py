@@ -30,11 +30,13 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Wa'alaikumssalam wr. wb.`")
 
+
 @register(outgoing=True, pattern='^.atg(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Astagfirullah aladzin..`")
-    
+
+
 @register(outgoing=True, pattern='^.ast(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
