@@ -278,8 +278,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("`Proses Global banned...✅`")
     sleep(3)
-    await typew.edit(f"╭✠╼━━━━━━❖━━━━━━━✠\n┣• **TUAN:** `{ALIVE_NAME}`\n┣• **PIBOONG:** [INSTAGRAM]({IG_ALIVE})\n┣• **Aksi:** `PROMOSI`\n╰✠╼━━━━━━❖━━━━━━━✠")
-
+    await typew.edit(f"╭✠╼━━━━━━❖━━━━━━━✠\n┣• **OWNER:** `{ALIVE_NAME}`\n┣• **MUTUALAN:** [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepi)\n┣• **Aksi:** `PROMOSI`\n╰✠╼━━━━━━❖━━━━━━━✠")
 
 @register(outgoing=True, pattern='^.gkck(?: |$)(.*)')
 async def typewriter(typew):
@@ -370,8 +369,8 @@ async def typewriter(typew):
     await typew.edit(f"𝗜𝗡𝗙𝗢 𝗞𝗘𝗞𝗨𝗔𝗧𝗔𝗡!! {REPO_NAME}\n\n"
                      "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
                      "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗦𝗔𝗔𝗧 𝗜𝗡𝗜 :\n"
-                     "┣• ▸ 999 ᴊᴀᴍ - 999 ᴍᴇɴɪᴛ.\n"
-                     "┣• ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : 999%\n"
+                     "┣• ▸ 999 ᴊᴀᴍ - 999 ᴍᴇɴɪᴛ.\n" 
+                     "┣• ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : 999%\n" 
                      "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
                      "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
                      "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
@@ -379,8 +378,7 @@ async def typewriter(typew):
                      "┣• ▸ `999999` ᴊᴀᴍ - `999999` ᴍᴇɴɪᴛ.\n"
                      "┣• ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : 1000%.\n"
                      "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
-                     f"𝗣𝗘𝗠𝗜𝗟𝗜𝗞  : {ALIVE_NAME}\n"
-                     f"**•JOIN•** : [MY GROUP]({GROUP_LINK})")
+                     f"𝗢𝗪𝗡𝗘𝗥  : {ALIVE_NAME}\n"
 
 
 @register(outgoing=True, pattern='^.kickme(?: |$)(.*)')
@@ -396,7 +394,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**Mutualan skuy...**")
     sleep(2)
-    await typew.edit(f"𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌= [𝐓𝐄𝐊𝐀𝐍]({IG_ALIVE})")
+    await typew.edit(f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepi)")
 
 
 @register(outgoing=True, pattern='^.fck(?: |$)(.*)')
