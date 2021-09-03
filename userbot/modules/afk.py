@@ -64,7 +64,7 @@ async def set_afk(afk_e):
         AFKREASON = string
         await afk_e.edit(f"🥰𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n━━━━━━━━━━━━━━ \n♡{ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 : {AFKREASON}\n━━━━━━━━━━━━━━")
     else:
-        await afk_e.edit("😂𝘼 𝙁 𝙆\n━━━━━━━━━━━━━━ \n┣♡ 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄 🥱\n━━━━━━━━━━━━━━")
+        await afk_e.edit("😂𝘼 𝙁 𝙆\n━━━━━━━━━━━━━━ \n♡ 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄 🥱\n━━━━━━━━━━━━━━")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     else:
