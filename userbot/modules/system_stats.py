@@ -331,12 +331,11 @@ async def redis(alive):
         f"◈ [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
         f"◈ [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
         f"◈ [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang) \n")
-        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈")
     if ALIVE_LOGO:
         try:
-            logo=ALIVE_LOGO
+            logo = ALIVE_LOGO
             await alive.delete()
-            msg=await bot.send_file(alive.chat_id, logo, caption = output)
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(500)
             await msg.delete()
         except BaseException:
