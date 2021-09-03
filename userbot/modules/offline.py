@@ -108,7 +108,7 @@ async def on_afk(event):
         if reason:
             message_to_reply = (
                 f"🥰𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n"
-                f"**♡ ALASAN :** `{reason}`")
+                f"**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`")
         else:
             message_to_reply = f"🥰𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**"
         try:
@@ -181,18 +181,18 @@ async def _(event):
                     )
             except BaseException:
                 await bot.send_message(
-                    event.chat_id, f"😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`"
+                    event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`"
                 )
         else:
             try:
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
-                        event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀"
+                        event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**"
                     )
                 else:
                     await bot.send_message(
-                        event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀", file=pic
+                        event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**", file=pic
                     )
             except BaseException:
                 await bot.send_message(event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n")
