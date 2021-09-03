@@ -188,25 +188,25 @@ async def _(event):
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
-                        event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**"
+                        event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀"
                     )
                 else:
                     await bot.send_message(
                         event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀", file=pic
                     )
             except BaseException:
-                await bot.send_message(event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n")
+                await bot.send_message(event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n")
         await event.delete()
         try:
             if reason and pic:
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(BOTLOG_CHATID, file=pic)
                     await bot.send_message(
-                        BOTLOG_CHATID, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**▸ ALASANAN :** `{reason}`"
+                        BOTLOG_CHATID, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`"
                     )
                 else:
                     await bot.send_message(
-                        BOTLOG_CHATID, f"*😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**▸ ALASAN :** `{reason}`", file=pic
+                        BOTLOG_CHATID, f"*😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`", file=pic
                     )
             elif reason:
                 await bot.send_message(
