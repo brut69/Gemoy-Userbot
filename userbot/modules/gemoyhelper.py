@@ -14,7 +14,7 @@ async def usit(e):
         f"**Halo {DEFAULTUSER} Jika Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
         "\n[Telegram](t.me/dunottagme)"
         "\n[Repo](https://github.com/brut69/Gemoy-Userbot)"
-        "\n[Instagram](instagram.com/intan_hepi)")
+        "\n[Instagram](instagram.com/intan_hepy)")
 
 
 @register(outgoing=True, pattern="^.vars$")
