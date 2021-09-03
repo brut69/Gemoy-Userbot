@@ -260,12 +260,12 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:gemes)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:gemoy)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤ  🤪 𝙂 𝙀 𝙈 𝙊 𝙔  -  𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🤪 **\n"
+        f"**ㅤ    🤪 𝙂 𝙀 𝙈 𝙊 𝙔  -  𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🤪 **\n"
         f"════════════════════════════\n"
         f"═⟩⟩ 🥱 • `ᴏᴡɴᴇʀ    :`[𝙂 𝙀 𝙈 𝙊 𝙔](t.me/dunottagme) \n"
         f"═⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10 \n"
@@ -316,6 +316,7 @@ async def redis(alive):
         f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
         f"     😴 𝙂 𝙀 𝙈 𝙊 𝙔  -  𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 😴 \n"
         f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
+        f"◈ 🥱 `Owner    :`[𝙂 𝙀 𝙈 𝙊 𝙔 - 𝘽 𝙊 𝙏](t.me/dunottagme) \n"
         f"◈ 🤴 `Name     :`{DEFAULTUSER} \n"
         f"◈ 🔎 `Username :`@{user.username} \n"
         f"◈ ⚙️ `Telethon :`v. {version.__version__} \n"
@@ -326,11 +327,11 @@ async def redis(alive):
         f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
         f"◈ **{GEMOY_TEKS_KUSTOM}** \n"
         f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
-        f"◈ [𝙂𝙀𝙈𝙊𝙔-𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
-        f"◈ [𝗙𝗢𝗟𝗟𝗢𝗪](https://Instagram.com/intan_hepy) \n"
-        f"◈ [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
-        f"◈ [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
-        f"◈ [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang) \n")
+        f"◈ **Repo :** [𝙂𝙀𝙈𝙊𝙔-𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
+        f"◈ **Instagram :** [𝗙𝗢𝗟𝗟𝗢𝗪 𝗠𝗬 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](https://Instagram.com/intan_hepy) \n"
+        f"◈ **GNU LICENSE :** [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
+        f"◈ **RAPHIELSCAPE LICENSE :** [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
+        f"◈ **Contact Us :** [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang) \n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -382,7 +383,7 @@ CMD_HELP.update({
 })
 CMD_HELP.update({
     "alive":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemes`"
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
     "\n↳ : To see whether your bot is working or not."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
     "\n↳ : Changes the 'user' in alive to the text you want."
