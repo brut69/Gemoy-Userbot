@@ -39,6 +39,16 @@ async def _(event):
     except Exception:
         await event.edit("**Tidak bisa menemukan video chikakiku.**")
 
+@register(outgoing=True, pattern=r"^\.filmapik$")
+async def _(event):
+    try:
+        response = requests.get(
+            "https://api-tede.herokuapp.com/api/filmapik").json()
+        await event.client.send_file(event.chat_id, response["url"])
+        await event.delete()
+    except Exception:
+        await event.edit("**Tidak bisa menemukan video filmapik.**")
+
 
 CMD_HELP.update(
     {
@@ -49,6 +59,8 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk Mengirim video wibu secara random.\
         \n\n  •  **Syntax :** `.chika`\
         \n  •  **Function : **Untuk Mengirim video chikakiku secara random.\
+       \n\n  •  **Syntax :** `.filmapik`\
+        \n  •  **Function : **Untuk Mengirim video filmapik secara random.\
     "
     }
 )
