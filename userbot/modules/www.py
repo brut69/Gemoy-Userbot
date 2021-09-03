@@ -128,7 +128,6 @@ async def redis(pong):
                     f"__|â”|âŽ†__ **User :** `{ALIVE_NAME}`" % (duration))
 
 
-
 @register(outgoing=True, pattern="^.ping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
@@ -154,20 +153,20 @@ async def redis(pong):
                     f"â•âŽ† **𝘚𝘐𝘚𝘈 𝘋𝘜𝘐𝘛:** "
                     f"`{uptime}` \n"
                     f"**âœ âž² 𝘋𝘰𝘮𝘱𝘦𝘵:** `{ALIVE_NAME}`" % (duration))
-                    f"**𝘏𝘈𝘉𝘐𝘚 𝘋𝘈𝘓𝘈𝘔** : {uptime}🕛" % (duration)) 
+                    f"**𝘏𝘈𝘉𝘐𝘚 𝘋𝘈𝘓𝘈𝘔** : {uptime}🕛" % (duration))
 
 
-@register(outgoing=True, pattern="^.speed$")
+@ register(outgoing = True, pattern = "^.speed$")
 async def speedtst(spd):
     """ For .speed command, use SpeedTest to check server speeds. """
     await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Mohon Tunggu...🤗`")
-    test = Speedtest()
+    test=Speedtest()
 
     test.get_best_server()
     test.download()
     test.upload()
     test.results.share()
-    result = test.results.dict()
+    result=test.results.dict()
 
     await spd.edit("**Hasil jaringan:\n**"
                    "ðŸ›  **Dimulai Pada:** "
