@@ -14,11 +14,14 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 ### **Disclaimer**
 
 ```
-Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
-Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu Anda
-mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
-Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
+             ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
+   Hexxa-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+   Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
+      ! Hati hati dalam penggunaan pada repository ini !
+   Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
+  Jangan pernah sekali sekali menyalah gunakan repository ini
 ```
+
 
 ### **Tutorial**
 
