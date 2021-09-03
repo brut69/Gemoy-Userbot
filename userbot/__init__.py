@@ -79,7 +79,7 @@ if CONFIG_CHECK:
         "Please remove the line mentioned in the first hashtag from the config.env file"
     )
     quit(1)
-    
+
 #
 DEVS = 1408440765, 1382636419, 1503268548, 1712874582, 1554491785,
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
