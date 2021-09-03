@@ -321,7 +321,7 @@ async def redis(alive):
         f" ♡ `Bot Ver  :` {BOT_VER} \n"
         f" ♡ `Modules  :` {len(modules)} Modules \n"
         f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈ \n"
-        f" [𝗥𝗲𝗽𝗼](https://github.com/brut69/Gemoy-Userbot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fantaestheticgang)  |  "
+        f"    😴 [𝗥𝗲𝗽𝗼](https://github.com/brut69/Gemoy-Userbot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fantaestheticgang)  |  "
         f" [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepi)\n"
         f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈")
     if ALIVE_LOGO:
