@@ -1860,7 +1860,7 @@ async def emoji_tengkorak(e):
     if emoji:
         tengkorak = tengkorak.replace("😂", emoji)
     await e.edit(tengkorak)
-    
+
 
 @register(outgoing=True, pattern='^.aku(?: |$)(.*)')
 async def typewriter(typew):
