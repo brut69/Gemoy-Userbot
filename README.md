@@ -30,7 +30,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut69/Gemoy-Userbot.git)
 
 ### **Generate String Using Replit** ⤵️
-[![GenerateStringName](https://img.shields.io/badge/repl.it-generateStringName-yellowgreen)](https://repl.it/@brut69/getStringName)
+[![GenerateStringName](https://img.shields.io/badge/repl.it-QueenGemoyUserbot-magentablue)](https://repl.it/@brut69/getStringName)
 
 
 ### **Credits**
