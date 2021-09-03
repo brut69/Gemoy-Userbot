@@ -334,9 +334,9 @@ async def redis(alive):
         f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈")
     if ALIVE_LOGO:
         try:
-            logo = ALIVE_LOGO
+            logo=ALIVE_LOGO
             await alive.delete()
-            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            msg=await bot.send_file(alive.chat_id, logo, caption = output)
             await asyncio.sleep(500)
             await msg.delete()
         except BaseException:
