@@ -445,6 +445,7 @@ async def typewriter(typew):
     await typew.edit("**YANG GA JAWAB, BESOK PINDAH AGAMA**")
    # Ported to Gemoy-Userbot
 
+
 @register(outgoing=True, pattern='^.gblk(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -461,8 +462,8 @@ async def typewriter(typew):
     await typew.edit("JAUHIN AJA, BOCAH KAYA DIA MAH BUAT APE")
     sleep(2)
     await typew.edit("TINGGALIN AJA DAH!!!!")
-    
-    
+
+
 CMD_HELP.update({
     "memes9":
     "`.gabut` ; `.orgil`\
