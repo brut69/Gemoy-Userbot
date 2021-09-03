@@ -5,7 +5,6 @@
 """ Userbot module containing commands related to the \
     Information Superhighway (yes, Internet). """
 
-import asyncio
 import time
 import redis
 
@@ -126,7 +125,6 @@ async def redis(pong):
                     f"**â˜ž i'm online  :** "
                     f"`{uptime}` \n"
                     f"__|â”|âŽ†__ **User :** `{ALIVE_NAME}`" % (duration))
-
 
 
 @register(outgoing=True, pattern="^.ping$")
