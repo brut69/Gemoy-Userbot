@@ -280,7 +280,6 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit(f"╭✠╼━━━━━━❖━━━━━━━✠\n┣• **OWNER:** `{ALIVE_NAME}`\n┣• **MUTUALAN:** [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepi)\n┣• **Aksi:** `PROMOSI`\n╰✠╼━━━━━━❖━━━━━━━✠")
 
-
 @register(outgoing=True, pattern='^.gkck(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -367,11 +366,11 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("✨")
     sleep(2)
-    await typew.edit(f"𝗜𝗡𝗙𝗢 𝗞𝗘𝗞𝗨𝗔𝗧𝗔𝗡!! {REPO_NAME}\n\n"
+    await typew.edit(f"𝗜𝗡𝗙𝗢 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡!! {REPO_NAME}\n\n"
                      "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
                      "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗦𝗔𝗔𝗧 𝗜𝗡𝗜 :\n"
-                     "┣• ▸ 999 ᴊᴀᴍ - 999 ᴍᴇɴɪᴛ.\n"
-                     "┣• ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : 999%\n"
+                     "┣• ▸ 999 ᴊᴀᴍ - 999 ᴍᴇɴɪᴛ.\n" 
+                     "┣• ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : 999%\n" 
                      "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
                      "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
                      "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
@@ -379,10 +378,10 @@ async def typewriter(typew):
                      "┣• ▸ `999999` ᴊᴀᴍ - `999999` ᴍᴇɴɪᴛ.\n"
                      "┣• ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : 1000%.\n"
                      "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
-                     f"𝗢𝗪𝗡𝗘𝗥  : {ALIVE_NAME}\n"
+                     f"𝗢𝗪𝗡𝗘𝗥  : {ALIVE_NAME}\n")
 
 
-@ register(outgoing=True, pattern='^.kickme(?: |$)(.*)')
+@register(outgoing=True, pattern='^.kickme(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(f"`{ALIVE_NAME}, Saat Nya Pergi...`")
@@ -390,7 +389,7 @@ async def typewriter(typew):
     await typew.edit(f"`{ALIVE_NAME} Telah meninggalkan Group....`")
 
 
-@ register(outgoing=True, pattern='^.gi(?: |$)(.*)')
+@register(outgoing=True, pattern='^.gi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**Mutualan skuy...**")
@@ -398,7 +397,7 @@ async def typewriter(typew):
     await typew.edit(f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepi)")
 
 
-@ register(outgoing=True, pattern='^.fck(?: |$)(.*)')
+@register(outgoing=True, pattern='^.fck(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(".                       /¯ )")
