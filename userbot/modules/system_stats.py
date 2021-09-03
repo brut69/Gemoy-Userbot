@@ -230,14 +230,14 @@ async def amireallyalive(alive):
     output = (
         f"\n__**{GEMOY_TEKS_KUSTOM}**__\n"
         f"**╭───────────────────**\n"
-        f"**├[• 🤴 Gemoy Owner** \n"
+        f"**├[• 🥱 Gemoy Owner** \n"
         f"├[•   : `{DEFAULTUSER}` \n"
         f"**├[• 🔎 Username** \n"
         f"├[•   : `@{user.username}` \n"
         f"├──────────────────\n"
         f"├[•⚙️ `Telethon :`Ver {version.__version__} \n"
-        f"├[•🐍 `Python   :`Ver {python_version()} \n"
-        f"├[•👾 `Bot Ver  :`{BOT_VER} \n"
+        f"├[•🦖 `Python   :`Ver {python_version()} \n"
+        f"├[•🤖 `Bot Ver  :`{BOT_VER} \n"
         f"├[•📂 `Modules  :`{len(modules)} \n"
         f"╰─────────────────")
     if ALIVE_LOGO:
@@ -267,14 +267,14 @@ async def amireallyalive(alive):
     output = (
         f"**ㅤㅤ 🥰 𝙂 𝙀 𝙈 𝙊 𝙔 𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🥰**\n"
         f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[𝙂𝙀𝙈𝙊𝙔](t.me/dunottagme)             ㅤ ║\n"
+        f"╟⟩⟩ 🥱 • `ᴏᴡɴᴇʀ    :`[𝙂𝙀𝙈𝙊𝙔](t.me/dunottagme)             ㅤ ║\n"
         f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
         f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
-        f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
-        f"╟⟩⟩ 👾 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
+        f"╟⟩⟩ 🦖 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
+        f"╟⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
         f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
         f"╚══════════╬════╬══════════╝ \n"
-        f"🔰 : [𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot)\n👥 : [𝙂𝙀𝙈𝙊𝙔-𝙏𝙀𝘼𝙈](t.me/fantaestheticgang)\n👤 : [𝙊𝙒𝙉𝙀𝙍](t.me/dunittagme)\n"
+        f"🤗 : [𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot)\n🕺 : [𝙂𝙀𝙈𝙊𝙔-𝙏𝙀𝘼𝙈](t.me/fantaestheticgang)\n😴 : [𝙊𝙒𝙉𝙀𝙍](t.me/dunittagme)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -310,20 +310,20 @@ async def redis(alive):
     await alive.edit("🤗")
     await asyncio.sleep(2)
     output = (
-        f"╭═──────╼═⌘═╾───────═\n"
-        f"┃🥰 𝙂 𝙀 𝙈 𝙊 𝙔 𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🥰\n"
-        f"╰═─────╼══⌘══╾─────═ \n"
-        f" ❍ `Name     :` {DEFAULTUSER} \n"
-        f" ❍ `Username :` @{user.username} \n"
-        f" ❍ `Telethon :` Ver {version.__version__} \n"
-        f" ❍ `Python   :` Ver {python_version()} \n"
-        f" ❍ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
-        f" ❍ `Bot Ver  :` {BOT_VER} \n"
-        f" ❍ `Modules  :` {len(modules)} Modules \n"
-        f"╭═───────╼⌘╾───────═ \n"
-        f"┃[𝗥𝗲𝗽𝗼](https://github.com/brut69/Gemoy-Userbot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fantaestheticgang)  |  "
-        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepi)\n"
-        f"╰═──────╼═⌘═╾───────═")
+        f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈\n"
+        f"    🥰 𝙂 𝙀 𝙈 𝙊 𝙔 𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🥰\n"
+        f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈\n"
+        f" ♡ `Name     :` {DEFAULTUSER} \n"
+        f" ♡ `Username :` @{user.username} \n"
+        f" ♡ `Telethon :` Ver {version.__version__} \n"
+        f" ♡ `Python   :` Ver {python_version()} \n"
+        f" ♡ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
+        f" ♡ `Bot Ver  :` {BOT_VER} \n"
+        f" ♡ `Modules  :` {len(modules)} Modules \n"
+        f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈ \n"
+        f" [𝗥𝗲𝗽𝗼](https://github.com/brut69/Gemoy-Userbot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fantaestheticgang)  |  "
+        f" [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepi)\n"
+        f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
