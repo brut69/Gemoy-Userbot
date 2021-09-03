@@ -1,6 +1,6 @@
 # Ported to Gemoy-Userbot @brut69
 from time import sleep
-from userbot import ALIVE_NAME, CMD_HELP, IG_ALIVE, REPO_NAME, GROUP_LINK, bot
+from userbot import ALIVE_NAME, CMD_HELP, REPO_NAME, bot
 from userbot.events import register
 from telethon import events
 import asyncio
@@ -280,6 +280,7 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit(f"╭✠╼━━━━━━❖━━━━━━━✠\n┣• **OWNER:** `{ALIVE_NAME}`\n┣• **MUTUALAN:** [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepi)\n┣• **Aksi:** `PROMOSI`\n╰✠╼━━━━━━❖━━━━━━━✠")
 
+
 @register(outgoing=True, pattern='^.gkck(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -369,8 +370,8 @@ async def typewriter(typew):
     await typew.edit(f"𝗜𝗡𝗙𝗢 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡!! {REPO_NAME}\n\n"
                      "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
                      "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗦𝗔𝗔𝗧 𝗜𝗡𝗜 :\n"
-                     "┣• ▸ 999 ᴊᴀᴍ - 999 ᴍᴇɴɪᴛ.\n" 
-                     "┣• ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : 999%\n" 
+                     "┣• ▸ 999 ᴊᴀᴍ - 999 ᴍᴇɴɪᴛ.\n"
+                     "┣• ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : 999%\n"
                      "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
                      "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
                      "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
