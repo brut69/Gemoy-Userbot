@@ -8,6 +8,8 @@ from userbot import CMD_HELP
 # Port By @VckyouuBitch From GeezProject
 # Ported to Gemoy-Userbot @brut69
 #
+
+
 @register(outgoing=True, pattern="^.allout(?: |$)(.*)")
 async def testing(event):
     nikal = await event.get_chat()
