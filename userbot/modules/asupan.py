@@ -39,6 +39,7 @@ async def _(event):
     except Exception:
         await event.edit("**Tidak bisa menemukan video chikakiku.**")
 
+
 @register(outgoing=True, pattern=r"^\.filmapik$")
 async def _(event):
     try:
