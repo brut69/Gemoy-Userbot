@@ -64,5 +64,5 @@ CMD_HELP.update({
 \n\n: `.aku`\
 \n : Intro aja sih. Cuma beda versi bhaha.\
 "
-    }
+}
 )
