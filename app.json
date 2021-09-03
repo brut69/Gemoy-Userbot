@@ -160,10 +160,6 @@
       "description": "Nama untuk menunjukan pesan .alive",
       "required": false
     },
-    "GEMOY_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .gmalive",
-      "required": false
-    },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu",
       "required": false
