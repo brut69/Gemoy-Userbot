@@ -265,7 +265,7 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤ 🥰 𝙂 𝙀 𝙈 𝙊 𝙔 𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🥰**\n"
+        f"**ㅤ  🥰 𝙂 𝙀 𝙈 𝙊 𝙔  -  𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🥰**\n"
         f"╔══════════╬════╬══════════╗ \n"
         f"╟⟩⟩ 🥱 • `ᴏᴡɴᴇʀ    :`[𝙂𝙀𝙈𝙊𝙔](t.me/dunottagme)             ㅤ ║\n"
         f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
@@ -300,30 +300,33 @@ async def amireallyalive(alive):
 async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("__Reconnect.__")
-    await alive.edit("__Reconnect..__")
-    await alive.edit("__Reconnect.__")
-    await alive.edit("__Reconnect..__")
-    await alive.edit("__Connecting...__")
-    await alive.edit("__Connecting..__")
-    await alive.edit("__Connecting...__")
+    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
+    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
+    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑...__")
+    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
+    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
+    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑...__")
+    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
+    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
     await alive.edit("🤗")
     await asyncio.sleep(2)
     output = (
-        f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈\n"
-        f"    🥰 𝙂 𝙀 𝙈 𝙊 𝙔 𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🥰\n"
-        f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈\n"
-        f" ♡ `Name     :` {DEFAULTUSER} \n"
-        f" ♡ `Username :` @{user.username} \n"
-        f" ♡ `Telethon :` Ver {version.__version__} \n"
-        f" ♡ `Python   :` Ver {python_version()} \n"
-        f" ♡ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
-        f" ♡ `Bot Ver  :` {BOT_VER} \n"
-        f" ♡ `Modules  :` {len(modules)} Modules \n"
-        f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈ \n"
-        f"    😴 [𝗥𝗲𝗽𝗼](https://github.com/brut69/Gemoy-Userbot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fantaestheticgang)  |  "
-        f" [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepy)\n"
-        f"◈ ━━━━━━━━ ♡ - ♡ ━━━━━━━━ ◈")
+        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
+        f"     🥰 𝙂 𝙀 𝙈 𝙊 𝙔  -  𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🥰\n"
+        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
+        f"◈ 🤴 `TagName :`{DEFAULTUSER} \n"
+        f"◈ 🔎 `Username :`@{user.username} \n"
+        f"◈ ⚙️ `Telethon :`v. {version.__version__} \n"
+        f"◈ 🦖 `Python   :`v. {python_version()} \n"
+        f"◈ 🛠️ `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"◈ 👾 `Bot Ver  :`v. {BOT_VER} \n"
+        f"◈ 📂 `Modules  :`{len(modules)} Modules \n"
+        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
+        f"◈ **{GEMOY_TEKS_KUSTOM}** \n"
+        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈ \n"
+        f"[𝗥𝗲𝗽𝗼](https://github.com/brut69/Gemoy-Userbot) •||• [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fantaestheticgang) •||• "
+        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/intan_hepy)\n"
+        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
