@@ -17,9 +17,9 @@ async def _(event):
             try:
                 t = await event.ban_time(t)
             except BaseException:
-                return await event.edit("`Incorrect Format`")
-    await event.edit(f"`Starting Fake Typing For {t} sec.`")
-    async with event.client.action(event.chat_id, "typing"):
+                return await event.edit("`Format Salah`")
+    await event.edit(f"`Memulai Pengetikan Palsu Selama {t} detik.`")
+    async with event.client.action(event.chat_id, "mengetik"):
         await asyncio.sleep(t)
 
 
@@ -35,9 +35,9 @@ async def _(event):
             try:
                 t = await event.ban_time(t)
             except BaseException:
-                return await event.edit("`Incorrect Format`")
-    await event.edit(f"`Starting Fake audio recording For {t} sec.`")
-    async with event.client.action(event.chat_id, "record-audio"):
+                return await event.edit("`Format Salah`")
+    await event.edit(f"`Memulai perekaman audio palsu Selama {t} detik.`")
+    async with event.client.action(event.chat_id, "suara rekaman"):
         await asyncio.sleep(t)
 
 
@@ -53,9 +53,9 @@ async def _(event):
             try:
                 t = await event.ban_time(t)
             except BaseException:
-                return await event.edit("`Incorrect Format`")
-    await event.edit(f"`Starting Fake video recording For {t} sec.`")
-    async with event.client.action(event.chat_id, "record-video"):
+                return await event.edit("`Format Salah`")
+    await event.edit(f"`Memulai perekaman video palsu Selama {t} detik.`")
+    async with event.client.action(event.chat_id, "merekam video"):
         await asyncio.sleep(t)
 
 
@@ -71,9 +71,9 @@ async def _(event):
             try:
                 t = await event.ban_time(t)
             except BaseException:
-                return await event.edit("`Incorrect Format`")
-    await event.edit(f"`Starting Fake Game Playing For {t} sec.`")
-    async with event.client.action(event.chat_id, "game"):
+                return await event.edit("`Format Salah`")
+    await event.edit(f"`Memulai Bermain Game Palsu Selama {t} detik.`")
+    async with event.client.action(event.chat_id, "permainan"):
         await asyncio.sleep(t)
 
 CMD_HELP.update({

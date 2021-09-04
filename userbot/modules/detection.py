@@ -10,7 +10,7 @@ async def detect(event):
     input_str = "".join(event.text.split(maxsplit=1)[1:])
     reply_message = await event.get_reply_message()
     if not event.reply_to_msg_id:
-        await event.edit("```Please reply to the user or type .detect (ID/Username) that you want to detect.```")
+        await event.edit("```Harap balas pengguna atau ketik .detect (ID/Nama Pengguna) yang ingin Anda deteksi.```")
         return
     if input_str:
         try:
@@ -19,31 +19,31 @@ async def detect(event):
             try:
                 u = await event.client.get_entity(input_str)
             except ValueError:
-                await edit.event("`Please Give ID/Username to Find History.`"
+                await edit.event("`Harap Berikan ID/Nama Pengguna untuk Menemukan Riwayat.`"
                                  )
             uid = u.id
     else:
         uid = reply_message.sender_id
     chat = "@tgscanrobot"
-    event = await event.edit("`Currently Doing Account Detection...`")
-    event = await event.edit("__Checking.__")
-    event = await event.edit("__Checking..__")
-    event = await event.edit("__Checking...__")
-    event = await event.edit("__Checking.__")
-    event = await event.edit("__Checking..__")
-    event = await event.edit("__Checking...__")
-    event = await event.edit("__Connecting.__")
-    event = await event.edit("__Connecting..__")
-    event = await event.edit("__Connecting...__")
-    event = await event.edit("__Connecting.__")
-    event = await event.edit("__Connecting..__")
-    event = await event.edit("__Connecting...__")
+    event = await event.edit("`Sedang Melakukan Deteksi Akun...`")
+    event = await event.edit("__Memeriksa.__")
+    event = await event.edit("__Memeriksa..__")
+    event = await event.edit("__Memeriksa...__")
+    event = await event.edit("__Memeriksa.__")
+    event = await event.edit("__Memeriksa..__")
+    event = await event.edit("__Memeriksa...__")
+    event = await event.edit("__Menghubungkan.__")
+    event = await event.edit("__Menghubungkan..__")
+    event = await event.edit("__Menghubungkan...__")
+    event = await event.edit("__Menghubungkan.__")
+    event = await event.edit("__Menghubungkan..__")
+    event = await event.edit("__Menghubungkan...__")
     async with bot.conversation(chat) as conv:
         try:
             await conv.send_message(f"{uid}")
         except YouBlockedUserError:
             await steal.reply(
-                "```Please Unblock @tgscanrobot And Try Again.```"
+                "```Silakan Buka Blokir @tgscanrobot Dan Coba Lagi.```"
             )
         response = await conv.get_response()
         await event.client.send_read_acknowledge(conv.chat_id)
@@ -64,5 +64,5 @@ def user_full_name(user):
 CMD_HELP.update({
     "detection":
         "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.detect`\
-          \n📌 : Melihat Riwayat Grup Yang Pernah/Sedang dimasuki."
+          \n : Melihat Riwayat Grup Yang Pernah/Sedang dimasuki."
 })

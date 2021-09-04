@@ -49,7 +49,7 @@ REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob"
 #
 PHOTOS_BASE_URI = "https://photoslibrary.googleapis.com"
 
-TOKEN_FILE_NAME = "GP_GEEZ.json"
+TOKEN_FILE_NAME = "GP_Gemoy.json"
 
 
 @register(outgoing=True, pattern=r"^\.gpsetup")
@@ -129,7 +129,7 @@ async def upload_google_photos(event):
 
     if not event.reply_to_msg_id and not input_str:
         await event.edit(
-            "©️ <b>[GEEZ]</b>\nTidak Ada Yang Akan Membantu Anda", parse_mode="html"
+            "©️ <b>[Gemoy]</b>\nTidak Ada Yang Akan Membantu Anda", parse_mode="html"
         )
         return
 
@@ -174,11 +174,11 @@ async def upload_google_photos(event):
     async with aiohttp.ClientSession() as session:
         headers = {
             "Content-Length": "0",
-            "Geez-Goog-Upload-Command": "start",
-            "Geez-Goog-Upload-Content-Type": mime_type,
-            "Geez-Goog-Upload-File-Name": file_name,
-            "Geez-Goog-Upload-Protocol": "resumable",
-            "Geez-Goog-Upload-Raw-Size": str(file_size),
+            "Gemoy-Goog-Upload-Command": "start",
+            "Gemoy-Goog-Upload-Content-Type": mime_type,
+            "Gemoy-Goog-Upload-File-Name": file_name,
+            "Gemoy-Goog-Upload-Protocol": "resumable",
+            "Gemoy-Goog-Upload-Raw-Size": str(file_size),
             "Authorization": "Bearer " + creds.access_token,
         }
         # Step 1: Initiating an upload session
@@ -194,10 +194,10 @@ async def upload_google_photos(event):
         logger.info(step_one_resp_headers)
         # Step 2: Saving the session URL
 
-        real_upload_url = step_one_resp_headers.get("Geez-Goog-Upload-URL")
+        real_upload_url = step_one_resp_headers.get("Gemoy-Goog-Upload-URL")
         logger.info(real_upload_url)
         upload_granularity = int(
-            step_one_resp_headers.get("Geez-Goog-Upload-Chunk-Granularity")
+            step_one_resp_headers.get("Gemoy-Goog-Upload-Chunk-Granularity")
         )
         logger.info(upload_granularity)
         number_of_req_s = int((file_size / upload_granularity))
@@ -212,8 +212,8 @@ async def upload_google_photos(event):
 
                 headers = {
                     "Content-Length": str(part_size),
-                    "Geez-Goog-Upload-Command": "upload",
-                    "Geez-Goog-Upload-Offset": str(offset),
+                    "Gemoy-Goog-Upload-Command": "upload",
+                    "Gemoy-Goog-Upload-Offset": str(offset),
                     "Authorization": "Bearer " + creds.access_token,
                 }
                 logger.info(i)
@@ -239,8 +239,8 @@ async def upload_google_photos(event):
             logger.info(number_of_req_s)
             headers = {
                 "Content-Length": str(len(current_chunk)),
-                "Geez-Goog-Upload-Command": "upload, finalize",
-                "Geez-Goog-Upload-Offset": str(number_of_req_s * upload_granularity),
+                "Gemoy-Goog-Upload-Command": "upload, finalize",
+                "Gemoy-Goog-Upload-Offset": str(number_of_req_s * upload_granularity),
                 "Authorization": "Bearer " + creds.access_token,
             }
             logger.info(headers)

@@ -28,8 +28,8 @@ from userbot.events import register
 
 @register(pattern=r".download(?: |$)(.*)", outgoing=True)
 async def download(target_file):
-    """ For .download command, download files to the userbot's server. """
-    await target_file.edit("Processing ...")
+    """ Untuk perintah .download, download file ke server userbot. """
+    await target_file.edit("Pengolahan ...")
     input_str = target_file.pattern_match.group(1)
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
@@ -80,7 +80,7 @@ async def download(target_file):
             except Exception as e:
                 LOGS.info(str(e))
         if downloader.isSuccessful():
-            await target_file.edit("Downloaded to `{}` successfully !!".format(
+            await target_file.edit("Berhasil diunduh ke `{}` !!".format(
                 downloaded_file_name))
         else:
             await target_file.edit("Incorrect URL\n{}".format(url))
@@ -96,19 +96,19 @@ async def download(target_file):
         except Exception as e:  # pylint:disable=C0103,W0703
             await target_file.edit(str(e))
         else:
-            await target_file.edit("Downloaded to `{}` successfully !!".format(
+            await target_file.edit("Berhasil diunduh ke `{}` !!".format(
                 downloaded_file_name))
     else:
         await target_file.edit(
-            "Reply to a message to download to my local server.")
+            "Balas pesan untuk mengunduh ke server lokal saya.")
 
 
 @register(pattern=r".uploadir (.*)", outgoing=True)
 async def uploadir(udir_event):
-    """ For .uploadir command, allows you to upload everything from a folder in the server"""
+    """ Untuk perintah .uploadir, memungkinkan Anda untuk mengunggah semuanya dari folder di server """ 
     input_str = udir_event.pattern_match.group(1)
     if os.path.exists(input_str):
-        await udir_event.edit("Processing ...")
+        await udir_event.edit("Pengolahan ...")
         lst_of_files = []
         for r, d, f in os.walk(input_str):
             for file in f:
@@ -118,7 +118,7 @@ async def uploadir(udir_event):
         LOGS.info(lst_of_files)
         uploaded = 0
         await udir_event.edit(
-            "Found {} files. Uploading will start soon. Please wait!".format(
+            "Ditemukan file {}. Pengunggahan akan segera dimulai. Mohon tunggu!".format(
                 len(lst_of_files)))
         for single_file in lst_of_files:
             if os.path.exists(single_file):
@@ -174,18 +174,18 @@ async def uploadir(udir_event):
                 os.remove(single_file)
                 uploaded = uploaded + 1
         await udir_event.edit(
-            "Uploaded {} files successfully !!".format(uploaded))
+            "File {} berhasil diunggah !!".format(uploaded))
     else:
-        await udir_event.edit("404: Directory Not Found")
+        await udir_event.edit("404: Direktori Tidak Ditemukan")
 
 
 @register(pattern=r".upload (.*)", outgoing=True)
 async def upload(u_event):
-    """ For .upload command, allows you to upload a file from the userbot's server """
-    await u_event.edit("Processing ...")
+    """ Untuk perintah .upload, memungkinkan Anda untuk mengunggah file dari server userbot """
+    await u_event.edit("Pengolahan ...")
     input_str = u_event.pattern_match.group(1)
     if input_str in ("userbot.session", "config.env"):
-        return await u_event.edit("`That's a dangerous operation! Not Permitted!`")
+        return await u_event.edit("`Itu operasi yang berbahaya! Tidak Diizinkan!`")
     if os.path.exists(input_str):
         c_time = time.time()
         await u_event.client.send_file(
@@ -197,9 +197,9 @@ async def upload(u_event):
             progress_callback=lambda d, t: asyncio.get_event_loop(
             ).create_task(
                 progress(d, t, u_event, c_time, "[UPLOAD]", input_str)))
-        await u_event.edit("Uploaded successfully !!")
+        await u_event.edit("Berhasil diunggah !!")
     else:
-        await u_event.edit("404: File Not Found")
+        await u_event.edit("404: Direktori Tidak ditemukan")
 
 
 def get_video_thumb(file, output=None, width=90):
@@ -230,7 +230,7 @@ def get_video_thumb(file, output=None, width=90):
 
 
 def extract_w_h(file):
-    """ Get width and height of media """
+    """ Dapatkan lebar dan tinggi media """
     command_to_run = [
         "ffprobe",
         "-v",
@@ -257,7 +257,7 @@ def extract_w_h(file):
 
 @register(pattern=r".uploadas(stream|vn|all) (.*)", outgoing=True)
 async def uploadas(uas_event):
-    """ For .uploadas command, allows you to specify some arguments for upload. """
+    """ Untuk perintah .uploadas, memungkinkan Anda menentukan beberapa argumen untuk diunggah. """
     await uas_event.edit("Processing ...")
     type_of_upload = uas_event.pattern_match.group(1)
     supports_streaming = False
@@ -340,17 +340,17 @@ async def uploadas(uas_event):
             elif spam_big_messages:
                 return await uas_event.edit("TBD: Not (yet) Implemented")
             os.remove(thumb)
-            await uas_event.edit("Uploaded successfully !!")
+            await uas_event.edit("Berhasil diunggah !!")
         except FileNotFoundError as err:
             await uas_event.edit(str(err))
     else:
-        await uas_event.edit("404: File Not Found")
+        await uas_event.edit("404: Berkas tidak ditemukan")
 
 
 CMD_HELP.update({
     "download":
-    "`.download` <link|filename> or reply to media\
-\nUsage: Downloads file to the server.\
-\n\n`.upload` <path in server>\
-\nUsage: Uploads a locally stored file to the chat."
+    "`.download` <link|nama file> atau balas ke media\
+\nUsage: Mengunduh file ke server.\
+\n\n`.upload` <jalur di server>\
+\nUsage: Mengunggah file yang disimpan secara lokal ke obrolan."
 })

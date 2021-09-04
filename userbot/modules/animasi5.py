@@ -63,7 +63,7 @@ async def _(event):
             await event.edit(animation_chars[i % 32])
 
 
-@register(outgoing=True, pattern='^.helikopter(?: |$)(.*)')
+@register(outgoing=True, pattern='^.heli(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("▬▬▬.◙.▬▬▬ \n"
@@ -78,26 +78,26 @@ async def typewriter(typew):
                      "╬═╬ \n"
                      "╬═╬ \n"
                      "╬═╬ \n"
-                     "╬═╬ Hallo Semuanya :) \n"
-                     "╬═╬☻/ \n"
+                     "╬═╬ 𝗔𝘆𝗼 𝗡𝗴𝘂𝗻𝗴𝘀𝗶 𝗦𝗲𝗺𝘂𝗮 :) \n"
+                     "╬═╬🤬/ \n"
                      "╬═╬/▌ \n"
                      "╬═╬/ \\ \n")
 
 
-@register(outgoing=True, pattern='^.tembak(?: |$)(.*)')
+@register(outgoing=True, pattern='^.dor(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("_/﹋\\_\n"
                      "(҂`_´)\n"
                      "<,︻╦╤─ ҉\n"
                      r"_/﹋\_"
-                     "\n**Mau Jadi Pacarku Gak?!**")
+                     "\n**𝙈𝙖𝙪 𝙅𝙖𝙙𝙞 𝙋𝙖𝙘𝙖𝙧𝙠𝙪 𝙂𝙖𝙠?!**")
 
 
 @register(outgoing=True, pattern='^.bundir(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Dadah Semuanya...`          \n　　　　　|"
+    await typew.edit("`𝘿𝙖𝙙𝙖𝙝 𝙎𝙚𝙢𝙪𝙖𝙣𝙮𝙖...`          \n　　　　　|"
                      "\n　　　　　| \n"
                      "　　　　　| \n"
                      "　　　　　| \n"
@@ -113,14 +113,14 @@ async def typewriter(typew):
                      "　　　　　 Ｕ Ｕ\n")
 
 
-@register(outgoing=True, pattern='^.awkwok(?: |$)(.*)')
+@register(outgoing=True, pattern='^.awk(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("────██──────▀▀▀██\n"
                      "──▄▀█▄▄▄─────▄▀█▄▄▄\n"
                      "▄▀──█▄▄──────█─█▄▄\n"
                      "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
-                     "─▀───────▀▀─▀───────▀▀\n`Awkwokwokwok..`")
+                     "─▀───────▀▀─▀───────▀▀\n`𝘼𝙬𝙠𝙬𝙤𝙠..`")
 
 
 @register(outgoing=True, pattern='^.ular(?: |$)(.*)')
@@ -229,8 +229,8 @@ async def typewriter(typew):
                      "▓▓▓▓▓▓█‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡█\n"
                      "▓▓▓▓▓▓█████‡‡‡‡‡‡‡‡‡‡‡‡██\n"
                      "█████‡‡‡‡‡‡‡██████████\n")
-
-
+    
+ 
 @register(outgoing=True, pattern='^.tank(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -244,7 +244,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("┈┈┏━╮╭━┓┈╭━━━━╮\n"
-                     "┈┈┃┏┗┛┓┃╭┫Ngok ┃\n"
+                     "┈┈┃┏┗┛┓┃╭┫𝗡𝗚𝗚 ┃\n"
                      "┈┈╰┓▋▋┏╯╯╰━━━━╯\n"
                      "┈╭━┻╮╲┗━━━━╮╭╮┈\n"
                      "┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n"
@@ -264,7 +264,7 @@ async def typewriter(typew):
                      "╨━━┗┛┗┛━━┗┛┗┛━━┻\n")
 
 
-@register(outgoing=True, pattern='^.bernyanyi(?: |$)(.*)')
+@register(outgoing=True, pattern='^.nyanyi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**Ganteng Doang Gak Bernyanyi (ง˙o˙)ว**")
@@ -302,13 +302,13 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi5":
-    "`.bulan` ; `.hati` ; `.bernyanyi`\
+    "`.bulan` ; `.hati` ; `.nyanyi`\
     \nUsage: liat aja.\
-    \n\n`.helikopter` ; `.tank` ; `.tembak`\n`.bundir`\
+    \n\n`.heli` ; `.tank` ; `.dor`\n`.bundir`\
     \nUsage: liat sendiri\
     \n\n`.y`\
     \nUsage: jempol\
-    \n\n`.awkwok`\
+    \n\n`.awk`\
     \nUsage: ketawa lari.\
     \n\n`.ular` ; `.babi` ; `.ajg`\
     \nUsage: liat sendiri."

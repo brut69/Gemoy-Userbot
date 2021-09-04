@@ -18,14 +18,14 @@ async def lst(event):
     path = cat if cat else os.getcwd()
     if not exists(path):
         await event.edit(
-            f"**There is no such directory or file with the name `{cat}` check again!**"
+            f"**Tidak ada direktori atau file seperti itu dengan nama `{cat}` periksa lagi!**"
         )
         return
     if isdir(path):
         if cat:
-            msg = "**Folders and Files in `{}`** :\n\n".format(path)
-        else:
-            msg = "**Folders and Files in Current Directory** :\n\n"
+            msg = "**Folder dan File di `{}`** :\n\n".format(path)
+        lain:
+            msg = "**Folder dan File di Direktori Saat Ini** :\n\n"
         lists = os.listdir(path)
         files = ""
         folders = ""
@@ -64,7 +64,7 @@ async def lst(event):
         msg = msg + folders + files if files or folders else msg + "__empty path__"
     else:
         size = os.stat(path).st_size
-        msg = "**The details of given file** :\n\n"
+        msg = "**Rincian file yang diberikan** :\n\n"
         if path.endswith((".mp3", ".flac", ".wav", ".m4a")):
             mode = "🎵 "
         if path.endswith((".opus")):

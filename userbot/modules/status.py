@@ -29,9 +29,9 @@ async def _(event):
     user_it = "me"
     user = await event.client.get_entity(user_it)
     if user.first_name.startswith(OFFLINE_TAG):
-        await event.edit("**Already in Offline Mode.**")
+        await event.edit("**Sudah dalam Mode Offline.**")
         return
-    await event.edit("**Changing Profile to Offline...**")
+    await event.edit("**Mengubah Profil menjadi Offline...**")
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):  # pylint:disable=E0602
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)  # pylint:disable=E0602
     urllib.request.urlretrieve(
@@ -45,7 +45,7 @@ async def _(event):
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
         else:
-            await event.edit("**Changed profile to OffLine.**")
+            await event.edit("**Mengubah profil menjadi OffLine.**")
     try:
         os.system("rm -fr donottouch.jpg")
     except Exception as e:  # pylint:disable=C0103,W0703
@@ -58,7 +58,7 @@ async def _(event):
                 last_name=last_name, first_name=first_name
             )
         )
-        result = "**`{} {}`\nI am Offline now.**".format(first_name, last_name)
+        result = "**`{} {}`\nSaya Offline sekarang.**".format(first_name, last_name)
         await event.edit(result)
     except Exception as e:  # pylint:disable=C0103,W0703
         await event.edit(str(e))
@@ -71,9 +71,9 @@ async def _(event):
     user_it = "me"
     user = await event.client.get_entity(user_it)
     if user.first_name.startswith(OFFLINE_TAG):
-        await event.edit("**Changing Profile to Online...**")
+        await event.edit("**Mengubah Profil menjadi Online...**")
     else:
-        await event.edit("**Already Online.**")
+        await event.edit("**Sudah Online.**")
         return
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):  # pylint:disable=E0602
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)  # pylint:disable=E0602
@@ -86,7 +86,7 @@ async def _(event):
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
         else:
-            await event.edit("**Changed profile to Online.**")
+            await event.edit("**Mengubah profil menjadi Online.**")
     try:
         os.system("rm -fr donottouch.jpg")
     except Exception as e:  # pylint:disable=C0103,W0703
@@ -99,7 +99,7 @@ async def _(event):
                 last_name=last_name, first_name=first_name
             )
         )
-        result = "**`{} {}`\nI am Online !**".format(first_name, last_name)
+        result = "**`{} {}`\nSaya Online !**".format(first_name, last_name)
         await event.edit(result)
     except Exception as e:  # pylint:disable=C0103,W0703
         await event.edit(str(e))
@@ -108,8 +108,8 @@ async def _(event):
 CMD_HELP.update(
     {
         "mystatus": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.offline`\
-         \n↳ : `Add an offline tag in your name and change profile pic to black`\
+         \n↳ : `Tambahkan tag offline di nama Anda dan ubah foto profil menjadi hitam`\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unoff`\
-         \n↳ : `Remove Offline Tag from your name and change profile pic to vars PROFILE_IMAGE.`"
+         \n↳ : `Hapus Tag Offline dari nama Anda dan ubah foto profil menjadi vars PROFILE_IMAGE.`"
     }
 )

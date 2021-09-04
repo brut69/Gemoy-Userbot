@@ -17,7 +17,7 @@ from userbot.events import register
 
 
 async def get_tz(con):
-    """ Get time zone of the given country. """
+    """ Dapatkan zona waktu negara tertentu. """
     if "(Uk)" in con:
         con = con.replace("Uk", "UK")
     if "(Us)" in con:
@@ -27,7 +27,7 @@ async def get_tz(con):
     if "(Western)" in con:
         con = con.replace("(Western)", "(western)")
     if "Minor Outlying Islands" in con:
-        con = con.replace("Minor Outlying Islands", "minor outlying islands")
+        con = con.replace("Kepulauan Terluar Kecil", "pulau-pulau kecil terluar")
     if "Nl" in con:
         con = con.replace("Nl", "NL")
 
@@ -43,10 +43,10 @@ async def get_tz(con):
 
 @register(outgoing=True, pattern="^.time(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
 async def time_func(tdata):
-    """ For .time command, return the time of
-        1. The country passed as an argument,
-        2. The default userbot country(set it by using .settime),
-        3. The server where the userbot runs.
+    """ Untuk perintah .time, kembalikan waktu
+        1. Negara disahkan sebagai argumen,
+        2. Negara userbot default (atur dengan menggunakan .settime),
+        3. Server tempat userbot berjalan.
     """
     con = tdata.pattern_match.group(1).title()
     tz_num = tdata.pattern_match.group(2)
@@ -65,11 +65,11 @@ async def time_func(tdata):
         tz_num = TZ_NUMBER
         timezones = await get_tz(COUNTRY)
     else:
-        await tdata.edit(f"`It's`  **{dt.now().strftime(t_form)}**  `here.`")
+        await tdata.edit(f"`Ini` **{dt.now().strftime(t_form)}** `di sini.`")
         return
 
     if not timezones:
-        await tdata.edit("`Invaild country.`")
+        await tdata.edit("`Negara tidak valid.`")
         return
 
     if len(timezones) == 1:
@@ -79,14 +79,14 @@ async def time_func(tdata):
             tz_num = int(tz_num)
             time_zone = timezones[tz_num - 1]
         else:
-            return_str = f"`{c_name} has multiple timezones:`\n\n"
+            return_str = f"`{c_name} memiliki beberapa zona waktu:`\n\n"
 
             for i, item in enumerate(timezones):
                 return_str += f"`{i+1}. {item}`\n"
 
-            return_str += "\n`Choose one by typing the number "
-            return_str += "in the command.`\n"
-            return_str += f"`Example: .time {c_name} 2`"
+            return_str += "\n`Pilih salah satu dengan mengetikkan angka "
+            return_str += "dalam perintah.`\n"
+            return_str += f"`Contoh: .time {c_name} 2`"
 
             await tdata.edit(return_str)
             return
@@ -95,21 +95,21 @@ async def time_func(tdata):
 
     if c_name != COUNTRY:
         await tdata.edit(
-            f"`It's`  **{dtnow}**  `in {c_name}({time_zone} timezone).`")
+            f"`Dia`  **{dtnow}**  `di dalam {c_name}({time_zone} timezone).`")
         return
 
     elif COUNTRY:
-        await tdata.edit(f"`It's`  **{dtnow}**  `here, in {COUNTRY}"
+        await tdata.edit(f"`Dia`  **{dtnow}**  `disini {COUNTRY}"
                          f"({time_zone} timezone).`")
         return
 
 
 @register(outgoing=True, pattern="^.date(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
 async def date_func(dat):
-    """ For .date command, return the date of
-        1. The country passed as an argument,
-        2. The default userbot country(set it by using .settime),
-        3. The server where the userbot runs.
+    """ Untuk perintah .date, kembalikan tanggal
+        1. Negara disahkan sebagai argumen,
+        2. Negara userbot default (atur dengan menggunakan .settime),
+        3. Server tempat userbot berjalan.
     """
     con = dat.pattern_match.group(1).title()
     tz_num = dat.pattern_match.group(2)
@@ -128,11 +128,11 @@ async def date_func(dat):
         tz_num = TZ_NUMBER
         timezones = await get_tz(COUNTRY)
     else:
-        await dat.edit(f"`It's`  **{dt.now().strftime(d_form)}**  `here.`")
+        await dat.edit(f"`Dia`  **{dt.now().strftime(d_form)}**  `di sini.`")
         return
 
     if not timezones:
-        await dat.edit("`Invaild country.`")
+        await dat.edit("`Negara tidak valid.`")
         return
 
     if len(timezones) == 1:
@@ -142,14 +142,14 @@ async def date_func(dat):
             tz_num = int(tz_num)
             time_zone = timezones[tz_num - 1]
         else:
-            return_str = f"`{c_name} has multiple timezones:`\n"
+            return_str = f"`{c_name} memiliki beberapa zona waktu:`\n"
 
             for i, item in enumerate(timezones):
                 return_str += f"`{i+1}. {item}`\n"
 
-            return_str += "\n`Choose one by typing the number "
-            return_str += "in the command.`\n"
-            return_str += f"Example: .date {c_name} 2"
+            return_str += "\n`Pilih salah satu dengan mengetikkan angka "
+            return_str += "dalam perintah.`\n"
+            return_str += f"Contoh: .date {c_name} 2"
 
             await dat.edit(return_str)
             return
@@ -158,19 +158,19 @@ async def date_func(dat):
 
     if c_name != COUNTRY:
         await dat.edit(
-            f"`It's`  **{dtnow}**  `in {c_name}({time_zone} timezone).`")
+            f"`Dia`  **{dtnow}**  `di dalam {c_name}({time_zone} timezone).`")
         return
 
     elif COUNTRY:
-        await dat.edit(f"`It's`  **{dtnow}**  `here, in {COUNTRY}"
+        await dat.edit(f"`Dia`  **{dtnow}**  `disini {COUNTRY}"
                        f"({time_zone} timezone).`")
         return
 
 
 CMD_HELP.update({
     "timedate":
-    "`.time` <country name/code> <timezone number>\
-\nUsage: Usage: Get the time of a country. If a country has multiple timezones, it will list all of them and let you select one.\
-\n\n`.date` <country name/code> <timezone number>\
-\nUsage: Get the date of a country. If a country has multiple timezones, it will list all of them and let you select one."
+    "`.time` <nama/kode negara> <nomor zona waktu>\
+\nUsage: Usage: Dapatkan waktu suatu negara. Jika suatu negara memiliki beberapa zona waktu, semua zona waktu akan dicantumkan dan Anda dapat memilih salah satu.\
+\n\n`.date` <nama/kode negara> <nomor zona waktu>\
+\nUsage: Dapatkan tanggal suatu negara. Jika suatu negara memiliki beberapa zona waktu, itu akan mencantumkan semuanya dan membiarkan Anda memilih satu."
 })

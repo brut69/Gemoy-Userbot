@@ -10,11 +10,11 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
-        await event.edit("sir this is not a image message reply to image message")
+        await event.edit("Bruh ini bukan pesan gambar, balas pesan gambar")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("sir, This is not a image ")
+        await event.edit("Bruh, ini bukan gambar")
         return
     chat = "@buildstickerbot"
     await event.edit("Membuat Sticker..")
@@ -27,10 +27,10 @@ async def _(event):
             msg = await event.client.forward_messages(chat, reply_message)
             response = await response
         except YouBlockedUserError:
-            await event.reply("unblock me (@buildstickerbot) and try again")
+            await event.reply("buka blokir saya (@buildstickerbot) dan coba lagi")
             return
         if response.text.startswith("Hi!"):
-            await event.edit("Can you kindly disable your forward privacy settings for good?")
+            await event.edit("Bisakah Anda menonaktifkan pengaturan privasi penerusan Anda untuk selamanya?")
         else:
             await event.delete()
             await bot.send_read_acknowledge(conv.chat_id)
@@ -87,7 +87,7 @@ async def _(event):
 @register(outgoing=True, pattern="^.stoi$")
 async def sticker_to_png(sticker):
     if not sticker.is_reply:
-        await sticker.edit("`NULL information to feftch...`")
+        await sticker.edit("`Informasi NULL untuk diambil...`")
         return False
 
     img = await sticker.get_reply_message()

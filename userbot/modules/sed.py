@@ -63,7 +63,7 @@ async def separate_sed(sed_string):
 
 @register(outgoing=True, pattern=r"^\.s")
 async def sed(command):
-    """ For sed command, use sed on Telegram. """
+    """ Untuk perintah sed, gunakan sed di Telegram. """
     sed_result = await separate_sed(command.text)
     textx = await command.get_reply_message()
     if sed_result:
@@ -71,18 +71,18 @@ async def sed(command):
             to_fix = textx.text
         else:
             return await command.edit(
-                "`Master, I don't have brains. Well you too don't I guess.`")
+                "`Mastah, saya tidak punya otak. Anda juga tidak, saya kira.`")
 
         repl, repl_with, flags = sed_result
 
         if not repl:
             return await command.edit(
-                "`Master, I don't have brains. Well you too don't I guess.`")
+                "`Mastah, saya tidak punya otak. Anda juga tidak, saya kira.`")
 
         try:
             check = re.match(repl, to_fix, flags=re.IGNORECASE)
             if check and check.group(0).lower() == to_fix.lower():
-                return await command.edit("`Boi!, that's a reply. Don't use sed`")
+                return await command.edit("`Boi!, itu balasan. Jangan gunakan sed`")
 
             if "i" in flags and "g" in flags:
                 text = re.sub(repl, repl_with, to_fix, flags=re.I).strip()
@@ -96,12 +96,12 @@ async def sed(command):
         except sre_err:
             return await command.edit("B O I! [Learn Regex](https://regexone.com)")
         if text:
-            await command.edit(f"Did you mean? \n\n{text}")
+            await command.edit(f"Apakah yang kamu maksud? \n\n{teks}")
 
 
 CMD_HELP.update({
     "sed":
-    ">`.s<delimiter><old word(s)><delimiter><new word(s)>`"
-    "\nUsage: Replaces a word or words using sed."
+    ">`.s<pembatas><kata lama><pembatas><kata baru>`"
+    "\nUsage: Mengganti kata atau kata menggunakan sed."
     "\nDelimiters: `/, :, |, _`"
 })

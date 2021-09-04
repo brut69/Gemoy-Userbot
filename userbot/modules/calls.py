@@ -14,7 +14,7 @@ from telethon.tl.types import ChatAdminRights
 from userbot import CMD_HELP
 from userbot.events import register
 
-NO_ADMIN = "`Sorry you are not admin :)`"
+NO_ADMIN = "`Maaf anda bukan admin :)`"
 
 
 async def get_call(event):
@@ -39,7 +39,7 @@ async def _(e):
     new_rights = ChatAdminRights(invite_users=True)
     try:
         await e.client(startvc(e.chat_id))
-        await e.edit("`Voice Chat Started...`")
+        await e.edit("`Obrolan Suara Dimulai...`")
     except Exception as ex:
         await e.edit(f"`{str(ex)}`")
 
@@ -55,14 +55,14 @@ async def _(e):
     new_rights = ChatAdminRights(invite_users=True)
     try:
         await e.client(stopvc(await get_call(e)))
-        await e.edit("`Voice Chat Stopped...`")
+        await e.edit("`Obrolan Suara Dihentikan...`")
     except Exception as ex:
         await e.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
 async def _(e):
-    await e.edit("`Inviting Members to Voice Chat...`")
+    await e.edit("`Mengundang Anggota ke Obrolan Suara...`")
     users = []
     z = 0
     async for x in e.client.iter_participants(e.chat_id):
@@ -75,16 +75,16 @@ async def _(e):
             z += 6
         except BaseException:
             pass
-    await e.edit(f"`Invited {z} users`")
+    await e.edit(f"`Mengundang {z} anggota`")
 
 
 CMD_HELP.update(
     {
         "calls": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startvc`\
-         \n↳ : Start Group Call in a group.\
+         \n↳ : Mulai Panggilan Grup dalam grup.\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stopvc`\
-         \n↳ : `Stop Group Call in a group.`\
+         \n↳ : `Hentikan Panggilan Grup dalam grup.`\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcinvite`\
-         \n↳ : Invite all members of group in Group Call. (You must be joined)."
+         \n↳ : Undang semua anggota grup dalam Panggilan Grup. (Anda harus bergabung)."
     }
 )

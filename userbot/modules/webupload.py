@@ -13,7 +13,7 @@ from userbot import TEMP_DOWNLOAD_DIRECTORY
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Processing ...")
+    await event.edit("Pengolahan ...")
     PROCESS_RUN_TIME = 100
     input_str = event.pattern_match.group(1)
     selected_transfer = event.pattern_match.group(2)
@@ -33,7 +33,7 @@ async def _(event):
     try:
         selected_one = CMD_WEB[selected_transfer].format(file_name)
     except KeyError:
-        await event.edit("Invalid selected Transfer")
+        await event.edit("Transfer yang dipilih tidak valid")
     cmd = selected_one
     time.time() + PROCESS_RUN_TIME
     process = await asyncio.create_subprocess_shell(

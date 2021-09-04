@@ -38,7 +38,7 @@ async def get_user_from_event(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("Failed \n **Error**\n", str(err))
+            return await event.edit("Gagal \n **Error**\n", str(err))
     return user_obj, extra
 
 
@@ -64,11 +64,11 @@ async def gspide(rk):
     sender = await lazy.get_sender()
     me = await lazy.client.get_me()
     if not sender.id == me.id:
-        rkp = await lazy.reply("`processing...`")
+        rkp = await lazy.reply("`pengolahan...`")
     else:
-        rkp = await lazy.edit("`processing...`")
+        rkp = await lazy.edit("`pengolahan...`")
     me = await rk.client.get_me()
-    await rkp.edit(f"`{ALIVE_NAME}:` **Requesting to global kick user!**")
+    await rkp.edit(f"`{ALIVE_NAME}:` **Meminta ke pengguna tendangan global!**")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await rk.get_chat()
@@ -101,7 +101,7 @@ async def gspide(rk):
                 await rk.client.edit_permissions(i, user, view_messages=False)
                 await rk.client.edit_permissions(i, user, send_messages=True)
                 a += 1
-                await rkp.edit(f"`{ALIVE_NAME} :` **Requesting to kicking user!\nGkicked {a} chats.....**")
+                await rkp.edit(f"`{ALIVE_NAME} :` **Meminta untuk menendang pengguna!\nGkicked {a} chat.....**")
 
             except BaseException:
                 b += 1

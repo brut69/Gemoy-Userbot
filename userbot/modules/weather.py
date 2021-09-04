@@ -43,7 +43,7 @@ async def get_weather(weather):
 
     if not OWM_API:
         await weather.edit(
-            "`Get an API key from` https://openweathermap.org/ `first.`")
+            "`Dapatkan kunci API dari` https://openweathermap.org/ `pertama.`")
         return
 
     APPID = OWM_API
@@ -52,7 +52,7 @@ async def get_weather(weather):
         CITY = DEFCITY
         if not CITY:
             await weather.edit(
-                "`Please specify a city or set one as default using the WEATHER_DEFCITY config variable.`"
+                "`Harap tentukan kota atau tetapkan sebagai default menggunakan variabel konfigurasi WEATHER_DEFCITY.`"
             )
             return
     else:
@@ -81,7 +81,7 @@ async def get_weather(weather):
     result = json.loads(request.text)
 
     if request.status_code != 200:
-        await weather.edit("`Invalid country.`")
+        await weather.edit("`Negara tidak valid.`")
         return
 
     cityname = result['name']
@@ -136,6 +136,6 @@ async def get_weather(weather):
 
 CMD_HELP.update({
     "weather":
-    "`.weather` <city> or `.weather` <city>, <country name/code>\
-    \nUsage: Gets the weather of a city."
+    "`.weather` <kota> or `.weather` <kota>, <nama/kode negara>\
+    \nUsage: Mendapat cuaca kota."
 })

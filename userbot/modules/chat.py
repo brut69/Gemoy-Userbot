@@ -74,7 +74,7 @@ async def _(event):
     try:
         async for x in bot.iter_participants(chat, filter=ChannelParticipantsBots):
             if isinstance(x.participant, ChannelParticipantAdmin):
-                mentions += "\n ⚜️ [{}](tg://user?id={}) `{}`".format(
+                mentions += "\n ⚔️ [{}](tg://user?id={}) `{}`".format(
                     x.first_name, x.id, x.id)
             else:
                 mentions += "\n [{}](tg://user?id={}) `{}`".format(
@@ -108,7 +108,7 @@ async def log(log_text):
 @register(outgoing=True, pattern="^.kickme$")
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit(f"`❗ {ALIVE_NAME} Telah Meninggalkan Group...`")
+    await leave.edit(f"`❕ {ALIVE_NAME} Telah Meninggalkan Group...`")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
@@ -118,7 +118,7 @@ async def unmute_chat(unm_e):
     try:
         from userbot.modules.sql_helper.keep_read_sql import unkread
     except AttributeError:
-        await unm_e.edit('`Running on Non-SQL Mode!`')
+        await unm_e.edit('`Berjalan pada Mode Non-SQL!`')
         return
     unkread(str(unm_e.chat_id))
     await unm_e.edit("```Berhasil Dibuka, Obrolan Tidak Lagi Dibisukan```")
@@ -132,7 +132,7 @@ async def mute_chat(mute_e):
     try:
         from userbot.modules.sql_helper.keep_read_sql import kread
     except AttributeError:
-        await mute_e.edit("`Running on Non-SQL mode!`")
+        await mute_e.edit("`Berjalan pada mode Non-SQL!`")
         return
     await mute_e.edit(str(mute_e.chat_id))
     kread(str(mute_e.chat_id))

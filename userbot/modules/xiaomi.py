@@ -12,7 +12,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     firmware = "firmware"
-    await event.edit("```Processing```")
+    await event.edit("```Pengolahan```")
     async with bot.conversation("@XiaomiGeeksBot") as conv:
         try:
             response = conv.wait_event(
@@ -22,7 +22,7 @@ async def _(event):
             await conv.send_message(f'/{firmware} {link}')
             response = await response
         except YouBlockedUserError:
-            await event.reply("```Unblock @XiaomiGeeksBot plox```")
+            await event.reply("```Buka blokir @XiaomiGeeksBot plox```")
             return
         else:
             await event.delete()
@@ -35,7 +35,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     fboot = "fastboot"
-    await event.edit("```Processing```")
+    await event.edit("```Pengolahan```")
     async with bot.conversation("@XiaomiGeeksBot") as conv:
         try:
             response = conv.wait_event(
@@ -45,7 +45,7 @@ async def _(event):
             await conv.send_message(f'/{fboot} {link}')
             response = await response
         except YouBlockedUserError:
-            await event.reply("```Unblock @XiaomiGeeksBoot plox```")
+            await event.reply("```Buka blokir @XiaomiGeeksBoot plox```")
             return
         else:
             await event.delete()
@@ -58,7 +58,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     recovery = "recovery"
-    await event.edit("```Processing```")
+    await event.edit("```Pengolahan```")
     async with bot.conversation("@XiaomiGeeksBot") as conv:
         try:
             response = conv.wait_event(
@@ -68,7 +68,7 @@ async def _(event):
             await conv.send_message(f'/{recovery} {link}')
             response = await response
         except YouBlockedUserError:
-            await event.reply("```Unblock @XiaomiGeeksBot plox```")
+            await event.reply("```Buka blokir @XiaomiGeeksBot plox```")
             return
         else:
             await event.delete()
@@ -81,7 +81,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     pitch = "pb"
-    await event.edit("```Processing```")
+    await event.edit("```Pengolahan```")
     async with bot.conversation("@XiaomiGeeksBot") as conv:
         try:
             response = conv.wait_event(
@@ -91,7 +91,7 @@ async def _(event):
             await conv.send_message(f'/{pitch} {link}')
             response = await response
         except YouBlockedUserError:
-            await event.reply("```Unblock @XiaomiGeeksBot plox```")
+            await event.reply("```Buka blokir @XiaomiGeeksBot plox```")
             return
         else:
             await event.delete()
@@ -104,7 +104,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     ofox = "of"
-    await event.edit("```Processing```")
+    await event.edit("```Pengolahan```")
     async with bot.conversation("@XiaomiGeeksBot") as conv:
         try:
             response = conv.wait_event(
@@ -114,7 +114,7 @@ async def _(event):
             await conv.send_message(f'/{ofox} {link}')
             response = await response
         except YouBlockedUserError:
-            await event.reply("```Unblock @XiaomiGeeksBot plox```")
+            await event.reply("```Buka blokir @XiaomiGeeksBot plox```")
             return
         else:
             await event.delete()
@@ -127,7 +127,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     eu = "eu"
-    await event.edit("```Processing```")
+    await event.edit("```Pengolahan```")
     async with bot.conversation("@XiaomiGeeksBot") as conv:
         try:
             response = conv.wait_event(
@@ -137,7 +137,7 @@ async def _(event):
             await conv.send_message(f'/{eu} {link}')
             response = await response
         except YouBlockedUserError:
-            await event.reply("```Unblock @XiaomiGeeksBot plox```")
+            await event.reply("```Buka blokir @XiaomiGeeksBot plox```")
             return
         else:
             await event.delete()
@@ -150,7 +150,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     vendor = "vendor"
-    await event.edit("```Processing```")
+    await event.edit("```Pengolahan```")
     async with bot.conversation("@XiaomiGeeksBot") as conv:
         try:
             response = conv.wait_event(
@@ -160,7 +160,7 @@ async def _(event):
             await conv.send_message(f'/{vendor} {link}')
             response = await response
         except YouBlockedUserError:
-            await event.reply("```Unblock @XiaomiGeeksBot plox```")
+            await event.reply("```Buka blokir @XiaomiGeeksBot plox```")
             return
         else:
             await event.delete()
@@ -173,7 +173,7 @@ async def _(event):
         return
     link = event.pattern_match.group(1)
     specs = "specs"
-    await event.edit("```Processing```")
+    await event.edit("```Pengolahan```")
     async with bot.conversation("@XiaomiGeeksBot") as conv:
         try:
             response = conv.wait_event(
@@ -183,7 +183,7 @@ async def _(event):
             await conv.send_message(f'/{specs} {link}')
             response = await response
         except YouBlockedUserError:
-            await event.reply("```Unblock @XiaomiGeeksBot plox```")
+            await event.reply("```Buka blokir @XiaomiGeeksBot plox```")
             return
         else:
             await event.delete()
@@ -192,20 +192,20 @@ async def _(event):
 
 CMD_HELP.update({
     "xiaomi":
-    "For Xiaomeme devices only!\
+    "Hanya untuk perangkat Xiaomi!\
 \n\n`.firmware` (codename)\
-     \nUsage : Get lastest Firmware\
+     \nUsage : Dapatkan Firmware terbaru\
 \n\n`.pb` (codename)\
-     \nUsage : Get latest PitchBlack Recovery\
+     \nUsage : Dapatkan Pemulihan PitchBlack terbaru\
 \n\n`.specs` (codename)\
-     \nUsage : Get quick spec information about device\
+     \nUsage : Dapatkan informasi spesifikasi cepat tentang perangkat\
 \n\n`.fastboot` (codename)\
-     \nUsage : Get latest fastboot MIUI\
+     \nUsage : Dapatkan MIUI fastboot terbaru\
 \n\n`.recovery` (codename)\
-     \nUsage : Get latest recovery MIUI\
+     \nUsage : Dapatkan MIUI pemulihan terbaru\
 \n\n`.eu` (codename)\
-    \nUsage: Get latest xiaomi.eu rom\
+    \nUsage: Dapatkan rom xiaomi.eu terbaru\
 \n\n`.vendor` (codename)\
-    \nUsage: fetches latest vendor\
+    \nUsage: mengambil vendor terbaru\
 \n\n`.of` (codename)\
-     \nUsage : Get latest ORangeFox Recovery"})
+     \nUsage : Dapatkan ORangeFox Recovery terbaru"})

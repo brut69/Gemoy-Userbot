@@ -25,19 +25,19 @@ async def download(event):
     if event.fwd_from:
         return
     if GITHUB_ACCESS_TOKEN is None:
-        await event.edit("`Please ADD Proper Access Token from github.com`")
+        await event.edit("`Silakan TAMBAHKAN Token Akses yang Tepat dari github.com`")
         return
     if GIT_REPO_NAME is None:
-        await event.edit("`Please ADD Proper Github Repo Name of your userbot`")
+        await event.edit("`Silakan TAMBAHKAN Nama Repo Github yang Tepat dari bot pengguna Anda`")
         return
-    mone = await event.reply("Processing ...")
+    mone = await event.reply("Pengolahan ...")
     if not os.path.isdir(GIT_TEMP_DIR):
         os.makedirs(GIT_TEMP_DIR)
     start = datetime.now()
     reply_message = await event.get_reply_message()
     try:
         time.time()
-        print("Downloading to TEMP directory")
+        print("Mengunduh ke direktori TEMP")
         downloaded_file_name = await bot.download_media(
             reply_message.media,
             GIT_TEMP_DIR
@@ -48,8 +48,8 @@ async def download(event):
         end = datetime.now()
         ms = (end - start).seconds
         await event.delete()
-        await mone.edit("Downloaded to `{}` in {} seconds.".format(downloaded_file_name, ms))
-        await mone.edit("Committing to Github....")
+        await mone.edit("Diunduh ke `{}` in {} seconds.".format(downloaded_file_name, ms))
+        await mone.edit("Berkomitmen ke Github....")
         await git_commit(downloaded_file_name, mone)
 
 
@@ -69,7 +69,7 @@ async def git_commit(file_name, mone):
     for i in content_list:
         create_file = True
         if i == 'ContentFile(path="' + file_name + '")':
-            return await mone.edit("`File Already Exists`")
+            return await mone.edit("`File Sudah Ada`")
             create_file = False
     file_name = "userbot/modules/" + file_name
     if create_file:
@@ -86,15 +86,15 @@ async def git_commit(file_name, mone):
             ccess = ccess.strip()
             await mone.edit(f"`Commited On Your Github Repo`\n\n[Your Modules](https://github.com/{ccess}/tree/sql-extended/userbot/modules/)")
         except BaseException:
-            print("Cannot Create Plugin")
-            await mone.edit("Cannot Upload Plugin")
+            print("Tidak Dapat Membuat Plugin")
+            await mone.edit("Tidak Dapat Mengunggah Plugin")
     else:
-        return await mone.edit("`Committed Suicide`")
+        return await mone.edit("`Bunuh Diri yang Dilakukan`")
 
 
 CMD_HELP.update({
     "gcommit":
     ".gcommit\
-    \nUsage: GITHUB File Uploader Plugin for userbot. Heroku Automation should be Enabled. Else u r not that lazy , For lazy people\
-\nInstructions:- Set GITHUB_ACCESS_TOKEN and GIT_REPO_NAME Variables in Heroku vars First\
-\n.commit reply_to_any_plugin can be any type of file too. but for plugin must be in .py ."})
+    \nUsage: Plugin Pengunggah File GITHUB untuk userbot. Otomatisasi Heroku harus Diaktifkan. Kalau tidak, Anda tidak malas, Untuk orang malas\
+\nInstruksi:- Setel Variabel GITHUB_ACCESS_TOKEN dan GIT_REPO_NAME di Heroku vars First\
+\n.commit reply_to_any_plugin juga dapat berupa jenis file apa pun. tapi untuk plugin harus di .py ."})

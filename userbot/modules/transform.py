@@ -19,13 +19,13 @@ bground = "black"
 @register(outgoing=True, pattern=r"^\.(ascii|asciis)$")
 async def ascii(event):
     if not event.reply_to_msg_id:
-        await event.edit("`Reply to Any media..`")
+        await event.edit("`Balas ke Media apa pun..`")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
         await event.edit("`reply to a image/sticker/video`")
         return
-    await event.edit("`Downloading Media..`")
+    await event.edit("`Mengunduh Media..`")
     if reply_message.photo:
         IMG = await bot.download_media(
             reply_message,
@@ -55,7 +55,7 @@ async def ascii(event):
             "ascii.png",
         )
     try:
-        await event.edit("`Processing..`")
+        await event.edit("`Pengolahan..`")
         list = await random_color()
         color1 = list[0]
         color2 = list[1]
@@ -133,13 +133,13 @@ async def random_color():
 async def _(event):
     BG = event.pattern_match.group(1)
     if BG.isnumeric():
-        return await event.edit("`Please input a color not a number!`")
+        return await event.edit("`Harap masukkan warna bukan angka!`")
     elif BG:
         global bground
         bground = BG
     else:
-        return await event.edit("`please insert bg of ascii`")
-    await event.edit(f"`Successfully set bg of ascii to` **{BG}**")
+        return await event.edit("`silakan masukkan bg dari ascii`")
+    await event.edit(f"`Berhasil menyetel bg ascii ke` **{BG}**")
 
 
 Converted = TEMP_DOWNLOAD_DIRECTORY + "sticker.webp"
@@ -148,13 +148,13 @@ Converted = TEMP_DOWNLOAD_DIRECTORY + "sticker.webp"
 @register(outgoing=True, pattern=r"^\.(mirror|flip|ghost|bw|poster)$")
 async def transform(event):
     if not event.reply_to_msg_id:
-        await event.edit("`Reply to Any media..`")
+        await event.edit("`Balas ke Media apa pun..`")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("`reply to a image/sticker`")
+        await event.edit("`membalas gambar/stiker`")
         return
-    await event.edit("`Downloading Media..`")
+    await event.edit("`Mengunduh Media..`")
     if reply_message.photo:
         transform = await bot.download_media(
             reply_message,
@@ -186,7 +186,7 @@ async def transform(event):
             "transform.png",
         )
     try:
-        await event.edit("`Transforming this media..`")
+        await event.edit("`Mengubah media ini..`")
         cmd = event.pattern_match.group(1)
         im = Image.open(transform).convert("RGB")
         if cmd == "mirror":
@@ -215,13 +215,13 @@ async def transform(event):
 @register(outgoing=True, pattern=r"^\.rotate(?: |$)(.*)")
 async def rotate(event):
     if not event.reply_to_msg_id:
-        await event.edit("`Reply to any media..`")
+        await event.edit("`Balas ke media apa pun..`")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("`reply to a image/sticker`")
+        await event.edit("`membalas gambar/stiker`")
         return
-    await event.edit("`Downloading Media..`")
+    await event.edit("`Mengunduh Media..`")
     if reply_message.photo:
         rotate = await bot.download_media(
             reply_message,
@@ -258,7 +258,7 @@ async def rotate(event):
             raise ValueError
     except ValueError:
         value = 90
-    await event.edit("`Rotating your media..`")
+    await event.edit("`Memutar media Anda..`")
     im = Image.open(rotate).convert("RGB")
     IMG = im.rotate(value, expand=1)
     IMG.save(Converted, quality=95)
@@ -275,22 +275,22 @@ async def rotate(event):
 CMD_HELP.update(
     {
         "transform": ">`.ghost`"
-        "\nUsage: Enchance your image to become a ghost!."
+        "\nUsage: Tingkatkan citramu menjadi hantu!."
         "\n\n>`.ascii`"
-        "\nUsage:create ascii art from media"
+        "\nUsage: membuat seni ascii dari media"
         "\n\n>`.asciis`"
-        "\nUsage:same but upload result as sticker"
+        "\nUsage: sama tetapi unggah hasil sebagai stiker"
         "\n\n>`.asciibg <color>`"
-        "\nUsage:Now to use ASCII module change first background color past"
+        "\nUsage: Sekarang untuk menggunakan modul ASCII, ubah warna latar belakang pertama melewati"
         "\n\n>`.flip`"
-        "\nUsage: To flip your image"
+        "\nUsage: Untuk membalik gambar Anda"
         "\n\n>`.mirror`"
-        "\nUsage: To mirror your image"
+        "\nUsage: Untuk mencerminkan gambar Anda"
         "\n\n>`.bw`"
-        "\nUsage: To Change your colorized image to b/w image!"
+        "\nUsage: Untuk Mengubah gambar berwarna Anda menjadi gambar b/w!"
         "\n\n>`.poster`"
-        "\nUsage: To posterize your image!"
+        "\nUsage: Untuk posterisasi gambar Anda!"
         "\n\n>`.rotate <value>`"
-        "\nUsage: To rotate your image\n* The value is range 1-360 if not it'll give default value which is 90"
+        "\nUsage: Untuk memutar gambar Anda\n* Nilainya berkisar 1-360 jika tidak maka akan memberikan nilai default yaitu 90"
     }
 )

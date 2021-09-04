@@ -45,7 +45,7 @@ async def randomise(items):
 async def sleepybot(time):
     """ For .sleep command, let the userbot snooze for a few second. """
     counter = int(time.pattern_match.group(1))
-    await time.edit("`I am sulking and snoozing...`")
+    await time.edit("`Saya merajuk dan tertidur ...`")
     if BOTLOG:
         str_counter = time_formatter(counter)
         await time.client.send_message(
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡ QueenGemoy-Project Repo](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/README.md)"
+        "\n[🎉 QueenGemoy-Project Repo](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -112,9 +112,9 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "╭‒─‒──────────‒─‒╮\n"
         "│                   ʀᴇᴘᴏ\n"
-        "│       [⚡QueenGemoy-Project⚡](https://github.com/brut69/Gemoy-Userbot)\n"
+        "│       [🎉QueenGemoy-Project🎉](https://github.com/brut69/Gemoy-Userbot)\n"
         "├‒─‒──────────‒─‒╯\n"
-        "│🔰 **ᴏᴡɴᴇʀ :** [Gemoy](t.me/dunottagme)\n"
+        "│🥱 **ᴏᴡɴᴇʀ :** [Gemoy](t.me/dunottagme)\n"
         "╰‒─‒──────────‒─‒╯\n"
         "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/LICENSE)"
     )

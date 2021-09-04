@@ -22,10 +22,10 @@ from userbot.events import register
 async def _(event):
     if event.fwd_from:
         return
-    s_m_ = await event.edit("Processing ...")
+    s_m_ = await event.edit("Pengolahan ...")
     cmd = event.pattern_match.group(1)
     if not cmd:
-        return await s_m_.edit("`What should i eval...`")
+        return await s_m_.edit("`Apa yang harus saya evaluasi...`")
 
     old_stderr = sys.stderr
     old_stdout = sys.stdout
@@ -83,7 +83,7 @@ async def run(run_q):
     code = run_q.pattern_match.group(1)
 
     if run_q.is_channel and not run_q.is_group:
-        return await run_q.edit("`Exec isn't permitted on channels!`")
+        return await run_q.edit("`Exec tidak diizinkan di saluran!`")
 
     if not code:
         return await run_q.edit(
@@ -92,7 +92,7 @@ async def run(run_q):
         )
 
     if code in ("userbot.session", "config.env"):
-        return await run_q.edit("`That's a dangerous operation! Not Permitted!`")
+        return await run_q.edit("`Itu operasi yang berbahaya! Tidak Diizinkan!`")
 
     if len(code.splitlines()) <= 5:
         codepre = code
@@ -128,7 +128,7 @@ async def run(run_q):
                 run_q.chat_id,
                 "output.txt",
                 reply_to=run_q.id,
-                caption="`Output too large, sending as file`",
+                caption="`Output terlalu besar, mengirim sebagai file`",
             )
             remove("output.txt")
             return
@@ -154,19 +154,19 @@ async def terminal_runner(term):
         uid = "This ain't it chief!"
 
     if term.is_channel and not term.is_group:
-        return await term.edit("`Term commands aren't permitted on channels!`")
+        return await term.edit("`Perintah istilah tidak diizinkan di saluran!`")
 
     if not command:
         return await term.edit(
-            "``` Give a command or use .help term for an example.```"
+            "``` Berikan perintah atau gunakan istilah .help sebagai contoh.```"
         )
 
     for i in ("userbot.session", "env"):
         if command.find(i) != -1:
-            return await term.edit("`That's a dangerous operation! Not Permitted!`")
+            return await term.edit("`Itu operasi yang berbahaya! Tidak Diizinkan!`")
 
     if not re.search(r"echo[ \-\w]*\$\w+", command) is None:
-        return await term.edit("`That's a dangerous operation! Not Permitted!`")
+        return await term.edit("`Itu operasi yang berbahaya! Tidak Diizinkan!`")
 
     process = await asyncio.create_subprocess_shell(
         command, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -182,7 +182,7 @@ async def terminal_runner(term):
             term.chat_id,
             "output.txt",
             reply_to=term.id,
-            caption="`Output too large, sending as file`",
+            caption="`Output terlalu besar, mengirim sebagai file`",
         )
         remove("output.txt")
         return
@@ -194,6 +194,6 @@ async def terminal_runner(term):
 
 
 CMD_HELP.update({"eval": ">`.eval print('world')`"
-                 "\nUsage: Just like exec.", "exec": ">`.exec print('hello')`"
-                 "\nUsage: Execute small python scripts.", "term": ">`.term <cmd>`"
-                 "\nUsage: Run bash commands and scripts on your server.", })
+                 "\nUsage: Sama seperti exec.", "exec": ">`.exec print('hello')`"
+                 "\nUsage: Jalankan skrip python kecil.", "term": ">`.term <cmd>`"
+                 "\nUsage: Jalankan perintah dan skrip bash di server Anda.", })

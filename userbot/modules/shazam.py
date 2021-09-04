@@ -15,7 +15,7 @@ from userbot.events import register
 
 @register(outgoing=True, pattern=r"^\.shazam(?: |$)(.*)")
 async def _(event):
-    "To reverse search music by bot."
+    "Untuk membalikkan pencarian musik dengan bot."
     if not event.reply_to_msg_id:
         return await event.edit("```Membalas pesan audio.```")
     reply_message = await event.get_reply_message()
@@ -28,7 +28,7 @@ async def _(event):
                 response = await conv.get_response()
                 send_audio = await conv.send_message(reply_message)
                 check = await conv.get_response()
-                if not check.text.startswith("Audio received"):
+                if not check.text.startswith("Audio diterima"):
                     return await event.edit(
                         "Terjadi kesalahan saat mengidentifikasi lagu. Coba gunakan pesan audio berdurasi 5-10 detik."
                     )
@@ -49,7 +49,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "shazam": ">`.shazam <reply to voice/audio>"
-        "\nUsage: Reverse search audio file using (@auddbot)"
+        "shazam": ">`.shazam <membalas suara/audio>"
+        "\nUsage: Membalikkan file audio pencarian menggunakan (@auddbot)"
     }
 )

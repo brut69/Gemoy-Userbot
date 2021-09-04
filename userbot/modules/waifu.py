@@ -41,7 +41,7 @@ async def waifu(animu):
         if animu.is_reply:
             text = (await animu.get_reply_message()).message
         else:
-            await animu.answer("`No text given, hence the waifu ran away.`")
+            await animu.answer("`Tidak ada teks yang diberikan, maka waifu melarikan diri.`")
             return
     animus = [15, 30, 32, 33, 40, 41, 42, 48, 55, 58]
     sticcers = await bot.inline_query(
@@ -55,7 +55,7 @@ async def waifu(animu):
         )
     except Exception:
         return await animu.edit(
-            "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
+            "`Anda tidak dapat mengirim hasil sebaris dalam obrolan ini (disebabkan oleh SendInlineBotResultRequest)`"
         )
     await sleep(5)
     await animu.delete()
@@ -63,19 +63,19 @@ async def waifu(animu):
 
 @register(outgoing=True, pattern=r'^.hz(:? |$)(.*)?')
 async def _(hazmat):
-    await hazmat.edit("`Sending information...`")
+    await hazmat.edit("`Mengirim informasi...`")
     level = hazmat.pattern_match.group(2)
     if hazmat.fwd_from:
         return
     if not hazmat.reply_to_msg_id:
-        await hazmat.edit("`WoWoWo Capt!, we are not going suit a ghost!...`")
+        await hazmat.edit("`WoWoWo Kapten!, ​​kami tidak cocok dengan hantu!...`")
         return
     reply_message = await hazmat.get_reply_message()
     if not reply_message.media:
-        await hazmat.edit("`Word can destroy anything Capt!...`")
+        await hazmat.edit("`Kata bisa menghancurkan apapun Kapten!...`")
         return
     chat = "@hazmat_suit_bot"
-    await hazmat.edit("```Suit Up Capt!, We are going to purge some virus...```")
+    await hazmat.edit("```Suit Up Kapten!, ​​Kami akan membersihkan beberapa virus...```")
     message_id_to_reply = hazmat.message.reply_to_msg_id
     msg_reply = None
     async with hazmat.client.conversation(chat) as conv:
@@ -100,10 +100,10 @@ async def _(hazmat):
             """ - don't spam notif - """
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await hazmat.reply("`Please unblock` @hazmat_suit_bot`...`")
+            await hazmat.reply("`Silakan buka blokir` @hazmat_suit_bot`...`")
             return
         if response.text.startswith("I can't"):
-            await hazmat.edit("`Can't handle this GIF...`")
+            await hazmat.edit("`Tidak dapat menangani GIF ini...`")
             await hazmat.client.delete_messages(
                 conv.chat_id,
                 [msg.id, response.id, r.id, msg_reply.id])
@@ -133,7 +133,7 @@ async def _(hazmat):
 CMD_HELP.update({
     "waifu":
     "`.waifu` text\
-\nUsage: for custom stickers.\
-\n\n`.hz` or `.hz [flip, x2, rotate (degree), background (number), black]`\
-\nUsage: Reply to a image / sticker to suit up!."
+\nUsage: untuk stiker khusus.\
+\n\n`.hz` or `.hz [flip, x2, putar (derajat), latar belakang (angka), hitam]`\
+\nUsage: Balas gambar / stiker yang sesuai!."
 })

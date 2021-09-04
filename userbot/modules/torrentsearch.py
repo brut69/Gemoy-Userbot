@@ -11,14 +11,14 @@ from userbot.events import register
 
 @register(outgoing=True, pattern=r"^\.ts (.*)")
 async def gengkapak(e):
-    await e.edit("`Please wait, fetching results...`")
+    await e.edit("`Harap tunggu, mengambil hasil...`")
     query = e.pattern_match.group(1)
     response = requests.get(
         f"https://sjprojectsapi.herokuapp.com/torrent/?query={query}"
     )
     ts = json.loads(response.text)
     if ts != response.json():
-        await e.edit("**Some error occured**\n`Try Again Later`")
+        await e.edit("**Terjadi beberapa kesalahan**\n`Coba Lagi Nanti`")
         return
     listdata = ""
     run = 0
@@ -33,7 +33,7 @@ async def gengkapak(e):
             break
 
     if not listdata:
-        return await e.edit("`Error: No results found`")
+        return await e.edit("`Kesalahan: Tidak ada hasil yang ditemukan`")
 
     tsfileloc = f"{TEMP_DOWNLOAD_DIRECTORY}/{query}.txt"
     with open(tsfileloc, "w+", encoding="utf8") as out_file:
@@ -44,7 +44,7 @@ async def gengkapak(e):
                          json={"content": data}) .json() .get("result") .get("key"))
     url = f"https://nekobin.com/raw/{key}"
     caption = (
-        f"`Here the results for the query: {query}`\n\nPasted to: [Nekobin]({url})"
+        f"`Berikut hasil kueri: {query}`\n\nDitempel to: [Nekobin]({url})"
     )
     os.remove(tsfileloc)
     await e.edit(caption, link_preview=False)
@@ -74,7 +74,7 @@ async def tor_search(event):
     search_str = event.pattern_match.group(1)
 
     print(search_str)
-    await event.edit("Searching for " + search_str + ".....")
+    await event.edit("Mencari " + search_str + ".....")
     if " " in search_str:
         search_str = search_str.replace(" ", "+")
         print(search_str)
@@ -112,7 +112,7 @@ async def tor_search(event):
             break
         counter += 1
     if not urls:
-        await event.edit("Either the Keyword was restricted or not found..")
+        await event.edit("Entah Kata Kunci dibatasi atau tidak ditemukan..")
         return
 
     print("Found URLS...")
@@ -126,9 +126,9 @@ async def tor_search(event):
                 magnets.append(mg)
             except Exception:
                 pass
-    print("Found Magnets...")
+    print("Menemukan Magnet...")
     shorted_links = dogbin(magnets)
-    print("Dogged Magnets to del.dog...")
+    print("Magnet mantap ke del.dog...")
     msg = ""
     try:
         search_str = search_str.replace("+", " ")
@@ -150,9 +150,9 @@ async def tor_search(event):
 
 CMD_HELP.update(
     {
-        "torrent": ">`.ts` Search query."
-        "\nUsage: Search for torrent query and post to dogbin.\n\n"
-        ">`.tos` Search query."
-        "\nUsage: Search for torrent magnet from query."
+        "torrent": ">`.ts` Permintaan pencarian."
+        "\nUsage: Telusuri kueri torrent dan poskan ke dogbin.\n\n"
+        ">`.tos` Permintaan pencarian."
+        "\nUsage: Cari magnet torrent dari kueri."
     }
 )

@@ -39,7 +39,7 @@ async def image_maker(event):
 
 CMD_HELP.update(
     {
-        "gid": "⚡**CMD**⚡ : `.gid`\
+        "gid": "**CMD** : `.gid`\
         \n↳ : Reply to a user to generate ID Card."
     }
 )

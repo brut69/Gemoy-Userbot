@@ -108,7 +108,7 @@ async def set_var(var):
                 "**Mengganti Config Vars**:\n"
                 f"`{variable}` = `{value}`"
             )
-        await var.edit("`Sedang Di Proses, Mohon Menunggu Dalam Beberapa Detik 😼`")
+        await var.edit("`Sedang Di Proses, Mohon Menunggu Dalam Beberapa Detik...`")
     else:
         if BOTLOG:
             await var.client.send_message(
@@ -182,7 +182,7 @@ async def dyno_usage(dyno):
 
             await dyno.edit(
                 "╭┈─╼━━━━━━━━━━━━━╾─┈  \n"
-                "│       🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰  \n"
+                "│          𝙂𝙀𝙈𝙊𝙔 - 𝙐𝙎𝙀𝙍𝘽𝙊𝙏  \n"
                 "├┈─╼━━━━━━━━━━━━━╾─┈  \n"
                 "│💠 ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ꜱᴀᴀᴛ ɪɴɪ \n"
                 f"│  ▸ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ. \n"

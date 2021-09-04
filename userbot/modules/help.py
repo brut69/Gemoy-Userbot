@@ -32,11 +32,11 @@ async def help(event):
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
-            string += "`\t ⊖  "
-        await event.edit("**🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰**\n\n"
-                         f"**◉ Bᴏᴛ ᴏꜰ {DEFAULTUSER}**\n**◉ Mᴏᴅᴜʟᴇꜱ : {len(modules)}**\n\n"
-                         "**• Mᴀɪɴ Mᴇɴᴜ :**\n"
-                         f"◉ {string}◉\n\n")
-        await event.reply(f"\n**Contoh** : Ketik <`.help afk`> Untuk Informasi Pengunaan.\nAtau Bisa Juga Ketik `.helpme` Untuk Main Menu Yang Lain-Nya.")
+            string += "`\t ✿  "
+        await event.edit("** 𝙂 𝙀 𝙈 𝙊 𝙔  -  𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 **\n\n"
+                         f"**✿ 𝗢𝗪𝗡𝗘𝗥 {DEFAULTUSER}**\n**✿ 𝗣𝗟𝗨𝗚𝗜𝗡𝗦 : {len(modules)}**\n\n"
+                         "**• 𝗢𝗨𝗥 𝗠𝗘𝗡𝗨 :**\n"
+                         f"✿ {string}✿\n\n")
+        await event.reply(f"\n**Contoh** : Ketik <`.help ping`> Untuk Informasi Pengunaan.\nAtau Bisa Juga Ketik `.helpme` Untuk Menu Yang Lainnya.")
         await asyncio.sleep(1000)
         await event.delete()

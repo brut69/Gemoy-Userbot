@@ -354,14 +354,14 @@ async def redis(alive):
 
 @register(outgoing=True, pattern="^.aliveu")
 async def amireallyaliveuser(username):
-    """ For .aliveu command, change the username in the .alive command. """
+    """ Untuk perintah .aliveu, ubah nama pengguna pada perintah .alive. """
     message = username.text
     output = ".aliveu [new username] tidak boleh kosong"
     if not (message == ".aliveu" and message[7:8] != " "):
         newuser = message[8:]
         global DEFAULTUSER  # global statement
         DEFAULTUSER = username
-        output = "Successfully changed user to " + newuser + "!"
+        output = "Berhasil mengubah pengguna menjadi " + newuser + "!"
     await username.edit("`" f"{output}" "`")
 
 
@@ -369,32 +369,32 @@ async def amireallyaliveuser(username):
 async def amireallyalivereset(ureset):
     global DEFAULTUSER  # global statement
     DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-    await ureset.edit("`" "Successfully reset user for alive!" "`")
+    await ureset.edit("`" "Berhasil mengatur ulang pengguna untuk hidup!" "`")
 
 
 CMD_HELP.update({
     "system":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
-    "\n↳ : Shows system information using neofetch."
+    "\n↳ : Menampilkan informasi sistem menggunakan neofetch."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.db`"
-    "\n↳ : Shows database related info."
+    "\n↳ : Menampilkan info terkait basis data."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spc`"
-    "\n↳ : Show system specification."
+    "\n↳ : Tunjukkan spesifikasi sistem."
 })
 CMD_HELP.update({
     "alive":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
-    "\n↳ : To see whether your bot is working or not."
+    "\n↳ : Untuk melihat apakah bot Anda berfungsi atau tidak."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
-    "\n↳ : Changes the 'user' in alive to the text you want."
+    "\n↳ : Ubah 'pengguna' menjadi teks yang Anda inginkan."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.restalive`"
-    "\n↳ : Resets the user to default."
+    "\n↳ : Menyetel ulang pengguna ke default."
 })
 CMD_HELP.update(
     {
         "botversion":
         "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.botver`"
-        "\n↳ : Shows the userbot version."
+        "\n↳ : Menampilkan versi bot pengguna."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pip` <module(s)>"
-        "\n↳ : Does a search of pip modules(s)."
+        "\n↳ : Melakukan pencarian modul pip."
     })

@@ -10,65 +10,65 @@ import asyncio
 @register(outgoing=True, pattern="^.hua$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Aku di ghosting")
-        sleep(1)
+        await e.edit("AING DI GHOSTING")
+        sleep(2)
         await e.edit("😭😭😭")
+        sleep(2)
+        await e.edit("AING SETESS")
         sleep(1)
-        await e.edit("Aku Sedihhh")
+        await e.edit("KENAPA COBAK")
         sleep(1)
-        await e.edit("Kenapa si")
+        await e.edit("JADIAN CUMA JADI PELAMPIASAN")
         sleep(1)
-        await e.edit("GAMPANG BGT NYAKITIN")
+        await e.edit("CUMA JADI BADUT")
         sleep(1)
-        await e.edit("HATI GUA BUKAN BUAT DI GHOSTING")
+        await e.edit("DAH SENENG KAU TINGGAL")
         sleep(1)
-        await e.edit("TAI BANGET ASLI")
+        await e.edit("GITU AJA KAN?")
         sleep(1)
-        await e.edit("PARAH SI")
+        await e.edit("DEMI APASI")
         sleep(1)
-        await e.edit("DEMI APASII")
+        await e.edit("KAU")
         sleep(1)
-        await e.edit("TWINGG")
+        await e.edit("TEGA")
         sleep(1)
-        await e.edit("KONTOL")
+        await e.edit("HANCURIN")
         sleep(1)
-        await e.edit("MEMEK")
+        await e.edit("APA YANG UDAH")
         sleep(1)
-        await e.edit("AKU DI GHOSTING")
+        await e.edit("KITA")
         sleep(1)
-        await e.edit("BANGSAT")
+        await e.edit("BANGUN")
         sleep(1)
-        await e.edit("ANJING")
+        await e.edit("🤧🤧🤧")
         sleep(1)
-        await e.edit("😡😡😡")
+        await e.edit("DEMI APA COBA?")
         sleep(1)
-        await e.edit("🥴🥴🥴")
+        await e.edit("COBA JELASIN")
         sleep(1)
-        await e.edit("ANJINGGGG༼")
+        await e.edit("APA YANG BUAT KAU")
         sleep(1)
-        await e.edit("TAIIII")
+        await e.edit("TEGA LAKUIN SEMUA INI")
         sleep(1)
-        await e.edit("AH ELAHH BABI")
+        await e.edit("APA..?? 😠😠")
         sleep(1)
-        await e.edit("GAUSAH GANGGU")
+        await e.edit("KENAPA..?? 😡😡")
         sleep(1)
-        await e.edit("GUA STRESS")
+        await e.edit("ATAU ADA SIAPA..?? 🤬🤬")
         sleep(1)
-        await e.edit("😭😭😭😭😭😭")
+        await e.edit("😭😭😭😭")
         sleep(1)
-        await e.edit("🥴🥴🥴🥴")
+        await e.edit("ADA YG MAU SAMA AKU TAK 👉👈")
+        sleep(3)
+        await e.edit("PLISS DAH...🥺🥺")
         sleep(1)
-        await e.edit("ADA YG MAU SAMA GUA?")
-        sleep(1)
-        await e.edit("PLISS GUA BUTUH")
-        sleep(1)
-        await e.edit("SESEORANG YG MAU NERIMA GUA")
+        await e.edit("SESEORANG YG MAU NERIMA AKU")
         sleep(1)
         await e.edit("😔😔😔😔")
         sleep(1)
-        await e.edit("MAU GAK JADI PACAR GUA??༼")
+        await e.edit("MAU GAK JADI TEMEN HIDUPKU?")
         sleep(1)
-        await e.edit("༼ TAPI BOONG TOD!!༽")
+        await e.edit("**🤪𝗧𝗔𝗣𝗜 𝗕𝗢𝗢𝗡𝗚🤪**")
 
 
 @register(outgoing=True, pattern='^.huh(?: |$)(.*)')
@@ -76,15 +76,15 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n />❤️ *NIH GUA KASIH BUAT LU!!`")
+                     "`\n />❤️ *NIH GUA KASIH BUAT MU!!`")
     sleep(3)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n/>💔  *E GAK DEH,UDH DI KSH GRATIS LU RUSAKIN`")
+                     "`\n/>💔  *E G DENG, UDH DI KSH GRATIS NTAR KAU RUSAKIN`")
     sleep(2)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n💔<\\  *KENTOD`")
+                     "`\n💔<\\  -PARAH`")
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -190,12 +190,12 @@ async def _(event):
         await event.edit(input_str)
 
         animation_chars = [
-            "**OWNER RAM-UBOT ADALAH MANUSIA TERGANTENG DI HATI PEMAKAI NYA, KENALAN DULU SAMA OWNER NYA YUK**"
-            "**RAMADHANI NAMANYA,ORANG NYA BAIK**"
-            "**TINGGAL NYA DI TANGERANG, BTW ORANG TANGERANG GANTENG GANTENG DAN THEBEST POKOK NYA AWWHHHH**"
-            "**KALO MAU FORK REPONYA,IZIN DULU KE ORANG NYA YA GENGSSS**"
-            "**POKOK NYA OWNER NYA THEBEST BANGET SERIUSSSSS**"
-            "**UDAH POKOK NYA ITU AJA SIH,INTINYA OWNER NYA GANTENG DAN BAIK PARAH**"]
+            "**Skuy kenalin Dev 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 dulu yook**"
+            "**Yusuf mungkin terkenalnya. Nama lain untuk di Dev 𝙍𝙊𝙈 adalah @brut69 dari 𝙍𝘼𝙎𝙏𝘼𝙈𝙊𝘿69™**"
+            "**Mo kepoin lebih lanjut sabi sih**"
+            "**Silakan PM ke @dunottagme or @jsminebot**"
+            "**Untuk bot Music yang bisa dipakai sabi @RemMusic_bot @RinMusicOS_bot @CallMusicPlusBot ©²¹**"
+            "**Gitu aja sih. Lebih detailnya silakan PM aje. Bhahaha**"]
 
         for i in animation_ttl:
 
@@ -204,7 +204,7 @@ async def _(event):
             await event.edit(animation_chars[i % 6])
 
 CMD_HELP.update({
-    "memes5":
+    "memes2":
     "`.nah` ; `.huh` ; `.owner`\
     \nUsage: cobain.\
     \n\n`.bunga` ; `.buah`\
@@ -214,7 +214,7 @@ CMD_HELP.update({
 })
 
 CMD_HELP.update({
-    "memes6":
+    "memes3":
     "`.hua`\
     \nUsage: nangis.\
     \n\n`.cinta` ; `.canda`\

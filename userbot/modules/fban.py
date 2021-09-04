@@ -10,7 +10,7 @@ async def fban(event):
     try:
         from userbot.modules.sql_helper.fban_sql import get_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Berjalan pada mode Non-SQL!**")
 
     if event.is_reply:
         reply_msg = await event.get_reply_message()
@@ -28,11 +28,11 @@ async def fban(event):
 
     if event.sender_id == fban_id:
         return await event.edit(
-            "**Error: This action has been prevented by KensurBot self preservation protocols.**"
+            "**Kesalahan: Tindakan ini telah dicegah oleh protokol pelestarian diri KensurBot.**"
         )
 
     if len((fed_list := get_flist())) == 0:
-        return await event.edit("**You haven't connected to any federations yet!**")
+        return await event.edit("**Anda belum terhubung ke federasi mana pun!**")
 
     user_link = f"[{fban_id}](tg://user?id={fban_id})"
 
@@ -64,11 +64,11 @@ async def fban(event):
     reason = reason if reason else "Not specified."
 
     if failed:
-        status = f"Failed to fban in {len(failed)}/{total} feds.\n"
+        status = f"Gagal mem-fban di {len(failed)}/{total} feds.\n"
         for i in failed:
             status += "• " + i + "\n"
     else:
-        status = f"Success! Fbanned in {total} feds."
+        status = f"Kesuksesan! Diblokir di {total} feds."
 
     await event.edit(
         f"**Fbanned **{user_link}!\n**Reason:** {reason}\n**Status:** {status}"
@@ -81,7 +81,7 @@ async def unfban(event):
     try:
         from userbot.modules.sql_helper.fban_sql import get_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Berjalan pada mode Non-SQL!**")
 
     if event.is_reply:
         reply_msg = await event.get_reply_message()
@@ -98,10 +98,10 @@ async def unfban(event):
         pass
 
     if event.sender_id == unfban_id:
-        return await event.edit("**Wait, that's illegal**")
+        return await event.edit("**Tunggu, itu ilegal **")
 
     if len((fed_list := get_flist())) == 0:
-        return await event.edit("**You haven't connected to any federations yet!**")
+        return await event.edit("**Anda belum terhubung ke federasi mana pun!**")
 
     user_link = f"[{unfban_id}](tg://user?id={unfban_id})"
 
@@ -136,7 +136,7 @@ async def unfban(event):
         for i in failed:
             status += "• " + i + "\n"
     else:
-        status = f"Success! Un-fbanned in {total} feds."
+        status = f"Kesuksesan! Batalkan pemblokiran di {total} feds."
 
     reason = reason if reason else "Not specified."
     await event.edit(
@@ -150,19 +150,19 @@ async def addf(event):
     try:
         from userbot.modules.sql_helper.fban_sql import add_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Berjalan pada mode Non-SQL!**")
 
     if not (fed_name := event.pattern_match.group(1)):
-        return await event.edit("**Pass a name in order connect to this group!**")
+        return await event.edit("**Berikan nama untuk terhubung ke grup ini!**")
 
     try:
         add_flist(event.chat_id, fed_name)
     except IntegrityError:
         return await event.edit(
-            "**This group is already connected to federations list.**"
+            "**Grup ini sudah terhubung ke daftar federasi.**"
         )
 
-    await event.edit("**Added this group to federations list!**")
+    await event.edit("**Menambahkan grup ini ke daftar federasi!**")
 
 
 @register(outgoing=True, pattern=r"^\.delf$")
@@ -171,10 +171,10 @@ async def delf(event):
     try:
         from userbot.modules.sql_helper.fban_sql import del_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Berjalan pada mode Non-SQL!**")
 
     del_flist(event.chat_id)
-    await event.edit("**Removed this group from federations list!**")
+    await event.edit("**Menghapus grup ini dari daftar federasi!**")
 
 
 @register(outgoing=True, pattern=r"^\.listf$")
@@ -183,12 +183,12 @@ async def listf(event):
     try:
         from userbot.modules.sql_helper.fban_sql import get_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Berjalan pada mode Non-SQL!**")
 
     if len((fed_list := get_flist())) == 0:
-        return await event.edit("**You haven't connected to any federations yet!**")
+        return await event.edit("**Anda belum terhubung ke federasi mana pun!**")
 
-    msg = "**Connected federations:**\n\n"
+    msg = "**Federasi yang terhubung:**\n\n"
 
     for i in fed_list:
         msg += "• " + str(i.fed_name) + "\n"
@@ -202,25 +202,25 @@ async def delf(event):
     try:
         from userbot.modules.sql_helper.fban_sql import del_flist_all
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Berjalan pada mode Non-SQL!**")
 
     del_flist_all()
-    await event.edit("**Disconnected from all connected federations!**")
+    await event.edit("**Terputus dari semua federasi yang terhubung!**")
 
 
 CMD_HELP.update(
     {
         "federation": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fban <id/username> <reason>`"
-        "\n↳ : Bans user from connected federations."
-        "\nYou can reply to the user whom you want to fban or manually pass the username/id."
+        "\n↳ : Melarang pengguna dari federasi yang terhubung."
+        "\nAnda dapat membalas pengguna yang ingin Anda fban atau secara manual melewati username/id."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unfban <id/username> <reason>`"
-        "\n↳ : Same as fban but unbans the user"
+        "\n↳ : Sama seperti fban tapi unban pengguna"
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addf <name>`"
-        "\n↳ : Adds current group and stores it as <name> in connected federations."
-        "\nAdding one group is enough for one federation."
+        "\n↳ : Menambahkan grup saat ini dan menyimpannya sebagai <name> di federasi yang terhubung."
+        "\nMenambahkan satu grup sudah cukup untuk satu federasi."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.delf`"
-        "\n↳ : Removes current group from connected federations."
+        "\n↳ : Menghapus grup saat ini dari federasi yang terhubung."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.listf`"
-        "\n↳ : Lists all connected federations by specified name."
+        "\n↳ : Daftar semua federasi yang terhubung dengan nama yang ditentukan."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.clearf`"
-        "\n↳ : Disconnects from all connected federations. Use it carefully."})
+        "\n↳ : Terputus dari semua federasi yang terhubung. Gunakan dengan hati-hati."})

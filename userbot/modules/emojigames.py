@@ -12,13 +12,13 @@ async def _(event):
         return
     input_str = event.pattern_match.group(1)
     await event.delete()
-    r = await event.reply(file=InputMediaDice(''))
+    r = await event.reply(file=InputMediaDice('🎲'))
     if input_str:
         try:
             required_number = int(input_str)
             while not r.media.value == required_number:
                 await r.delete()
-                r = await event.reply(file=InputMediaDice(''))
+                r = await event.reply(file=InputMediaDice('🎲'))
         except BaseException:
             pass
 
@@ -40,7 +40,7 @@ async def _(event):
             pass
 
 
-@register(outgoing=True, pattern="^.ball(?: |$)(.*)")
+@register(outgoing=True, pattern="^.basket(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -56,8 +56,61 @@ async def _(event):
         except BaseException:
             pass
 
+
+@register(outgoing=True, pattern="^.bowl(?: |$)(.*)")
+async def _(event):
+    if event.fwd_from:
+        return
+    input_str = event.pattern_match.group(1)
+    await event.delete()
+    r = await event.reply(file=InputMediaDice('🎳'))
+    if input_str:
+        try:
+            required_number = int(input_str)
+            while not r.media.value == required_number:
+                await r.delete()
+                r = await event.reply(file=InputMediaDice('🎳'))
+        except BaseException:
+            pass
+
+
+@register(outgoing=True, pattern="^.ball(?: |$)(.*)")
+async def _(event):
+    if event.fwd_from:
+        return
+    input_str = event.pattern_match.group(1)
+    await event.delete()
+    r = await event.reply(file=InputMediaDice('⚽'))
+    if input_str:
+        try:
+            required_number = int(input_str)
+            while not r.media.value == required_number:
+                await r.delete()
+                r = await event.reply(file=InputMediaDice('⚽'))
+        except BaseException:
+            pass
+
+
+@register(outgoing=True, pattern="^.ding(?: |$)(.*)")
+async def _(event):
+    if event.fwd_from:
+        return
+    input_str = event.pattern_match.group(1)
+    await event.delete()
+    r = await event.reply(file=InputMediaDice('🎰'))
+    if input_str:
+        try:
+            required_number = int(input_str)
+            while not r.media.value == required_number:
+                await r.delete()
+                r = await event.reply(file=InputMediaDice('🎰'))
+        except BaseException:
+            pass
+
+
+
 CMD_HELP.update({
     "emojigames":
-    "`.dice` 1-6 or `.dart`1-6 or `.ball`1-5\
+    "`.dice` 1-6 or `.dart` 1-6 or `.ball` 1-5 `.basket` 1-5 or `.bowl` `.ding`\
 \nUsage: hahaha just a magic.\nWarning:`Don't use any other values or bot will crash`"
 })

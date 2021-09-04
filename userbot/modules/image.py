@@ -12,8 +12,8 @@ from userbot.utils import googleimagesdownload
 async def goimg(event):
     query = event.pattern_match.group(1)
     if not query:
-        return await event.edit("`Give something to search...`")
-    await event.edit("`Processing Keep Patience...`")
+        return await event.edit("`Berikan sesuatu untuk ditelusuri...`")
+    await event.edit("`Memproses Tetap Sabar...`")
     if ";" in query:
         try:
             lmt = int(query.split(";")[1])
@@ -38,7 +38,7 @@ async def goimg(event):
 
 CMD_HELP.update(
     {
-        "img": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.img <search_query>`\
-         \n↳ : Does an image search on Google and shows 5 images."
+        "img": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.img <pencarian_kueri>`\
+         \n↳ : Melakukan pencarian gambar di Google dan menampilkan 5 gambar."
     }
 )

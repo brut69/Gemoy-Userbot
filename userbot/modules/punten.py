@@ -48,18 +48,6 @@ async def typewriter(typew):
     )
 
 
-@register(outgoing=True, pattern='^.aku(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    await typew.edit(f"`Hai Perkenalkan Namaku {ALIVE_NAME}`")
-    sleep(3)
-    await typew.edit(f"`Aku pengguna 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏`")
-    sleep(2)
-    await typew.edit(f"`Umurku 17 y.o`")
-    sleep(1)
-    await typew.edit(f"`Tinggal Di {WEATHER_DEFCITY}, Salam Kenal Semua:)`")
-
-
 # Create by myself @localheart
 
 
@@ -70,8 +58,6 @@ CMD_HELP.update(
         \n  •  **Function : **Arts Beruang kek lagi mantau.\
         \n\n  •  **Syntax :** `.sadboy`\
         \n  •  **Function : **ya sadboy coba aja.\
-        \n\n  •  **Syntax :** `.aku`\
-        \n  •  **Function : **Perkenalan Diri.\
     "
     }
 )

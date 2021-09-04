@@ -70,7 +70,7 @@ CMD_HELP.update(
         "secretchat": "**Plugin : **`secretchat`\
         \n\n  •  **Syntax :** `.wp <teks> <username/ID>`\
         \n  •  **Function : **Memberikan pesan rahasia haya orang yang di tag yang bisa melihat\
-        \n  •  **Example  : **.wp aku sayang kamu @mrismanaziz\
+        \n  •  **Example  : **.wp aku sayang kamu\
     "
     }
 )

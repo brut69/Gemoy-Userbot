@@ -15,28 +15,28 @@ from userbot.events import register
 async def _(event):
     ureply = await event.get_reply_message()
     if not (ureply and ("audio" in ureply.document.mime_type)):
-        await event.edit("`Reply To Audio Only..`")
+        await event.edit("`Balas Ke Audio Saja..`")
         return
-    await event.edit("`processing...`")
+    await event.edit("`pengolahan...`")
     d = os.path.join("resources/extras", "ul.mp3")
-    await event.edit("`Downloading... Large Files Takes Time..`")
+    await event.edit("`Mengunduh... File Besar Membutuhkan Waktu..`")
     await event.client.download_media(ureply, d)
-    await event.edit("`Done.. Now reply to video In which u want to add that Audio`")
+    await event.edit("`Selesai.. Sekarang balas video yang ingin Anda tambahkan Audio`")
 
 
 @register(outgoing=True, pattern="^.addaudio(?: |$)(.*)", disable_errors=True)
 async def _(event):
     ureply = await event.get_reply_message()
     if not (ureply and ("video" in ureply.document.mime_type)):
-        await event.edit("`Reply To Gif/Video In which u want to add audio.`")
+        await event.edit("`Balas Ke Gif/Video Di mana Anda ingin menambahkan audio.`")
         return
-    xx = await event.edit("`processing...`")
+    xx = await event.edit("`pengolahan...`")
     ultt = await ureply.download_media()
     ls = os.listdir("resources/extras")
     z = "ul.mp3"
     x = "resources/extras/ul.mp3"
     if z not in ls:
-        await event.edit("`First reply an audio with .aw`")
+        await event.edit("`Pertama, balas audio dengan .aw`")
         return
     video = m.VideoFileClip(ultt)
     audio = m.AudioFileClip(x)
@@ -56,8 +56,8 @@ async def _(event):
 CMD_HELP.update(
     {
         "specialtools": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getaudio`\
-         \n↳ : Download Audio To put in ur Desired Video/Gif..\
+         \n↳ : Unduh Audio Untuk memasukkan Video/Gif yang Anda inginkan..\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addaudio`\
-         \n↳ : It will put the above audio to the replied video/gif.."
+         \n↳ : Ini akan menempatkan audio di atas ke video/gif yang dibalas.."
     }
 )

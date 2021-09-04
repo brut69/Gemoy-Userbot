@@ -402,6 +402,7 @@ RUNS_STR = [
     "Saya lari karena saya sangat gabut.",
     "Lari... \nkarena diet bukanlah pilihan.",
     "Berlari Cepat Dari Orang Gila",
+    "Lari... \nAda Wibuu...",
     "Jika kamu ingin menangkapku, kamu harus cepat... \nJika kamu ingin tinggal bersamaku, kamu harus menjadi orang yang baik... \nTapi jika kamu ingin melewati aku... \nKamu pasti bercanda. ",
     "Siapapun dapat berlari seratus meter, itu hitungan empat puluh dua ribu dua ratus berikutnya.",
     "Mengapa semua orang ini mengikuti saya?",
@@ -462,25 +463,25 @@ CHASE_STR = [
 ]
 
 HELLOSTR = [
-    "Hai!",
-    "'Ello, bro!",
-    "Apa itu crackin?",
-    "Apa kabarmu?",
-    "Halo, apa kabar, apa kabar!",
-    "Halo, siapa di sana, saya sedang berbicara.",
-    "Kamu tahu siapa ini.",
-    "Yo!",
-    "Wassup.",
-    "Salam dan salam!",
-    "Halo, sinar matahari!",
-    "Hei, apa kabar, hai!",
-    "Apa yang menendang, ayam kecil?",
+    "Hemblo..👋",
+    "'Eyyoo..",
+    "Gabutkah kalian?",
+    "Apa kabarmu hari ini?",
+    "Eyyo, apa kabar hatimu disana?",
+    "Eyyo, siapa di sana, saya sedang berbicara disini.",
+    "Kamu tahu siapa aku?",
+    "Yoi bruh",
+    "Wassup Gang",
+    "Hah??",
+    "Eyyo, sinar mentari pagiku..",
+    "Hello epribadeh, sehat?",
+    "Hmm.. Sepi kali disini",
     "Ciluk ba!",
-    "Halo-bagus!",
-    "Halo, mahasiswa baru!",
-    "Saya datang dengan damai!",
+    "Bagaimana kabar hati kalian hari ini?",
+    "Hayyo, member baru",
+    "Saya datang dengan damai dan sehat",
     "Ahoy, sobat!",
-    "Hiya!",
+    "Hiya Ha..!!",
 ]
 
 SHGS = [
@@ -565,14 +566,14 @@ SLAP_TEMPLATES_EN = [
     "mengikat {victim} ke tiang dan mencambuk mereka {where} dengan {item}."
     "memberikan dorongan ramah untuk membantu {victim} belajar berenang di lahar.",
     "mengirim {victim} ke /laut /lahar.",
-    "mengirim {victim} ke lubang memori.",
+    "mengirim {victim} ke lubang pembuangan.",
     "memenggal {victim}.",
     "melemparkan {victim} dari sebuah gedung.",
-    "mengganti semua musik {victim} dengan lagu iri bilang bos.",
+    "mengganti semua musik {victim} dengan lagu tahun 50n.",
     "spam email {victim}.",
     "membuat {victim} depresi.",
     "menampar {victim} tanpa apa-apa.",
-    "pukul {victim} dengan pesawat garuda.",
+    "pukul {victim} dengan gagang pesawat telfon.",
     "memukul kepala {victim}.",
     "taruh {victim} di tong sampah.",
     "Menendang {victim} dan melemparnya ke sungai.",
@@ -648,52 +649,68 @@ WHERE_EN = ["di pipi", "di kepala", "di pantat", "di badan"]
 
 SLAP_TEMPLATES_ID = [
     "{hits} {victim} dengan {item}.",
-    "{throws} sebuah  {item} kepada {victim}.",
-    "mengambil  {item} dan {hits} {victim} .",
-    "Mengambil Sebuah {item} dan {hits} {victim} Dengan itu.",
-    "Menjatuhkan {victim} Ke Lava.",
-    "Mengirimkan {victim} ke Kawah.",
-    "Membuang {victim} Ke Laut.",
-    "Mengeluarkan {victim} Dari Bumi.",
-    "Melempar {victim} Ke luar angkasa.",
-    "Menaruh {victim} di Pluto.",
-    "Melemparkan sebuah {item} ke {victim}.",
-    "Melemparkan {item} kepada {victim}.",
-    "Menampar {victim} menggunakan {item}.",
-    "Membuang {victim} Ke udara.",
-    "Menghapus {victim} Dari Daftar Teman.",
-    "Melemparkan {item} {where} {victim}.",
-    "Meletakan {item} {where} {victim}.",
-    "Menyerang {victim} menggunakan {anime}.",
-    "Mengehack Seluruh akun {victim}",
+    "{hits} {victim} di wajah dengan {item}.",
+    "{hits} {victim} sekitar sedikit dengan {item}.",
+    "{throws} {item} ke {Victim}.",
+    "mengambil {item} dan {throws} ke wajah {victim}.",
+    "Menusuk {victim} dengan tombak cinta.",
+    "{throws} beberapa {item} ke {victim}.",
+    "mengambil {item} dan {throws} ke wajah {victim}.",
+    "meluncurkan {item} ke arah umum {korban}.",
+    "duduk di wajah {victim} sambil membanting {item}.",
+    "mulai menampar {victim} dengan konyol dengan {item}.",
+    "pin {victim} ke bawah dan berulang kali {hits} mereka dengan {item}.",
+    "mengambil {item} dan {hits} {victim} dengannya.",
+    "mulai menampar {victim} dengan konyol dengan {item}.",
+    "menahan {victim} dan berulang kali {hits} mereka dengan {item}.",
+    "memukul {victim} dengan {item}.",
+    "mengambil {item} dan {hits} {victim} dengannya.",
+    "mengikat {victim} ke kursi dan {throws} {item} padanya.",
+    "{hits} {victim} {where} dengan {item}.",
+    "mengikat {victim} ke tiang dan mencambuk mereka {where} dengan {item}."
+    "memberikan dorongan ramah untuk membantu {victim} belajar berenang di lahar.",
+    "mengirim {victim} ke /laut /lahar.",
+    "mengirim {victim} ke lubang pembuangan.",
+    "memenggal {victim}.",
+    "melemparkan {victim} dari sebuah gedung.",
+    "mengganti semua musik {victim} dengan lagu tahun 50n.",
+    "spam email {victim}.",
+    "membuat {victim} depresi.",
+    "menampar {victim} tanpa apa-apa.",
+    "pukul {victim} dengan gagang pesawat telfon.",
+    "memukul kepala {victim}.",
+    "taruh {victim} di tong sampah.",
+    "Menendang {victim} dan melemparnya ke sungai.",
+    "letakkan {victim} di rumah hantu.",
+    "menampar {victim} dengan tongkat besi!",
 ]
 
 ITEMS_ID = [
     "Tabung Gas",
-    "Televisi 42 In",
-    "Raket",
+    "Televisi 69 In",
+    "Egrang",
     "Raket Nyamuk",
-    "Kaca",
+    "Gelas Kaca",
     "Buku",
-    "Ringgis",
-    "Telur",
-    "Jarum",
-    "Monitor Tabung",
+    "Linggis",
+    "Telur Busuk",
+    "Jarum Jam",
+    "Bayi Tabung",
     "Obeng",
     "Almunium",
     "Emas",
     "Printer",
-    "Speaker",
-    "Gas Lpg",
-    "Tangki Bensin",
+    "Toa Masjid",
+    "Gas Elpiji",
+    "Pom PERTAMINI",
     "Tandon Air",
-    "Bola Boling",
+    "Bola Bowling",
     "Laptop",
-    "Hardisk Rusak",
-    "Wajan Panas",
-    "Virus Corona",
+    "Ambulance Kopid",
+    "Wajan Bekas Gorengan",
+    "Virus Karona",
     "Meja Kantor",
-    "Meja Arsip",
+    "Meja KUA",
     "Lemari",
     "Ember Besi",
     "Besi Beton",
@@ -702,7 +719,7 @@ ITEMS_ID = [
     "Batu Krikil",
     "Makanan Basi",
     "Pesawat AirBus",
-    "Roket Nasa",
+    "Roket Owner",
     "Satelit Nasa",
     "Matahari",
     "Meteor",
@@ -710,34 +727,38 @@ ITEMS_ID = [
     "Beton panas",
     "Cermin",
     "Batu Giok",
-    "Botol",
+    "Botol Mijon",
     "Nezuko",
     "Kaset Pita",
     "Tiang Jemuran",
     "Pisau Lipat",
-    "Bongkahan Es ",
+    "Es Cristal Cup",
     "Asteroid",
 ]
 
 THROW_ID = [
-    "Melempar",
-    "Melemparkan",
+    "melempar",
+    "melemparkan",
 ]
 
 HIT_ID = [
-    "Memukul",
-    "melemparkan",
-    "Memukuli",
+    "memukul",
+    "menendang",
+    "menampar",
+    "memukul",
+    "melempar",
+    "menyerang",
+    "menggunakan",
 ]
 
-WHERE_ID = ["di pipi", "di kepala", "di bokong", "di badan"]
+WHERE_ID = ["di pipi", "di kepala", "di pantat", "di badan"]
 
 
 SLAP_TEMPLATES_Jutsu = [
-    "Menyerang {victim} Menggunakan {hits}.",
-    "Menyerang {victim} Menggunakan {item}.",
-    "Melemparkan {throws} kepada {victim} .",
-    "Melemparkan {throws} {where} {victim}.",
+    "menyerang {victim} menggunakan {hits}.",
+    "menyerang {victim} menggunakan {item}.",
+    "melemparkan {throws} kepada {victim} .",
+    "melemparkan {throws} {where} {victim}.",
 ]
 
 ITEMS_Jutsu = [
@@ -755,21 +776,23 @@ HIT_Jutsu = [
     "Chidori",
 ]
 
-GAMBAR_TITIT = """
-😋😋
-😋😋😋
-  😋😋😋
-    😋😋😋
-     😋😋😋
-       😋😋😋
-        😋😋😋
-         😋😋😋
-          😋😋😋
-          😋😋😋
-      😋😋😋😋
- 😋😋😋😋😋😋
- 😋😋😋  😋😋😋
-    😋😋       😋😋
+GAMBAR_LOPE1 = """
+…..*..lovelovelo…*
+…*..lovelovelove….*
+..*.lovelovelovelove…*…………….*….*
+.*..lovelovelovelovelo…*………*..lovel….*
+...*..lovelovelovelovelove…*….*…lovelovelo.*
+*.. lovelovelovelovelove…*….*…lovelovelo.*
+.*..lovelovelovelovelove…*..*…lovelovelo…*
+..*…lovelovelovelovelove..*…lovelovelo…*
+…*….lovelovelolovelovelovelovelovelo…*
+…..*….lovelovelovelovelovelovelov…*
+……..*….lovelovelovelovelovelo…*
+………..*….lovelovelovelove…*
+……………*…lovelovelo….*
+………………*..lovelo…*
+…………………*…..*
+………………….*..*
 """
 
 GAMBAR_OK = """
@@ -801,21 +824,15 @@ GAMBAR_TENGKORAK = """
 ░░░░░░▐▌░░░░░░░░░█░
 """
 
-GAMBAR_KONTL = """
-⣠⡶⠚⠛⠲⢄⡀
-⣼⠁ ⠀⠀⠀ ⠳⢤⣄
-⢿⠀⢧⡀⠀⠀⠀⠀⠀⢈⡇
-⠈⠳⣼⡙⠒⠶⠶⠖⠚⠉⠳⣄
-⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄
-⠀⠀⠀⠘⣆ ⠀⠀⠀⠀ ⠀⠈⠓⢦⣀
-⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⢤
-⠀⠀⠀⠀⠀⠀⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧
-⠀⠀⠀⠀⠀⠀⠀⡴⠋⠓⠦⣤⡀⠀⠀⠀⠀⠀⠀⠀⠈⣇
-⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄
-⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
-⠀⠀⠀⠀⠀⠀⢹⡄⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃
-⠀⠀⠀⠀⠀⠀⠀⠙⢦⣀⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⢦⣀⣀⣀⣀⣠⡴⠚⠁⠉⠉⠉
+GAMBAR_LOPE2 = """
+_♥__♥_____♥__♥___ Put This
+_♥_____♥_♥_____♥__ Heart
+_♥______♥______♥__ On Your
+__♥_____/______♥__ Page If
+___♥____\_____♥___ You Had
+____♥___/___♥_____ Your Heart
+______♥_\_♥_______ Broken
+________♥_________…………….
 """
 
 
@@ -1498,7 +1515,7 @@ async def let_me_google_that_for_you(lmgtfy_q):
 @register(outgoing=True, pattern=r"^\.sayhi$")
 async def sayhi(e):
     await e.edit(
-        "\n💰💰💰💰💰💰💰💰💰💰💰💰"
+        "\n💰💰💰??💰💰💰💰💰💰💰💰"
         "\n💰🔷💰💰💰🔷💰💰🔷🔷🔷💰"
         "\n💰🔷💰💰💰🔷💰💰💰🔷💰💰"
         "\n💰🔷💰💰💰🔷💰💰💰🔷💰💰"
@@ -1835,22 +1852,22 @@ async def shrugger(shg):
     await shg.edit(choice(SHGS))
 
 
-@register(outgoing=True, pattern=r"^\.(?:penis|dick)\s?(.)?")
-async def emoji_penis(e):
+@register(outgoing=True, pattern=r"^\.lope$")
+async def emoji_lope(e):
     emoji = e.pattern_match.group(1)
-    titid = GAMBAR_TITIT
+    lope = GAMBAR_LOPE1
     if emoji:
-        titid = titid.replace("😋", emoji)
-    await e.edit(titid)
+        lope = lope.replace("🥰", emoji)
+    await e.edit(lope)
 
 
-@register(outgoing=True, pattern=r"^\.(?:kon|kontl)\s?(.)?")
-async def emoji_kontl(e):
+@register(outgoing=True, pattern=r"^\.lopes$")
+async def emoji_lopes(e):
     emoji = e.pattern_match.group(1)
-    kontl = GAMBAR_KONTL
+    lopes = GAMBAR_LOPE2
     if emoji:
-        kontl = kontl.replace("😂", emoji)
-    await e.edit(kontl)
+        lopes = lopes.replace("🥰", emoji)
+    await e.edit(lopes)
 
 
 @register(outgoing=True, pattern=r"^\.skull$")
@@ -1861,17 +1878,6 @@ async def emoji_tengkorak(e):
         tengkorak = tengkorak.replace("😂", emoji)
     await e.edit(tengkorak)
 
-
-@register(outgoing=True, pattern='^.aku(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    await typew.edit(f"`Hai Perkenalkan Namaku {ALIVE_NAME}`")
-    sleep(3)
-    await typew.edit(f"`Aku pengguna 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏`")
-    sleep(2)
-    await typew.edit(f"`Umurku 17 y.o`")
-    sleep(1)
-    await typew.edit(f"`Tinggal Di {WEATHER_DEFCITY}, Salam Kenal Semua:)`")
 # Create by myself @localheart
 
 
@@ -1936,5 +1942,4 @@ CMD_HELP.update(
         "\n\n> `.nou` `.bot` `.rock` `.gey` `.tf` `.paw` `.tai` `.nih`"
         "\n> `.fag` `.gtfo`; `.stfu` `.lol` `.lool` `.fail` `.leave`"
         "\n> `.iwi` `.sayhi` `.koc` `.gas` `.earth` `.love` `.rain`"
-        "\n> `.penis` `.emo` `.fuck` `.skull` `.aku` `.monyet`\nUsage: Cobain aja"
-        "\n\n\n**Semoga Harimu Menyenangkan**\n➥ `@queengemoy_userbot`"})
+        "\n> `.lope` `.lopes` `.emo` `.fuck` `.skull` `.aku` `.monyet`\nUsage: Cobain aja"})

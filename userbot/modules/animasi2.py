@@ -752,21 +752,27 @@ HILIH = [
     "乁( ⁰͡  Ĺ̯ ⁰͡ ) ㄏ",
 ]
 
-GAMBAR_TITIT = """
-⣠⡶⠚⠛⠲⢄⡀
-⣼⠁ ⠀⠀⠀ ⠳⢤⣄
-⢿⠀⢧⡀⠀⠀⠀⠀⠀⢈⡇
-⠈⠳⣼⡙⠒⠶⠶⠖⠚⠉⠳⣄
-⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄
-⠀⠀⠀⠘⣆ ⠀⠀⠀⠀ ⠀⠈⠓⢦⣀
-⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⢤
-⠀⠀⠀⠀⠀⠀⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧
-⠀⠀⠀⠀⠀⠀⠀⡴⠋⠓⠦⣤⡀⠀⠀⠀⠀⠀⠀⠀⠈⣇
-⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄
-⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
-⠀⠀⠀⠀⠀⠀⢹⡄⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃
-⠀⠀⠀⠀⠀⠀⠀⠙⢦⣀⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⢦⣀⣀⣀⣀⣠⡴⠚⠁⠉⠉⠉
+GAMBAR_OKE = """
+████████████████████████████████████████
+████████████████████████████████████████
+██████▀░░░░░░░░▀████████▀▀░░░░░░░▀██████
+████▀░░░░░░░░░░░░▀████▀░░░░░░░░░░░░▀████
+██▀░░░░░░░░░░░░░░░░▀▀░░░░░░░░░░░░░░░░▀██
+██░░░░░░░░░░░░░░░░░░░▄▄░░░░░░░░░░░░░░░██
+██░░░░░░░░░░░░░░░░░░█░█░░░░░░░░░░░░░░░██
+██░░░░░░░░░░░░░░░░░▄▀░█░░░░░░░░░░░░░░░██
+██░░░░░░░░░░████▄▄▄▀░░▀▀▀▀▄░░░░░░░░░░░██
+██▄░░░░░░░░░████░░░░░░░░░░█░░░░░░░░░░▄██
+████▄░░░░░░░████░░░░░░░░░░█░░░░░░░░▄████
+██████▄░░░░░████▄▄▄░░░░░░░█░░░░░░▄██████
+████████▄░░░▀▀▀▀░░░▀▀▀▀▀▀▀░░░░░▄████████
+██████████▄░░░░░░░░░░░░░░░░░░▄██████████
+████████████▄░░░░░░░░░░░░░░▄████████████
+██████████████▄░░░░░░░░░░▄██████████████
+████████████████▄░░░░░░▄████████████████
+██████████████████▄▄▄▄██████████████████
+████████████████████████████████████████
+████████████████████████████████████████
 """
 
 AENJEAYE = """
@@ -1104,19 +1110,19 @@ async def faces(ii):
     await ii.edit(reply_text)
 
 
-@register(outgoing=True, pattern=r"^\.hi$")
+@register(outgoing=True, pattern=r"^\.hai$")
 async def sayhi(e):
     await e.edit(
-        "\n🙋🙋🙋🙋🙋🙋🙋🙋🙋🙋🙋🙋"
-        "\n🙋🔷🙋🙋🙋🔷🙋🙋🔷🔷🔷🙋"
-        "\n🙋🔷🙋🙋🙋🔷🙋🙋🙋🔷🙋🙋"
-        "\n🙋🔷🙋🙋🙋🔷🙋🙋🙋🔷🙋🙋"
-        "\n🙋🔷🔷🔷🔷🔷🙋🙋🙋🔷🙋🙋"
-        "\n🙋🔷🙋🙋🙋🔷🙋🙋🙋🔷🙋🙋"
-        "\n🙋🔷🙋🙋🙋🔷🙋🙋🙋🔷🙋🙋"
-        "\n🙋🔷🙋🙋🙋🔷🙋🙋🔷🔷🔷🙋"
-        "\n🙋🙋🙋🙋🙋🙋🙋🙋🙋🙋🙋🙋"
-    )
+        "\n✨✨✨✨✨✨✨✨✨✨✨✨"
+        "\n✨❤️❤️✨✨❤️❤️✨✨❤️❤️✨"
+        "\n✨❤️❤️✨✨❤️❤️✨✨❤️❤️✨"
+        "\n✨❤️❤️✨✨❤️❤️✨✨❤️❤️✨"
+        "\n✨❤️❤️❤️❤️❤️❤️✨✨❤️❤️✨"
+        "\n✨❤️❤️❤️❤️❤️❤️✨✨❤️❤️✨"
+        "\n✨❤️❤️✨✨❤️❤️✨✨❤️❤️✨"
+        "\n✨❤️❤️✨✨❤️❤️✨✨❤️❤️✨"
+        "\n✨❤️❤️✨✨❤️❤️✨✨❤️❤️✨"
+        "\n✨✨✨✨✨✨✨✨✨✨✨✨")
 
 
 @register(outgoing=True, pattern=r"^\.react$")
@@ -1569,84 +1575,84 @@ async def koc(e):
         await e.edit(choice(FACEREACTS))
 
 
-@register(outgoing=True, pattern=r"^\.(?:penis|dick)\s?(.)?")
-async def emoji_penis(e):
+@register(outgoing=True, pattern=r"^\.oke$")
+async def emoji_oke(e):
     emoji = e.pattern_match.group(1)
-    titid = GAMBAR_TITIT
+    oke = GAMBAR_OKE
     if emoji:
-        titid = titid.replace("🍆", emoji)
-    await e.edit(titid)
+        oke = oke.replace("👍", emoji)
+    await e.edit(oke)
+
 
 
 CMD_HELP.update(
     {
         "animasi2": ">`.cowsay`"
-        "\nUsage: cow which says things."
+        "\nUsage: sapi yang mengatakan sesuatu."
         "\n\n>`:/`"
-        "\nUsage: Check yourself ;)"
+        "\nUsage: Cek sendiri ;)"
         "\n\n>`-_-`"
         "\nUsage: Ok..."
         "\n\n>`;_;`"
-        "\nUsage: Like `-_-` but crying."
+        "\nUsage: Seperti `-_-` tapi menangis."
         "\n\n>`.cp`"
-        "\nUsage: Copypasta the famous meme"
+        "\nUsage: Copypasta meme yang terkenal"
         "\n\n>`.vapor`"
-        "\nUsage: Vaporize everything!"
+        "\nUsage: Menguap semuanya!"
         "\n\n>`.str`"
-        "\nUsage: Stretch it."
+        "\nUsage: Regangkan."
         "\n\n>`.10iq`"
-        "\nUsage: You retard !!"
+        "\nUsage: Kamu bodoh !!"
         "\n\n>`.zal`"
-        "\nUsage: Invoke the feeling of chaos."
+        "\nUsage: Menimbulkan perasaan kacau."
         "\n\n>`Oem`"
         "\nUsage: Oeeeem"
         "\n\n>`Oof`"
         "\nUsage: Ooooof"
         "\n\n>`.fp`"
-        "\nUsage: Facepalm :P"
+        "\nUsage: Telapak tangan :P"
         "\n\n>`.moon`"
-        "\nUsage: kensar moon animation."
+        "\nUsage: animasi bulan kensar."
         "\n\n>`.clock`"
-        "\nUsage: kensar clock animation."
-        "\n\n>`.hi`"
-        "\nUsage: Greet everyone!"
+        "\nUsage: animasi jam kensar."
+        "\n\n>`.hai`"
+        "\nUsage: Salam semua!"
         "\n\n>`.coinflip <heads/tails>`"
-        "\nUsage: Flip a coin !!"
+        "\nUsage: Lempar koin !!"
         "\n\n>`.owo`"
         "\nUsage: UwU"
         "\n\n>`.react`"
-        "\nUsage: Make your userbot react to everything."
+        "\nUsage: Buat userbot Anda bereaksi terhadap semuanya."
         "\n\n>`.slap | .slap id | .slap jutsu`"
-        "\nUsage: reply to slap them with random objects !!"
+        "\nUsage: membalas menampar mereka dengan benda-benda acak!!"
         "\n\n>`.cry`"
         "\nUsage: y u du dis, i cri."
         "\n\n>`.shg`"
-        "\nUsage: Shrug at it !!"
+        "\nUsage: Angkat bahu itu!!"
         "\n\n>`.run`"
-        "\nUsage: Let Me Run, run, RUNNN!"
+        "\nUsage: Biarkan Aku Lari, lari, LARI!"
         "\n\n>`.chase`"
-        "\nUsage: You better start running"
+        "\nUsage: Lebih baik kamu mulai berlari"
         "\n\n>`.metoo`"
-        "\nUsage: Haha yes"
+        "\nUsage: Haha iya"
         "\n\n>`.mock`"
-        "\nUsage: Do it and find the real fun."
+        "\nUsage: Lakukan dan temukan kesenangan yang sesungguhnya."
         "\n\n>`.clap`"
-        "\nUsage: Praise people!"
+        "\nUsage: Puji orang!"
         "\n\n>`.f <emoji/character>`"
-        "\nUsage: Pay Respects."
+        "\nUsage: Beri Hormat."
         "\n\n>`.bt`"
-        "\nUsage: Believe me, you will find this useful."
+        "\nUsage: Percayalah, Anda akan menemukan ini berguna."
         "\n\n>`.type`"
-        "\nUsage: Just a small command to make your keyboard become a typewriter!"
+        "\nUsage: Hanya perintah kecil untuk membuat keyboard Anda menjadi mesin tik!"
         "\n\n>`.lfy <query>`"
-        "\nUsage: Let me Google that for you real quick !!"
+        "\nUsage: Biarkan saya Google itu untuk Anda dengan sangat cepat!!"
         "\n\n>`.decide [Alternates: (.yes, .no, .maybe)]`"
-        "\nUsage: Make a quick decision."
+        "\nUsage: Cepat ambil keputusan."
         "\n\n>`.scam <action> <time>`"
-        "\n[Available Actions: (typing, contact, game, location, voice, round, video, photo, document, cancel)]"
-        "\nUsage: Create fake chat actions, for fun. (Default action: typing)"
-        "\nAnd Many More..."
+        "\n[Tindakan yang Tersedia: (mengetik, kontak, permainan, lokasi, suara, putaran, video, foto, dokumen, batal)]"
+        "\nUsage: Buat tindakan obrolan palsu, untuk bersenang-senang. (Tindakan default: mengetik)"
+        "\nDan Banyak Lagi..."
         "\n.nou | .bot | .gey | .gay | .tf | .paw | .taco | .nih | .ii ;"
         "\n.fag | .gtfo | .stfu | .lol | .lool | .fail | .leave"
-        "\n.love | .rain | .earth | .fuck | .penis | .koc | .anjay"
-        "\n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."})
+        "\n.love | .rain | .earth | .fuck | .oke | .koc | .anjay"})

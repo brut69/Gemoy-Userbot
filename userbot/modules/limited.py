@@ -11,7 +11,7 @@ from userbot.events import register
 
 @register(outgoing=True, pattern=r"^\.limit(?: |$)(.*)")
 async def _(event):
-    await event.edit("`Checking If You Are Limited...`")
+    await event.edit("`Memeriksa Apakah Anda Terbatas...`")
     async with bot.conversation("@SpamBot") as conv:
         try:
             response = conv.wait_event(
@@ -21,7 +21,7 @@ async def _(event):
             response = await response
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await event.edit("`Boss! Please Unblock @SpamBot`")
+            await event.edit("`Bos! Silakan Buka Blokir @SpamBot`")
             return
         await event.edit(f"~ {response.message.message}")
 

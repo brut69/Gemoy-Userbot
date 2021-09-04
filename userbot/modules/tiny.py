@@ -16,17 +16,17 @@ async def _(event):
         return
     xx = await event.edit("`Memproses Tiny....`")
     ik = await bot.download_media(reply)
-    im1 = Image.open("resources/extras/geez.png")
+    im1 = Image.open("resources/extras/gemoy.png")
     if ik.endswith(".tgs"):
-        await event.client.download_media(reply, "geez.tgs")
-        os.system("lottie_convert.py geez.tgs json.json")
+        await event.client.download_media(reply, "gemoy.tgs")
+        os.system("lottie_convert.py gemoy.tgs json.json")
         json = open("json.json", "r")
         jsn = json.read()
         json.close()
         jsn = jsn.replace("512", "2000")
         open("json.json", "w").write(jsn)
-        os.system("lottie_convert.py json.json geez.tgs")
-        file = "geez.tgs"
+        os.system("lottie_convert.py json.json gemoy.tgs")
+        file = "gemoy.tgs"
         os.remove("json.json")
     elif ik.endswith((".gif", ".mp4")):
         iik = cv2.VideoCapture(ik)

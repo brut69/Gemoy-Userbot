@@ -142,7 +142,7 @@ async def show_welcome(event):
     try:
         from userbot.modules.sql_helper.welcome_sql import get_current_welcome_settings
     except AttributeError:
-        return await event.edit("`Running on Non-SQL mode!`")
+        return await event.edit("`Berjalan on Non-SQL mode!`")
     cws = get_current_welcome_settings(event.chat_id)
     if not cws:
         return await event.edit("`Disini Tidak Ada Pesan Welcome Yang Anda Simpan `")
@@ -163,7 +163,7 @@ async def del_welcome(event):
     try:
         from userbot.modules.sql_helper.welcome_sql import rm_welcome_setting
     except AttributeError:
-        return await event.edit("`Running on Non-SQL mode!`")
+        return await event.edit("`Berjalan on Non-SQL mode!`")
     if rm_welcome_setting(event.chat_id) is True:
         await event.edit("`Menghapus Pesan Welcome Berhasil Dilakukan`")
     else:
