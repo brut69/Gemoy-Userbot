@@ -1,6 +1,5 @@
 from time import sleep
-from platform import uname
-from userbot import ALIVE_NAME, WEATHER_DEFCITY, CMD_HELP
+from userbot import CMD_HELP
 from userbot.events import register
 
 
@@ -20,7 +19,7 @@ async def typewriter(typew):
     await typew.edit("`Karena itu Aku gabut gatau stress keknya juga🤪`")
     sleep(1)
     await typew.edit("`Ya beginilah aku Apa Adanya. Bhaak🤣`")
-    
+
 # Create by myself @localheart
 
 
@@ -41,7 +40,7 @@ async def typewriter(typew):
     await typew.edit("`🥲🥲🥲`")
     sleep(2)
     await typew.edit("`😭😭😭`")
-    
+
 # Create by myself @localheart
 
 
@@ -59,7 +58,7 @@ async def typewriter(typew):
     await typew.edit("`Jaga diri, Jaga kesehatan`")
     sleep(2)
     await typew.edit("`Dalam semangat, syukur dan keceriaan 🥰`")
-    
+
 # Create by myself @localheart
 
 
@@ -75,9 +74,8 @@ async def typewriter(typew):
     await typew.edit("`Kalo perlu Aku Rukyah Ownernya sklian`")
     sleep(2)
     await typew.edit("`Ebujet.. 😭😭`")
-    
-# Create by myself @localheart
 
+# Create by myself @localheart
 
 
 CMD_HELP.update({
