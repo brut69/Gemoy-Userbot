@@ -1,19 +1,26 @@
 from time import sleep
-from userbot import CMD_HELP
+from platform import uname
+from userbot import ALIVE_NAME, WEATHER_DEFCITY, CMD_HELP
 from userbot.events import register
 
 
 @register(outgoing=True, pattern='^.saya(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Hai Perkenalkan Namaku {ALIVE_NAME}`")
+    await typew.edit("`Hemblo 👋 Perkenalkan Namaku 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 `")
     sleep(3)
-    await typew.edit("`Umurku 17 y.o`")
-    sleep(3)
-    await typew.edit("`Saya pengguna 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏`")
+    await typew.edit("`Tinggal Di Mars`")
     sleep(1)
-    await typew.edit("`Tinggal Di {WEATHER_DEFCITY}, Salam Kenal Semua :)`")
-
+    await typew.edit("`Aku anak Kedua dari 11 bersaudara`")
+    sleep(1)
+    await typew.edit("`Hobiku Nyemil, Tidur, Nyemil, Tidur`")
+    sleep(1)
+    await typew.edit("`Kegiatanku sekarang tidak ada😂`")
+    sleep(1)
+    await typew.edit("`Karena itu Aku gabut gatau stress keknya juga🤪`")
+    sleep(1)
+    await typew.edit("`Ya beginilah aku Apa Adanya. Bhaak🤣`")
+    
 # Create by myself @localheart
 
 
@@ -22,13 +29,19 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(3)
     await typew.edit("`Cuma Mau Bilang`")
-    sleep(3)
+    sleep(1)
     await typew.edit("`Aku Sayang Kamu`")
     sleep(1)
-    await typew.edit("`I LOVE YOU 💞`")
+    await typew.edit("`I LOVE YOU 🥰`")
     sleep(1)
-    await typew.edit("`I LOVE YOU SO MUCH 🥰`")
-
+    await typew.edit("`I MISS YOU 🤧`")
+    sleep(1)
+    await typew.edit("`INTINYA KALO KETEMU JAN SAMPE ANU 👉👈`")
+    sleep(1)
+    await typew.edit("`🥲🥲🥲`")
+    sleep(1)
+    await typew.edit("`😭😭😭`")
+    
 # Create by myself @localheart
 
 
@@ -39,23 +52,32 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`Tetaplah Bernapas`")
     sleep(1)
-    await typew.edit("`Dan Selalu Bersyukur`")
+    await typew.edit("`Bernapas itu Gratis`")
     sleep(1)
-    await typew.edit("`Alhamdulillah..`")
-
+    await typew.edit("`Sama halnya kek Ibadah`")
+    sleep(1)
+    await typew.edit("`Jaga diri, Jaga kesehatan`")
+    sleep(1)
+    await typew.edit("`Dalam semangat, syukur dan keceriaan 🥰`")
+    
 # Create by myself @localheart
 
 
 @register(outgoing=True, pattern='^.aku(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Aku 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏`")
+    await typew.edit("`Aku 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏`")
     sleep(3)
-    await typew.edit("`Jangan Main Main`")
-    sleep(2)
-    await typew.edit("`Aku Gban Nangesss Ntar Lu. Bhaks`")
-
+    await typew.edit("`Jangan Nakal kamu yah`")
+    sleep(1)
+    await typew.edit("`Cepet tobat ape perlu Aku Rukyah ntar nih GC`")
+    sleep(1)
+    await typew.edit("`Kalo perlu Aku Rukyah Ownernya sklian`")
+    sleep(1)
+    await typew.edit("`Ebujet.. 😭😭`")
+    
 # Create by myself @localheart
+
 
 
 CMD_HELP.update({
