@@ -349,6 +349,77 @@ async def koc(e):
         await e.edit("`GABUT`")
 
 
+@register(outgoing=True, pattern='^.macan(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`🌴...                           🚶`")
+    await typew.edit("`🌴..                          🚶`")
+    await typew.edit("`🌴.                         🚶`")
+    await typew.edit("`🌴...                        🚶`")
+    await typew.edit("`🌴..                      🚶`")
+    await typew.edit("`🌴.                      🚶`")
+    await typew.edit("`🌴...                     🚶`")
+    await typew.edit("`🌴..                    🚶`")
+    await typew.edit("`🌴.                   🚶`")
+    await typew.edit("`🌴...                  🚶`")
+    await typew.edit("`🌴..                 🚶`")
+    await typew.edit("`🌴.                🚶`")
+    await typew.edit("`🌴...               🚶`")
+    await typew.edit("`🌴..              🚶`")
+    await typew.edit("`🌴.             🚶`")
+    await typew.edit("`🌴...            🚶`")
+    await typew.edit("`🌴..           🚶`")
+    await typew.edit("`🌴.          🚶`")
+    await typew.edit("`🌴...         🚶`")
+    await typew.edit("`🌴..        🚶`")
+    await typew.edit("`🌴.       🚶`")
+    await typew.edit("`🌴...      🚶`")
+    await typew.edit("`🌴..     🚶`")
+    await typew.edit("`🌴.    🚶`")
+    await typew.edit("`🌴...   🚶`")
+    await typew.edit("`🌴..  🚶`")
+    await typew.edit("`🌴. 🚶`")
+    sleep(1)
+    await typew.edit("🚶     `rawwwhhh 💢`    🐅")
+    sleep(1)
+    await typew.edit("`ANJIR ADA MACAN!!!`")
+    await typew.edit("`🏃  LARI-LARI       🐅`")
+    await typew.edit("`🏃  WADUH          🐅`")
+    await typew.edit("`🏃                🐅`")
+    await typew.edit("`🏃               🐅`")
+    await typew.edit("`🏃              🐅`")
+    await typew.edit("`🏃             🐅`")
+    await typew.edit("`🏃            🐅`")
+    await typew.edit("`🏃           🐅`")
+    await typew.edit("`ANJIR MAKIN DEKET:)`")
+    await typew.edit("`🏃  HUH-HUH   🐅`")
+    await typew.edit("`🏃             🐅`")
+    await typew.edit("`🏃              🐅`")
+    await typew.edit("`🏃               🐅`")
+    await typew.edit("`🏃                🐅`")
+    await typew.edit("`🏃                 🐅`")
+    await typew.edit("`🏃                  🐅`")
+    await typew.edit("`🏃                   🐅`")
+    await typew.edit("`🏃                    🐅`")
+    await typew.edit("`🏃                     🐅`")
+    await typew.edit("`🏃                      🐅`")
+    await typew.edit("`🏃                     🐅`")
+    await typew.edit("`🏃                    🐅`")
+    await typew.edit("`🏃                   🐅`")
+    await typew.edit("`🏃          🐅  < --- `")
+    await typew.edit("`🏃    🐅`")
+    await typew.edit("`Dah lah pasrah saja:)`")
+    sleep(1)
+    await typew.edit("`...`")
+    sleep(1)
+    await typew.edit("`😵`")
+    sleep(2)
+    await typew.edit("`😵\n👕\n👖\n🩲\n👟`")
+    sleep(2)
+    await typew.edit("`-TAMAT DEH-`")
+# Dibuat oleh Apis
+
+
 @register(outgoing=True, pattern='^.sangean(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -363,6 +434,34 @@ async def typewriter(typew):
     await typew.edit("`Jadinya Gitu, Sange Berat`")
     sleep(1)
     await typew.edit("`MAKANYA KALO HIDUP HARUS GANTENG KONTOOOLL`")
+# Create by myself @localheart
+
+
+@register(outgoing=True, pattern="^.userbot(?: |$)(.*)")
+async def _(event):
+    event.pattern_match.group(1)
+    await event.edit(
+        " **Hay Semua** __Aku Userbot__ 😎 \n"
+        " **Userbot Digunakan Untuk bersenang-senang dan managed grup mu** \n"
+        " __Seru Lho Jadi Pengguna Userbot__ 🥳 \n"
+        " **Dengan Berbagai Macam Plugin Dan Perintah Userbot** \n"
+        " __Dibuat Oleh :__ [Developer](https://t.me/sokapgblg) ")
+
+
+@register(outgoing=True, pattern='^.terkadang(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`Terkadang`")
+    sleep(1)
+    await typew.edit("`Mencintai Seseorang`")
+    sleep(1)
+    await typew.edit("`Hanya Akan Membuang Waktumu`")
+    sleep(1)
+    await typew.edit("`Ketika Waktumu Habis`")
+    sleep(1)
+    await typew.edit("`Tambah Aja 5000`")
+    sleep(1)
+    await typew.edit("`Bercanda`")
 # Create by myself @localheart
 
 
@@ -409,6 +508,32 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
+@register(outgoing=True, pattern='^.gombal(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("`Hai, I LOVE YOU 💞`")
+    sleep(1)
+    await typew.edit("`I LOVE YOU SO MUCH!`")
+    sleep(1)
+    await typew.edit("`I NEED YOU!`")
+    sleep(1)
+    await typew.edit("`I WANT TO BE YOUR BOYFRIEND!`")
+    sleep(1)
+    await typew.edit("`I LOVEE YOUUUU💕💗`")
+    sleep(1)
+    await typew.edit("`I LOVEE YOUUUU💗💞`")
+    sleep(1)
+    await typew.edit("`I LOVEE YOUUUU💝💗`")
+    sleep(1)
+    await typew.edit("`I LOVEE YOUUUU💟💖`")
+    sleep(1)
+    await typew.edit("`I LOVEE YOUUUU💘💓`")
+    sleep(1)
+    await typew.edit("`Tapi Bo'ong`")
+# Create by myself @localheart
+
+
 @register(outgoing=True, pattern='^.yatim(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -436,7 +561,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi4":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gabut` atau `.dino`\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gabut` | `.dino` | `.macan` | `.gombal` | `.terkadang` | `.userbot`\
     \n↳ : Dikala gabut, yaaa pake aja xixixi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yatim`\
     \n↳ : Buat bercandaan, kalo gasuka jangan dipake.\
