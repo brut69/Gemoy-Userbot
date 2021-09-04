@@ -15,7 +15,6 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 </p>
 
 ### **Disclaimer**
-
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
    Hexxa-Userbot digunakan untuk membantu aktifitas akun anda di telegram
@@ -59,6 +58,9 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 *   [TeamUserge](https://github.com/UsergeTeam/Userge)    Userge
 *   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
 *   [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot) -  Risman
+*   [Hexxa-Team](https://github.com/Hexxa-Team/Hexxa-Userbot)
+*   [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT)
+
 
 
 ### **Stay Support** 🚀
