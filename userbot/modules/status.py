@@ -58,7 +58,8 @@ async def _(event):
                 last_name=last_name, first_name=first_name
             )
         )
-        result = "**`{} {}`\nSaya Offline sekarang.**".format(first_name, last_name)
+        result = "**`{} {}`\nSaya Offline sekarang.**".format(
+            first_name, last_name)
         await event.edit(result)
     except Exception as e:  # pylint:disable=C0103,W0703
         await event.edit(str(e))

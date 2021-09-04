@@ -53,7 +53,7 @@ async def on_snip_save(event):
     if msg and msg.media and not string:
         if BOTLOG_CHATID:
             await event.client.send_message(
-                BOTLOG_CHATID, f"#SNIP\ \&KATA KUNCI: {keyword}\ \in\Pesan berikut disimpan sebagai data snip, mohon JANGAN dihapus !!"
+                BOTLOG_CHATID, f"#SNIP\\ \\&KATA KUNCI: {keyword}\\ \\in\\Pesan berikut disimpan sebagai data snip, mohon JANGAN dihapus !!"
             )
             msg_o = await event.client.forward_messages(
                 entity=BOTLOG_CHATID,

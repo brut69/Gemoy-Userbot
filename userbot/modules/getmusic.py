@@ -230,4 +230,4 @@ CMD_HELP.update({"getmusic": ">`.songn <Artist - Song Title>`"
                  "\n\n>`.songf now`"
                  "\nUsage: Unduh scrobble LastFM saat ini dengan @SpotifyMusicDownloaderBot"
                  "\n\n>`.vsong` <Artist - Song Title>"
-                 "\nUsage: Menemukan dan mengunggah klip video.\in"})
+                 "\nUsage: Menemukan dan mengunggah klip video.\\in"})

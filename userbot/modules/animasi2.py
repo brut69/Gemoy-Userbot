@@ -1584,7 +1584,6 @@ async def emoji_oke(e):
     await e.edit(oke)
 
 
-
 CMD_HELP.update(
     {
         "animasi2": ">`.cowsay`"

@@ -88,7 +88,7 @@ async def get_users(event):
     async for user in event.client.iter_participants(gemoyteam.full_chat.id):
         try:
             if error.startswith("Too"):
-                return await gemoy.edit(f"**Terminal Selesai Dengan Kesalahan**\n(`Mungkin Mendapat Batas Kesalahan dari telethon Silakan coba lagi Nanti`)\n**Kesalahan** : \n`{error}`\n\n• `{s}` orang yang diundang \ n• Gagal Mengundang `{f}` orang")
+                return await gemoy.edit(f"**Terminal Selesai Dengan Kesalahan**\n(`Mungkin Mendapat Batas Kesalahan dari telethon Silakan coba lagi Nanti`)\n**Kesalahan** : \n`{error}`\n\n• `{s}` orang yang diundang \\ n• Gagal Mengundang `{f}` orang")
             await event.client(functions.channels.InviteToChannelRequest(channel=chat, users=[user.id]))
             s = s + 1
             await gemoy.edit(f"**Terminal Berjalan...**\n\n• Mengundang `{s}` orang \n• Gagal Mengundang `{f}` orang\n\n**× LastError:** `{error}`")

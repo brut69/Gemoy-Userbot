@@ -108,7 +108,6 @@ async def _(event):
             pass
 
 
-
 CMD_HELP.update({
     "emojigames":
     "`.dice` 1-6 or `.dart` 1-6 or `.ball` 1-5 `.basket` 1-5 or `.bowl` `.ding`\

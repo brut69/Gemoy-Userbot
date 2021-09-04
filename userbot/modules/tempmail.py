@@ -20,7 +20,7 @@ async def _(event):
             await asyncio.sleep(1)
             await conv.send_message("Generate New")
             response = await response
-            gemoyuserbot = ((response).reply_markup.rows[2].buttons[0].url)
+            ((response).reply_markup.rows[2].buttons[0].url)
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
             await gemoy.edit("`Mohon Maaf, Silahkan Buka` @TempMailBot `Lalu Tekan Start dan Coba Lagi.`")

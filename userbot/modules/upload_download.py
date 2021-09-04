@@ -105,7 +105,7 @@ async def download(target_file):
 
 @register(pattern=r".uploadir (.*)", outgoing=True)
 async def uploadir(udir_event):
-    """ Untuk perintah .uploadir, memungkinkan Anda untuk mengunggah semuanya dari folder di server """ 
+    """ Untuk perintah .uploadir, memungkinkan Anda untuk mengunggah semuanya dari folder di server """
     input_str = udir_event.pattern_match.group(1)
     if os.path.exists(input_str):
         await udir_event.edit("Pengolahan ...")

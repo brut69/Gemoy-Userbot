@@ -27,7 +27,9 @@ async def get_tz(con):
     if "(Western)" in con:
         con = con.replace("(Western)", "(western)")
     if "Minor Outlying Islands" in con:
-        con = con.replace("Kepulauan Terluar Kecil", "pulau-pulau kecil terluar")
+        con = con.replace(
+            "Kepulauan Terluar Kecil",
+            "pulau-pulau kecil terluar")
     if "Nl" in con:
         con = con.replace("Nl", "NL")
 
