@@ -55,17 +55,17 @@ async def set_not_afk(event):
                 shite = await bot.send_message(event.chat_id, file=pic)
                 shites = await bot.send_message(
                     event.chat_id,
-                    f"`{ALIVE_NAME}` ꜱᴜᴅᴀʜ ᴋᴇᴍʙᴀʟɪ ᴏɴʟɪɴᴇ\n**ᴅᴀʀɪ ᴏꜰꜰʟɪɴᴇ** `{total_afk_time}` **ʏᴀɴɢ ʟᴀʟᴜ**",
+                    f"`{ALIVE_NAME}` 🥱 𝙎𝙐𝘿𝘼𝙃 𝙆𝙀𝙈𝘽𝘼𝙇𝙄\n**𝘿𝘼𝙍𝙄 𝙊𝙁𝙁𝙇𝙄𝙉𝙀** `{total_afk_time}` **𝘠𝘈𝘕𝘎 𝘓𝘈𝘓𝘜**",
                 )
             else:
                 shite = await bot.send_message(
                     event.chat_id,
-                    f"`{ALIVE_NAME}` ꜱᴜᴅᴀʜ ᴋᴇᴍʙᴀʟɪ ᴏɴʟɪɴᴇ\n**ᴅᴀʀɪ ᴏꜰꜰʟɪɴᴇ** `{total_afk_time}` **ʏᴀɴɢ ʟᴀʟᴜ**",
+                    f"`{ALIVE_NAME}` 🥱 𝙎𝙐𝘿𝘼𝙃 𝙆𝙀𝙈𝘽𝘼𝙇𝙄\n**𝘿𝘼𝙍𝙄 𝙊𝙁𝙁𝙇𝙄𝙉𝙀** `{total_afk_time}` **𝘠𝘈𝘕𝘎 𝘓𝘈𝘓𝘜**",
                     file=pic,
                 )
         except BaseException:
             shite = await bot.send_message(
-                event.chat_id, f"`{ALIVE_NAME}` ᴋᴇᴍʙᴀʟɪ ᴏɴʟɪɴᴇ\n**ᴅᴀʀɪ ᴏꜰꜰʟɪɴᴇ :** `{total_afk_time}` **ʏᴀɴɢ ʟᴀʟᴜ**"
+                event.chat_id, f"`{ALIVE_NAME}` 🥱 𝙎𝙐𝘿𝘼𝙃 𝙆𝙀𝙈𝘽𝘼𝙇𝙄\n**𝘿𝘼𝙍𝙄 𝙊𝙁𝙁𝙇𝙄𝙉𝙀 :** `{total_afk_time}` **𝘠𝘈𝘕𝘎 𝘓𝘈𝘓𝘜**"
             )
 
         except BaseException:
@@ -173,11 +173,11 @@ async def _(event):
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
-                        event.chat_id, f"😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`"
+                        event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`"
                     )
                 else:
                     await bot.send_message(
-                        event.chat_id, f"😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`", file=pic
+                        event.chat_id, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`", file=pic
                     )
             except BaseException:
                 await bot.send_message(
@@ -206,7 +206,7 @@ async def _(event):
                     )
                 else:
                     await bot.send_message(
-                        BOTLOG_CHATID, f"*😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`", file=pic
+                        BOTLOG_CHATID, f"**😴 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n\n**♡ {ALIVE_NAME} 𝙎𝙀𝘿𝘼𝙉𝙂 𝙊𝙁𝙁𝙇𝙄𝙉𝙀**\n**♡ 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 :** `{reason}`", file=pic
                     )
             elif reason:
                 await bot.send_message(
