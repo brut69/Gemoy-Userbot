@@ -1,5 +1,5 @@
 {
-  "name": "𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏",
+  "name": "🤪 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏",
   "description": "𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Telegram.",
   "logo": "https://telegra.ph/file/6f95912d305ad85457f39.jpg",
   "keywords": [
@@ -41,10 +41,12 @@
     },
     "BOTLOG_CHATID": {
       "description": "ID GROUP",
+      "value": "-1001534925371",
       "required": true
     },
     "G_BAN_LOGGER_GROUP": {
       "description": "ID GROUP (ISI SAMA SAJA DENGAN BOTLOG_CHATID)",
+      "value": "-1001534925371",
       "required": true
     },
     "GENIUS_ACCESS_TOKEN": {
@@ -52,11 +54,12 @@
       "required": false
     },
     "GENIUS_API_TOKEN": {
-      "description": "Get this value from https://genius.com/developers., basically same as GENIUS_API_TOKEN.",
+      "description": "Basically same as GENIUS_API_TOKEN.",
       "required": false
     },
     "MONGO_URI": {
       "description": "Your MongoDB Atlas URL, Get your guide from https://telegra.ph/Mongo-DB-12-24.",
+      "value": "mongodb+srv://",
       "required": false
     },
     "GITHUB_ACCESS_TOKEN": {
@@ -65,6 +68,7 @@
     },
     "GIT_REPO_NAME": {
       "description": "Add the GIT_REPO_NAME here. It helps with commit on GitHub.",
+      "value": "https://github.com/",
       "required": false
     },
     "COUNTRY": {
@@ -83,7 +87,7 @@
     },
     "PM_AUTO_BAN": {
       "description": "PM Auto-Ban Feature Switch. Also known as the 'bleep blop, this is a bot...' module.",
-      "value": "False",
+      "value": "True",
       "required": true
     },
     "YOUTUBE_API_KEY": {
@@ -100,6 +104,7 @@
     },
     "REDIS_URI": {
       "description": "Redis endpoint URL, from redislabs.com",
+      "value": "redis-00000",
       "required": false
     },
     "REDIS_PASSWORD": {
@@ -108,11 +113,13 @@
     },
     "ANTI_SPAMBOT": {
       "description": "Kicks spambots from groups after they join. (Requires admin powers in groups to kick)",
-      "value": "False"
+      "value": "False",
+      "required": false
     },
     "ANTI_SPAMBOT_SHOUT": {
       "description": "Report spambots to @admins in groups after they join, just in case when you don't have admin powers to kick that shit yourself.",
-      "value": "False"
+      "value": "False",
+      "required": false
     },
     "TMP_DOWNLOAD_DIRECTORY": {
       "description": "Download location for many modules (GDrive, .download etc..)",
@@ -153,23 +160,27 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "unknown",
+      "value": "𝙃𝙚𝙡𝙡𝙤, 𝙋𝙚𝙧𝙠𝙚𝙣𝙖𝙡𝙠𝙖𝙣 𝙖𝙠𝙪 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
       "required": false
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
+      "value": "@username",
       "required": false
     },
     "GEMOY_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .gemoyalive (Isi Terserah)",
+      "description": "Kustom Pesan Alive Mu Untuk Perintah .gemoy",
+      "value": "𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
       "required": false
     },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu",
+      "value": "𝗦𝘁𝗶𝗰𝗸𝗲𝗿𝗽𝗮𝗰𝗸 𝗯𝘆 @",
       "required": false
     },
     "ALIVE_LOGO": {
       "description": "Photo profil bot Mu.",
+      "value": "https://telegra.ph/file/6f95912d305ad85457f39.jpg",
       "required": false
     },
     "G_DRIVE_DATA": {
@@ -190,7 +201,7 @@
       "required": false
     },
     "UB_BLACK_LIST_CHAT": {
-      "description": "Isi Apa Aja",
+      "description": "Lmao",
       "required": false
     },
     "LYDIA_API_KEY": {
@@ -217,6 +228,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "In case you maintain a fork, add your repo URL here.",
+      "value": "https://github.com/",
       "required": false
     },
     "BOT_TOKEN": {
