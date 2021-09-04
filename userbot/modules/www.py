@@ -154,6 +154,7 @@ async def redis(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     await pong.edit("**𝘔𝘦𝘮𝘶𝘭𝘢𝘪 𝘊𝘩𝘦𝘤𝘬 𝘒𝘢𝘯𝘵𝘰𝘯𝘨**")
+    await asyncio.sleep(2)
     await pong.edit("**𝘗𝘭𝘦𝘢𝘴𝘦 𝘞𝘢𝘪𝘵 𝘧𝘰𝘳 ...**")
     await asyncio.sleep(3)
     await pong.edit("🙄")
