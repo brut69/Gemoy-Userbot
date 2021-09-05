@@ -459,25 +459,25 @@ CHASE_STR = [
 ]
 
 HELLOSTR = [
-    "Hai!",
-    "'Ello, bro!",
-    "Apa itu crackin?",
-    "Apa kabarmu?",
-    "Halo, apa kabar, apa kabar!",
-    "Halo, siapa di sana, saya sedang berbicara.",
-    "Kamu tahu siapa ini.",
-    "Yo!",
-    "Wassup.",
-    "Salam dan salam!",
-    "Halo, sinar matahari!",
-    "Hei, apa kabar, hai!",
-    "Apa yang menendang, ayam kecil?",
+    "Hemblo..👋",
+    "'Eyyoo..",
+    "Gabutkah kalian?",
+    "Apa kabarmu hari ini?",
+    "Eyyo, apa kabar hatimu disana?",
+    "Eyyo, siapa di sana, saya sedang berbicara disini.",
+    "Kamu tahu siapa aku?",
+    "Yoi bruh",
+    "Wassup Gang",
+    "Hah??",
+    "Eyyo, sinar mentari pagiku..",
+    "Hello epribadeh, sehat?",
+    "Hmm.. Sepi kali disini",
     "Ciluk ba!",
-    "Halo-bagus!",
-    "Halo, mahasiswa baru!",
-    "Saya datang dengan damai!",
+    "Bagaimana kabar hati kalian hari ini?",
+    "Hayyo, member baru",
+    "Saya datang dengan damai dan sehat",
     "Ahoy, sobat!",
-    "Hiya!",
+    "Hiya Ha..!!",
 ]
 
 SHGS = [
@@ -578,30 +578,30 @@ SLAP_TEMPLATES_EN = [
 
 ITEMS_EN = [
     "Tabung Gas",
-    "Televisi 42 In",
-    "Raket",
+    "Televisi 69 In",
+    "Egrang",
     "Raket Nyamuk",
-    "Kaca",
+    "Gelas Kaca",
     "Buku",
-    "Ringgis",
-    "Telur",
-    "Jarum",
-    "Monitor Tabung",
+    "Linggis",
+    "Telur Busuk",
+    "Jarum Jam",
+    "Bayi Tabung",
     "Obeng",
     "Almunium",
     "Emas",
     "Printer",
-    "Speaker",
-    "Gas Lpg",
-    "Tangki Bensin",
+    "Toa Masjid",
+    "Gas Elpiji",
+    "Pom PERTAMINI",
     "Tandon Air",
-    "Bola Boling",
+    "Bola Bowling",
     "Laptop",
-    "Hardisk Rusak",
-    "Wajan Panas",
-    "Virus Corona",
+    "Ambulance Kopid",
+    "Wajan Bekas Gorengan",
+    "Virus Karona",
     "Meja Kantor",
-    "Meja Arsip",
+    "Meja KUA",
     "Lemari",
     "Ember Besi",
     "Besi Beton",
@@ -610,7 +610,7 @@ ITEMS_EN = [
     "Batu Krikil",
     "Makanan Basi",
     "Pesawat AirBus",
-    "Roket Nasa",
+    "Roket Owner",
     "Satelit Nasa",
     "Matahari",
     "Meteor",
@@ -618,12 +618,12 @@ ITEMS_EN = [
     "Beton panas",
     "Cermin",
     "Batu Giok",
-    "Botol",
+    "Botol Mijon",
     "Nezuko",
     "Kaset Pita",
     "Tiang Jemuran",
     "Pisau Lipat",
-    "Bongkahan Es ",
+    "Es Cristal Cup",
     "Asteroid",
 ]
 
@@ -666,30 +666,30 @@ SLAP_TEMPLATES_ID = [
 
 ITEMS_ID = [
     "Tabung Gas",
-    "Televisi 42 In",
-    "Raket",
+    "Televisi 69 In",
+    "Egrang",
     "Raket Nyamuk",
-    "Kaca",
+    "Gelas Kaca",
     "Buku",
-    "Ringgis",
-    "Telur",
-    "Jarum",
-    "Monitor Tabung",
+    "Linggis",
+    "Telur Busuk",
+    "Jarum Jam",
+    "Bayi Tabung",
     "Obeng",
     "Almunium",
     "Emas",
     "Printer",
-    "Speaker",
-    "Gas Lpg",
-    "Tangki Bensin",
+    "Toa Masjid",
+    "Gas Elpiji",
+    "Pom PERTAMINI",
     "Tandon Air",
-    "Bola Boling",
+    "Bola Bowling",
     "Laptop",
-    "Hardisk Rusak",
-    "Wajan Panas",
-    "Virus Corona",
+    "Ambulance Kopid",
+    "Wajan Bekas Gorengan",
+    "Virus Karona",
     "Meja Kantor",
-    "Meja Arsip",
+    "Meja KUA",
     "Lemari",
     "Ember Besi",
     "Besi Beton",
@@ -698,7 +698,7 @@ ITEMS_ID = [
     "Batu Krikil",
     "Makanan Basi",
     "Pesawat AirBus",
-    "Roket Nasa",
+    "Roket Owner",
     "Satelit Nasa",
     "Matahari",
     "Meteor",
@@ -706,12 +706,12 @@ ITEMS_ID = [
     "Beton panas",
     "Cermin",
     "Batu Giok",
-    "Botol",
+    "Botol Mijon",
     "Nezuko",
     "Kaset Pita",
     "Tiang Jemuran",
     "Pisau Lipat",
-    "Bongkahan Es ",
+    "Es Cristal Cup",
     "Asteroid",
 ]
 
@@ -751,30 +751,38 @@ HIT_Jutsu = [
     "Chidori",
 ]
 
-GAMBAR_TITIT = """
-😋😋
-😋😋😋
-  😋😋😋
-    😋😋😋
-     😋😋😋
-       😋😋😋
-        😋😋😋
-         😋😋😋
-          😋😋😋
-          😋😋😋
-      😋😋😋😋
- 😋😋😋😋😋😋
- 😋😋😋  😋😋😋
-    😋😋       😋😋
+GAMBAR_LOP = """
+_♥__♥_____♥__♥___ Letakkan Hati ini
+_♥_____♥_♥_____♥__ Ya Hati ini
+_♥______♥______♥__ Pada Mu
+__♥_____/______♥__ Jika Sebenarnya
+___♥____\_____♥___ Kamu punya Hati
+____♥___/___♥_____ Yang sedang
+______♥_\_♥_______ Sakit hati
+________♥_________…………….
 """
 
 GAMBAR_OK = """
-░▐▀▀▀▀▀▀▀▀▌▐▀▌▄▄▄▀▀▓▀
-░▐▌▓▀▀▀▀▓▌▌▐▐▌▀▌▄▄▀░░
-░▐▐▌▐▀▀▌▐▐▌▐▌▐▓▄▀░░░░
-░▐▌▌▐▄▄▌▐▌▌▐▐▌▓▀▄░░░░
-░▐▐▓▄▄▄▄▓▐▌▐▌▌▄▌▀▀▄░░
-░▐▄▄▄▄▄▄▄▄▌▐▄▌▀▀▀▄▄▓▄
+████████████████████████████████████████
+████████████████████████████████████████
+██████▀░░░░░░░░▀████████▀▀░░░░░░░▀██████
+████▀░░░░░░░░░░░░▀████▀░░░░░░░░░░░░▀████
+██▀░░░░░░░░░░░░░░░░▀▀░░░░░░░░░░░░░░░░▀██
+██░░░░░░░░░░░░░░░░░░░▄▄░░░░░░░░░░░░░░░██
+██░░░░░░░░░░░░░░░░░░█░█░░░░░░░░░░░░░░░██
+██░░░░░░░░░░░░░░░░░▄▀░█░░░░░░░░░░░░░░░██
+██░░░░░░░░░░████▄▄▄▀░░▀▀▀▀▄░░░░░░░░░░░██
+██▄░░░░░░░░░████░░░░░░░░░░█░░░░░░░░░░▄██
+████▄░░░░░░░████░░░░░░░░░░█░░░░░░░░▄████
+██████▄░░░░░████▄▄▄░░░░░░░█░░░░░░▄██████
+████████▄░░░▀▀▀▀░░░▀▀▀▀▀▀▀░░░░░▄████████
+██████████▄░░░░░░░░░░░░░░░░░░▄██████████
+████████████▄░░░░░░░░░░░░░░▄████████████
+██████████████▄░░░░░░░░░░▄██████████████
+████████████████▄░░░░░░▄████████████████
+██████████████████▄▄▄▄██████████████████
+████████████████████████████████████████
+████████████████████████████████████████
 """
 
 
@@ -797,21 +805,23 @@ GAMBAR_TENGKORAK = """
 ░░░░░░▐▌░░░░░░░░░█░
 """
 
-GAMBAR_KONTL = """
-⣠⡶⠚⠛⠲⢄⡀
-⣼⠁ ⠀⠀⠀ ⠳⢤⣄
-⢿⠀⢧⡀⠀⠀⠀⠀⠀⢈⡇
-⠈⠳⣼⡙⠒⠶⠶⠖⠚⠉⠳⣄
-⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄
-⠀⠀⠀⠘⣆ ⠀⠀⠀⠀ ⠀⠈⠓⢦⣀
-⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⢤
-⠀⠀⠀⠀⠀⠀⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧
-⠀⠀⠀⠀⠀⠀⠀⡴⠋⠓⠦⣤⡀⠀⠀⠀⠀⠀⠀⠀⠈⣇
-⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄
-⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
-⠀⠀⠀⠀⠀⠀⢹⡄⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃
-⠀⠀⠀⠀⠀⠀⠀⠙⢦⣀⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⢦⣀⣀⣀⣀⣠⡴⠚⠁⠉⠉⠉
+GAMBAR_LOPE = """
+…..*..lovelovelo…*
+…*..lovelovelove….*
+..*.lovelovelovelove…*…………….*….*
+.*..lovelovelovelovelo…*………*..lovel….*
+...*..lovelovelovelovelove…*….*…lovelovelo.*
+*.. lovelovelovelovelove…*….*…lovelovelo.*
+.*..lovelovelovelovelove…*..*…lovelovelo…*
+..*…lovelovelovelovelove..*…lovelovelo…*
+…*….lovelovelolovelovelovelovelovelo…*
+…..*….lovelovelovelovelovelovelov…*
+……..*….lovelovelovelovelovelo…*
+………..*….lovelovelovelove…*
+……………*…lovelovelo….*
+………………*..lovelo…*
+…………………*…..*
+………………….*..*
 """
 
 
@@ -1467,7 +1477,7 @@ async def let_me_google_that_for_you(lmgtfy_q):
                         f"\n[{query}]({r.json()['shorturl']})")
 
 
-@register(outgoing=True, pattern=r"^\.sayhi$")
+@register(outgoing=True, pattern=r"^\.hy$")
 async def sayhi(e):
     await e.edit(
         "\n✨✨✨✨✨✨✨✨✨✨✨✨"
@@ -1544,7 +1554,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern=r"^\.leave$")
 async def leave(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit(f"`❗ {ALIVE_NAME} Telah Meninggalkan Group...`")
+        await e.edit(f"`❗ {ALIVE_NAME} 𝚃𝚎𝚕𝚊𝚑 𝙼𝚎𝚗𝚒𝚗𝚐𝚐𝚊𝚕𝚔𝚊𝚗 𝙶𝚛𝚘𝚞𝚙...`")
 
 
 @register(outgoing=True, pattern=r"^\.fail$")
@@ -1588,15 +1598,16 @@ async def lool(e):
 @register(outgoing=True, pattern=r"^\.stfu$")
 async def stfu(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`\n██████████████████████████████`"
-                     "`\n██▀▀▀▀████▀▀▀▀████▀▀▀▀▀███▀▀██▀▀█`"
-                     "`\n█──────██──────██───────██──██──█`"
-                     "`\n█──██▄▄████──████──███▄▄██──██──█`"
-                     "`\n█▄────▀████──████────█████──██──█`"
-                     "`\n█▀▀██──████──████──███████──██──█`"
-                     "`\n█──────████──████──███████──────█`"
-                     "`\n██▄▄▄▄█████▄▄████▄▄████████▄▄▄▄██`"
-                     "`\n█████████████████████████████████`")
+        await e.edit("`\██████████████████████████████`"
+            "`\n██▀▀▀▀████▀▀▀▀████▀▀▀▀▀███▀▀██▀▀█`"
+            "`\n█──────██──────██───────██──██──█`"
+            "`\n█──██▄▄████──████──███▄▄██──██──█`"
+            "`\n█▄────▀████──████────█████──██──█`"
+            "`\n█▀▀██──████──████──███████──██──█`"
+            "`\n█──────████──████──███████──────█`"
+            "`\n██▄▄▄▄█████▄▄████▄▄████████▄▄▄▄██`"
+            "`\n█████████████████████████████████`"
+        )
 
 
 @register(outgoing=True, pattern=r"^\.gtfo$")
@@ -1622,7 +1633,7 @@ async def nih(e):
                      "\n                    \n"
                      r"`(\_/)`"
                      "`\n(●_●)`"
-                     "`\n💖<\\  *Tapi Bo'ong`")
+                     "`\n💖<\\  *𝗧𝗔𝗣𝗜 𝗕𝗢𝗢𝗡𝗚`")
 
 
 @register(outgoing=True, pattern=r"^\.fag$")
@@ -1631,7 +1642,7 @@ async def gtfo(e):
         await e.edit("`\n█████████`"
                      "`\n█▄█████▄█`"
                      "`\n█▼▼▼▼▼`"
-                     "`\n█       STFU FAGGOT'S`"
+                     "`\n█       𝗥𝗔𝗔𝗔𝗔𝗔𝗪𝗥𝗥𝗥`"
                      "`\n█▲▲▲▲▲`"
                      "`\n█████████`"
                      "`\n ██   ██`")
@@ -1642,7 +1653,7 @@ async def taco(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("\n{\\__/}"
                      "\n(●_●)"
-                     "\n( >💩 Mau Tai Ku?")
+                     "\n( >💩 Mau PUP Ku?")
 
 
 @register(outgoing=True, pattern=r"^\.paw$")
@@ -1751,7 +1762,7 @@ async def koc(e):
         await e.edit("8===✊D💦💦💦💦💦💦💦💦💦")
         await e.edit("8==✊=D💦💦💦💦💦💦💦💦💦💦")
         await e.edit("8=✊==D Lah Kok Habis?")
-        await e.edit("😭😭😭😭")
+        await e.edit("𝗧𝗢𝗕𝗔𝗧 𝗞𝗔 𝗧𝗢𝗕𝗔𝗧 😭😭😭😭")
 
 
 @register(outgoing=True, pattern="^.gas$")
@@ -1775,22 +1786,22 @@ async def shrugger(shg):
     await shg.edit(choice(SHGS))
 
 
-@register(outgoing=True, pattern=r"^\.(?:penis|dick)\s?(.)?")
-async def emoji_penis(e):
+@register(outgoing=True, pattern=r"^\.lov$")
+async def emoji_lov(e):
     emoji = e.pattern_match.group(1)
-    titid = GAMBAR_TITIT
+    lov = GAMBAR_LOV
     if emoji:
-        titid = titid.replace('🌟', emoji)
-    await e.edit(titid)
+        lov = lov.replace('🌟', emoji)
+    await e.edit(lov)
 
 
-@register(outgoing=True, pattern=r"^\.(?:kntl|kontol)\s?(.)?")
-async def emoji_kontl(e):
+@register(outgoing=True, pattern=r"^\.lope$")
+async def emoji_lope(e):
     emoji = e.pattern_match.group(1)
-    kontl = GAMBAR_KONTL
+    lope = GAMBAR_LOPE
     if emoji:
-        kontl = kontl.replace('😂', emoji)
-    await e.edit(kontl)
+        lope = lope.replace('😂', emoji)
+    await e.edit(lope)
 
 
 @register(outgoing=True, pattern=r"^\.oke$")
@@ -1871,7 +1882,6 @@ CMD_HELP.update({
     "\nUsage: Buat keputusan cepat."
     "\n\n> `.nou` `.bot` `.rock` `.gey` `.tf` `.paw` `.tai` `.nih`"
     "\n> `.fag` `.gtfo`; `.stfu` `.lol` `.lool` `.fail` `.leave`"
-    "\n> `.iwi` `.sayhi` `.koc` `.gas` `.earth` `.love` `.rain`"
-    "\n> `.penis` `.emo` `.fuck` `.skull`  `.monyet`\nUsage: Cobain aja"
-    "\n\n\n**Semoga Harimu Menyenangkan**\n"
+    "\n> `.iwi` `.hy` `.koc` `.gas` `.earth` `.love` `.rain`"
+    "\n> `.lop` `.lov` `.emo` `.fuck` `.skull`  `.monyet`\nUsage: Cobain aja"
 })

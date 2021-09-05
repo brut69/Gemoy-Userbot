@@ -109,7 +109,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`🧎🐖`")
     sleep(2)
-    await typew.edit("`-TAMAT-`")
+    await typew.edit("`𝗦𝗘𝗞𝗜𝗔𝗡 𝗧𝗘𝗥𝗜𝗠𝗔 𝗞𝗔𝗦𝗜𝗛`")
 
 
 @register(outgoing=True, pattern="^.gabut$")
@@ -375,13 +375,13 @@ async def koc(e):
         await e.edit("🚶                              🐢")
         await e.edit("🚶                               🐢")
         await e.edit("🚶                                🐢")
-        await e.edit("`NGAPAIN DI LIAT?😒😡`")
+        await e.edit("`𝗡𝗴𝗮𝗽𝗮𝗶𝗻 𝗟𝗶𝗮𝘁 𝗟𝗶𝗮𝘁 𝗗𝗮𝗵?😒😡`")
 
 
 @register(outgoing=True, pattern="^.mf$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`MAAF GADULU YA` **😝😜🤪😛** ")
+        await e.edit("`𝗠𝗢𝗡 𝗠𝗔𝗔𝗣 𝗚𝗔 𝗗𝗨𝗟𝗨` **😝😜🤪😛** ")
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -442,7 +442,7 @@ async def typewriter(typew):
     await typew.edit("`Assalamu'alaiku`")
     await typew.edit("`Assalamu'alaikum`")
     sleep(3)
-    await typew.edit("**YANG GA JAWAB, BESOK PINDAH AGAMA**")
+    await typew.edit("**𝗬𝗔𝗡𝗚 𝗚𝗔 𝗝𝗔𝗪𝗔𝗕, 𝗕𝗘𝗦𝗢𝗞 𝗣𝗜𝗡𝗗𝗔𝗛 𝗔𝗚𝗔𝗠𝗔**")
    # Ported to Gemoy-Userbot
 
 
