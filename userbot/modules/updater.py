@@ -52,7 +52,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         heroku_applications = heroku.apps()
         if HEROKU_APP_NAME is None:
             await event.edit(
-                '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
+                '`🦖 𝙃𝙀𝙍𝙊𝙆𝙐: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
                 ' untuk dapat deploy perubahan terbaru dari 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏.`'
             )
             repo.__del__()
@@ -66,7 +66,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 f'{txt}\n`Kredensial Heroku tidak valid untuk deploy QueenGemoy-Userbot dyno.`'
             )
             return repo.__del__()
-        await event.edit('`[HEROKU]:'
+        await event.edit('`🦖 𝙃𝙀𝙍𝙊𝙆𝙐:'
                          '\n🔴 Sedang MengUpdate 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Mohon Menunggu 5-6 Menit`'
                          )
         ups_rem.fetch(ac_br)
@@ -91,7 +91,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`QueenGemoy-Userbot Berhasil Di Deploy!\n" "🟠 Restart 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Mohon Tunggu Sebentar....`")
+            await event.edit("`🛠️ 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Berhasil Di Deploy!\n" "🟠 Restart 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Mohon Tunggu Sebentar....`")
             await asyncio.sleep(15)
             await event.delete()
 
@@ -101,7 +101,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 "`🟢 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Berhasil Di Update`")
 
     else:
-        await event.edit('`[HEROKU]:'
+        await event.edit('`🦖 𝙃𝙀𝙍𝙊𝙆𝙐:'
                          '\nHarap Siapkan Variabel` **HEROKU_API_KEY** `.`'
                          )
         await asyncio.sleep(10)
@@ -139,7 +139,7 @@ async def update(event, repo, ups_rem, ac_br):
 @register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("`Mengecek Pembaruan, Silakan Menunggu....`")
+    await event.edit("`🔎 Mengecek Pembaruan, Silakan Menunggu....`")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
