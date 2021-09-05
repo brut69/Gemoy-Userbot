@@ -17,7 +17,7 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 ### **Disclaimer**
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
-   Hexxa-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+   Gemoy-Userbot digunakan untuk membantu aktifitas akun anda di telegram
    Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
       ! Hati hati dalam penggunaan pada repository ini !
    Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
