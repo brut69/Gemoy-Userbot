@@ -71,5 +71,5 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 
 ### **License**
 Licensed under [GNU General Public License v3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE)
-Licensed under [Raphielscape Public License](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/LICENSE) - Ver
+Licensed under [Raphielscape Public License](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/LICENSE)
 
