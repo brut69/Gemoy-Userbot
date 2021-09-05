@@ -42,6 +42,7 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 
 `Thanks For all` 🥰
 
+*   [FantaestheticGang](https://t.me/fantaestheticgang) - Telegram Group Support
 *   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
 *   [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
 *   [Mkaraniya](https://github.com/mkaraniya) & [Dev73](https://github.com/Devp73) - OpenUserBot
