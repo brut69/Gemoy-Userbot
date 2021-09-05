@@ -119,8 +119,8 @@ async def rastick(animu):
 
 CMD_HELP.update(
     {
-        "rastick": ">`.rst`"
-        "\nUsage: To stickerize your text with random sticker templates."
+        "rastick": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rst`"
+        "\nPenggunaan: To stickerize your text with random sticker templates."
         "\n@StickerizerBot"
     }
 )

@@ -166,9 +166,9 @@ async def get_dogbin_content(dog_url):
 
 CMD_HELP.update(
     {
-        "paste": ">`.paste` or `.paste <d/k>` <text/reply>"
-        "\nUsage: Paste your text to Nekobin or Dogbin or Katbin"
-        "\n\n>`.getpaste`"
-        "\nUsage: Gets the content of a paste or shortened url from dogbin (https://del.dog/)"
+        "paste": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.paste` | `.paste <d/k>` <text/reply>"
+        "\nPenggunaan: Tempel teks Anda ke Nekobin atau Dogbin atau Katbin"
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getpaste`"
+        "\nPenggunaan: Mendapat konten tempel atau url singkat dari dogbin <https://del.dog/>"
     }
 )

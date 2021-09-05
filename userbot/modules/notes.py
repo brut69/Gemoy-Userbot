@@ -138,16 +138,14 @@ async def kick_marie_notes(kick):
 
 
 CMD_HELP.update({
-    "notes":
-    "\
-#<notename>\
-\nUsage: Gets the specified note.\
-\n\n`.save` <notename> <notedata> or reply to a message with .save <notename>\
-\nUsage: Saves the replied message as a note with the notename. (Works with pics, docs, and stickers too!)\
-\n\n`.notes`\
-\nUsage: Gets all saved notes in a chat.\
-\n\n`.clear` <notename>\
-\nUsage: Deletes the specified note.\
-\n\n`.rmbotnotes` <marie/rose>\
-\nUsage: Removes all notes of admin bots (Currently supported: Marie, Rose and their clones.) in the chat."
+    "`notes`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Get #notes`" 
+"\nPenggunaan: Mendapatkan catatan yang ditentukan."
+"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.save` <nama catatan> <catatan> atau balas pesan dengan `.save` <notename>"
+"\nPenggunaan : Menyimpan pesan balasan sebagai catatan dengan nama catatan. (Bekerja dengan foto, dokumen, dan stiker juga!)."
+"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.notes`"
+"\nPenggunaan : Mendapatkan semua catatan yang disimpan dalam obrolan."
+"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.clear` <notename>"
+"\nPenggunaan : Menghapus catatan yang ditentukan."
+"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.rmbotnotes` <marie/rose>"
+"\nPenggunaan : Menghapus semua catatan bot admin <saat ini didukung Marie, Rose, dan klon mereka> dalam obrolan."
 })

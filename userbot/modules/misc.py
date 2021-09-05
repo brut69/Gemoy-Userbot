@@ -50,16 +50,16 @@ async def sleepybot(time):
         str_counter = time_formatter(counter)
         await time.client.send_message(
             BOTLOG_CHATID,
-            f"You put the bot to sleep for {str_counter}.",
+            f"Anda membuat bot tidur untuk {str_counter}.",
         )
     sleep(counter)
-    await time.edit("`OK, I'm awake now.`")
+    await time.edit("`Oke, aku bangun sekarang.`")
 
 
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Gemoy-Userbot....`")
+    await event.edit("`Mematikan 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -70,12 +70,12 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Gemoy-Userbot...`")
+    await event.edit("`Restarting 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`Userbot Telah Di Restart`")
+                                        "`𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[🎉 QueenGemoy-Project Repo](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/README.md)"
+        "\n[𝙌𝙪𝙚𝙚𝙣 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙍𝙚𝙥𝙤](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -110,13 +110,12 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "╭‒─‒──────────‒─‒╮\n"
-        "│                   ʀᴇᴘᴏ\n"
-        "│       [🎉QueenGemoy-Project🎉](https://github.com/brut69/Gemoy-Userbot)\n"
-        "├‒─‒──────────‒─‒╯\n"
-        "│🥱 **ᴏᴡɴᴇʀ :** [Gemoy](t.me/dunottagme)\n"
-        "╰‒─‒──────────‒─‒╯\n"
-        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/LICENSE)"
+        "━━━━━━━━━━━━━━━━━━━━\n"
+        "               🛠️ 𝗥 𝗘 𝗣 𝗢 🛠️\n"
+        "          [𝗚𝗘𝗠𝗢𝗬-𝗨𝗦𝗘𝗥𝗕𝗢𝗧](https://github.com/brut69/Gemoy-Userbot)\n"
+        "                  `𝖭𝗈𝗈𝖻𝖾𝗅𝗈𝗉𝖾𝗋`\n"
+        "             [𝗗𝗼𝗻 𝘁 𝗧𝗼𝘂𝗰𝗵 𝗠𝗲](t.me/dunottagme)\n"
+        "━━━━━━━━━━━━━━━━━━━━"
     )
 
 
@@ -263,28 +262,23 @@ async def scam(results, lim):
 
 
 CMD_HELP.update({
-    "random":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.random <item1> <item2> ... <itemN>`\
-    \n↳ : Get a random item from the list of items.",
-    "sleep":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`\
-    \n↳ : Let yours snooze for a few seconds.",
-    "shutdown":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`\
-    \n↳ : Shutdown bot",
-    "repo":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repo`\
-    \n↳ : Github Repo of this bot",
-    "readme":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.readme`\
-    \n↳ : Provide links to setup the userbot and it's modules.",
-    "repeat":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat <no> <text>`\
-    \n↳ : Repeats the text for a number of times. Don't confuse this with spam tho.",
-    "restart":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.restart`\
-    \n↳ : Restarts the bot !!",
-    "raw":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.raw`\
-    \n↳ : Get detailed JSON-like formatted data about replied message."
+    "`crandom`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.random` <item1> <item2> ... <item>"
+    "\nPenggunaan: Dapatkan item acak dari daftar item."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat` <no> <text>"
+    "\nPenggunaan: Mengulangi teks untuk beberapa kali. Jangan bingung ini sama dengan spam."
+    })
+    
+CMD_HELP.update({
+    "`repo`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`" 
+    "\nPenggunaan: Biarkan milikmu tunda selama beberapa detik."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`"
+    "\nPenggunaan: Matikan bot."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repo`"
+    "\nPenggunaan : Github Repo dari bot ini"
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.readme`"
+    "\nPenggunaan: Berikan tautan untuk mengatur bot pengguna dan modulnya."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.restart`"
+    "\nPenggunaan: Mulai ulang bot."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.raw`"
+    "\nPenggunaan: Dapatkan data berformat mirip JSON terperinci tentang pesan yang dibalas."
 })

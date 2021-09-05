@@ -43,13 +43,12 @@ async def typewriter(typew):
     await typew.edit("`Astagfirullah..`")
 
 CMD_HELP.update({
-    "salam":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.P` | `.p`\
-\n↳ : Untuk Memberi salam.\
+"`salam`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.P` | `.p`\
+\nPenggunaan: Untuk Memberi salam.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.L` `.l`\
-\n↳ : Untuk Menjawab Salam.\
+\nPenggunaan: Untuk Menjawab Salam.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.atg`\
-\n↳ : Istighfar 1.\
+\nPenggunaan: Istighfar 1.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ast`\
-\n↳ : Istighfar 2."
+\nPenggunaan: Istighfar 2."
 })

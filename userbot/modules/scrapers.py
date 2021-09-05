@@ -1309,7 +1309,7 @@ async def capture(url):
 
 CMD_HELP.update(
     {
-        "`tts`": "𝙋𝙡𝙪𝙜𝙞𝙣: `tts`\
+   "`tts`": "𝙋𝙡𝙪𝙜𝙞𝙣: `tts`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tts` <text/reply>\
         \nPenggunaan: Menerjemahkan teks ke ucapan untuk bahasa yang disetel. \
         \n**NOTE**: `Gunakan .lang tts <kode bahasa> untuk menyetel bahasa untuk tr (default adalah Indonesia)`\
@@ -1320,7 +1320,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`translate`": "𝙋𝙡𝙪𝙜𝙞𝙣: `Terjemahan`\
+  "`translate`": "𝙋𝙡𝙪𝙜𝙞𝙣: `Terjemahan`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tr` <text/reply>\
         \nPenggunaan: Menerjemahkan teks ke bahasa yang disetel.\
         \n**NOTE**: Gunakan .lang tr <kode bahasa> untuk menyetel bahasa untuk tr (default adalah Indonesia)\
@@ -1331,7 +1331,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`removebg`": "𝙋𝙡𝙪𝙜𝙞𝙣: `removebg`\
+  "`removebg`": "𝙋𝙡𝙪𝙜𝙞𝙣: `removebg`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rmbg` <Tautan ke Gambar> atau balas gambar apa pun (Peringatan: tidak berfungsi pada stiker.)\
         \nPenggunaan: Menghapus latar belakang gambar, menggunakan API remove.bg\
     "
@@ -1341,7 +1341,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`langcode`": "𝙋𝙡𝙪𝙜𝙞𝙣: `ocr`\
+  "`langcode`": "𝙋𝙡𝙪𝙜𝙞𝙣: `ocr`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ocr` <kode bahasa>\
         \nPenggunaan: Balas gambar atau stiker untuk mengekstrak teks media tersebut.\
     "
@@ -1351,7 +1351,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`youtube`": "𝙋𝙡𝙪𝙜𝙞𝙣: `youtube`\
+  "`youtube`": "𝙋𝙡𝙪𝙜𝙞𝙣: `youtube`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yt` <jumlah> <query>\
         \nPenggunaan: Melakukan Pencarian YouTube. Dapat menentukan jumlah hasil yang dibutuhkan (max 5)\
     "
@@ -1361,7 +1361,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`google`": "𝙋𝙡𝙪𝙜𝙞𝙣: `google`\
+     "`google`": "𝙋𝙡𝙪𝙜𝙞𝙣: `google`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.google` <query>\
         \nPenggunaan: Melakukan pencarian di google.\
     "
@@ -1371,7 +1371,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`wiki`": "𝙋𝙡𝙪𝙜𝙞𝙣: `wiki`\
+   "`wiki`": "𝙋𝙡𝙪𝙜𝙞𝙣: `wiki`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wiki` <query>\
         \nPenggunaan: Melakukan pencarian di Wikipedia.\
     "
@@ -1380,8 +1380,8 @@ CMD_HELP.update(
 
 
 CMD_HELP.update(
-    {
-        "`directlink`": "𝙋𝙡𝙪𝙜𝙞𝙣: `direct`\
+       {
+    "`directlink`": "𝙋𝙡𝙪𝙜𝙞𝙣: `direct`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.direct` <url>\
         \nPenggunaan: Balas tautan atau tempel URL untuk membuat tautan unduhan langsung.\
         \n**Supported URL**: `Google Drive` - `Cloud Mail` - `Yandex.Disk` - `AFH` - `ZippyShare` - `MediaFire` - `SourceForge` - `OSDN` - `GitHub`\
@@ -1392,7 +1392,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`barcode`": "𝙋𝙡𝙪𝙜𝙞𝙣: `barcode`\
+     "`barcode`": "𝙋𝙡𝙪𝙜𝙞𝙣: `barcode`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.barcode` <content>\
         \nPenggunaan: Buat Kode Batang dari konten yang diberikan.\
         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.makeqr` <content>\
@@ -1405,7 +1405,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`imgsearch`": "𝙋𝙡𝙪𝙜𝙞𝙣: `image_search`\
+  "`imgsearch`": "𝙋𝙡𝙪𝙜𝙞𝙣: `image_search`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.img` <search_query>\
         \nPenggunaan: Melakukan pencarian gambar di Google dan menampilkan 15 gambar.\
     "
@@ -1415,7 +1415,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`ytaudio`": "𝙋𝙡𝙪𝙜𝙞𝙣: `ytdl`\
+    "`ytaudio`": "𝙋𝙡𝙪𝙜𝙞𝙣: `ytdl`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ytaudio` <url>\
         \nPenggunaan: Untuk Mendownload lagu dari YouTube.\
         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ytvideo` <url>\
@@ -1427,7 +1427,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`screenshoot`": "𝙋𝙡𝙪𝙜𝙞𝙣: `screenshot`\
+ "`screenshoot`": "𝙋𝙡𝙪𝙜𝙞𝙣: `screenshot`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ss` <url>\
         \nPenggunaan: Mengambil tangkapan layar dari situs web dan mengirimkan tangkapan layar.\
     "
@@ -1437,7 +1437,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`currency`": "𝙋𝙡𝙪𝙜𝙞𝙣: `currency`\
+ "`currency`": "𝙋𝙡𝙪𝙜𝙞𝙣: `currency`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.currency` <amount> <from> <to>\
         \nPenggunaan: Mengonversi berbagai mata uang untuk Anda.\
     "
@@ -1447,7 +1447,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`urbandic`": "𝙋𝙡𝙪𝙜𝙞𝙣: `Urban Dictionary`\
+ "`urbandic`": "𝙋𝙡𝙪𝙜𝙞𝙣: `Urban Dictionary`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ud` <query>\
         \nPenggunaan: Melakukan pencarian di Urban Dictionary.\
     "

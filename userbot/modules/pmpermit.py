@@ -29,11 +29,11 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     "━━━━━━━━━━━ ♡ - ♡ ━━━━━━━━━━━\n"
-    "   “𝗚𝗘𝗠𝗢𝗬 𝗦𝗘𝗖𝗨𝗥𝗜𝗧𝗬 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧”\n"
+    "      ◈ 𝗚𝗘𝗠𝗢𝗬 𝗦𝗘𝗖𝗨𝗥𝗜𝗧𝗬 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧 ◈\n"
     "━━━━━━━━━━━ ◈ - ◈ ━━━━━━━━━━━\n"
-    "  ❌ 𝘿𝙄𝙇𝘼𝙍𝘼𝙉𝙂 𝙆𝙀𝙍𝘼𝙎 𝙎 𝙋 𝘼 𝙈 ❌\n"
+    "       ❌ 𝘿𝙄𝙇𝘼𝙍𝘼𝙉𝙂 𝙆𝙀𝙍𝘼𝙎 𝙎 𝙋 𝘼 𝙈 ❌\n"
     "🤬 𝙅𝘼𝙂𝘼 𝙍𝙊𝙊𝙈 𝘿𝘼𝙍𝙄 𝙏𝙔𝙋𝙄𝙉𝙂 𝘽𝙐𝙍𝙐𝙆 🤬\n"
-    f"`𝘒𝘢𝘳𝘦𝘯𝘢 𝘚𝘢𝘺𝘢 𝘈𝘬𝘢𝘯 𝘖𝘵𝘰𝘮𝘢𝘵𝘪𝘴 𝘔𝘦𝘮𝘣𝘭𝘰𝘬𝘪𝘳𝘮𝘶\n𝘛𝘶𝘯𝘨𝘨𝘶 𝘚𝘢𝘮𝘱𝘢𝘪 {DEFAULTUSER} 𝘔𝘦𝘯𝘦𝘳𝘪𝘮𝘢 𝘗𝘦𝘴𝘢𝘯𝘮𝘶`\n**𝘼𝙧𝙞𝙜𝙖𝙩𝙤 **\n"
+    f"`𝘒𝘢𝘳𝘦𝘯𝘢 𝘚𝘢𝘺𝘢 𝘈𝘬𝘢𝘯 𝘖𝘵𝘰𝘮𝘢𝘵𝘪𝘴 𝘔𝘦𝘮𝘣𝘭𝘰𝘬𝘪𝘳𝘮𝘶\n𝘛𝘶𝘯𝘨𝘨𝘶 𝘚𝘢𝘮𝘱𝘢𝘪 {DEFAULTUSER}\n𝘔𝘦𝘯𝘦𝘳𝘪𝘮𝘢 𝘗𝘦𝘴𝘢𝘯𝘮𝘶.`**𝘼𝙧𝙞𝙜𝙖𝙩𝙤 **\n"
     "━━━━━━━━━━━ ◈ - ◈ ━━━━━━━━━━━\n"
     f"◈ `𝚊𝚞𝚝𝚘𝚖𝚊𝚝𝚒𝚌𝚊𝚕𝚕𝚢 𝚖𝚎𝚜𝚜𝚊𝚐𝚎`\n"
     f"◈ `𝚋𝚢` 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n")
@@ -94,7 +94,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
-                    "`Anda Telah Di Blokir Karna Melakukan Spam Pesan`\n"
+                    "`❌ Anda Telah Di Blokir Karna Melakukan Spam Pesan`\n"
                     f"`Ke Room Chat Ini`"
                 )
 
@@ -236,7 +236,7 @@ async def approvepm(apprvpm):
     except IntegrityError:
         return await apprvpm.edit("`Oke Pesan Anda Sudah Diterima ツ`")
 
-    await apprvpm.edit(f"`Hai` [{name0}](tg://user?id={uid}) `Pesan Anda Sudah Diterima 😎`")
+    await apprvpm.edit(f"`Assalamu alaikum` [{name0}](tg://user?id={uid}) `Pesan Anda Sudah Diterima 😎`")
     await apprvpm.delete(getmsg)
     await message.delete()
 
@@ -266,7 +266,7 @@ async def disapprovepm(disapprvpm):
         name0 = str(aname.first_name)
 
     await disapprvpm.edit(
-        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `Pesan Anda Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat!`"
+        f"`❌ Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `Pesan Anda Telah Ditolak, Anda Otomatis Terkena Block!`"
     )
 
     if BOTLOG:
@@ -326,7 +326,7 @@ async def unblockpm(unblock):
         )
 
 
-@register(outgoing=True, pattern=r"^.(set|get|reset) pm_msg(?: |$)(\w*)")
+@register(outgoing=True, pattern=r"^.(set|get|reset) pm(?: |$)(\w*)")
 async def add_pmsg(cust_msg):
     """Set your own Unapproved message"""
     if not PM_AUTO_BAN:
@@ -397,31 +397,31 @@ async def permitpm(event):
     if event.is_private:
         if not pm_permit_sql.is_approved(chats.id):
             pm_permit_sql.approve(
-                chats.id, f"`{ALIVE_NAME} Telah Mengirimi Anda Pesan 😯`")
+                chats.id, f"👤 `{ALIVE_NAME} Telah Mengirimi Anda Pesan`")
             await borg.send_message(
-                chats, f"**Menerima Pesan!, Pengguna Terdeteksi Adalah {DEFAULTUSER}**"
+                chats, f"**🟢 Menerima Pesan!, Pengguna Terdeteksi Adalah {DEFAULTUSER}**"
             )
 
 CMD_HELP.update(
     {
-        "pmpermit": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.setuju | .ok`"
-        "\n↳ : Menerima pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.tolak | .nopm`"
-        "\n↳ : Menolak pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.block`"
-        "\n↳ : Memblokir Orang Di PM."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.unblock`"
-        "\n↳ : Membuka Blokir."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.notifoff`"
-        "\n↳ : Mematikan notifikasi pesan yang belum diterima."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.notifon`"
-        "\n↳ : Menghidupkan notifikasi pesan yang belum diterima."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.set pm_msg` <balas ke pesan>"
-        "\n↳ : Menyetel Pesan Pribadimu untuk orang yang pesannya belum diterima"
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.get pm_msg`"
-        "\n↳ : Mendapatkan Custom pesan PM mu"
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.reset pm_msg`"
-        "\n↳ : Menghapus pesan PM ke default"
-        "\n\nPesan Pribadi yang belum diterima saat ini tidak dapat disetel"
+        "pmpermit": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.setuju | .ok`"
+        "\nPenggunaan: Menerima pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tolak | .nopm`"
+        "\nPenggunaan: Menolak pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.block`"
+        "\nPenggunaan: Memblokir Orang Di PM."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unblock`"
+        "\nPenggunaan: Membuka Blokir."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.notifoff`"
+        "\nPenggunaan: Mematikan notifikasi pesan yang belum diterima."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.notifon`"
+        "\nPenggunaan: Menghidupkan notifikasi pesan yang belum diterima."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set pm` <balas ke pesan>"
+        "\nPenggunaan: Menyetel Pesan Pribadimu untuk orang yang pesannya belum diterima"
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get pm`"
+        "\nPenggunaan: Mendapatkan Custom pesan PM mu"
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.reset pm`"
+        "\nPenggunaan: Menghapus pesan PM ke default"
+        "\n**NOTE**: Pesan Pribadi yang belum diterima saat ini tidak dapat disetel"
         "\nke teks format kaya bold, underline, link, dll."
         "\nPesan akan terkirim normal saja"})

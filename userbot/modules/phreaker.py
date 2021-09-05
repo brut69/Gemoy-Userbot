@@ -125,15 +125,14 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "phreaker":
-    "`.nmap <bug hosts>`\
-\nUsage: to get info bug/host.\
-\n\n`.subd <bug hosts>`\
-\nUsage: to get subdomain bug/host.\
-\n\n`.cek <bug hosts>`\
-\nUsage: to cek respons bug/host.\
-    \n\n`.bin < bin number >`\
-    \nUsage: to cek bin ip.\
-\n\n`.cc <mm|yy|cvv`\
-\nUsage: to cek Credits Card Stats."
+   "`bughost`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nmap <bug hosts>`\
+\nPenggunaan: to get info bug/host.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.subd <bug hosts>`\
+\nPenggunaan: to get subdomain bug/host.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cek <bug hosts>`\
+\nPenggunaan: to cek respons bug/host.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bin < bin number >`\
+\nPenggunaan: to cek bin ip.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cc <mm|yy|cvv`\
+\nPenggunaan: to cek Credits Card Stats."
 })

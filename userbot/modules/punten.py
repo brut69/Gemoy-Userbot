@@ -7,12 +7,34 @@ from userbot.events import register
 @register(outgoing=True, pattern=r"^\.sadboy(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(2)
-    await typew.edit("`Pertama-tama kamu cantik`")
-    sleep(2)
-    await typew.edit("`Kedua kamu manis`")
     sleep(1)
-    await typew.edit("`Dan yang terakhir adalah kamu bukan jodohku`")
+    await typew.edit("`Sebenarnya....`")
+    sleep(2)
+    await typew.edit("`Aku pengen jujur ke kamu`")
+    sleep(1)
+    await typew.edit("`Soal hubungan kita 🥺`")
+    sleep(2)
+    await typew.edit("`Kamu sebenarnya sayang aku ndak sih?`")
+    sleep(1)
+    await typew.edit("`Terus kenapa kamu selalu jauhin aku`")
+    sleep(1)
+    await typew.edit("`Kadang aku cuma mikir`")
+    sleep(1)
+    await typew.edit("`Kurangku apa di Kamu`")
+    sleep(1)
+    await typew.edit("`Sampe Kamu tega lakuin ini ke Aku`")
+    sleep(1)
+    await typew.edit("`Aku tuh sayang kamu`")
+    sleep(1)
+    await typew.edit("`Kapan Kamu bisa ngertiin Aku`")
+    sleep(1)
+    await typew.edit("`Sampe sekarang pun`")
+    sleep(1)
+    await typew.edit("`Aku masi mengharap Kamu`")
+    sleep(1)
+    await typew.edit("`Kembali disini`")
+    sleep(1)
+    await typew.edit("`Di Hatiku...🥺😭`")
 
 
 # Create by myself @localheart
@@ -29,7 +51,8 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Punten**"
+        "\n𝗠𝗜𝗦𝗜𝗠𝗜𝗦𝗜"
+        "\n𝗡𝗚𝗜𝗡𝗧𝗜𝗣 𝗗𝗨𝗟𝗨 𝗔𝗛"
     )
 
 
@@ -44,7 +67,8 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Masih Ku Pantau**"
+        "\n𝙝𝙢𝙢"
+        "\n𝘼𝘿𝙀 𝘼𝙋𝙀 𝙎𝙄𝙄𝙃"
     )
 
 
@@ -53,11 +77,11 @@ async def typewriter(typew):
 
 CMD_HELP.update(
     {
-        "punten": "**Plugin : **`Animasi Punten`\
-        \n\n  •  **Syntax :** `.punten` ; `.pantau`\
-        \n  •  **Function : **Arts Beruang kek lagi mantau.\
-        \n\n  •  **Syntax :** `.sadboy`\
-        \n  •  **Function : **ya sadboy coba aja.\
+        "punten": "𝙋𝙡𝙪𝙜𝙞𝙣: `Animasi Punten`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.punten` | `.pantau`\
+        \nPenggunaan: Arts Beruang mantau.\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sadboy`\
+        \nPenggunaan: coba aja.\
     "
     }
 )

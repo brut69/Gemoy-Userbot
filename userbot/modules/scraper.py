@@ -172,28 +172,27 @@ async def testing(event):
         except Exception as e:
             await event.edit(str(e))
         await sleep(.5)
-    await event.edit("Tidak Ada yang Terjadi di sini 🙃")
+    await event.edit("Tidak Ada yang Terjadi di sini.")
 
 
 CMD_HELP.update({
     "inviteall":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteall groups username`\
-          \n📌 : __Scrapes users from the given chat to your group__."
+       "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteall` <groups username>\
+          \nPenggunaan: Invite anggota dari Pesan Pribadi."
 })
 
 CMD_HELP.update(
     {
-        "allban": "**Plugin : **`allban`\
-    \n\n**Syntax : **`.allban`\
-    \n**Function : **ban all members in 1 cmnd"
+        "allban": "𝙋𝙡𝙪𝙜𝙞𝙣: `allban`\
+    \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.allban`\
+    \nPenggunaan: Banned semua anggota dalam sekali perintah."
     }
 )
 
 CMD_HELP.update({
-    "scraper":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getmemb`\
-   \nUsage : Mengumpulkan Anggota dari Obrolan\
+  "`getmem`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getmemb`\
+   \nPenggunaan: Mengumpulkan Anggota dari Obrolan\
    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addmemb`\
-   \nUsage : Menambahkan Anggota ke Obrolan\
-   \nTata Cara Menggunakannya:  Pertama, Anda harus melakukan .getmemb terlebih dahulu dari Obrolan. Lalu buka grup Anda dan ketik .addmemb untuk menambahkan mereka ke grup Anda."
+   \nPenggunaan: Menambahkan Anggota ke Obrolan\
+   \nTata Cara Menggunakannya:  Pertama, Anda harus melakukan .getmemb terlebih dahulu dari Obrolan\nLalu buka grup Anda dan ketik `.addmemb` untuk menambahkan mereka ke grup Anda."
 })
