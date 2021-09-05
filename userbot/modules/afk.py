@@ -70,7 +70,7 @@ async def set_afk(afk_e):
     else:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\n**🔴 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞 🔴**")
+        await afk_e.client.send_message(BOTLOG_CHATID, "💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n**🔴 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞 🔴**")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
