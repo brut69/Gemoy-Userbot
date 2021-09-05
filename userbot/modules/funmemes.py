@@ -451,8 +451,7 @@ async def _(event):
 
 @register(outgoing=True, pattern=r"^\.gangstar(?: |$)(.*)")
 async def _(event):
-    if not event.text[0].isalpha() and event.text[0] not in (
-            "/", "#", "@", "!"):
+    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit("EVERyBOdy")
         await asyncio.sleep(0.3)
         await event.edit("wAs")
@@ -1049,7 +1048,8 @@ async def _(event):
             "**Pesan Obrolan Diekspor Ke** `./Inpu/`",
             "**Pesan Obrolan Diekspor Ke** `./Inpu/homework/`",
             "**Pesan Obrolan Diekspor Ke** `./Inpu/homework/groupchat.txt`",
-            "__Legend meninggalkan obrolan ini.....! Sampai jumpa..__", "__Legend meninggalkan obrolan ini.....! Sampai jumpa..__,
+            "__Legend meninggalkan obrolan ini.....! Sampai jumpa..__",
+            "__Legend meninggalkan obrolan ini.....! Sampai jumpa..__,"
         ]
 
         animation_interval = 1
@@ -1532,8 +1532,7 @@ async def _(event):
 
         await event.edit(input_str)
 
-        animation_chars = ["🐵", "🙉", "🙈", "🙊",
-                           "🖕‎🐵🖕", "**OPPA MONEKEYY Style....**"]
+        animation_chars = ["🐵", "🙉", "🙈", "🙊", "🖕‎🐵🖕", "**OPPA MONEKEYY Style....**"]
 
         animation_interval = 2
 
