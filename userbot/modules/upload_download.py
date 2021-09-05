@@ -349,7 +349,7 @@ async def uploadas(uas_event):
 
 CMD_HELP.update({
     "`updown`":
-       "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.download` <link or nama file> atau balas ke media\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.download` <link or nama file> atau balas ke media\
 \nPenggunaan: Mengunduh file ke server.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.upload` <jalur di server>\
 \nPenggunaan: Mengunggah file yang disimpan secara lokal ke obrolan."

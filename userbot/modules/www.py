@@ -244,7 +244,7 @@ async def pingme(pong):
 
 CMD_HELP.update({
     "pinger":
-     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.gping` | `.gemping` | `.pings` | `.sping`\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.gping` | `.gemping` | `.pings` | `.sping`\
          \nPenggunaan: Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.speed`\
          \nPenggunaan: Untuk Menunjukkan Kecepatan Jaringan Anda.\

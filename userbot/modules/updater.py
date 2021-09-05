@@ -232,7 +232,7 @@ async def upstream(event):
 
 
 CMD_HELP.update({
-"`updatebot`":
+    "`updatebot`":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update`"
     "\nPenggunaan: Untuk Melihat Pembaruan Terbaru 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update now`"

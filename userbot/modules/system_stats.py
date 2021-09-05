@@ -371,7 +371,6 @@ async def amireallyalivereset(ureset):
     await ureset.edit("`" "Berhasil mengatur ulang pengguna untuk hidup!" "`")
 
 
-
 CMD_HELP.update({
     "`botsys`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
     "\nPenggunaan: Menampilkan informasi sistem menggunakan neofetch."
@@ -382,7 +381,7 @@ CMD_HELP.update({
 })
 
 CMD_HELP.update({
-  "`alive`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
+    "`alive`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
     "\nPenggunaan: Untuk melihat apakah bot Anda berfungsi atau tidak."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
     "\nPenggunaan: Ubah 'pengguna' menjadi teks yang Anda inginkan."

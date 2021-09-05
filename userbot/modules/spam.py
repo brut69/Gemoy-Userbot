@@ -78,7 +78,7 @@ async def spammer(e):
 
 
 CMD_HELP.update({
-"`spammer`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cspam` <text>\
+    "`spammer`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cspam` <text>\
 \nPenggunaan: Spam teks huruf demi huruf.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spam` <count> <text>\
 \nPenggunaan: Membanjiri teks dalam obrolan !!\

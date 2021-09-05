@@ -28,6 +28,6 @@ async def _(event):
         await event.edit(f"**GEMOY TEMPMAIL** ~ `{response.message.message}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({dunottagme_bot})")
 
 
-CMD_HELP.update({"`tempmail`": 
+CMD_HELP.update({"`tempmail`":
                 "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tm`"
                  "\nPenggunaan: Mendapatkan Email Gratis Dari Temp Mail"})

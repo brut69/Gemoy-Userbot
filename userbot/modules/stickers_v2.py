@@ -108,9 +108,9 @@ async def sticker_to_png(sticker):
 
 
 CMD_HELP.update({
-"`stickpic`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.itos`"
-                 "\nPenggunaan: Balas ke sticker atau gambar/n`.itos` untuk mengambil sticker bukan ke pack."
-                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get`"
-                 "\nPenggunaan: Balas ke sticker untuk mendapatkan file 'PNG' sticker."
-                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stoi`"
-                 "\nPenggunaan: Balas Ke sticker untuk mendapatkan file 'PNG' sticker."})
+    "`stickpic`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.itos`"
+    "\nPenggunaan: Balas ke sticker atau gambar/n`.itos` untuk mengambil sticker bukan ke pack."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get`"
+    "\nPenggunaan: Balas ke sticker untuk mendapatkan file 'PNG' sticker."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stoi`"
+    "\nPenggunaan: Balas Ke sticker untuk mendapatkan file 'PNG' sticker."})

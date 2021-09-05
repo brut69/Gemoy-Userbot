@@ -108,7 +108,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-"`offline`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.offline`\
+        "`offline`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.offline`\
          \nPenggunaan: `Tambahkan tag offline di nama Anda dan ubah foto profil menjadi hitam`\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unoff`\
          \nPenggunaan: `Hapus Tag Offline dari nama Anda\ndan ubah foto profil menjadi vars PROFILE_IMAGE.`"
