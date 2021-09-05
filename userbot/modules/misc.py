@@ -266,10 +266,10 @@ CMD_HELP.update({
     "\nPenggunaan: Dapatkan item acak dari daftar item."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat` <no> <text>"
     "\nPenggunaan: Mengulangi teks untuk beberapa kali. Jangan bingung ini sama dengan spam."
-    })
-    
+})
+
 CMD_HELP.update({
-    "`repo`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`" 
+    "`repo`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`"
     "\nPenggunaan: Biarkan milikmu tunda selama beberapa detik."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`"
     "\nPenggunaan: Matikan bot."

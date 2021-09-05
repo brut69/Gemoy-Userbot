@@ -125,7 +125,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-   "`bughost`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nmap <bug hosts>`\
+    "`bughost`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nmap <bug hosts>`\
 \nPenggunaan: to get info bug/host.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.subd <bug hosts>`\
 \nPenggunaan: to get subdomain bug/host.\

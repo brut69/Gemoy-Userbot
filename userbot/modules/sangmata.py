@@ -56,6 +56,6 @@ async def lastname(steal):
 
 
 CMD_HELP.update({
-        "`sangmata`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sm`\
+    "`sangmata`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sm`\
           \nPenggunaan: Mendapatkan Riwayat Nama Pengguna."
 })

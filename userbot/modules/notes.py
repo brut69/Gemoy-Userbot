@@ -138,14 +138,14 @@ async def kick_marie_notes(kick):
 
 
 CMD_HELP.update({
-    "`notes`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Get #notes`" 
-"\nPenggunaan: Mendapatkan catatan yang ditentukan."
-"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.save` <nama catatan> <catatan> atau balas pesan dengan `.save` <notename>"
-"\nPenggunaan : Menyimpan pesan balasan sebagai catatan dengan nama catatan. (Bekerja dengan foto, dokumen, dan stiker juga!)."
-"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.notes`"
-"\nPenggunaan : Mendapatkan semua catatan yang disimpan dalam obrolan."
-"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.clear` <notename>"
-"\nPenggunaan : Menghapus catatan yang ditentukan."
-"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.rmbotnotes` <marie/rose>"
-"\nPenggunaan : Menghapus semua catatan bot admin <saat ini didukung Marie, Rose, dan klon mereka> dalam obrolan."
+    "`notes`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Get #notes`"
+    "\nPenggunaan: Mendapatkan catatan yang ditentukan."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.save` <nama catatan> <catatan> atau balas pesan dengan `.save` <notename>"
+    "\nPenggunaan : Menyimpan pesan balasan sebagai catatan dengan nama catatan. (Bekerja dengan foto, dokumen, dan stiker juga!)."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.notes`"
+    "\nPenggunaan : Mendapatkan semua catatan yang disimpan dalam obrolan."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.clear` <notename>"
+    "\nPenggunaan : Menghapus catatan yang ditentukan."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.rmbotnotes` <marie/rose>"
+    "\nPenggunaan : Menghapus semua catatan bot admin <saat ini didukung Marie, Rose, dan klon mereka> dalam obrolan."
 })

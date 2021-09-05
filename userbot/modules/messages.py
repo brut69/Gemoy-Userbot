@@ -129,15 +129,14 @@ async def selfdestruct(destroy):
     """
 
 
-CMD_HELP.update({"purge": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.purge`" 
+CMD_HELP.update({"purge": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.purge`"
                  "\nPenggunaan : Membersihkan semua pesan mulai dari pesan yang dibalas."
-                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.purgeme` <angka>" 
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.purgeme` <angka>"
                  "\nPenggunaan: Menghapus jumlah pesan anda, yang mau anda hapus."
-                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.del`" 
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.del`"
                  "\nPenggunaan: Menghapus pesan, balas ke pesan."
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.edit` <pesan baru>"
                  "\nPenggunaan: Ganti pesan terakhir Anda dengan <pesan baru>."
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sd` <x> <pesan>"
                  "\nPenggunaan: Membuat pesan yang hancur sendiri dalam x detik."
-                 "\n**NOTE**: Jaga di bawah 80 detik karena bot Anda akan tertidur."
-                 })
+                 "\n**NOTE**: Jaga di bawah 80 detik karena bot Anda akan tertidur."})

@@ -313,18 +313,15 @@ async def fetch_info(replied_user, event):
 CMD_HELP.update({
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.username` <username baru>\
 \nPenggunaan: Ganti Username Telegram.
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.name` <nama depan> Atau `.name` <Nama Depan> <Nama Belakang>\
-\nPenggunaan: Ganti Nama Telegram Anda\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.setpfp`\
-\nPenggunaan: Balas Ke Gambar Ketik .setpfp Untuk Mengganti Foto Profil Telegram.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.setbio` <bio baru>\
-\nPenggunaan: Untuk Mengganti Bio Telegram.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.delpfp` Atau `.delpfp` <berapa profil>/<all>\
-\nPenggunaan: Menghapus Foto Profil Telegram.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.reserved`\
-\nPenggunaan: Menunjukkan nama pengguna yang dipesan oleh Anda.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.count`\
-\nPenggunaan: Menghitung Grup, Chat, Bot etc...\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.data` <username> Atau Balas Ke Pesan Ketik `.data`\
-\nPenggunaan: Mendapatkan Informasi Pengguna."
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.name` < nama depan > Atau `.name` < Nama Depan > <Nama Belakang > nPenggunaan: Ganti Nama Telegram Anda
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.setpfp`
+    \nPenggunaan: Balas Ke Gambar Ketik .setpfp Untuk Mengganti Foto Profil Telegram.
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.setbio` < bio baru > nPenggunaan: Untuk Mengganti Bio Telegram.
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.delpfp` Atau `.delpfp` < berapa profil > / < all > nPenggunaan: Menghapus Foto Profil Telegram.
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.reserved`
+    \nPenggunaan: Menunjukkan nama pengguna yang dipesan oleh Anda.
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.count`
+    \nPenggunaan: Menghitung Grup, Chat, Bot etc...
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.data` < username > Atau Balas Ke Pesan Ketik `.data`
+    \nPenggunaan: Mendapatkan Informasi Pengguna."
 })

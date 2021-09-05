@@ -151,4 +151,4 @@ async def scam(results, lim):
 CMD_HELP.update({"`reverse`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.reverse`\
                  \nPenggunaan: Balas gambar/stiker untuk melakukan pencarian terbalik di google.
 "
-})
+                 })

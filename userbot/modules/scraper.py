@@ -177,7 +177,7 @@ async def testing(event):
 
 CMD_HELP.update({
     "inviteall":
-       "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteall` <groups username>\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteall` <groups username>\
           \nPenggunaan: Invite anggota dari Pesan Pribadi."
 })
 
@@ -190,7 +190,7 @@ CMD_HELP.update(
 )
 
 CMD_HELP.update({
-  "`getmem`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getmemb`\
+    "`getmem`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getmemb`\
    \nPenggunaan: Mengumpulkan Anggota dari Obrolan\
    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addmemb`\
    \nPenggunaan: Menambahkan Anggota ke Obrolan\
