@@ -68,7 +68,7 @@
     },
     "GIT_REPO_NAME": {
       "description": "Tambahkan GIT_REPO_NAME di sini. Ini membantu dengan komit di GitHub guna Pembaruan bot Kamu.",
-      "value": "https://github.com/",
+      "value": "https://github.com/brut69/Gemoy-Userbot",
       "required": false
     },
     "COUNTRY": {
@@ -165,7 +165,7 @@
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "value": "@username",
+      "value": "@Ur Name",
       "required": false
     },
     "GEMOY_TEKS_KUSTOM": {
@@ -201,7 +201,7 @@
       "required": false
     },
     "UB_BLACK_LIST_CHAT": {
-      "description": "Lmao",
+      "description": "𝗪𝗮𝗶𝘁... 𝗪𝗵𝗮𝘁 ?? 𝗟𝗺𝗮𝗼",
       "required": false
     },
     "LYDIA_API_KEY": {
@@ -228,7 +228,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Jika Anda memelihara Fork, tambahkan URL repo Anda di sini guna Pembaruan bot Kamu.",
-      "value": "https://github.com/",
+      "value": "https://github.com/brut69/Gemoy-Userbot",
       "required": false
     },
     "BOT_TOKEN": {
