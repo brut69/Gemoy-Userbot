@@ -756,9 +756,9 @@ _♥__♥_____♥__♥___ Letakkan Hati ini
 _♥_____♥_♥_____♥__ Ya Hati ini
 _♥______♥______♥__ Pada Mu
 __♥_____/______♥__ Jika Sebenarnya
-___♥____\\_____♥___ Kamu punya Hati
+___♥____\_____♥___ Kamu punya Hati
 ____♥___/___♥_____ Yang sedang
-______♥_\\_♥_______ Sakit hati
+______♥_\_♥_______ Sakit hati
 ________♥_________…………….
 """
 
@@ -1598,16 +1598,16 @@ async def lool(e):
 @register(outgoing=True, pattern=r"^\.stfu$")
 async def stfu(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("`\\██████████████████████████████`"
-                     "`\n██▀▀▀▀████▀▀▀▀████▀▀▀▀▀███▀▀██▀▀█`"
-                     "`\n█──────██──────██───────██──██──█`"
-                     "`\n█──██▄▄████──████──███▄▄██──██──█`"
-                     "`\n█▄────▀████──████────█████──██──█`"
-                     "`\n█▀▀██──████──████──███████──██──█`"
-                     "`\n█──────████──████──███████──────█`"
-                     "`\n██▄▄▄▄█████▄▄████▄▄████████▄▄▄▄██`"
-                     "`\n█████████████████████████████████`"
-                     )
+        await e.edit("`\██████████████████████████████`"
+            "`\n██▀▀▀▀████▀▀▀▀████▀▀▀▀▀███▀▀██▀▀█`"
+            "`\n█──────██──────██───────██──██──█`"
+            "`\n█──██▄▄████──████──███▄▄██──██──█`"
+            "`\n█▄────▀████──████────█████──██──█`"
+            "`\n█▀▀██──████──████──███████──██──█`"
+            "`\n█──────████──████──███████──────█`"
+            "`\n██▄▄▄▄█████▄▄████▄▄████████▄▄▄▄██`"
+            "`\n█████████████████████████████████`"
+        )
 
 
 @register(outgoing=True, pattern=r"^\.gtfo$")
@@ -1786,7 +1786,7 @@ async def shrugger(shg):
     await shg.edit(choice(SHGS))
 
 
-@register(outgoing=True, pattern=r"^\.lov$")
+@register(outgoing=True, pattern=r"^\.(?:lov|lov)\s?(.)?")
 async def emoji_lov(e):
     emoji = e.pattern_match.group(1)
     lov = GAMBAR_LOV
@@ -1795,7 +1795,7 @@ async def emoji_lov(e):
     await e.edit(lov)
 
 
-@register(outgoing=True, pattern=r"^\.lope$")
+@register(outgoing=True, pattern=r"^\.(?:lope|lope)\s?(.)?")
 async def emoji_lope(e):
     emoji = e.pattern_match.group(1)
     lope = GAMBAR_LOPE
@@ -1804,7 +1804,7 @@ async def emoji_lope(e):
     await e.edit(lope)
 
 
-@register(outgoing=True, pattern=r"^\.oke$")
+@register(outgoing=True, pattern=r"^\.(?:oke|oke)\s?(.)?")
 async def emoji_oke(e):
     emoji = e.pattern_match.group(1)
     oke = GAMBAR_OK
