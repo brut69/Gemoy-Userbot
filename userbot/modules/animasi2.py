@@ -847,7 +847,7 @@ async def coin(event):
         input_str = input_str.lower()
     if r == "heads":
         if input_str == "heads":
-            await event.edit("Koin mendarat di: **KEPALAMU**.\Anda benar.")
+            await event.edit("Koin mendarat di: **KEPALAMU**.\\Anda benar.")
         elif input_str == "tails":
             await event.edit(
                 "Koin mendarat di: **KEPALAMU**.\nAnda salah, coba lagi ..."
@@ -856,7 +856,7 @@ async def coin(event):
             await event.edit("Koin mendarat di: **KEPALAMU**.")
     elif r == "tails":
         if input_str == "tails":
-            await event.edit("Koin mendarat di: **PANTAT**.\Anda benar.")
+            await event.edit("Koin mendarat di: **PANTAT**.\\Anda benar.")
         elif input_str == "heads":
             await event.edit(
                 "Koin mendarat di: **PANTAT**.\nAnda salah, coba lagi ..."
@@ -1406,9 +1406,9 @@ async def fail(e):
 async def leol(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
-            "`\n░█░░░█▀█░█░░ `" 
-             "\n░█░░░█░█░█░░ `"
-             "\n░▀▀▀░▀▀▀░▀▀▀ `"
+            "`\n░█░░░█▀█░█░░ `"
+            "\n░█░░░█░█░█░░ `"
+            "\n░▀▀▀░▀▀▀░▀▀▀ `"
         )
 
 
@@ -1592,9 +1592,8 @@ async def emoji_lop(e):
     emoji = e.pattern_match.group(1)
     lop = GAMBAR_LOP
     if emoji:
-        oke = lop.replace("😂", emoji)
+        lop.replace("😂", emoji)
     await e.edit(lop)
-
 
 
 CMD_HELP.update(
