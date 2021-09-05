@@ -170,9 +170,9 @@ async def date_func(dat):
 
 
 CMD_HELP.update({
-    "timedate":
-    "`.time` <nama/kode negara> <nomor zona waktu>\
-\nUsage: Usage: Dapatkan waktu suatu negara. Jika suatu negara memiliki beberapa zona waktu, semua zona waktu akan dicantumkan dan Anda dapat memilih salah satu.\
-\n\n`.date` <nama/kode negara> <nomor zona waktu>\
-\nUsage: Dapatkan tanggal suatu negara. Jika suatu negara memiliki beberapa zona waktu, itu akan mencantumkan semuanya dan membiarkan Anda memilih satu."
+    "`timedate`":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.time` <nama/kode negara> <nomor zona waktu>\
+\nPenggunaan: Dapatkan waktu suatu negara.\nJika suatu negara memiliki beberapa zona waktu\nsemua zona waktu akan dicantumkan dan Anda dapat memilih salah satu.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.date` <nama/kode negara> <nomor zona waktu>\
+\nPenggunaan: Dapatkan tanggal suatu negara. Jika suatu negara memiliki beberapa zona waktu\nitu akan mencantumkan semuanya dan membiarkan Anda memilih satu."
 })

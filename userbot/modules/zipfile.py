@@ -147,13 +147,13 @@ def zipdir(path, ziph):
 
 
 CMD_HELP.update({
-    "zipfile":
-        "`.compress` **[optional: <reply to file>]**\
-            \nUsage: buat file menjadi zip.\
-            \n`.addzip` **<reply to file>**\
-            \nUsage: tambahkan file ke daftar zip.\
-            \n`.upzip` **[optional: <zip title>]**\
-            \nUsage: unggah daftar zip.\
-            \n`.rmzip` **[optional: <zip title>]**\
-            \nUsage: hapus daftar pos."
+    "`zipper`":
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.compress` optional: <reply to file>\
+            \nPenggunaan: buat file menjadi zip.\
+            \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addzip` <reply to file>\
+            \nPenggunaan: tambahkan file ke daftar zip.\
+            \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.upzip` optional: <zip title>\
+            \nPenggunaan: unggah daftar zip.\
+            \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rmzip` optional: <zip title>\
+            \nPenggunaan: hapus daftar pos."
 })

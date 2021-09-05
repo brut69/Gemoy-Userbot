@@ -65,19 +65,18 @@ async def _(e):
 
 
 CMD_HELP.update({
-    'tags':
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag all`"
-    "\n• : Tandai 100 Anggota obrolan teratas."
+    "`tags`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag all`"
+    "\nPenggunaan: Tandai 100 Anggota obrolan teratas."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag admin`"
-    "\n• : Tag Admin obrolan itu."
+    "\nPenggunaan: Tag Admin obrolan itu."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag owner`"
-    "\n• : Tag Pemilik obrolan itu."
+    "\nPenggunaan: Tag Pemilik obrolan itu."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag bot`"
-    "\n• : Tandai Bot dari obrolan itu."
+    "\nPenggunaan: Tandai Bot dari obrolan itu."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag rec`"
-    "\n• : Tandai Anggota Aktif baru-baru ini."
+    "\nPenggunaan: Tandai Anggota Aktif baru-baru ini."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag on`"
-    "\n• : Tandai Anggota online (hanya berfungsi jika privasi tidak aktif)."
+    "\nPenggunaan: Tandai Anggota online (hanya berfungsi jika privasi tidak aktif)."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag off`"
-    "\n• : Tandai Anggota Offline (hanya berfungsi jika privasi tidak aktif)."
+    "\nPenggunaan: Tandai Anggota Offline (hanya berfungsi jika privasi tidak aktif)."
 })

@@ -191,21 +191,20 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "xiaomi":
-    "Hanya untuk perangkat Xiaomi!\
-\n\n`.firmware` (codename)\
-     \nUsage : Dapatkan Firmware terbaru\
-\n\n`.pb` (codename)\
-     \nUsage : Dapatkan Pemulihan PitchBlack terbaru\
-\n\n`.specs` (codename)\
-     \nUsage : Dapatkan informasi spesifikasi cepat tentang perangkat\
-\n\n`.fastboot` (codename)\
-     \nUsage : Dapatkan MIUI fastboot terbaru\
-\n\n`.recovery` (codename)\
-     \nUsage : Dapatkan MIUI pemulihan terbaru\
-\n\n`.eu` (codename)\
-    \nUsage: Dapatkan rom xiaomi.eu terbaru\
-\n\n`.vendor` (codename)\
-    \nUsage: mengambil vendor terbaru\
-\n\n`.of` (codename)\
-     \nUsage : Dapatkan ORangeFox Recovery terbaru"})
+    "`memeui`":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.firmware` (codename)\
+     \nPenggunaan : Dapatkan Firmware terbaru\
+     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pb` (codename)\
+     \nPenggunaan : Dapatkan Pemulihan PitchBlack terbaru\
+     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.specs` (codename)\
+     \nPenggunaan : Dapatkan informasi spesifikasi cepat tentang perangkat\
+     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fastboot` (codename)\
+     \nPenggunaan : Dapatkan MIUI fastboot terbaru\
+     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.recovery` (codename)\
+     \nPenggunaan : Dapatkan MIUI pemulihan terbaru\
+     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.eu` (codename)\
+    \nPenggunaan: Dapatkan rom xiaomi.eu terbaru\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vendor` (codename)\
+    \nPenggunaan: mengambil vendor terbaru\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.of` (codename)\
+     \nPenggunaan : Dapatkan ORangeFox Recovery terbaru"})

@@ -573,7 +573,7 @@ def deEmojify(inputString):
     return get_emoji_regexp().sub("", inputString)
 
 
-@register(outgoing=True, pattern="^.removebg(?: |$)(.*)")
+@register(outgoing=True, pattern="^.rmbg(?: |$)(.*)")
 async def kbg(remob):
     """For .rbg command, Remove Image Background."""
     if REM_BG_API_KEY is None:
@@ -617,7 +617,7 @@ async def kbg(remob):
             await remob.client.send_file(
                 remob.chat_id,
                 remove_bg_image,
-                caption="Support @GeezSupportGroup",
+                caption="Support @fantaestheticgang",
                 force_document=True,
                 reply_to=message_id,
             )
@@ -1309,10 +1309,10 @@ async def capture(url):
 
 CMD_HELP.update(
     {
-        "tts": "**Modules : **`tts`\
-        \n\n  •  **Syntax :** `.tts` <text/reply>\
-        \n  •  **Function : **Menerjemahkan teks ke ucapan untuk bahasa yang disetel. \
-        \n\n  •  **NOTE :** Gunakan .lang tts <kode bahasa> untuk menyetel bahasa untuk tr **(Bahasa Default adalah bahasa Indonesia)**\
+   "`tts`": "𝙋𝙡𝙪𝙜𝙞𝙣: `tts`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tts` <text/reply>\
+        \nPenggunaan: Menerjemahkan teks ke ucapan untuk bahasa yang disetel. \
+        \n**NOTE**: `Gunakan .lang tts <kode bahasa> untuk menyetel bahasa untuk tr (default adalah Indonesia)`\
     "
     }
 )
@@ -1320,10 +1320,10 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "translate": "**Modules : **`Terjemahan`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.tr` <text/reply>\
-        \n  •  **Function : **Menerjemahkan teks ke bahasa yang disetel.\
-        \n\n  •  **NOTE :** Gunakan .lang tr <kode bahasa> untuk menyetel bahasa untuk tr **(Bahasa Default adalah bahasa Indonesia)**\
+  "`translate`": "𝙋𝙡𝙪𝙜𝙞𝙣: `Terjemahan`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tr` <text/reply>\
+        \nPenggunaan: Menerjemahkan teks ke bahasa yang disetel.\
+        \n**NOTE**: Gunakan .lang tr <kode bahasa> untuk menyetel bahasa untuk tr (default adalah Indonesia)\
     "
     }
 )
@@ -1331,9 +1331,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "removebg": "**Modules : **`removebg`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.removebg` <Tautan ke Gambar> atau balas gambar apa pun (Peringatan: tidak berfungsi pada stiker.)\
-        \n  •  **Function : **Menghapus latar belakang gambar, menggunakan API remove.bg\
+  "`removebg`": "𝙋𝙡𝙪𝙜𝙞𝙣: `removebg`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rmbg` <Tautan ke Gambar> atau balas gambar apa pun (Peringatan: tidak berfungsi pada stiker.)\
+        \nPenggunaan: Menghapus latar belakang gambar, menggunakan API remove.bg\
     "
     }
 )
@@ -1341,9 +1341,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "ocr": "**Modules : **`ocr`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.ocr` <kode bahasa>\
-        \n  •  **Function : **Balas gambar atau stiker untuk mengekstrak teks media tersebut.\
+  "`langcode`": "𝙋𝙡𝙪𝙜𝙞𝙣: `ocr`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ocr` <kode bahasa>\
+        \nPenggunaan: Balas gambar atau stiker untuk mengekstrak teks media tersebut.\
     "
     }
 )
@@ -1351,9 +1351,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "youtube": "**Modules : **`youtube`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.yt` <jumlah> <query>\
-        \n  •  **Function : **Melakukan Pencarian YouTube. Dapat menentukan jumlah hasil yang dibutuhkan (default adalah 5)\
+  "`youtube`": "𝙋𝙡𝙪𝙜𝙞𝙣: `youtube`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yt` <jumlah> <query>\
+        \nPenggunaan: Melakukan Pencarian YouTube. Dapat menentukan jumlah hasil yang dibutuhkan (max 5)\
     "
     }
 )
@@ -1361,9 +1361,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "google": "**Modules : **`google`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.google` <query>\
-        \n  •  **Function : **Melakukan pencarian di google.\
+     "`google`": "𝙋𝙡𝙪𝙜𝙞𝙣: `google`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.google` <query>\
+        \nPenggunaan: Melakukan pencarian di google.\
     "
     }
 )
@@ -1371,9 +1371,20 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "wiki": "**Modules : **`wiki`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.wiki` <query>\
-        \n  •  **Function : **Melakukan pencarian di Wikipedia.\
+   "`wiki`": "𝙋𝙡𝙪𝙜𝙞𝙣: `wiki`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wiki` <query>\
+        \nPenggunaan: Melakukan pencarian di Wikipedia.\
+    "
+    }
+)
+
+
+CMD_HELP.update(
+       {
+    "`directlink`": "𝙋𝙡𝙪𝙜𝙞𝙣: `direct`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.direct` <url>\
+        \nPenggunaan: Balas tautan atau tempel URL untuk membuat tautan unduhan langsung.\
+        \n**Supported URL**: `Google Drive` - `Cloud Mail` - `Yandex.Disk` - `AFH` - `ZippyShare` - `MediaFire` - `SourceForge` - `OSDN` - `GitHub`\
     "
     }
 )
@@ -1381,10 +1392,12 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "direct": "**Modules : **`direct`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.direct` <url>\
-        \n  •  **Function : **Balas tautan atau tempel URL untuk membuat tautan unduhan langsung.\
-        \n\n  •  **Supported URL :** `Google Drive` - `Cloud Mail` - `Yandex.Disk` - `AFH` - `ZippyShare` - `MediaFire` - `SourceForge` - `OSDN` - `GitHub`\
+     "`barcode`": "𝙋𝙡𝙪𝙜𝙞𝙣: `barcode`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.barcode` <content>\
+        \nPenggunaan: Buat Kode Batang dari konten yang diberikan.\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.makeqr` <content>\
+        \nPenggunaan: Buat Kode QR dari konten yang diberikan.\
+        \n**NOTE**: Gunakan `.decode` <reply to barcode/qrcode> untuk mendapatkan konten yang didekodekan.\
     "
     }
 )
@@ -1392,14 +1405,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "barcode": "**Modules : **`barcode`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.barcode` <content>\
-        \n  •  **Function :** Buat Kode Batang dari konten yang diberikan.\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.barcode www.google.com`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.makeqr` <content>\
-        \n  •  **Function :** Buat Kode QR dari konten yang diberikan.\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.makeqr www.google.com`\
-        \n\n  •  **NOTE :** Gunakan .decode <reply to barcode / qrcode> untuk mendapatkan konten yang didekodekan.\
+  "`imgsearch`": "𝙋𝙡𝙪𝙜𝙞𝙣: `image_search`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.img` <search_query>\
+        \nPenggunaan: Melakukan pencarian gambar di Google dan menampilkan 15 gambar.\
     "
     }
 )
@@ -1407,9 +1415,11 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "image_search": "**Modules : **`image_search`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.img` <search_query>\
-        \n  •  **Function : **Melakukan pencarian gambar di Google dan menampilkan 15 gambar.\
+    "`ytaudio`": "𝙋𝙡𝙪𝙜𝙞𝙣: `ytdl`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ytaudio` <url>\
+        \nPenggunaan: Untuk Mendownload lagu dari YouTube.\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ytvideo` <url>\
+        \nPenggunaan: Untuk Mendownload video dari YouTube.\
     "
     }
 )
@@ -1417,11 +1427,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "ytdl": "**Modules : **`ytdl`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.ytaudio` <url>\
-        \n  •  **Function : **Untuk Mendownload lagu dari YouTube.\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.ytvideo` <url>\
-        \n  •  **Function : **Untuk Mendownload video dari YouTube.\
+ "`screenshoot`": "𝙋𝙡𝙪𝙜𝙞𝙣: `screenshot`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ss` <url>\
+        \nPenggunaan: Mengambil tangkapan layar dari situs web dan mengirimkan tangkapan layar.\
     "
     }
 )
@@ -1429,10 +1437,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "screenshot": "**Modules : **`screenshot`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.ss` <url>\
-        \n  •  **Function : **Mengambil tangkapan layar dari situs web dan mengirimkan tangkapan layar.\
-        \n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙  : .ss http://www.google.com\
+ "`currency`": "𝙋𝙡𝙪𝙜𝙞𝙣: `currency`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.currency` <amount> <from> <to>\
+        \nPenggunaan: Mengonversi berbagai mata uang untuk Anda.\
     "
     }
 )
@@ -1440,19 +1447,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "currency": "**Modules : **`currency`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.currency` <amount> <from> <to>\
-        \n  •  **Function : **Mengonversi berbagai mata uang untuk Anda.\
-    "
-    }
-)
-
-
-CMD_HELP.update(
-    {
-        "ud": "**Modules : **`Urban Dictionary`\
-        \n\n  •  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.ud` <query>\
-        \n  •  **Function : **Melakukan pencarian di Urban Dictionary.\
+ "`urbandic`": "𝙋𝙡𝙪𝙜𝙞𝙣: `Urban Dictionary`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ud` <query>\
+        \nPenggunaan: Melakukan pencarian di Urban Dictionary.\
     "
     }
 )

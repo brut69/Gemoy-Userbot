@@ -131,9 +131,9 @@ async def _(hazmat):
     return os.remove(downloaded_file_name)
 
 CMD_HELP.update({
-    "waifu":
-    "`.waifu` text\
-\nUsage: untuk stiker khusus.\
-\n\n`.hz` or `.hz [flip, x2, putar (derajat), latar belakang (angka), hitam]`\
-\nUsage: Balas gambar / stiker yang sesuai!."
+    "`waifu`":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.waifu` text\
+\nPenggunaan: untuk stiker khusus.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hz` or `.hz` <flip, x2, putar (derajat), latar belakang (angka), hitam>`\
+\nPenggunaan: Balas gambar / stiker yang sesuai!"
 })

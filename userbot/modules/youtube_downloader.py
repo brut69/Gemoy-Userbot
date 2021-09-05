@@ -93,13 +93,13 @@ async def download_from_youtube_(event):
 
 
 CMD_HELP.update({
-    "ytdownload":
+    "`ytdownload`":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yta` <(youtube) link>\
-   \nUsage : Unduh audio dari tautan.\
+   \nPenggunaan : Unduh audio dari tautan.\
    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ytv <(youtube) link>`\
-   \nUsage : Unduh video dari tautan.\
+   \nPenggunaan : Unduh video dari tautan.\
    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ytsa <(youtube) permintaan pencarian>`\
-   \nUsage : Cari dan unduh audio dari youtube.\
+   \nPenggunaan : Cari dan unduh audio dari youtube.\
    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ytsv <(youtube) permintaan pencarian>`\
-   \nUsage : Cari dan unduh video dari youtube."
+   \nPenggunaan : Cari dan unduh video dari youtube."
 })

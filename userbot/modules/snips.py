@@ -113,15 +113,13 @@ async def on_snip_delete(event):
 
 
 CMD_HELP.update({
-    "snips":
-    "\
-$<snip_name>\
-\nUsage: Dapatkan snip yang ditentukan, di mana saja.\
-\n\n`.snip` <nama> <data> atau balas pesan dengan .snip <nama>\
-\nUsage: Menyimpan pesan sebagai snip (catatan global) dengan nama. (Bekerja dengan foto, dokumen, dan stiker juga!)\
-\n\n`.snips`\
-\nUsage: Mendapatkan semua cuplikan yang disimpan.\
-\n\n`.remsnip` <snip_name>\
-\nUsage: Menghapus snip yang ditentukan.\
+"`gnotes`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.snip` | $ <snip_name>\
+\nPenggunaan: Dapatkan snip yang ditentukan, di mana saja.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.snip` <nama> <data> atau balas pesan dengan .snip <nama>\
+\nPenggunaan: Menyimpan pesan sebagai snip (catatan global) dengan nama. (Bekerja dengan foto, dokumen, dan stiker juga!)\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.snips`\
+\nPenggunaan: Mendapatkan semua cuplikan yang disimpan.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.remsnip` <snip_name>\
+\nPenggunaan: Menghapus snip yang ditentukan.\
 "
 })

@@ -31,7 +31,7 @@ def user_list(l, n):
         yield l[i: i + n]
 
 
-@register(outgoing=True, groups_only=True, pattern=r"^\.startvc$")
+@register(outgoing=True, groups_only=True, pattern=r"^\.startos$")
 async def start_voice(c):
     chat = await c.get_chat()
     admin = chat.admin_rights
@@ -47,7 +47,7 @@ async def start_voice(c):
         await c.edit(f"**ERROR:** `{ex}`")
 
 
-@register(outgoing=True, groups_only=True, pattern=r"^\.stopvc$")
+@register(outgoing=True, groups_only=True, pattern=r"^\.stopos$")
 async def stop_voice(c):
     chat = await c.get_chat()
     admin = chat.admin_rights
@@ -63,7 +63,7 @@ async def stop_voice(c):
         await c.edit(f"**ERROR:** `{ex}`")
 
 
-@register(outgoing=True, groups_only=True, pattern=r"^\.vcinvite")
+@register(outgoing=True, groups_only=True, pattern=r"^\.inviteos")
 async def _(c):
     await c.edit("`Mengundang Anggota ke Obrolan Suara...`")
     users = []
@@ -83,13 +83,13 @@ async def _(c):
 
 CMD_HELP.update(
     {
-        "vcg": "**Plugin : **`vcg`\
-        \n\n  •  **Syntax :** `.startvc`\
-        \n  •  **Function : **Untuk Memulai voice chat group\
-        \n\n  •  **Syntax :** `.stopvc`\
-        \n  •  **Function : **Untuk Memberhentikan voice chat group\
-        \n\n  •  **Syntax :** `.vcinvite`\
-        \n  •  **Function : **Mengundang Member group ke voice chat group\
+        "`os`": "𝙋𝙡𝙪𝙜𝙞𝙣: `os`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startos`\
+        \nPenggunaan: Untuk Memulai voice chat group\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stopos`\
+        \nPenggunaan: Untuk Memberhentikan voice chat group\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteos`\
+        \nPenggunaan: Mengundang Member group ke voice chat group\
     "
     }
 )

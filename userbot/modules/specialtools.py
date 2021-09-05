@@ -55,9 +55,9 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "specialtools": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getaudio`\
-         \n↳ : Unduh Audio Untuk memasukkan Video/Gif yang Anda inginkan..\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addaudio`\
-         \n↳ : Ini akan menempatkan audio di atas ke video/gif yang dibalas.."
+ "`getaudio`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getaudio`\
+         \nPenggunaan: Unduh Audio Untuk memasukkan Video/Gif yang Anda inginkan..\
+         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addaudio`\
+         \nPenggunaan: Ini akan menempatkan audio di atas ke video/gif yang dibalas.."
     }
 )

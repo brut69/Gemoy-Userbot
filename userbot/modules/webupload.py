@@ -43,7 +43,7 @@ async def _(event):
     await event.edit(f"{stdout.decode()}")
 
 CMD_HELP.update({
-    "webupload":
-        "\n`.webupload --`(`anonfiles`|`transfer`|`filebin`|`anonymousfiles`|`megaupload`|`bayfiles`)\
-         \nUsage: reply `.webupload --anonfiles` or `.webupload --filebin` and the file will be uploaded to that website. "
+    "`webupload`":
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.webupload --`(`anonfiles`|`transfer`|`filebin`|`anonymousfiles`|`megaupload`|`bayfiles`)\
+         \nPenggunaan: reply `.webupload --anonfiles` or `.webupload --filebin` and the file will be uploaded to that website. "
 })

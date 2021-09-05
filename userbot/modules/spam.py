@@ -78,16 +78,15 @@ async def spammer(e):
 
 
 CMD_HELP.update({
-    "spam":
-    "`.cspam` <text>\
-\nUsage: Spam teks huruf demi huruf.\
-\n\n`.spam` <count> <text>\
-\nUsage: Membanjiri teks dalam obrolan !!\
-\n\n`.wspam` <text>\
-\nUsage: Spam teks kata demi kata.\
-\n\n`.picspam` <count> <tautan ke gambar/gif>\
-\nUsage: Seolah SMS spam saja tidak cukup!!\
-\n\n`.delayspam` <tunda> <hitung> <teks>\
-\nUsage: `.bigspam` tetapi dengan penundaan khusus.\
-\n\n\nNOTE : Spam dengan risiko Anda sendiri!!"
+"`spammer`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cspam` <text>\
+\nPenggunaan: Spam teks huruf demi huruf.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spam` <count> <text>\
+\nPenggunaan: Membanjiri teks dalam obrolan !!\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wspam` <text>\
+\nPenggunaan: Spam teks kata demi kata.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.picspam` <count> <tautan ke gambar/gif>\
+\nPenggunaan: Seolah SMS spam saja tidak cukup!!\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.delayspam` <tunda> <hitung> <teks>\
+\nPenggunaan: `.bigspam` tetapi dengan penundaan khusus.\
+\n\n**NOTE**: `Spam dengan risiko Anda sendiri!!`"
 })

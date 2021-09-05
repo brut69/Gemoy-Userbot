@@ -135,7 +135,7 @@ async def get_weather(weather):
 
 
 CMD_HELP.update({
-    "weather":
-    "`.weather` <kota> or `.weather` <kota>, <nama/kode negara>\
-    \nUsage: Mendapat cuaca kota."
+    "`weather`":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.weather` <kota> atau <nama/kode negara>\
+    \nPenggunaan: Mendapat cuaca kota."
 })

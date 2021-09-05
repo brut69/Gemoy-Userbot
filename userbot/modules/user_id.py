@@ -46,9 +46,10 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "getid": "**Plugin : **`getid`\
-        \n\n  •  **Syntax :** `.gid` <username> Atau Balas Ke Pesan Pengguna Ketik `.whois`\
-        \n  •  **Function : **Untuk Mendapatkan User ID Pengguna Telegram.\
+        "`getid`": "𝙋𝙡𝙪𝙜𝙞𝙣: `getid`\
+        \nPenggunaan: `.gid` <username> Atau Balas Ke Pesan Pengguna.\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whois`\
+        \nPenggunaan: Untuk Mendapatkan User ID Pengguna Telegram.\
     "
     }
 )

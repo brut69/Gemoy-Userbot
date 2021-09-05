@@ -348,13 +348,12 @@ async def sticker_to_png(sticker):
 
 CMD_HELP.update(
     {
-        "stickers": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kang | .tikel [emoji('s)]?`"
-        "\n↳ : Balas .tikel Ke Sticker Atau Gambar Untuk Menambahkan Ke Pack Mu "
+        "`getsticker`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kang | .tikel [emoji('s)]?`"
+        "\nPenggunaan: Balas .tikel Ke Sticker Atau Gambar Untuk Menambahkan Ke Pack Mu "
         "\nBisa Memilih Emoji Sesuai Pilihanmu."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kang | .tikel  (emoji['s]]?` [nomer]?"
-        "\n↳ : Ambil Sticker/Gambar Ke Pack Baru Mu "
-        "Dan Bisa Pilih Emoji Sticker Mu."
+        "\nPenggunaan: Ambil Sticker/Gambar Ke Pack Baru Mu.\nDan Bisa Pilih Emoji Sticker Mu."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stkrinfo`"
-        "\n↳ : Dapatkan Informasi Pack Sticker."
+        "\nPenggunaan: Dapatkan Informasi Pack Sticker."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get`"
-        "\n↳ : Balas Ke Stcker Untuk Mendapatkan File 'PNG' Sticker."})
+        "\nPenggunaan: Balas Ke Stcker Untuk Mendapatkan File 'PNG' Sticker."})

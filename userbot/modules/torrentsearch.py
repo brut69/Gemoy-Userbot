@@ -150,9 +150,9 @@ async def tor_search(event):
 
 CMD_HELP.update(
     {
-        "torrent": ">`.ts` Permintaan pencarian."
-        "\nUsage: Telusuri kueri torrent dan poskan ke dogbin.\n\n"
-        ">`.tos` Permintaan pencarian."
-        "\nUsage: Cari magnet torrent dari kueri."
+        "`torrent`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ts` <permintaan pencarian>"
+        "\nPenggunaan: Telusuri kueri torrent dan poskan ke dogbin."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tos` <permintaan pencarian>"
+        "\nPenggunaan: Cari magnet torrent dari kueri."
     }
 )

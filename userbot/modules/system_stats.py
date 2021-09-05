@@ -229,17 +229,16 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"\n__**{GEMOY_TEKS_KUSTOM}**__\n"
-        f"**╭───────────────────**\n"
-        f"**├[• 🥱 Gemoy Owner** \n"
-        f"├[•   : `{DEFAULTUSER}` \n"
-        f"**├[• 🔎 Username** \n"
-        f"├[•   : `@{user.username}` \n"
-        f"├──────────────────\n"
+        f"╭────────────────────────\n"
+        f"├[• 👑 [𝗚𝗘𝗠𝗢𝗬 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](t.me/dunottagme) \n"
+        f"├[• 🥇 `{DEFAULTUSER}` \n"
+        f"├[• 👤 `@{user.username}` \n"
+        f"├────────────────────────\n"
         f"├[•⚙️ `Telethon :`Ver {version.__version__} \n"
         f"├[•🦖 `Python   :`Ver {python_version()} \n"
         f"├[•🤖 `Bot Ver  :`{BOT_VER} \n"
         f"├[•📂 `Modules  :`{len(modules)} \n"
-        f"╰─────────────────")
+        f"╰────────────────────────")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -274,10 +273,10 @@ async def amireallyalive(alive):
         f"═⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER} \n"
         f"═⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} \n"
         f"════════════════════════════\n"
-        f"• **Copyright :** [𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
-        f"• **GNU LICENSE :** [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗣𝘂𝗯𝗹𝗶𝗰 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
-        f"• **RAPHIELSCAPE LICENSE :** [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗣𝗨𝗕𝗟𝗜𝗖 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
-        f"• **Contact Us:** [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang) \n")
+        f"• [𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
+        f"• [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗣𝘂𝗯𝗹𝗶𝗰 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
+        f"• [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗣𝗨𝗕𝗟𝗜𝗖 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
+        f"• [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -327,11 +326,11 @@ async def redis(alive):
         f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
         f"◈ **{GEMOY_TEKS_KUSTOM}** \n"
         f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
-        f"◈ **Repo :** [𝙂𝙀𝙈𝙊𝙔-𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
-        f"◈ **Instagram :** [𝗙𝗢𝗟𝗟𝗢𝗪 𝗠𝗬 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](https://Instagram.com/intan_hepy) \n"
-        f"◈ **GNU LICENSE :** [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
-        f"◈ **RAPHIELSCAPE LICENSE :** [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
-        f"◈ **Contact Us :** [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang) \n")
+        f"◈ [𝙂𝙀𝙈𝙊𝙔-𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
+        f"◈ [𝗙𝗢𝗟𝗟𝗢𝗪 𝗠𝗬 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](https://Instagram.com/intan_hepy) \n"
+        f"◈ [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
+        f"◈ [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
+        f"◈ [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -372,29 +371,29 @@ async def amireallyalivereset(ureset):
     await ureset.edit("`" "Berhasil mengatur ulang pengguna untuk hidup!" "`")
 
 
+
 CMD_HELP.update({
-    "system":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
-    "\n↳ : Menampilkan informasi sistem menggunakan neofetch."
+    "`botsys`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
+    "\nPenggunaan: Menampilkan informasi sistem menggunakan neofetch."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.db`"
-    "\n↳ : Menampilkan info terkait basis data."
+    "\nPenggunaan: Menampilkan info terkait basis data."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spc`"
-    "\n↳ : Tunjukkan spesifikasi sistem."
+    "\nPenggunaan: Tunjukkan spesifikasi sistem."
 })
+
 CMD_HELP.update({
-    "alive":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
-    "\n↳ : Untuk melihat apakah bot Anda berfungsi atau tidak."
+  "`alive`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
+    "\nPenggunaan: Untuk melihat apakah bot Anda berfungsi atau tidak."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
-    "\n↳ : Ubah 'pengguna' menjadi teks yang Anda inginkan."
+    "\nPenggunaan: Ubah 'pengguna' menjadi teks yang Anda inginkan."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.restalive`"
-    "\n↳ : Menyetel ulang pengguna ke default."
+    "\nPenggunaan: Menyetel ulang pengguna ke default."
 })
+
 CMD_HELP.update(
     {
-        "botversion":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.botver`"
-        "\n↳ : Menampilkan versi bot pengguna."
+        "`botver`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.botver`"
+        "\nPenggunaan: Menampilkan versi bot pengguna."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pip` <module(s)>"
-        "\n↳ : Melakukan pencarian modul pip."
+        "\nPenggunaan: Melakukan pencarian modul pip."
     })
