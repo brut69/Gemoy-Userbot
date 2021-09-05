@@ -64,6 +64,7 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 
 
 ### **Stay Support** 🚀
+*   [GemoyUserbot-Dev](https://t.me/dunoottagme) - **Noobeloper**
 *   [LonamiWebs](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
 
 
