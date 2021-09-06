@@ -4,14 +4,23 @@
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-# Fixes by Github/ArnabXD | Telegram/Arnab431
+#Fixes by Github/ArnabXD | Telegram/Arnab431
 # Ported to Gemoy-Userbot
-# @dunottagme
+# @dunottagme 
 # © 2021
 
+import os
+import urllib
+import requests
+from re import sub
+from cowpy import cow
+from asyncio import sleep
+from collections import deque
+from random import choice, getrandbits, randint
 
-from userbot import CMD_HELP
+from userbot import bot, CMD_HELP, ALIVE_NAME
 from userbot.events import register
+from userbot.modules.admin import get_user_from_event
 
 # ================= CONSTANT =================
 
@@ -20,7 +29,7 @@ EMOJIS = [
     "🥱",
 ]
 
-PICTURE_LOVE1 = """
+PICTURE_BERUANGLOVE = """
 █▀███▀▀███▀▀███▀▀███▀▀███▀█
 █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
 █▒▒█▒▒▒▒▒███▒▒█▒▒▒█▒█████▒█
@@ -63,14 +72,14 @@ PICTURE_LOVE1 = """
 █▄▄█▄▄██▄▄█▄▄█▄▄█▄▄██▄▄█▄▄█
 """
 
-PICTURE_LOVE2 = """
+PICTURE_ILU = """
 ╔══╗
 ╚╗╔╝
 ╔╝(¯`v´¯)
 ╚══`.¸.YOU
 """
 
-PICTURE_LOVE3 = """
+PICTURE_BIGLOVE = """
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░▄▄▄▄▄▄░░░░▄▄▄░░░░▄▄▄░░░░░░
 ░░░▀████▀░░▄█████▄▄█████▄░░░░
@@ -90,7 +99,7 @@ PICTURE_LOVE3 = """
 """
 
 
-PICTURE_LOVE4 = """
+PICTURE_ANAK = """
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░▄▄▄░░░░▄███▄▄███▄░░░░░░▄░░▄░░░░░░░░
 ░░░░█░░░░░██████████░░░░░░█░░█░░░░░░░░
@@ -113,7 +122,7 @@ PICTURE_LOVE4 = """
 """
 
 
-PICTURE_LOVE5 = """
+PICTURE_YUHU = """
 ────╪███████╪────╪███████
 ──╪███████████╪╪███████████
 ──██████████████████████████
@@ -146,7 +155,7 @@ PICTURE_LOVE5 = """
 """
 
 
-PICTURE_LOVE6 = """
+PICTURE_INLOVE = """
 ───▄▄▄▄▄▄─────▄▄▄▄▄▄
 ─▄█▓▓▓▓▓▓█▄─▄█▓▓▓▓▓▓█▄
 ▐█▓▓▒▒▒▒▒▓▓█▓▓▒▒▒▒▒▓▓█▌
@@ -162,7 +171,7 @@ PICTURE_LOVE6 = """
 """
 
 
-PICTURE_LOVE7 = """
+PICTURE_LONG = """
 ░███████░
 ░█╬╬╬╬╬█░
 ░██╬╬███░
@@ -222,7 +231,8 @@ PICTURE_LOVE7 = """
 """
 
 
-PICTURE_LOVE8 = """
+
+PICTURE_DATAR = """
   ::::          ::::::      ::::      ::::    :::::::::
   ::::        ::::  ::::    ::::      ::::    :::::::::
   ::::       ::::    ::::   ::::      ::::    ::::
@@ -234,7 +244,8 @@ PICTURE_LOVE8 = """
 """
 
 
-PICTURE_LOVE9 = """
+
+PICTURE_ALAY = """
 ██─▄███▄███▄─██▄──▄██──▄███▄──██──██
 ██─█████████──▀████▀──██▀─▀██─██──██
 ██──▀█████▀─────██────██▄─▄██─██──██
@@ -242,7 +253,8 @@ PICTURE_LOVE9 = """
 """
 
 
-PICTURE_LOVE10 = """
+
+PICTURE_APESI = """
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 ▒▒▒▒▒▒▒░░░░░░═░░▒▒▒▒░░░░░░▒▒▒░░░░═░▒▒▒▒▒▒
@@ -298,7 +310,7 @@ PICTURE_LOVE10 = """
 """
 
 
-PICTURE_LOVE11 = """
+PICTURE_SERAHLAH = """
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░░░▄▄▄▄▄▄░░░░░░░░░▄▄▄▄▄▄░░░░░░░░
 ░░░░▄▄▄▄░░░░▄▄▄▄░░░▄▄▄▄░░░░▄▄▄▄░░░░░
@@ -320,107 +332,108 @@ PICTURE_LOVE11 = """
 """
 
 
-@register(outgoing=True, pattern=r"^\.(?:lop1|lop1)\s?(.)?")
-async def emoji_lop1(e):
+@register(outgoing=True, pattern=r"^\.(?:glop1|glop1)\s?(.)?")
+async def emoji_glop1(e):
     emoji = e.pattern_match.group(1)
-    lop1 = PICTURE_LOVE1
+    glop1 = PICTURE_BERUANGLOVE
     if emoji:
-        lop1 = lop1.replace('🥱', emoji)
-    await e.edit(lop1)
+        glop1 = glop1.replace('🥱', emoji)
+    await e.edit(glop1)
 
 
-@register(outgoing=True, pattern=r"^\.(?:lop2|lop2)\s?(.)?")
-async def emoji_lop2(e):
+@register(outgoing=True, pattern=r"^\.(?:glop2|glop2)\s?(.)?")
+async def emoji_glop2(e):
     emoji = e.pattern_match.group(1)
-    lop2 = PICTURE_LOVE2
+    glop2 = PICTURE_ILU
     if emoji:
-        lop2 = lop2.replace('🥱', emoji)
-    await e.edit(lop2)
+        glop2 = glop2.replace('🥱', emoji)
+    await e.edit(glop2)
 
 
-@register(outgoing=True, pattern=r"^\.(?:lop3|lop3)\s?(.)?")
-async def emoji_lop3(e):
+@register(outgoing=True, pattern=r"^\.(?:glop3|glop3)\s?(.)?")
+async def emoji_glop3(e):
     emoji = e.pattern_match.group(1)
-    lop3 = PICTURE_LOVE3
+    glop3 = PICTURE_BIGLOVE
     if emoji:
-        lop3 = lop3.replace('🥱', emoji)
-    await e.edit(lop3)
-
-
-@register(outgoing=True, pattern=r"^\.(?:lop4|lop4)\s?(.)?")
-async def emoji_lop4(e):
+        glop3 = glop3.replace('🥱', emoji)
+    await e.edit(glop3)
+    
+    
+@register(outgoing=True, pattern=r"^\.(?:glop4|glop4)\s?(.)?")
+async def emoji_glop4(e):
     emoji = e.pattern_match.group(1)
-    lop4 = PICTURE_LOVE4
+    glop4 = PICTURE_ANAK
     if emoji:
-        lop4 = lop4.replace('🥱', emoji)
-    await e.edit(lop4)
-
-
-@register(outgoing=True, pattern=r"^\.(?:lop5|lop5)\s?(.)?")
-async def emoji_lop5(e):
+        glop4 = glop4.replace('🥱', emoji)
+    await e.edit(glop4)
+    
+    
+@register(outgoing=True, pattern=r"^\.(?:glop5|glop5)\s?(.)?")
+async def emoji_glop5(e):
     emoji = e.pattern_match.group(1)
-    lop5 = PICTURE_LOVE5
+    glop5 = PICTURE_YUHU
     if emoji:
-        lop5 = lop5.replace('🥱', emoji)
-    await e.edit(lop5)
+        glop5 = glop5.replace('🥱', emoji)
+    await e.edit(glop5)
 
 
-@register(outgoing=True, pattern=r"^\.(?:lop6|lop6)\s?(.)?")
-async def emoji_lop6(e):
+@register(outgoing=True, pattern=r"^\.(?:glop6|glop6)\s?(.)?")
+async def emoji_glop6(e):
     emoji = e.pattern_match.group(1)
-    lop6 = PICTURE_LOVE6
+    glop6 = PICTURE_INLOVE
     if emoji:
-        lop6 = lop6.replace('🥱', emoji)
-    await e.edit(lop6)
+        glop6 = glop6.replace('🥱', emoji)
+    await e.edit(glop6)
 
 
-@register(outgoing=True, pattern=r"^\.(?:lop7|lop7)\s?(.)?")
-async def emoji_lop7(e):
+@register(outgoing=True, pattern=r"^\.(?:glop7|glop7)\s?(.)?")
+async def emoji_glop7(e):
     emoji = e.pattern_match.group(1)
-    lop7 = PICTURE_LOVE7
+    glop7 = PICTURE_LONG
     if emoji:
-        lop7 = lop7.replace('🥱', emoji)
-    await e.edit(lop7)
-
-
-@register(outgoing=True, pattern=r"^\.(?:lop8|lop8)\s?(.)?")
-async def emoji_lop8(e):
+        glop7 = glop7.replace('🥱', emoji)
+    await e.edit(glop7)
+    
+    
+@register(outgoing=True, pattern=r"^\.(?:glop8|glop8)\s?(.)?")
+async def emoji_glop8(e):
     emoji = e.pattern_match.group(1)
-    lop8 = PICTURE_LOVE8
+    glop8 = PICTURE_DATAR
     if emoji:
-        lop8 = lop8.replace('🥱', emoji)
-    await e.edit(lop8)
-
-
-@register(outgoing=True, pattern=r"^\.(?:lop9|lop9)\s?(.)?")
-async def emoji_lop9(e):
+        glop8 = glop8.replace('🥱', emoji)
+    await e.edit(glop8)
+    
+    
+@register(outgoing=True, pattern=r"^\.(?:glop9|glop9)\s?(.)?")
+async def emoji_glop9(e):
     emoji = e.pattern_match.group(1)
-    lop9 = PICTURE_LOVE9
+    glop9 = PICTURE_ALAY
     if emoji:
-        lop9 = lop9.replace('🥱', emoji)
-    await e.edit(lop9)
-
-
-@register(outgoing=True, pattern=r"^\.(?:lop10|lop10)\s?(.)?")
-async def emoji_lop10(e):
+        glop9 = glop9.replace('🥱', emoji)
+    await e.edit(glop9)
+    
+    
+@register(outgoing=True, pattern=r"^\.(?:glop10|glop10)\s?(.)?")
+async def emoji_glop10(e):
     emoji = e.pattern_match.group(1)
-    lop10 = PICTURE_LOVE10
+    glop10 = PICTURE_APESI
     if emoji:
-        lop10 = lop10.replace('🥱', emoji)
-    await e.edit(lop10)
-
-
-@register(outgoing=True, pattern=r"^\.(?:lop11|lop11)\s?(.)?")
-async def emoji_lop11(e):
+        glop10 = glop10.replace('🥱', emoji)
+    await e.edit(glop10)
+    
+    
+@register(outgoing=True, pattern=r"^\.(?:glop11|glop11)\s?(.)?")
+async def emoji_glop11(e):
     emoji = e.pattern_match.group(1)
-    lop11 = PICTURE_LOVE11
+    glop11 = PICTURE_SERAHLAH
     if emoji:
-        lop11 = lop11.replace('🥱', emoji)
-    await e.edit(lop11)
-
-
+        glop11 = glop11.replace('🥱', emoji)
+    await e.edit(glop11)
+    
+    
+    
 CMD_HELP.update({
-    "gemoylp":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lope` `.lop` `.lop1` `.lop2` `.lop3` `.lop4`\n`.lop5` `.lop6` `.lop7` `.lop8` `.lop9` `.lop10` `.lop11`\n`.pagi` `.mlm` `.mlm2`\nPenggunaan: Lope yu bhaaks."
-}
+    "gemoylop": 
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.glop` `.glop1` `.glop2` `.glop3` `.glop4`\n`.glop5` `.glop6` `.glop7` `.glop8` `.glop9` `.glop10` `.glop11`\n`.pagi` `.mlm` `.night` `.lov`\nPenggunaan: Gemoy Userbot lope yu bhaaks."
+  }
 )

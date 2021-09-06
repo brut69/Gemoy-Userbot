@@ -37,7 +37,7 @@ async def help(event):
                          f"👤 𝗢𝗪𝗡𝗘𝗥 {DEFAULTUSER}\n📂 𝗣𝗟𝗨𝗚𝗜𝗡𝗦 {len(modules)}\n"
                          "🛠️ 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂 𝙊𝙍𝘿𝙀𝙍𝙎 𝘼𝙑𝘼𝙄𝙇𝘼𝘽𝙇𝙀\n"
                          f"☻{string}\n\n")
-        await asyncio.sleep(6)
+        await asyncio.sleep(10)
         await event.reply(f"\n**𝘊𝘰𝘯𝘵𝘰𝘩** : Ketik `.help ping` Untuk Informasi Pengunaan.\nAtau Ketik `.helpme` Untuk Menu Lainnya.")
         await asyncio.sleep(1000)
         await event.delete()

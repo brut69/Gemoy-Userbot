@@ -859,7 +859,7 @@ GAMBAR_PAGI = """
 
 # Create by @Ultdroid
 
-GAMBAR_MALAM = """
+GAMBAR_MLM = """
 ┌▀█┌▀█┌▀█┌▀█┌▀█┌▀█┌▀█
 ┌▀█╔══╗╔══╗╔══╗╔══╗▀█
 ┌▀█║╔═╣║╔╗║║╔╗║╚╗╗║▀█
@@ -875,7 +875,7 @@ GAMBAR_MALAM = """
 """
 
 
-GAMBAR_MALAM2 = """
+GAMBAR_MALAM = """
        🌙.     *       ☄️
   🌟   .  *       .
                        *   .      🛰     .        ✨      *
@@ -883,7 +883,7 @@ GAMBAR_MALAM2 = """
       .              . . 𝚂𝚆𝙴𝙴𝚃 𝙳𝚁𝙴𝙰𝙼𝚂 🌙
 . *       🌏 𝗚𝗢𝗢𝗗 𝗡𝗜𝗚𝗛𝗧 ✨         *
                     🌙.     *       ☄️        .
-🌟   .  *       .         ;          .        .
+🌟   .  *       .         ;          .        .        
                        *   .      🛰     .        ✨      *
 """
 
@@ -1872,19 +1872,19 @@ async def emoji_lope(e):
 @register(outgoing=True, pattern=r"^\.(?:mlm|mlm)\s?(.)?")
 async def emoji_mlm(e):
     emoji = e.pattern_match.group(1)
-    mlm = GAMBAR_MALAM
+    mlm = GAMBAR_MLM
     if emoji:
         mlm = mlm.replace('🌟', emoji)
     await e.edit(mlm)
 
 
-@register(outgoing=True, pattern=r"^\.(?:mlm2|mlm2)\s?(.)?")
-async def emoji_mlm2(e):
+@register(outgoing=True, pattern=r"^\.(?:night|night)\s?(.)?")
+async def emoji_night(e):
     emoji = e.pattern_match.group(1)
-    mlm2 = GAMBAR_MALAM2
+    night = GAMBAR_MALAM
     if emoji:
-        mlm2 = mlm2.replace('🌟', emoji)
-    await e.edit(mlm2)
+        night = night.replace('🌟', emoji)
+    await e.edit(night)
 
 
 @register(outgoing=True, pattern=r"^\.(?:pagi|pagi)\s?(.)?")

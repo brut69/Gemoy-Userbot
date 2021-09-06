@@ -190,11 +190,11 @@ async def _(event):
         await event.edit(input_str)
 
         animation_chars = [
-            "**Skuy kenalin Dev 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 dulu yook**"
-            "**Yusuf mungkin terkenalnya. Nama lain untuk di Dev 𝙍𝙊𝙈 adalah @brut69 dari 𝙍𝘼𝙎𝙏𝘼𝙈𝙊𝘿69™**"
+            "**Skuy kenalin Dev 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 dulu yook.**"
+            "** Yusuf mungkin terkenalnya. Nama lain untuk di Dev 𝙍𝙊𝙈 adalah @brut69 dari 𝙍𝘼𝙎𝙏𝘼𝙈𝙊𝘿69**"
             "**Mo kepoin lebih lanjut sabi sih**"
             "**Silakan PM ke @dunottagme or @jsminebot**"
-            "**Untuk bot Music yang bisa dipakai sabi @RemMusic_bot @RinMusicOS_bot @CallMusicPlusBot ©²¹**"
+            "**Untuk bot Music yang bisa dipakai sabi @RemMusic_bot @RinMusicOS_bot @CallMusicPlusBot**"
             "**Gitu aja sih. Lebih detailnya silakan PM aje. Bhahaha**"]
 
         for i in animation_ttl:
