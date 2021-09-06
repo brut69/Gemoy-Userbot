@@ -201,7 +201,8 @@
       "required": false
     },
     "UB_BLACK_LIST_CHAT": {
-      "description": "𝗪𝗮𝗶𝘁... 𝗪𝗵𝗮𝘁 ?? 𝗟𝗺𝗮𝗼",
+      "description": "Lmao, idk about this.",
+      "value": "𝗪𝗮𝗶𝘁... 𝗪𝗵𝗮𝘁 ?? 𝗟𝗺𝗮𝗼",
       "required": false
     },
     "LYDIA_API_KEY": {
