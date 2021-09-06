@@ -1407,8 +1407,8 @@ async def leol(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
             "`\n░█░░░█▀█░█░░ `"
-            "\n░█░░░█░█░█░░ `"
-            "\n░▀▀▀░▀▀▀░▀▀▀ `"
+            "`\n░█░░░█░█░█░░ `"
+            "`\n░▀▀▀░▀▀▀░▀▀▀ `"
         )
 
 
@@ -1426,7 +1426,7 @@ async def lool(e):
 async def stfu(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
-            "`\n██████████████████████████████`"
+            "`\n█████████████████████████████████`"
             "`\n██▀▀▀▀████▀▀▀▀████▀▀▀▀▀███▀▀██▀▀█`"
             "`\n█──────██──────██───────██──██──█`"
             "`\n█──██▄▄████──████──███▄▄██──██──█`"
@@ -1468,7 +1468,7 @@ async def nih(e):
         )
 
 
-@register(outgoing=True, pattern=r"^\.fag$")
+@register(outgoing=True, pattern=r"^\.rawr$")
 async def fgtfo(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
