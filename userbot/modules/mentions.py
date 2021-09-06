@@ -43,8 +43,8 @@ async def mention(event):
 
 CMD_HELP.update(
     {
-        "𝙋𝙡𝙪𝙜𝙞𝙣: `mentions` | Menyebut pengguna dengan nama khusus."
-        "\nPenggunaan: `Hi @ender1324<build bot>`"
-        "\nHasil: Hi <build bot>(tg://resolve?domain=ender1324)"
+        "mentions": "Mentions users with a custom name."
+        "\nPenggunaan: `Hi @ender1324<bluid boi>`"
+        "\nHasil: Hi <bluid boi>(tg://resolve?domain=ender1324)"
     }
 )
