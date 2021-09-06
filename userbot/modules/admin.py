@@ -934,4 +934,3 @@ CMD_HELP.update(
         "\nPenggunaan: Mendapatkan daftar pengguna daam grup."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.setgpic` <balas ke gambar>"
         "\nPenggunaan: Mengganti foto profil grup."})
-        

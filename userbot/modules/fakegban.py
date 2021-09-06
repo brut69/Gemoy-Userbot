@@ -3,7 +3,7 @@
 import asyncio
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
-#from userbot.utils import admin_cmd
+# from userbot.utils import admin_cmd
 from userbot.events import register
 from userbot import ALIVE_NAME, CMD_HELP, bot
 
@@ -34,9 +34,9 @@ async def gbun(event):
         idd = reply_message.from_id
         # make meself invulnerable cuz why not xD
         if idd == 1036951071:
-            await reply_message.reply("`Tunggu sebentar, Ini tuanku!`\n**Beraninya kau mengancam akan melarang Mastahku!**\n\n__Akunmu telah diretas! 📢 Bayar $6969 ke Mastah saya__ [Heyworld](tg://user?id=1036951071) __untuk melepaskan
+            await reply_message.reply("`Tunggu sebentar, Ini tuanku!`\n**Beraninya kau mengancam akan melarang Mastahku!**\n\n__Akunmu telah diretas! 📢 Bayar $6969 ke Mastah saya__[Heyworld](tg: // user?id=1036951071) __untuk melepaskan
         else:
-            jnl = ("`Warning!!`"
+            jnl=("`Warning!!`"
                    "[{}](tg://user?id={})"
                    f"` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
                    "**Name: ** __{}__\n"
@@ -47,14 +47,14 @@ async def gbun(event):
             elif usname != "None":
                 jnl += "**Username** : @{}\n".format(usname)
             if len(gbunVar) > 0:
-                gbunm = "`{}`".format(gbunVar)
-                gbunr = "**Reason: **" + gbunm
+                gbunm="`{}`".format(gbunVar)
+                gbunr="**Reason: **" + gbunm
                 jnl += gbunr
             else:
                 jnl += no_reason
             await reply_message.reply(jnl)
     else:
-        mention = (
+        mention=(
             f"Peringatan!! Pengguna Terkena 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 Oleh {DEFAULTUSER} \nAlasan: Tidak Ada Alasan yang Diberikan.")
         await event.reply(mention)
     await event.delete()

@@ -215,7 +215,7 @@ async def delf(event):
 
 CMD_HELP.update({"federation": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fbans <id/username> <reason>`"
                  "\nPenggunaan: Melarang pengguna dari federasi yang terhubung."
-                 "\Anda dapat membalas pengguna yang ingin Anda blokir atau secara manual memberikan nama pengguna/id."
+                 "\\Anda dapat membalas pengguna yang ingin Anda blokir atau secara manual memberikan nama pengguna/id."
                  "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unfbans <id/username> <reason>`"
                  "\nPenggunaan: Sama seperti fban tapi unban pengguna"
                  "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addfs <name>`"

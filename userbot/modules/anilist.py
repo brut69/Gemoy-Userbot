@@ -335,7 +335,6 @@ async def anilist(event):
     await event.edit(msg, link_preview=True)
 
 
-
 CMD_HELP.update({
     "anilist":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙`.anilist`\
