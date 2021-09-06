@@ -5,7 +5,7 @@ Available Commands:
 .ungban REASON"""
 import asyncio
 from userbot.events import register
-from userbot import ALIVE_NAME, G_BAN_LOGGER_GROUP, bot
+from userbot import CMD_HELP, ALIVE_NAME, G_BAN_LOGGER_GROUP, bot
 # imported from uniborg by @heyworld
 
 # ================= CONSTANT =================
@@ -60,8 +60,9 @@ async def _(event):
     await event.edit(f"**Pemblokiran pengguna dibatalkan oleh {DEFAULTUSER}**")
     asyncio.sleep(5)
     await event.delete()
-
-
+    
+    
+    
 CMD_HELP.update({
     "gbanbot": "\
 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gbanb`\

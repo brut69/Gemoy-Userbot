@@ -8,6 +8,7 @@ ported char, airing and manga by @sandy1709 and @mrconfused
 import json
 import re
 
+from userbot import CMD_HELP
 import requests
 from userbot.events import register
 from userbot import bot
@@ -333,6 +334,7 @@ async def anilist(event):
     result = await callAPI(input_str)
     msg = await formatJSON(result)
     await event.edit(msg, link_preview=True)
+
 
 
 CMD_HELP.update({
