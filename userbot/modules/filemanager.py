@@ -4,7 +4,7 @@ import os.path
 import time
 from os.path import exists, isdir
 
-from userbot import register, CMD_HELP
+from userbot.events import register
 from userbot.utils import humanbytes
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
@@ -107,10 +107,3 @@ async def lst(event):
             await event.delete()
     else:
         await event.edit(msg)
-
-
-CMD_HELP.update({
-    "filemanager":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ls`"
-    "\nPenggunaan: File Manager Cloud bot maibi."
-})
