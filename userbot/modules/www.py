@@ -62,35 +62,34 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**❕𝐆 𝐄 𝐌 𝐎 𝐘   𝐔 𝐒 𝐄 𝐑 𝐁 𝐎 𝐓❕**… "
                     f"\n%sms` \n"
-                    f" 📢 𝙼𝚢 𝚂𝚎𝚗𝚜𝚎𝚒 : "
+                    f"📢 𝙼𝚢 𝚂𝚎𝚗𝚜𝚎𝚒 : "
                     f"\n`{ALIVE_NAME}` \n" % (duration))
 
 
-@register(outgoing=True, pattern="^.gping$")
+@register(outgoing=True, pattern="^.lping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     await pong.edit("**𝘔𝘦𝘮𝘶𝘭𝘢𝘪 𝘛𝘦𝘴𝘵 𝘍𝘪𝘴𝘪𝘬**")
     await asyncio.sleep(1)
-    await pong.edit("__**...𝙂𝙀𝙈𝙊𝙔...**__")
-    await pong.edit("__**.....𝙐𝙎𝙀𝙍𝘽𝙊𝙏.....**__")
+    await pong.edit("__𝙂𝙀𝙈𝙊𝙔__________________")
+    await pong.edit("___________𝙐𝙎𝙀𝙍𝘽𝙊𝙏_______")
     await asyncio.sleep(1)
-    await pong.edit("__**......𝖲𝖤𝖫𝖠𝖫𝖴 𝖲𝖠𝖡𝖠𝖱......**__")
-    await asyncio.sleep(2)
-    await pong.edit("`    0% ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `")
-    await pong.edit("`    4% █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `")
-    await pong.edit("`    8% ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `")
-    await pong.edit("`  36% █████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `")
-    await pong.edit("`  52% █████████████▒▒▒▒▒▒▒▒▒▒▒▒ `")
-    await pong.edit("`  88% █████████████████████▒▒▒▒ `")
+    await pong.edit("`0%     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `")
+    await pong.edit("`4%     █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `")
+    await pong.edit("`8%     ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `")
+    await pong.edit("`36%   █████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `")
+    await pong.edit("`52%   █████████████▒▒▒▒▒▒▒▒▒▒▒▒ `")
+    await pong.edit("`88%.  █████████████████████▒▒▒▒ `")
     await pong.edit("`100% █████████████████████████ `")
+    await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**❕𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 𝘗𝘐𝘕𝘎𝘌𝘙❕**\n"
-                    f" ✨ 𝙿𝚒𝚗𝚐𝚎𝚛 : "
+                    f"✨ 𝙿𝚒𝚗𝚐𝚎𝚛 : "
                     f"`%sms` \n"
-                    f" 🟢 𝙾𝚗𝚕𝚒𝚗𝚎 : "
+                    f"🟢 𝙾𝚗𝚕𝚒𝚗𝚎 : "
                     f"`{uptime}` \n" % (duration))
 
 
@@ -116,14 +115,14 @@ async def redis(pong):
     await pong.edit("`...𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏.....`")
     await asyncio.sleep(1)
     await pong.edit("🤪")
-    await asyncio.sleep(1)
+    await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await asyncio.sleep(1)
     await pong.edit(f"❕𝐆 𝐄 𝐌 𝐎 𝐘   𝐔 𝐒 𝐄 𝐑 𝐁 𝐎 𝐓 ❕\n"
-                    f" ✨ 𝙿𝚒𝚗𝚐𝚎𝚛 : "
+                    f"✨ 𝙿𝚒𝚗𝚐𝚎𝚛 : "
                     f"`%sms` \n"
-                    f" ⏰ 𝚂𝚒𝚜𝚊 𝚆𝚊𝚔𝚝𝚞: "
+                    f"⏰ 𝚂𝚒𝚜𝚊 𝚆𝚊𝚔𝚝𝚞: "
                     f"`{uptime}` \n" % (duration))
 
 
@@ -145,16 +144,16 @@ async def redis(pong):
     await pong.edit("___🚒________________")
     await pong.edit("😱___________________")
     await pong.edit("🤕")
-    await asyncio.sleep(1)
+    await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await asyncio.sleep(2)
     await pong.edit(f"🚦𝐆 𝐄 𝐌 𝐎 𝐘   𝐔 𝐒 𝐄 𝐑 𝐁 𝐎 𝐓🚦 \n"
-                    f" 🤒 𝙺𝚎𝚜𝚎𝚑𝚊𝚝𝚊𝚗 : "
+                    f"🤒 𝙺𝚎𝚜𝚎𝚑𝚊𝚝𝚊𝚗 : "
                     f"`%sms` \n"
-                    f" 🤕 𝙿𝚎𝚛𝚊𝚠𝚊𝚝𝚊𝚗 𝚍𝚊𝚕𝚊𝚖 : "
+                    f"🤕 𝙿𝚎𝚛𝚊𝚠𝚊𝚝𝚊𝚗 𝚍𝚊𝚕𝚊𝚖 : "
                     f"`{uptime}` \n"
-                    f" 😷 𝙿𝚊𝚜𝚒𝚎𝚗 𝚁𝚊𝚠𝚊𝚝 𝙹𝚊𝚕𝚊𝚗 : `{ALIVE_NAME}`" % (duration))
+                    f"😷 𝙿𝚊𝚜𝚒𝚎𝚗 𝚁𝚊𝚠𝚊𝚝 𝙹𝚊𝚕𝚊𝚗 : `{ALIVE_NAME}`" % (duration))
 
 
 @register(outgoing=True, pattern="^.ping$")
@@ -175,15 +174,15 @@ async def redis(pong):
     await pong.edit("😡")
     await asyncio.sleep(1)
     await pong.edit("🤬")
-    await asyncio.sleep(1)
+    await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"🏧 𝐆 𝐄 𝐌 𝐎 𝐘   𝐔 𝐒 𝐄 𝐑 𝐁 𝐎 𝐓 🏧 \n"
-                    f" 💰 𝚂𝚒𝚜𝚊 𝚂𝚊𝚕𝚍𝚘 : "
+                    f"💰 𝚂𝚒𝚜𝚊 𝚂𝚊𝚕𝚍𝚘 : "
                     f"`%sms` \n"
-                    f" ⏰ 𝙷𝚊𝚋𝚒𝚜 𝙳𝚊𝚕𝚊𝚖 : "
+                    f"⏰ 𝙷𝚊𝚋𝚒𝚜 𝙳𝚊𝚕𝚊𝚖 : "
                     f"`{uptime}` \n"
-                    f" 👤 𝚁𝚎𝚔𝚎𝚗𝚒𝚗𝚐 : `{ALIVE_NAME}`" % (duration))
+                    f"👤 𝚁𝚎𝚔𝚎𝚗𝚒𝚗𝚐 : `{ALIVE_NAME}`" % (duration))
 
 
 @register(outgoing=True, pattern="^.speed$")
@@ -247,13 +246,13 @@ async def pingme(pong):
     duration = (end - start).microseconds / 9000
     await asyncio.sleep(1)
     await pong.edit("🤧")
-    await asyncio.sleep(1)
+    await asyncio.sleep(2)
     await pong.edit("🧘 𝐆 𝐄 𝐌 𝐎 𝐘 𝐔 𝐒 𝐄 𝐑 𝐁 𝐎 𝐓 **𝘗𝘖𝘕𝘎 ❕**\n`%sms`" % (duration))
 
 
 CMD_HELP.update({
     "pinger":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.gping` | `.gemping` | `.pings` | `.sping`\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.lping` | `.gemping` | `.pings` | `.sping`\
          \nPenggunaan: Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.speed`\
          \nPenggunaan: Untuk Menunjukkan Kecepatan Jaringan Anda.\
