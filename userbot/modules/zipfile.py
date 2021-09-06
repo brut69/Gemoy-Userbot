@@ -152,8 +152,8 @@ CMD_HELP.update({
             \nPenggunaan: buat file menjadi zip.\
             \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addzip` <reply to file>\
             \nPenggunaan: tambahkan file ke daftar zip.\
-            \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.upzip` optional: <zip title>\
+            \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.upzip` optional <zip title>\
             \nPenggunaan: unggah daftar zip.\
-            \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rmzip` optional: <zip title>\
+            \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rmzip` optional <zip title>\
             \nPenggunaan: hapus daftar pos."
 })
