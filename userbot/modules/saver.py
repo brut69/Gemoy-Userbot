@@ -54,5 +54,5 @@ async def igsaver(event):
             await event.delete()
 
 
-CMD_HELP.update({"`igsaver`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.igsaver`"
+CMD_HELP.update({"igsaver": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.igsaver`"
                  "\nPenggunaan: Download Postingan di Instagram, Silahkan Salin Link Postingan Instagram Yang Ingin Anda Download Lalu Kirim Link, atau Reply dan Ketik `.igsaver`"})

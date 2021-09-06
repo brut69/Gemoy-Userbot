@@ -83,7 +83,7 @@ async def _(c):
 
 CMD_HELP.update(
     {
-        "`os`": "𝙋𝙡𝙪𝙜𝙞𝙣: `os`\
+        "os": "𝙋𝙡𝙪𝙜𝙞𝙣: `os`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startos`\
         \nPenggunaan: Untuk Memulai voice chat group\
         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stopos`\

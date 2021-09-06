@@ -224,5 +224,5 @@ async def _(event):
             BOTLOG_CHATIDger.warn(str(e))
 
 
-CMD_HELP.update({"`offline`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.off` <reason> atau balas media untuk itu"
+CMD_HELP.update({"offline": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.off` <reason> atau balas media untuk itu"
                  "\nPenggunaan: `.afk` bisa dengan media keren ketika seseorang menandai atau membalas salah satu pesan atau chat pribadi Anda."})

@@ -67,7 +67,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit('`🦖 𝙃𝙀𝙍𝙊𝙆𝙐:'
-                         '\n🔴 Sedang MengUpdate 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Mohon Menunggu 5-6 Menit`'
+                         '\n🔴 Sedang MengUpdate 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Mohon Menunggu 2-5 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -232,7 +232,7 @@ async def upstream(event):
 
 
 CMD_HELP.update({
-    "`updatebot`":
+    "updatebot":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update`"
     "\nPenggunaan: Untuk Melihat Pembaruan Terbaru 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update now`"

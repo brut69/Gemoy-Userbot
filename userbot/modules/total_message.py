@@ -18,7 +18,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "`totalmsg`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tmsg` | `.tmsg` <username>\
+        "totalmsg": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tmsg` | `.tmsg` <username>\
     \nPenggunaan: Mengembalikan jumlah pesan total pengguna dalam obrolan saat ini."
     }
 )

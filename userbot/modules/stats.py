@@ -158,7 +158,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "`statme`": "𝙋𝙡𝙪𝙜𝙞𝙣: `stats`\
+        "statme": "𝙋𝙡𝙪𝙜𝙞𝙣: `stats`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stats`\
         \nPenggunaan: Untuk memeriksa statistik pengguna\
         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.statme`\
@@ -172,7 +172,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "`deteksi`": "𝙋𝙡𝙪𝙜𝙞𝙣: `deteksi`\
+        "deteksi": "𝙋𝙡𝙪𝙜𝙞𝙣: `deteksi`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.deteksi`\
         \nPenggunaan: Untuk memeriksa orang tersebut bergabung ke grup mana aja.\
     "

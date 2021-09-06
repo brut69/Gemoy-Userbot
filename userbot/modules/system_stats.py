@@ -372,7 +372,7 @@ async def amireallyalivereset(ureset):
 
 
 CMD_HELP.update({
-    "`botsys`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
+    "botsys": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
     "\nPenggunaan: Menampilkan informasi sistem menggunakan neofetch."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.db`"
     "\nPenggunaan: Menampilkan info terkait basis data."
@@ -381,7 +381,7 @@ CMD_HELP.update({
 })
 
 CMD_HELP.update({
-    "`alive`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
+    "alive": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
     "\nPenggunaan: Untuk melihat apakah bot Anda berfungsi atau tidak."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
     "\nPenggunaan: Ubah 'pengguna' menjadi teks yang Anda inginkan."
@@ -391,7 +391,7 @@ CMD_HELP.update({
 
 CMD_HELP.update(
     {
-        "`botver`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.botver`"
+        "botver": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.botver`"
         "\nPenggunaan: Menampilkan versi bot pengguna."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pip` <module(s)>"
         "\nPenggunaan: Melakukan pencarian modul pip."

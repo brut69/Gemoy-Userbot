@@ -65,7 +65,7 @@ async def _(e):
 
 
 CMD_HELP.update({
-    "`tags`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag all`"
+    "tags": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag all`"
     "\nPenggunaan: Tandai 100 Anggota obrolan teratas."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tag admin`"
     "\nPenggunaan: Tag Admin obrolan itu."

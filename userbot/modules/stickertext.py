@@ -58,6 +58,6 @@ async def stext(event):
 
 
 CMD_HELP.update({
-    "`sticktex`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stick` <text>"
+    "sticktex": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stick` <text>"
     "\nPenggunaan: Mengubah Teks/Kata-Kata, Menjadi Stiker Anda."
 })

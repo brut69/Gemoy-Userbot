@@ -147,7 +147,7 @@ def zipdir(path, ziph):
 
 
 CMD_HELP.update({
-    "`zipper`":
+    "zipper":
         "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.compress` optional: <reply to file>\
             \nPenggunaan: buat file menjadi zip.\
             \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addzip` <reply to file>\

@@ -82,5 +82,5 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "`tiny`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tiny`\
+    "tiny": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tiny`\
     \nPenggunaan : Untuk Memperkecil Sticker."})

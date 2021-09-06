@@ -49,7 +49,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "`shazam`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shazam <membalas suara/audio>"
+        "shazam": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shazam <membalas suara/audio>"
         "\nPenggunaan: Membalikkan file audio pencarian menggunakan (@auddbot)"
     }
 )

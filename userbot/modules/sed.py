@@ -100,7 +100,7 @@ async def sed(command):
 
 
 CMD_HELP.update({
-    "`sed`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.s` <pembatas><kata lama><pembatas><kata baru>"
+    "sed": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.s` <pembatas><kata lama><pembatas><kata baru>"
     "\nPenggunaan: Mengganti kata atau kata menggunakan sed."
     "\nDelimiters: `/, :, |, _`"
 })

@@ -30,7 +30,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "`cekresi`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.resi`\
+    "cekresi": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.resi`\
 \nPenggunaan: Cek resi \
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lacak`\
 \nPenggunaan: Lacak paket"

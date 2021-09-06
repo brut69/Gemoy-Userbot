@@ -106,7 +106,7 @@ async def quote_search(event):
 
 
 CMD_HELP.update({
-    "`quotly`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.q`\
+    "quotly": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.q`\
 \nPenggunaan: Mengubah Pesan Menjadi sticker.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.xq`\
 \nPenggunaan: Mengubah stiker Menjadi Pesan."

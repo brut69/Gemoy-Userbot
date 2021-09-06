@@ -51,7 +51,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "`spotify`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spotnow`"
+    "spotify": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spotnow`"
     "\nPenggunaan: Tunjukkan apa yang Anda dengarkan di spotify."
     "\n@SpotifyNowBot"
 })

@@ -191,7 +191,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "`memeui`":
+    "memeui":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.firmware` (codename)\
      \nPenggunaan : Dapatkan Firmware terbaru\
      \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pb` (codename)\

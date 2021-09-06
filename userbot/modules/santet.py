@@ -319,6 +319,6 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "`santet`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.santet`\
+    "santet": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.santet`\
         \nPenggunaan: Santet Online Buat Bercanda."
 })

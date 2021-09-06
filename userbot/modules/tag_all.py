@@ -21,6 +21,6 @@ async def all(event):
 
 
 CMD_HELP.update({
-    "`tagall`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙:`.all` | @all\
+    "tagall": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙:`.all` | @all\
 \nPenggunaan: Untuk Men-Tag semua anggota yang ada di group."
 })

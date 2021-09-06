@@ -69,5 +69,5 @@ async def ssvideo(event):
         return await event.edit(f"{e}")
 
 
-CMD_HELP.update({"`ssvideo`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ssvideo` <bingkai>\
+CMD_HELP.update({"ssvideo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ssvideo` <bingkai>\
 \nPenggunaan: ke ss bingkai video per bingkai"})
