@@ -872,15 +872,18 @@ GAMBAR_MALAM = """
 ┌▀█░░█░▌█▐█▐░▌░█░░░▀█
 ┌▀█░░░░░░░░░░░░░░░░▀█
 ┌▀█┌▀█┌▀█┌▀█┌▀█┌▀█┌▀█
+"""
 
-🌙.     *       ☄️
+
+GAMBAR_MALAM2 = """
+       🌙.     *       ☄️
   🌟   .  *       .
                        *   .      🛰     .        ✨      *
-  .     *   SLEEP WELL        🚀
-      .              . . SWEET DREAMS 🌙
-. *       🌏 GOOD NIGHT         *
-                    🌙.     *       ☄️
-🌟   .  *       .         `"
+  .     *   𝚂𝙻𝙴𝙴𝙿 𝚆𝙴𝙻𝙻         🚀
+      .              . . 𝚂𝚆𝙴𝙴𝚃 𝙳𝚁𝙴𝙰𝙼𝚂 🌙
+. *       🌏 𝗚𝗢𝗢𝗗 𝗡𝗜𝗚𝗛𝗧 ✨         *
+                    🌙.     *       ☄️        .
+🌟   .  *       .         ;          .        .        
                        *   .      🛰     .        ✨      *
 """
 
@@ -1873,6 +1876,15 @@ async def emoji_mlm(e):
     if emoji:
         mlm = mlm.replace('🌟', emoji)
     await e.edit(mlm)
+
+
+@register(outgoing=True, pattern=r"^\.(?:mlm2|mlm2)\s?(.)?")
+async def emoji_mlm2(e):
+    emoji = e.pattern_match.group(1)
+    mlm2 = GAMBAR_MALAM2
+    if emoji:
+        mlm2 = mlm2.replace('🌟', emoji)
+    await e.edit(mlm2)
 
 
 @register(outgoing=True, pattern=r"^\.(?:pagi|pagi)\s?(.)?")
