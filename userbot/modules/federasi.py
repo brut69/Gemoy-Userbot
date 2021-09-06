@@ -213,15 +213,15 @@ async def delf(event):
     await event.edit("**Disconnected from all connected federations!**")
 
 
-CMD_HELP.update({"federation": ">`.fbans <id/username> <reason>`"
-                 "\nUsage: Bans user from connected federations."
-                 "\nYou can reply to the user whom you want to fban or manually pass the username/id."
-                 "\n\n`>.unfbans <id/username> <reason>`"
-                 "\nUsage: Same as fban but unbans the user"
-                 "\n\n>`.addfs <name>`"
-                 "\nUsage: Adds current group and stores it as <name> in connected federations."
-                 "\nAdding one group is enough for one federation."
-                 "\n\n>`.delfs`"
-                 "\nUsage: Removes current group from connected federations."
-                 "\n\n>`.listfs`"
-                 "\nUsage: Lists all connected federations by specified name."})
+CMD_HELP.update({"federation": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fbans <id/username> <reason>`"
+                 "\nPenggunaan: Melarang pengguna dari federasi yang terhubung."
+                 "\Anda dapat membalas pengguna yang ingin Anda blokir atau secara manual memberikan nama pengguna/id."
+                 "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unfbans <id/username> <reason>`"
+                 "\nPenggunaan: Sama seperti fban tapi unban pengguna"
+                 "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addfs <name>`"
+                 "\nPenggunaan: Menambahkan grup saat ini dan menyimpannya sebagai <name> di federasi yang terhubung."
+                 "\nMenambahkan satu grup sudah cukup untuk satu federasi."
+                 "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.delfs`"
+                 "\nPenggunaan: Menghapus grup saat ini dari federasi yang terhubung."
+                 "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.listfs`"
+                 "\nPenggunaan: Mencantumkan semua federasi yang terhubung dengan nama yang ditentukan."})

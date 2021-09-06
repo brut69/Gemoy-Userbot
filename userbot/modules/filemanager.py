@@ -107,3 +107,10 @@ async def lst(event):
             await event.delete()
     else:
         await event.edit(msg)
+
+
+CMD_HELP.update({
+    "filemanager":
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ls`"
+    "\nPenggunaan: File Manager Cloud bot maibi."
+})

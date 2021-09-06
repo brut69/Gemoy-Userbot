@@ -79,11 +79,11 @@ async def _(event):
 CMD_HELP.update({
     "fakeaction":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ftyping` <jumlah teks>\
-   \nUsage : Seakan akan sedang mengetik padahal tidak\
+   \nPenggunaan: Seakan akan sedang mengetik padahal tidak\
    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.faudio` <jumlah teks>\
-   \nUsage : Berfungsi sama seperti ftyping tapi ini dalam bentuk fake audio\
+   \nPenggunaan: Berfungsi sama seperti ftyping tapi ini dalam bentuk fake audio\
    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fgame` <jumlah teks>\
-   \nUsage : Berfungsi sama seperti ftyping tapi ini dalam bentuk fake game\
+   \nPenggunaan: Berfungsi sama seperti ftyping tapi ini dalam bentuk fake game\
    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fvideo` <jumlah teks>\
-   \nUsage : Berfungsi sama seperti ftyping tapi ini dalam bentuk fake video"
+   \nPenggunaan: Berfungsi sama seperti ftyping tapi ini dalam bentuk fake video"
 })

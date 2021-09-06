@@ -71,9 +71,9 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "core": "**Plugin : **`core`\
-        \n\n  •  **Syntax :** `.install` <reply ke file plugins>\
-        \n  •  **Function : **Untuk Menginstall plugins userbot secara instan.\
+        "core": "𝙋𝙡𝙪𝙜𝙞𝙣: `core`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.install` <reply ke file plugins>\
+        \nPenggunaan: Untuk Menginstall plugins userbot secara instan.\
     "
     }
 )

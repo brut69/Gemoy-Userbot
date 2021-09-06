@@ -486,6 +486,6 @@ async def figlet(event):
 
 CMD_HELP.update({
     "figlet":
-        ">`.fg`"
-    "\nUsage : Buat teks menjadi figlet.."
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fg`"
+    "\nPenggunaan: Buat teks menjadi figlet."
 })

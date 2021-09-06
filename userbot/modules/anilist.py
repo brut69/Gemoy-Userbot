@@ -333,3 +333,11 @@ async def anilist(event):
     result = await callAPI(input_str)
     msg = await formatJSON(result)
     await event.edit(msg, link_preview=True)
+
+
+
+CMD_HELP.update({
+    "anilist":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙`.anilist`\
+    \nPenggunaan: Lmao"
+})

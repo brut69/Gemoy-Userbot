@@ -93,9 +93,9 @@ async def bruh(message, user):
 
 CMD_HELP.update(
     {
-        "amongus": "**Plugin : **`amongus`\
-        \n\n  •  **Syntax :** `.imp`\
-        \n  •  **Function : **Kirimkan gambar seorang impostor Among US dengan kalimat dari Anda.\
+        "amongus": "𝙋𝙡𝙪𝙜𝙞𝙣: `amongus`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.imposter`\
+        \nPenggunaan: Kirimkan gambar seorang impostor Among US dengan kalimat dari Anda.\
     "
     }
 )

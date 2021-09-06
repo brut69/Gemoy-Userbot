@@ -139,7 +139,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n💖<\\  *Tapi Bo'ong Hiyahiyahiya`")
+                     "`\n💖<\\  *Tapi Bo'ong`")
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -175,14 +175,14 @@ async def _(event):
 
 CMD_HELP.update({
     "animasi1":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nah` ; `.huh` ; `.owner`\
-    \n↳ : Cobain Sendiri.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bunga` ; `.buah`\
-    \n↳ : animasi.\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nah` `.huh` `.owner`\
+    \nPenggunaan: Cobain Sendiri.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bunga` `.buah`\
+    \nPenggunaan: animasi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.waktu`\
-    \n↳ : animasi.\
+    \nPenggunaan: animasi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hua`\
-    \n↳ : nangis.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ceritacinta` ; `.canda`\
-    \n↳ : liat sendiri"
+    \nPenggunaan: nangis.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ceritacinta` `.canda`\
+    \nPenggunaan: liat sendiri"
 })

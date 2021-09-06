@@ -139,11 +139,11 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "ascii": "`.ascii`\n"
-        "Usage: Buat Ascii Art Dari Media\n\n"
-        "`.asciis`\n"
-        "Usage: Sama Tapi Unggah Hasilnya Sebagai Sticker\n\n"
-        "`.asciibg <color>`\n"
-        "Usage: Untuk Mengubah Warna Background Dari Modul Ascii Contoh `.asciibg black`"
+        "ascii": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ascii`\n"
+        "Penggunaan: Buat Ascii Art Dari Media\n\n"
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.asciis`\n"
+        "Penggunaan: Sama Tapi Unggah Hasilnya Sebagai Sticker\n\n"
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.asciibg <color>`\n"
+        "Penggunaan: Untuk Mengubah Warna Background Dari Modul Ascii Contoh `.asciibg black`"
     }
 )

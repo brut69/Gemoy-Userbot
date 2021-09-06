@@ -34,8 +34,8 @@ async def testing(event):
 
 CMD_HELP.update(
     {
-        "cukup": "**Plugin : **`cukup`\
-    \n\n**Syntax : **`.allout`\
-    \n**Function : **ban all members in 1 cmnd"
+        "allout": "𝙋𝙡𝙪𝙜𝙞𝙣: `allout`\
+    \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.allout`\
+    \nPenggunaan: Banned @all members in 1 cmnd"
     }
 )

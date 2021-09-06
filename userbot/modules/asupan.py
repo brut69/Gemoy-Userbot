@@ -53,15 +53,14 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "asupan": "**Plugin : **`asupan`\
-        \n\n  •  **Syntax :** `.asupan`\
-        \n  •  **Function : **Untuk Mengirim video asupan secara random.\
-        \n\n  •  **Syntax :** `.wibu`\
-        \n  •  **Function : **Untuk Mengirim video wibu secara random.\
-        \n\n  •  **Syntax :** `.chika`\
-        \n  •  **Function : **Untuk Mengirim video chikakiku secara random.\
-       \n\n  •  **Syntax :** `.filmapik`\
-        \n  •  **Function : **Untuk Mengirim video filmapik secara random.\
-    "
+        "asupan": "𝙋𝙡𝙪𝙜𝙞𝙣: `asupan`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.asupan`\
+        \nPenggunaan: Untuk Mengirim video asupan secara random.\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wibu`\
+        \nPenggunaan: Untuk Mengirim video wibu secara random.\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.chika`\
+        \nPenggunaan: Untuk Mengirim video chikakiku secara random.\
+       \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.filmapik`\
+        \nPenggunaan: Untuk Mengirim video filmapik secara random.    "
     }
 )

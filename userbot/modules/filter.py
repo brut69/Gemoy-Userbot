@@ -97,7 +97,7 @@ async def remove_a_filter(r_handler):
             "`Berhasil Menghapus Filter` **{}** `Disini`.".format(filt))
 
 
-@register(outgoing=True, pattern="^.bersihkanbotfilter (.*)")
+@register(outgoing=True, pattern="^.cleanfilter (.*)")
 async def kick_marie_filter(event):
     """ For .bersihkanbotfilter command, allows you to kick all \
         Marie(or her clones) filters from a chat. """
@@ -143,14 +143,14 @@ async def filters_active(event):
 
 CMD_HELP.update({
     "filter":
-    "`.filters`\
-    \nUsage: Melihat filter userbot yang aktif di obrolan.\
-    \n\n`.filter` <keyword> <balasan> atau balas ke pesan ketik .filter <keyword>\
-    \nUsage: Membuat filter di obrolan.\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.filters`\
+    \nPenggunaan: Melihat filter userbot yang aktif di obrolan.\
+    \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.filter` <keyword> <balasan> atau balas ke pesan ketik .filter <keyword>\
+    \nPenggunaan: Membuat filter di obrolan.\
     \nBot Akan Membalas Jika Ada Yang Menyebut 'keyword' yang dibuat.\
     \nBisa dipake ke media/sticker/vn/file.\
-    \n\n`.stop` <keyword>\
-    \nUsage: Untuk Nonaktifkan Filter.\
-    \n\n`.bersihkanbotfilter` <marie/rose>\
-    \nUsage: Menghapus semua filter yang ada di bot grup (Saat ini bot yang didukung: Marie, Rose.) dalam obrolan."
+    \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stop` <keyword>\
+    \nPenggunaan: Untuk Nonaktifkan Filter.\
+    \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cleanfilter` <marie/rose>\
+    \nPenggunaan: Menghapus semua filter yang ada di bot grup <Saat ini bot yang didukung: Marie, Rose> dalam obrolan."
 })

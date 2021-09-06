@@ -193,7 +193,9 @@ async def terminal_runner(term):
         await term.edit(f"`{curruser}:~$ {command}\n{result}`")
 
 
-CMD_HELP.update({"eval": ">`.eval print('world')`"
-                 "\nUsage: Sama seperti exec.", "exec": ">`.exec print('hello')`"
-                 "\nUsage: Jalankan skrip python kecil.", "term": ">`.term <cmd>`"
-                 "\nUsage: Jalankan perintah dan skrip bash di server Anda.", })
+CMD_HELP.update({"eval": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.eval print('world')\
+                 \nPenggunaan: Sama seperti exec\
+                 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.exec` print\
+                 \nPenggunaan: Jalankan skrip python kecil.\
+                 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.term` <cmd>\
+                 \nPenggunaan: Jalankan perintah dan skrip bash di server Anda."})

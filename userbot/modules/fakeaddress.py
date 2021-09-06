@@ -39,8 +39,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "fakeaddress": "**IP HACK**\
-\n\n**Syntax : **`.ip <ip address>`\
-\n**Usage :** Memberikan detail tentang alamat ip."
+        "fakeaddress": "𝙋𝙡𝙪𝙜𝙞𝙣: `ip hack`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ip <ip address>`\
+\nPenggunaan: Memberikan detail tentang alamat ip."
     }
 )

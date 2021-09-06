@@ -43,8 +43,8 @@ async def _(event):
 CMD_HELP.update({
     "games": "\
 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.xogame`\
-\n↳ : Mainkan game XO bersama temanmu.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mod <nama app>`\
-\n↳ : Dapatkan applikasi mod\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whisp <teks> <username/ID>`\
-\n↳ : Berikan pesan rahasia"})
+\nPenggunaan: Mainkan game XO bersama temanmu.\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mod <nama app>`\
+\nPenggunaan: Dapatkan applikasi mod\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whisp <teks> <username/ID>`\
+\nPenggunaan: Berikan pesan rahasia"})

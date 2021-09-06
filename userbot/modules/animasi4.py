@@ -563,14 +563,14 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi4":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gabut` | `.dino` | `.macan` | `.gombal` | `.terkadang` | `.userbot`\
-    \n↳ : Dikala gabut, yaaa pake aja xixixi.\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gabut` `.dino` `.macan` `.gombal` `.terkadang` `.userbot`\
+    \nPenggunaan: Dikala gabut, yaaa pake aja xixixi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yatim`\
-    \n↳ : Buat bercandaan, kalo gasuka jangan dipake.\
+    \nPenggunaan: Buat canda, kalo gasuka jang ngeluh.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cinta`\
-    \n↳ : Mengirim cinta tai anjiing ke seseorang.\
+    \nPenggunaan: Mengirim cinta tai anjiing ke seseorang.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sayang`\
-    \n↳ : Berubah menjadi kadal.\
+    \nPenggunaan: Berubah menjadi kadal.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tobat`\
-    \n↳ : Lmao."
+    \nPenggunaan: Lmao."
 })

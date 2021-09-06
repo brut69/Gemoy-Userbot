@@ -302,14 +302,14 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi5":
-    "`.bulan` ; `.hati` ; `.nyanyi`\
-    \nUsage: liat aja.\
-    \n\n`.heli` ; `.tank` ; `.dor`\n`.bundir`\
-    \nUsage: liat sendiri\
-    \n\n`.y`\
-    \nUsage: jempol\
-    \n\n`.awk`\
-    \nUsage: ketawa lari.\
-    \n\n`.ular` ; `.babi` ; `.ajg`\
-    \nUsage: liat sendiri."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bulan` `.hati` `.nyanyi`\
+    \nPenggunaan: liat aja.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.heli` `.tank` `.dor` `.bundir`\
+    \nPenggunaan: liat sendiri\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.y`\
+    \nPenggunaan: jempol\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.awk`\
+    \nPenggunaan: ketawa lari.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ular` `.babi` `.ajg`\
+    \nPenggunaan: liat sendiri."
 })

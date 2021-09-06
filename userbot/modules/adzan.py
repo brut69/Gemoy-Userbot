@@ -54,4 +54,4 @@ async def get_adzan(adzan):
 
 
 CMD_HELP.update({"adzan": "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.adzan` <kota>"
-                 "\n↳ : Memberikan Informasi Waktu Sholat."})
+                 "\nPenggunaan: Memberikan Informasi Waktu Sholat."})

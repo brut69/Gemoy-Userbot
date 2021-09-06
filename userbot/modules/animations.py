@@ -228,15 +228,15 @@ async def tweet(event):
 
 CMD_HELP.update(
     {
-        "animations": ">`.tweet` <username>.<tweet>"
-        "\nUsage: Create tweet with custom username.\n\n"
-        ">`.trump` <tweet>"
-        "\nUsage: Create tweet for Donald Trump.\n\n"
-        ">`.qg` <tweet>"
-        "\nUsage: Create tweet for `@QoryGore`.\n\n"
-        ">`.cmm` <text>"
-        "\nUsage: Create banner for Change My Mind.\n\n"
-        ">`.kanna` <text>"
-        "\nUsage: Kanna is writing your text."
+        "animations": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tweet` <username>.<tweet>"
+        "\nPenggunaan: Buat tweet dengan nama pengguna khusus.\n\n"
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.trump` <tweet>"
+        "\nPenggunaan: Buat tweet untuk Donald Trump.\n\n"
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.qg` <tweet>"
+        "\nPenggunaan: Buat tweet untuk `@QoryGore`.\n\n"
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cmm` <text>"
+        "\nPenggunaan: Create banner for Change My Mind.\n\n"
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kanna` <text>"
+        "\nPenggunaan: Kanna sedang menulis teksmu."
     }
 )

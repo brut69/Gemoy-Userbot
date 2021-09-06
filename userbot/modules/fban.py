@@ -211,16 +211,16 @@ async def delf(event):
 CMD_HELP.update(
     {
         "federation": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fban <id/username> <reason>`"
-        "\n↳ : Melarang pengguna dari federasi yang terhubung."
+        "\nPenggunaan: Melarang pengguna dari federasi yang terhubung."
         "\nAnda dapat membalas pengguna yang ingin Anda fban atau secara manual melewati username/id."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unfban <id/username> <reason>`"
-        "\n↳ : Sama seperti fban tapi unban pengguna"
+        "\nPenggunaan: Sama seperti fban tapi unban pengguna"
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.addf <name>`"
-        "\n↳ : Menambahkan grup saat ini dan menyimpannya sebagai <name> di federasi yang terhubung."
+        "\nPenggunaan: Menambahkan grup saat ini dan menyimpannya sebagai <name> di federasi yang terhubung."
         "\nMenambahkan satu grup sudah cukup untuk satu federasi."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.delf`"
-        "\n↳ : Menghapus grup saat ini dari federasi yang terhubung."
+        "\nPenggunaan: Menghapus grup saat ini dari federasi yang terhubung."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.listf`"
-        "\n↳ : Daftar semua federasi yang terhubung dengan nama yang ditentukan."
+        "\nPenggunaan: Daftar semua federasi yang terhubung dengan nama yang ditentukan."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.clearf`"
-        "\n↳ : Terputus dari semua federasi yang terhubung. Gunakan dengan hati-hati."})
+        "\nPenggunaan: Terputus dari semua federasi yang terhubung. Gunakan dengan hati-hati."})

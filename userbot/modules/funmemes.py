@@ -1717,66 +1717,66 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "memes": "`.eye`\
-\nUsage: Lihat Sendiri.\
-\n\n`.earth`\
-\nusage: Memutar Bumi 🌎🌎\
-\n\n`.bombs`\
-\nUsage: Bom Telegram🤣🤣\
-\n\n`.think`\
-\nUsage: hmmm berpikir\
+        "memes": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.eye`\
+\nPenggunaan: Lihat Sendiri.\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.earth`\
+\nPenggunaan: Memutar Bumi 🌎🌎\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bombs`\
+\nPenggunaan: Bom Telegram🤣🤣\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.think`\
+\nPenggunaan: hmmm berpikir\
 \n\n`.gotm` atau `.gott`\
-\nUsage: dapatkan sucks🤣\
-\n\n`.snake`\
-\nUsage: Lihat Sendiri\
-\n\n`.call`\
-\nUsage: Memanggil Owner Telegram \
-\n\n`.admeme`\
-\nUsage: mememememe\
-\n\n`.qs`\
-\nUsage: Memulai Percakapan\
-\n\n`.wtf`\
-\nUsage: Lihat Sendiri\
-\n\n`.load`,`.up`,`.square`,`.round`,`.heart`,`.monkey`,`.anim`,`.hand`,`.fnl`,`.cnt`,`.kiss`\
-\nUsage: Lihat Sendiri\
-\n\n`.human`\
-\nUsage: Tidak Ada Yang Menarik\
-\n\n`.wupload`\
-\nUsage: meh\
-\n\n`.music`\
-\nUsage: music player\
-\n\n`.fleave`\
-\nUsage: Keluar boong an\
-\n\n`.fadmin`\
-\nUsage: Jadi Admin Fake\
-\n\n`.gift`\
-\nUsage: Memberi Hadiah Tapi Aku Tidak Mau Member Tau Apa Dalamnya!\
-\n\n`.police`\
-\nUsage: Waktunya Ke Penjara\
-\n\n`.kill`\
-\nUsage: Untuk Membunuh Musuh Secara Online\
-\n\n`.os`\
-\nUsage: Lihat Sendiri.\
-\n\n`.isro`\
-\nUsage: Untuk Memanggil Alien\
-\n\n`.gangstar`\
-\nUsage: Anda Menjadi Gangstar.\
-\n\n`.hack`\
-\nUsage: Untuk Hack Telegram:v\
-\n\n`.dump`\
-\nUsage: xD\
-\n\n`.hypno`\
-\nUsage: Ah Sial Mataku 👀\
-\n\n`.whatsapp`\
-\nUsage: Untuk Hack Whatsapp:v \
-\n\n`.solar`\
-\nUsage: System Solar Kita Yang Cantik 🌞🌞\
-\n\n`.quickheal` atau `.sqh` atau `.vquickheal`\
-\nUsage: Virus Ditemukan, Hapus Itu Menggunakan Ini:v\
-\n\n`.plane`\
-\nUsage: Untuk Berkeliling Di Satu Tempat✈️\
-\n\n`.jio`\
-\nUsage: Jaringan Mu Lambat?? Boost Menggunakan Ini\
+\nPenggunaan: dapatkan sucks🤣\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.snake`\
+\nPenggunaan: Lihat Sendiri\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.call`\
+\nPenggunaan: Memanggil Owner Telegram \
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.admeme`\
+\nPenggunaan: mememememe\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.qs`\
+\nPenggunaan: Memulai Percakapan\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wtf`\
+\nPenggunaan: Lihat Sendiri\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.load`,`.up`,`.square`,`.round`,`.heart`,`.monkey`,`.anim`,`.hand`,`.fnl`,`.cnt`,`.kiss`\
+\nPenggunaan: Lihat Sendiri\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.human`\
+\nPenggunaan: Tidak Ada Yang Menarik\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wupload`\
+\nPenggunaan: meh\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.music`\
+\nPenggunaan: music player\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fleave`\
+\nPenggunaan: Keluar boong an\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fadmin`\
+\nPenggunaan: Jadi Admin Fake\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gift`\
+\nPenggunaan: Memberi Hadiah Tapi Aku Tidak Mau Member Tau Apa Dalamnya!\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.police`\
+\nPenggunaan: Waktunya Ke Penjara\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kill`\
+\nPenggunaan: Untuk Membunuh Musuh Secara Online\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.os`\
+\nPenggunaan: Lihat Sendiri.\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.isro`\
+\nPenggunaan: Untuk Memanggil Alien\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gangstar`\
+\nPenggunaan: Anda Menjadi Gangstar.\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hack`\
+\nPenggunaan: Untuk Hack Telegram:v\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dump`\
+\nPenggunaan: xD\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hypno`\
+\nPenggunaan: Ah Sial Mataku 👀\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whatsapp`\
+\nPenggunaan: Untuk Hack Whatsapp:v \
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.solar`\
+\nPenggunaan: System Solar Kita Yang Cantik 🌞🌞\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.quickheal` atau `.sqh` atau `.vquickheal`\
+\nPenggunaan: Virus Ditemukan, Hapus Itu Menggunakan Ini:v\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.plane`\
+\nPenggunaan: Untuk Berkeliling Di Satu Tempat✈️\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.jio`\
+\nPenggunaan: Jaringan Mu Lambat?? Boost Menggunakan Ini\
 "
     }
 )

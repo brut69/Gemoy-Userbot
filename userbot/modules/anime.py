@@ -662,20 +662,20 @@ def is_gif(file):
 
 CMD_HELP.update({
     "anime":
-    "`.anime` <anime>\
-    \nUsage: Returns with Anime information.\
-    \n\n`.manga` <manga name>\
-    \nUsage: Returns with the Manga information.\
-    \n\n`.akaizoku` or `.akayo` <anime name>\
-    \nUsage: Returns with the Anime Download link.\
-    \n\n`.char` <character name>\
-    \nUsage: Return with character information.\
-    \n\n`.upcoming`\
-    \nUsage: Returns with Upcoming Anime information.\
-    \n\n`.scanime` <anime> or .sanime <anime>\
-    \nUsage: Search anime.\
-    \n\n`.smanga` <manga>\
-    \nUsage: Search manga.\
-    \n\n`.whatanime` Reply with media.\
-    \nUsage: Find anime from media file."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.anime` <anime>\
+    \nPenggunaan: Kembali dengan informasi Anime.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.manga` <manga name>\
+    \nPenggunaan: Kembali dengan informasi Manga.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.akaizoku` or `.akayo` <anime name>\
+    \nPenggunaan: Kembali dengan tautan Unduh Anime.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.char` <character name>\
+    \nPenggunaan: Kembali dengan informasi karakter.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.upcoming`\
+    \nPenggunaan: Kembali dengan informasi Anime Mendatang.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.scanime` <anime> or .sanime <anime>\
+    \nPenggunaan: Cari anime.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.smanga` <manga>\
+    \nPenggunaan: Cari manga.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whatanime` Reply with media.\
+    \nPenggunaan: Temukan anime dari file media."
 })

@@ -28,7 +28,7 @@ def user_list(l, n):
         yield l[i: i + n]
 
 
-@register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
+@register(outgoing=True, pattern=r"^\.vcsr$", groups_only=True)
 async def _(e):
     chat = await e.get_chat()
     admin = chat.admin_rights
@@ -44,7 +44,7 @@ async def _(e):
         await e.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
+@register(outgoing=True, pattern=r"^\.vcst$", groups_only=True)
 async def _(e):
     chat = await e.get_chat()
     admin = chat.admin_rights
@@ -60,7 +60,7 @@ async def _(e):
         await e.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
+@register(outgoing=True, pattern=r"^\.vcin", groups_only=True)
 async def _(e):
     await e.edit("`Mengundang Anggota ke Obrolan Suara...`")
     users = []
@@ -80,11 +80,11 @@ async def _(e):
 
 CMD_HELP.update(
     {
-        "calls": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startvc`\
-         \n↳ : Mulai Panggilan Grup dalam grup.\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stopvc`\
-         \n↳ : `Hentikan Panggilan Grup dalam grup.`\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcinvite`\
-         \n↳ : Undang semua anggota grup dalam Panggilan Grup. (Anda harus bergabung)."
+        "vcs": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcsr`\
+         \nPenggunaan: Mulai Panggilan Grup dalam grup.\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcst`\
+         \nPenggunaan: `Hentikan Panggilan Grup dalam grup.`\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcin`\
+         \nPenggunaan: Undang semua anggota grup dalam Panggilan Grup (Anda harus bergabung)."
     }
 )

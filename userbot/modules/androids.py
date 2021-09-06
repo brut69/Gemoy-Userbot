@@ -313,20 +313,20 @@ async def twrp(request):
 CMD_HELP.update({
     "androids":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.magisk`\
-\n↳ : Get latest Magisk releases\
+\nPenggunaan: updatelatest Magisk releases\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.device <codename>`\
-\n↳ : Get info about android device codename or model.\
+\nPenggunaan: Get info about android device codename or model.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.codename <brand> <device>`\
-\n↳ : Search for android device codename.\
+\nPenggunaan: Search for android device codename.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pixeldl` **<download.pixelexperience.org>**\
-\n↳ : Download pixel experience ROM into your userbot server.\
+\nPenggunaan: Download pixel experience ROM into your userbot server.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spec <brand> <device>`\
-\n↳ : Get device specifications info.\
+\nPenggunaan: Get device specifications info.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.twrp <codename>`\
-\n↳ : Get latest twrp download for android device.\
+\nPenggunaan: Get latest twrp download for android device.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gpsetup` <Try this in botlog group only>\
-\n↳ : Setup auth for Google Photos.\
+\nPenggunaan: Setup auth for Google Photos.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.gp` Reply to photo or video.\
-\n↳ : Upload photo or video to Google.\
-\n\nYou need G_PHOTOS_CLIENT_ID and G_PHOTOS_CLIENT_SECRET.\nGet it from [here](https://j.mp/39lWQQm)"
+\nPenggunaan: Upload photo or video to Google.\
+\nYou need G_PHOTOS_CLIENT_ID and G_PHOTOS_CLIENT_SECRET.\nGet it from here(https://j.mp/39lWQQm)"
 })

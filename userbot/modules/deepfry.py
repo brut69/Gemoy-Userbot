@@ -138,9 +138,9 @@ async def check_media(reply_message):
 
 CMD_HELP.update({
     "deepfry":
-    "`.deepfry` or `.deepfry` [level(1-8)]"
-    "\nUsage: gambar/stiker deep fry dari balasan."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.deepfry` or `.deepfry` <level 1-8>"
+    "\nPenggunaan: gambar/stiker deep fry dari balasan."
     "\n@image_deepfrybot"
-    "\n`.deepfry [level(1-5)]`"
-    "\nUsage: gambar gorengan"
+    "\n`.deepfry <level 1-5>`"
+    "\nPenggunaan: gambar gorengan"
 })
