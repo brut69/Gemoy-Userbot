@@ -4,7 +4,7 @@ from userbot.events import register
 from time import sleep
 
 
-@register(outgoing=True, pattern='^.gemoybot(?: |$)(.*)')
+@register(outgoing=True, pattern='^.gemoy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -52,7 +52,3 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`Dan Selalu Bersyukur`")
 # Create by myself @localheart
-
-
-CMD_HELP.update({"gemoybot": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gemoybot`"
-                 "\nPenggunaan: Just Intro."})
