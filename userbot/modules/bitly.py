@@ -7,7 +7,7 @@
 
 from bitlyshortener import Shortener
 from re import match
-from userbot import CMD_HELP, BITLY_TOKEN, BOTLOG, BOTLOG_CHATID
+from userbot import BITLY_TOKEN, BOTLOG, BOTLOG_CHATID
 from userbot.events import register
 
 
@@ -29,23 +29,15 @@ async def shortener(short):
             return
         link_match = match(r'\bhttps?://.*\.\S+', message)
         if not link_match:
-            await short.edit("`Kesalahan! Harap berikan url yang valid!`\ncontoh: https://google.com")
+            await short.edit("`Error! Please provide valid url!`\nexample: https://google.com")
             return
         urls = [f'{message}']
         bitly = Shortener(tokens=token, max_cache_size=8192)
         raw_output = bitly.shorten_urls(urls)
         string_output = f"{raw_output}"
         output = string_output.replace("['", "").replace("']", "")
-        await short.edit(f"`Tautan Anda berhasil dipersingkat!`\nIni tautan Anda {output}")
+        await short.edit(f"`Your link shortened successfully!`\nHere is your link {output}")
         if BOTLOG:
-            await short.client.send_message(BOTLOG_CHATID, f"`#SHORTLINK \\Ini Tautan Anda!`\\dan {output}")
+            await short.client.send_message(BOTLOG_CHATID, f"`#SHORTLINK \nThis Your Link!`\n {output}")
     else:
-        await short.edit("Setel token API bit.ly terlebih dahulu\nDapatkan dari [di sini](https://bitly.com/a/sign_up)")
-
-
-CMD_HELP.update(
-    {
-        "bytly": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bytly` <URL>"
-        "\nPenggunaan: Tautkan URL ke byt.ly ads.
-        "
-    })
+        await short.edit("Set bit.ly API token first\nGet from [here](https://bitly.com/a/sign_up)")
