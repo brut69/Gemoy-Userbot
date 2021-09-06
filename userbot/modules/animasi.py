@@ -91,7 +91,7 @@ async def pagi(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
 "`\n
- ^_^) `"
+ ^ _ ^ ) `"
 "`\n.................^v^ `"
 "`\n⋱ ⋮ ⋰ `"
 "`\n⋯ ◯ ⋯¨. ︵ ..............................................^v^ `"
@@ -107,10 +107,10 @@ async def pagi(e):
 "`\n▀───▀──▀▀──▀─▀─▀──▀─▀─▀──▀──▀▀─`"
 )
 
-#Create by @Ultdroid
+# Create by @Ultdroid
 
 
-@register(outgoing=True, pattern=r"^\.mlm$")
+@ register(outgoing = True, pattern = r"^\.mlm$")
 async def mlm(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
@@ -139,7 +139,7 @@ async def mlm(e):
 "`\n                       *   .      🛰     .        ✨      * `"
 )
 
-#Create by @Ultdroid
+# Create by @Ultdroid
 
 
 CMD_HELP.update({
