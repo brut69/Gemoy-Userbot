@@ -4,7 +4,7 @@ import os.path
 import time
 from os.path import exists, isdir
 
-from userbot.events import register
+from userbot import register, CMD_HELP
 from userbot.utils import humanbytes
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
