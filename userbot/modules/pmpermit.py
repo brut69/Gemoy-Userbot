@@ -415,21 +415,15 @@ CMD_HELP.update(
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.notifoff`"
         "\nPenggunaan: Mematikan notifikasi pesan yang belum diterima."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.notifon`"
-        "\nPenggunaan: Menghidupkan notifikasi pesan yang belum diterima."
-        }
-      )
-      
-      
-CMD_HELP.update(
-    {
-        "pmsetwelcome": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set pm` <balas ke pesan>"
-        "\nPenggunaan: Menyetel Pesan Pribadimu untuk orang yang pesannya belum diterima"
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get pm`"
-        "\nPenggunaan: Mendapatkan Custom pesan PM mu"
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.reset pm`"
-        "\nPenggunaan: Menghapus pesan PM ke default"
-        "\n**NOTE**: Pesan Pribadi yang belum diterima saat ini tidak dapat disetel"
-        "\nke teks format kaya bold, underline, link, dll."
-        "\nPesan akan terkirim normal saja."
-        }
-      )
+        "\nPenggunaan: Menghidupkan notifikasi pesan yang belum diterima."})
+
+
+CMD_HELP.update({"pmsetwelcome": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set pm` <balas ke pesan>"
+                 "\nPenggunaan: Menyetel Pesan Pribadimu untuk orang yang pesannya belum diterima"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get pm`"
+                 "\nPenggunaan: Mendapatkan Custom pesan PM mu"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.reset pm`"
+                 "\nPenggunaan: Menghapus pesan PM ke default"
+                 "\n**NOTE**: Pesan Pribadi yang belum diterima saat ini tidak dapat disetel"
+                 "\nke teks format kaya bold, underline, link, dll."
+                 "\nPesan akan terkirim normal saja."})
