@@ -60,9 +60,8 @@ async def _(event):
     await event.edit(f"**Pemblokiran pengguna dibatalkan oleh {DEFAULTUSER}**")
     asyncio.sleep(5)
     await event.delete()
-    
-    
-    
+
+
 CMD_HELP.update({
     "gbanbot": "\
 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gbanb`\
