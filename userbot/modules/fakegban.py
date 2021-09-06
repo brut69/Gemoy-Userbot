@@ -3,7 +3,7 @@
 import asyncio
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
-# from userbot.utils import admin_cmd
+#from userbot.utils import admin_cmd
 from userbot.events import register
 from userbot import ALIVE_NAME, CMD_HELP, bot
 
@@ -18,9 +18,9 @@ async def gbun(event):
         return
     gbunVar = event.text
     gbunVar = gbunVar[6:]
-    mentions = f"`Peringatan!! Pengguna 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 Oleh` {DEFAULTUSER}\n"
-    no_reason = "Tidak ada alasan yang diberikan "
-    await event.edit("**⚒️ Memanggil palu 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 yang perkasa** ⚒️")
+    mentions = f"`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n"
+    no_reason = "No Reason Given "
+    await event.edit("**Summoning out the mighty gban hammer ☠️**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
     async for x in bot.iter_participants(chat, filter=ChannelParticipantsAdmins):
@@ -34,9 +34,9 @@ async def gbun(event):
         idd = reply_message.from_id
         # make meself invulnerable cuz why not xD
         if idd == 1036951071:
-            await reply_message.reply("`Tunggu sebentar, Ini tuanku!`\n**Beraninya kau mengancam akan melarang Mastahku!**\n\n__Akunmu telah diretas! 📢 Bayar $6969 ke Mastah saya__[Heyworld](tg: // user?id=1036951071) __untuk melepaskan
+            await reply_message.reply("`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 6969$ to my master__ [Heyworld](tg://user?id=1036951071) __to release your account__😏")
         else:
-            jnl=("`Warning!!`"
+            jnl = ("`Warning!!`"
                    "[{}](tg://user?id={})"
                    f"` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By` {DEFAULTUSER}\n\n"
                    "**Name: ** __{}__\n"
@@ -47,19 +47,19 @@ async def gbun(event):
             elif usname != "None":
                 jnl += "**Username** : @{}\n".format(usname)
             if len(gbunVar) > 0:
-                gbunm="`{}`".format(gbunVar)
-                gbunr="**Reason: **" + gbunm
+                gbunm = "`{}`".format(gbunVar)
+                gbunr = "**Reason: **" + gbunm
                 jnl += gbunr
             else:
                 jnl += no_reason
             await reply_message.reply(jnl)
     else:
-        mention=(
-            f"Peringatan!! Pengguna Terkena 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 Oleh {DEFAULTUSER} \nAlasan: Tidak Ada Alasan yang Diberikan.")
+        mention = (
+            f"Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By {DEFAULTUSER} \nReason: No Reason Given. ")
         await event.reply(mention)
     await event.delete()
 
 CMD_HELP.update({
     "fakegban": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fgban`\
-    \nPenggunaan: Ketik .fgban atau Reply .fgban alasan dan lihat sendiri."
+    \nPenggunaan: tyle `.fgban` or Reply `.fgban` reason and see it yourself. "
 })
