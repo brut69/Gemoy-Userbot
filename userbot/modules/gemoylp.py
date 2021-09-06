@@ -4,23 +4,14 @@
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-#Fixes by Github/ArnabXD | Telegram/Arnab431
+# Fixes by Github/ArnabXD | Telegram/Arnab431
 # Ported to Gemoy-Userbot
-# @dunottagme 
+# @dunottagme
 # © 2021
 
-import os
-import urllib
-import requests
-from re import sub
-from cowpy import cow
-from asyncio import sleep
-from collections import deque
-from random import choice, getrandbits, randint
 
-from userbot import bot, CMD_HELP, ALIVE_NAME
+from userbot import CMD_HELP
 from userbot.events import register
-from userbot.modules.admin import get_user_from_event
 
 # ================= CONSTANT =================
 
@@ -231,7 +222,6 @@ PICTURE_LOVE7 = """
 """
 
 
-
 PICTURE_LOVE8 = """
   ::::          ::::::      ::::      ::::    :::::::::
   ::::        ::::  ::::    ::::      ::::    :::::::::
@@ -244,14 +234,12 @@ PICTURE_LOVE8 = """
 """
 
 
-
 PICTURE_LOVE9 = """
 ██─▄███▄███▄─██▄──▄██──▄███▄──██──██
 ██─█████████──▀████▀──██▀─▀██─██──██
 ██──▀█████▀─────██────██▄─▄██─██──██
 ██────▀█▀───────██─────▀███▀──▀█████
 """
-
 
 
 PICTURE_LOVE10 = """
@@ -310,7 +298,6 @@ PICTURE_LOVE10 = """
 """
 
 
-
 PICTURE_LOVE11 = """
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░░░▄▄▄▄▄▄░░░░░░░░░▄▄▄▄▄▄░░░░░░░░
@@ -358,8 +345,8 @@ async def emoji_lop3(e):
     if emoji:
         lop3 = lop3.replace('🥱', emoji)
     await e.edit(lop3)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:lop4|lop4)\s?(.)?")
 async def emoji_lop4(e):
     emoji = e.pattern_match.group(1)
@@ -367,8 +354,8 @@ async def emoji_lop4(e):
     if emoji:
         lop4 = lop4.replace('🥱', emoji)
     await e.edit(lop4)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:lop5|lop5)\s?(.)?")
 async def emoji_lop5(e):
     emoji = e.pattern_match.group(1)
@@ -394,8 +381,8 @@ async def emoji_lop7(e):
     if emoji:
         lop7 = lop7.replace('🥱', emoji)
     await e.edit(lop7)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:lop8|lop8)\s?(.)?")
 async def emoji_lop8(e):
     emoji = e.pattern_match.group(1)
@@ -403,8 +390,8 @@ async def emoji_lop8(e):
     if emoji:
         lop8 = lop8.replace('🥱', emoji)
     await e.edit(lop8)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:lop9|lop9)\s?(.)?")
 async def emoji_lop9(e):
     emoji = e.pattern_match.group(1)
@@ -412,8 +399,8 @@ async def emoji_lop9(e):
     if emoji:
         lop9 = lop9.replace('🥱', emoji)
     await e.edit(lop9)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:lop10|lop10)\s?(.)?")
 async def emoji_lop10(e):
     emoji = e.pattern_match.group(1)
@@ -421,8 +408,8 @@ async def emoji_lop10(e):
     if emoji:
         lop10 = lop10.replace('🥱', emoji)
     await e.edit(lop10)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:lop11|lop11)\s?(.)?")
 async def emoji_lop11(e):
     emoji = e.pattern_match.group(1)
@@ -430,11 +417,10 @@ async def emoji_lop11(e):
     if emoji:
         lop11 = lop11.replace('🥱', emoji)
     await e.edit(lop11)
-    
-    
-    
+
+
 CMD_HELP.update({
-    "gemoylp": 
+    "gemoylp":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lope` `.lop` `.lop1` `.lop2` `.lop3` `.lop4`\n`.lop5` `.lop6` `.lop7` `.lop8` `.lop9` `.lop10` `.lop11`\n`.pagi` `.mlm` `.mlm2`\nPenggunaan: Lope yu bhaaks."
-  }
+}
 )
