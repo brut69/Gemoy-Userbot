@@ -43,12 +43,13 @@ async def telegraphs(grop):
                 await grop.edit(str(e))
 
 CMD_HELP.update({
-    "membuat": "𝙋𝙡𝙪𝙜𝙞𝙣: `Membuat`\
+    "membuat": "\
+Membuat\
 \nPenggunaan: Untuk membuat Channel, Grup dan Grup bersama Bot.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.buat g` <nama grup>\
 \nPenggunaan: Membuat grup mu.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.buat gb` <nama grup>\
 \nPenggunaan: Membuat Grup bersama bot.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.buat c` <nama channel>\
-\nPenggunaan: Membuat sebuah Channel.
+\nPenggunaan: Membuat sebuah Channel.\
 "})
