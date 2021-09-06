@@ -7,7 +7,7 @@
 
 from bitlyshortener import Shortener
 from re import match
-from userbot import BITLY_TOKEN, BOTLOG, BOTLOG_CHATID
+from userbot import CMD_HELP, BITLY_TOKEN, BOTLOG, BOTLOG_CHATID
 from userbot.events import register
 
 
@@ -38,7 +38,7 @@ async def shortener(short):
         output = string_output.replace("['", "").replace("']", "")
         await short.edit(f"`Tautan Anda berhasil dipersingkat!`\nIni tautan Anda {output}")
         if BOTLOG:
-            await short.client.send_message(BOTLOG_CHATID, f"`#SHORTLINK \\Ini Tautan Anda!`\\dan {output}")
+            await short.client.send_message(BOTLOG_CHATID, f"`#SHORTLINK \Ini Tautan Anda!`\dan {output}")
     else:
         await short.edit("Setel token API bit.ly terlebih dahulu\nDapatkan dari [di sini](https://bitly.com/a/sign_up)")
 
@@ -47,5 +47,5 @@ CMD_HELP.update(
     {
         "bytly": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bytly` <URL>"
         "\nPenggunaan: Tautkan URL ke byt.ly ads.
-        "
-    })
+"
+})
