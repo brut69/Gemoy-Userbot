@@ -30,7 +30,7 @@ async def hack(event):
     await asyncio.sleep(2)
     await event.edit("`Menginstal... 84%\n█████████████████████▒▒▒▒ `")
     await asyncio.sleep(2)
-    await event.edit("`Menginstal... 100%\n████████Installed██████████ `")
+    await event.edit("`Menginstal... 100%\n██████████Installed█████████ `")
     await asyncio.sleep(2)
     await event.edit("`File target Mengunggah...\n\nMengarahkan ke Server jarak jauh untuk meretas..`")
     await asyncio.sleep(3)

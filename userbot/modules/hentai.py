@@ -30,6 +30,6 @@ async def _(event):
             await bot.send_message(event.chat_id, response.message)
 
 CMD_HELP.update({
-    "hentai":
+    "hemtai":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hentai` <link/code> \
 \nPenggunaan: lihat nhentai di telegra.ph XD"})

@@ -262,14 +262,14 @@ async def scam(results, lim):
 
 
 CMD_HELP.update({
-    "`crandom`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.random` <item1> <item2> ... <item>"
+    "crandom": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.random` <item1> <item2> ... <item>"
     "\nPenggunaan: Dapatkan item acak dari daftar item."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat` <no> <text>"
     "\nPenggunaan: Mengulangi teks untuk beberapa kali. Jangan bingung ini sama dengan spam."
 })
 
 CMD_HELP.update({
-    "`repo`": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`"
+    "botrepo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`"
     "\nPenggunaan: Biarkan milikmu tunda selama beberapa detik."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`"
     "\nPenggunaan: Matikan bot."
