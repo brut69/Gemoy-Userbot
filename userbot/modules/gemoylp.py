@@ -4,23 +4,14 @@
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-#Fixes by Github/ArnabXD | Telegram/Arnab431
+# Fixes by Github/ArnabXD | Telegram/Arnab431
 # Ported to Gemoy-Userbot
-# @dunottagme 
+# @dunottagme
 # © 2021
 
-import os
-import urllib
-import requests
-from re import sub
-from cowpy import cow
-from asyncio import sleep
-from collections import deque
-from random import choice, getrandbits, randint
 
-from userbot import bot, CMD_HELP, ALIVE_NAME
+from userbot import CMD_HELP
 from userbot.events import register
-from userbot.modules.admin import get_user_from_event
 
 # ================= CONSTANT =================
 
@@ -231,7 +222,6 @@ PICTURE_LONG = """
 """
 
 
-
 PICTURE_DATAR = """
   ::::          ::::::      ::::      ::::    :::::::::
   ::::        ::::  ::::    ::::      ::::    :::::::::
@@ -244,14 +234,12 @@ PICTURE_DATAR = """
 """
 
 
-
 PICTURE_ALAY = """
 ██─▄███▄███▄─██▄──▄██──▄███▄──██──██
 ██─█████████──▀████▀──██▀─▀██─██──██
 ██──▀█████▀─────██────██▄─▄██─██──██
 ██────▀█▀───────██─────▀███▀──▀█████
 """
-
 
 
 PICTURE_APESI = """
@@ -357,8 +345,8 @@ async def emoji_glop3(e):
     if emoji:
         glop3 = glop3.replace('🥱', emoji)
     await e.edit(glop3)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:glop4|glop4)\s?(.)?")
 async def emoji_glop4(e):
     emoji = e.pattern_match.group(1)
@@ -366,8 +354,8 @@ async def emoji_glop4(e):
     if emoji:
         glop4 = glop4.replace('🥱', emoji)
     await e.edit(glop4)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:glop5|glop5)\s?(.)?")
 async def emoji_glop5(e):
     emoji = e.pattern_match.group(1)
@@ -393,8 +381,8 @@ async def emoji_glop7(e):
     if emoji:
         glop7 = glop7.replace('🥱', emoji)
     await e.edit(glop7)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:glop8|glop8)\s?(.)?")
 async def emoji_glop8(e):
     emoji = e.pattern_match.group(1)
@@ -402,8 +390,8 @@ async def emoji_glop8(e):
     if emoji:
         glop8 = glop8.replace('🥱', emoji)
     await e.edit(glop8)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:glop9|glop9)\s?(.)?")
 async def emoji_glop9(e):
     emoji = e.pattern_match.group(1)
@@ -411,8 +399,8 @@ async def emoji_glop9(e):
     if emoji:
         glop9 = glop9.replace('🥱', emoji)
     await e.edit(glop9)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:glop10|glop10)\s?(.)?")
 async def emoji_glop10(e):
     emoji = e.pattern_match.group(1)
@@ -420,8 +408,8 @@ async def emoji_glop10(e):
     if emoji:
         glop10 = glop10.replace('🥱', emoji)
     await e.edit(glop10)
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:glop11|glop11)\s?(.)?")
 async def emoji_glop11(e):
     emoji = e.pattern_match.group(1)
@@ -429,11 +417,10 @@ async def emoji_glop11(e):
     if emoji:
         glop11 = glop11.replace('🥱', emoji)
     await e.edit(glop11)
-    
-    
-    
+
+
 CMD_HELP.update({
-    "gemoylop": 
+    "gemoylop":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.glop` `.glop1` `.glop2` `.glop3` `.glop4`\n`.glop5` `.glop6` `.glop7` `.glop8` `.glop9` `.glop10` `.glop11`\n`.pagi` `.mlm` `.night` `.lov`\nPenggunaan: Gemoy Userbot lope yu bhaaks."
-  }
+}
 )
