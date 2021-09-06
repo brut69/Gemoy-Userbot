@@ -536,11 +536,11 @@ async def phcomment(event):
 
 CMD_HELP.update({
     "memes1":
-    "`.fgs`\
-\nUsage: Dapatkan meme dari google yang di custom pengguna!\
-\n`.fgs [Teks Atas] ; [Teks Bawah]`\
-\n\n<`.modi` or `.trump` or `.cmm` or `.kanna`> <text>\
-\nUsage: Just for Fun.\
-\n\n<`.ph` or `.threat` or `.trash` or `.trap` >\
-\nUsage: Balas Ke Sticker Atau Gambar Dan Liat Apa Yang Terjadi."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fgs`\
+\nPenggunaan: Dapatkan meme dari google yang di custom pengguna!\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fgs Teks Atas Teks Bawah`\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.modi` or `.trump` or `.cmm` or `.kanna`> <text>\
+\nPenggunaan: Just for Fun.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ph` or `.threat` or `.trash` or `.trap` >\
+\nPenggunaan: Balas Ke Sticker Atau Gambar Dan Liat Apa Yang Terjadi."
 })

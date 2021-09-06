@@ -46,9 +46,9 @@ async def image_maker(event):
 
 CMD_HELP.update(
     {
-        "id": "**Plugin : **`id`\
-        \n\n  •  **Syntax :** `.id`\
-        \n  •  **Function : **Balas ke pengguna untuk menghasilkan Kartu ID.\
+        "id": "𝙋𝙡𝙪𝙜𝙞𝙣: `id`\
+        \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.id`\
+        \nPenggunaan: Balas ke pengguna untuk menghasilkan Kartu ID.\
     "
     }
 )

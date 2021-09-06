@@ -33,7 +33,7 @@ async def getmusicvideo(cat):
     os.system(command)
 
 
-@register(outgoing=True, pattern=r"^\.songn (?:(now)|(.*) - (.*))")
+@register(outgoing=True, pattern=r"^\.nsong (?:(now)|(.*) - (.*))")
 async def _(event):
     if event.fwd_from:
         return
@@ -74,7 +74,7 @@ async def _(event):
         return await event.edit("`Kesalahan: `@WooMaiBot` tidak merespons!.`")
 
 
-@register(outgoing=True, pattern=r"^\.songl(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.lsong(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -106,7 +106,7 @@ async def _(event):
         return await event.edit("`Kesalahan: `@MusicsHunterBot` tidak merespons!.`")
 
 
-@register(outgoing=True, pattern=r"^\.songf (?:(now)|(.*) - (.*))")
+@register(outgoing=True, pattern=r"^\.ssong (?:(now)|(.*) - (.*))")
 async def _(event):
     if event.fwd_from:
         return
@@ -168,9 +168,9 @@ async def _(event):
     await getmusicvideo(query)
     l = glob.glob(("*.mp4")) + glob.glob(("*.mkv")) + glob.glob(("*.webm"))
     if l:
-        await event.edit("`Ya..! saya menemukan sesuatu..`")
+        await event.edit("`Ya.. saya menemukan sesuatu.`")
     else:
-        await event.edit(f"`Maaf..! saya tidak dapat menemukan apa pun dengan` **{query}**")
+        await event.edit(f"`Maaf.. saya tidak dapat menemukan apa pun dengan` **{query}**")
         return
     try:
         loa = l[0]
@@ -219,15 +219,15 @@ async def _(event):
         return
 
 
-CMD_HELP.update({"getmusic": ">`.songn <Artist - Song Title>`"
-                 "\nUsage: Unduh musik dengan nama (@WooMaiBot)"
-                 "\n\n>`.songl <Spotify/Deezer Link>`"
-                 "\nUsage: Unduh musik melalui tautan (@MusicsHunterBot)"
-                 "\n\n>`.songf <Artist - Song Title>`"
-                 "\nUsage: Unduh musik berdasarkan nama (@SpotifyMusicDownloaderBot)"
-                 "\n\n>`.songn now`"
-                 "\nUsage: Unduh scrobble LastFM saat ini dengan @WooMaiBot"
-                 "\n\n>`.songf now`"
-                 "\nUsage: Unduh scrobble LastFM saat ini dengan @SpotifyMusicDownloaderBot"
-                 "\n\n>`.vsong` <Artist - Song Title>"
-                 "\nUsage: Menemukan dan mengunggah klip video.\\in"})
+CMD_HELP.update({"getmusic": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nsong <Artist - Song Title>`"
+                 "\nPenggunaan: Unduh musik dengan nama (@WooMaiBot)"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lsong <Spotify/Deezer Link>`"
+                 "\nPenggunaan: Unduh musik melalui tautan (@MusicsHunterBot)"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ssong <Artist - Song Title>`"
+                 "\nPenggunaan: Unduh musik berdasarkan nama (@SpotifyMusicDownloaderBot)"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nsong now`"
+                 "\nPenggunaan: Unduh scrobble LastFM saat ini dengan @WooMaiBot"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ssong now`"
+                 "\nPenggunaan: Unduh scrobble LastFM saat ini dengan @SpotifyMusicDownloaderBot"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vsong` <Artist - Song Title>"
+                 "\nPenggunaan: Menemukan dan mengunggah klip video.\\in"})

@@ -111,7 +111,6 @@ async def gspide(rk):
     return await rkp.edit(f"`{ALIVE_NAME}:` **GKicked [{user.first_name}](tg://user?id={user.id}) in {a} chat(s) **")
 
 CMD_HELP.update({
-    "gkick": "\
-`.gkick reason`\
-\nUsage: Globally Ban users from all the Group Administrations bots where you are SUDO"
+       "gkick": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gkick <reason>`\
+\nPenggunaan: Globally Ban users from all the Group Administrations bots where you are SUDO"
 })

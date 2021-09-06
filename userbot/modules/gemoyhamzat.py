@@ -71,7 +71,7 @@ async def _(hazmat):
 
 CMD_HELP.update(
     {
-        "hazmat": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.hz` atau >`.hz [flip, x2, rotate (level), background (nomer), black]`"
-        "\n↳ : Balas ke gambar/sticker untuk menyesuaikan."
+        "hazmat": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hz` or `.hz <flip, x2, rotate level, background nomer, black>`"
+        "\nPenggunaan: Balas ke gambar/sticker untuk menyesuaikan."
     }
 )

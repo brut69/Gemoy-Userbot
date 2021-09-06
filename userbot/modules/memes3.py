@@ -205,18 +205,18 @@ async def _(event):
 
 CMD_HELP.update({
     "memes2":
-    "`.nah` ; `.huh` ; `.owner`\
-    \nUsage: cobain.\
-    \n\n`.bunga` ; `.buah`\
-    \nUsage: animasi.\
-    \n\n`.waktu`\
-    \nUsage: animasi."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nah` `.huh` `.owner`\
+    \nPenggunaan: cobain.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bunga` `.buah`\
+    \nPenggunaan: animasi.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.waktu`\
+    \nPenggunaan: animasi."
 })
 
 CMD_HELP.update({
     "memes3":
-    "`.hua`\
-    \nUsage: nangis.\
-    \n\n`.cinta` ; `.canda`\
-    \nUsage: liat sendiri"
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hua`\
+    \nPenggunaan: nangis.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cinta` `.canda`\
+    \nPenggunaan: liat sendiri"
 })

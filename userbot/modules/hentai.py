@@ -31,5 +31,5 @@ async def _(event):
 
 CMD_HELP.update({
     "hentai":
-    "`.hentai` <link / code> \
-\nUsage: lihat nhentai di telegra.ph XD\n"})
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hentai` <link/code> \
+\nPenggunaan: lihat nhentai di telegra.ph XD"})

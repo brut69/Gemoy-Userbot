@@ -38,7 +38,7 @@ async def goimg(event):
 
 CMD_HELP.update(
     {
-        "img": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.img <pencarian_kueri>`\
-         \n↳ : Melakukan pencarian gambar di Google dan menampilkan 5 gambar."
+        "image": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.img` <pencarian_kueri>\
+         \nPenggunaan: Melakukan pencarian gambar di Google dan menampilkan 5 gambar."
     }
 )

@@ -466,16 +466,16 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "memes4":
-    "`.gabut` ; `.orgil`\
-    \nUsage: ntahlah gabut doang.\
-    \n\n`.ass`\
-    \nUsage: Salam duls biar sopan."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gabut` `.orgil`\
+    \nPenggunaan: ntahlah gabut doang.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ass`\
+    \nPenggunaan: Salam dulu boss."
 })
 
 CMD_HELP.update({
     "memes5":
-    "`.cinta`\
-    \nUsage: mengirim cintamu ke seseorang.\
-    \n\n`.kangen` ;  `.gblk`\
-    \nUsage: intinya gabut."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cinta`\
+    \nPenggunaan: mengirim cintamu ke seseorang.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kangen` `.gblk`\
+    \nPenggunaan: intinya gabut."
 })

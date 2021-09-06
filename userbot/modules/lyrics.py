@@ -60,8 +60,8 @@ async def lyrics(lyric):
 
 CMD_HELP.update({
     "lyrics":
-    "`.lyrics` **<nama artis> - <nama lagu>**"
-    "\nUsage: Dapatkan lirik yang cocok dengan artis dan lagu."
-    "\n\n`.lyrics now`"
-    "\nUsage: Dapatkan artis lirik dan lagu dari scrobbling lastfm saat ini."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lyrics` <nama artis> <nama lagu>"
+    "\nPenggunaan: Dapatkan lirik yang cocok dengan artis dan lagu."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lyrics now`"
+    "\nPenggunaan: Dapatkan artis lirik dan lagu dari scrobbling lastfm saat ini."
 })

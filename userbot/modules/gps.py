@@ -39,6 +39,6 @@ async def gps(event):
 
 CMD_HELP.update({
     "gps":
-    ">.`gps`"
-    "\nUsage: Untuk Mendapatkan Lokasi Map"
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gps`"
+    "\nPenggunaan: Untuk Mendapatkan Lokasi Map"
 })

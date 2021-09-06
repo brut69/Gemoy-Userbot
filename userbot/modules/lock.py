@@ -180,7 +180,7 @@ async def rem_locks(event):
         await event.client(
             EditChatDefaultBannedRightsRequest(peer=peer_id,
                                                banned_rights=unlock_rights))
-        await event.edit(f"`Anda Telah Membuka Kunci {what} Untuk Obrolan Ini` ⚡")
+        await event.edit(f"`Anda Telah Membuka Kunci {what} Untuk Obrolan Ini`")
     except BaseException as e:
         await event.edit(
             f"`Mohon Maaf, Apakah AndaMempunyai Izin Melakukan Itu Disini ?`\n**Kesalahan:** {str(e)}")
@@ -190,8 +190,8 @@ async def rem_locks(event):
 CMD_HELP.update({
     "locks":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lock <all atau Jenis>` atau `.unlock <all atau Jenis>`\
-\n↳ : Memungkinkan anda kunci atau membuka kunci, beberapa jenis pesan dalam obrolan.\
-\n[Anda Harus Jadi Admin Grup Untuk Menggunakan Perintah!]\
-\n\nJenis pesan yang bisa dikunci atau dibuka adalah: \
-\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`\n**Contoh:** `.lock msg` atau `.unlock msg`"
+\nPenggunaan: Memungkinkan anda kunci atau membuka kunci, beberapa jenis pesan dalam obrolan.\
+\n<Anda Harus Jadi Admin Grup Untuk Menggunakan Perintah!>\
+\nJenis pesan yang bisa dikunci atau dibuka adalah: \
+\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`\n**Contoh**: `.lock msg` atau `.unlock msg`"
 })

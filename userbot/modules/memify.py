@@ -319,8 +319,8 @@ async def draw_meme_text(image_path, text):
 
 CMD_HELP.update({
     "memify":
-        "`.mmf Teks Atas ; Teks Bawah`\
-        \nUsage: Balas Ke Sticker/Gambar/Gif.\n"
-        "`.mmf2 Teks Atas ; Teks Bawah`\
-        \nUsage: Balas Ke Sticker/Gambar/Gif."
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mmf Teks Atas Teks Bawah`\
+        \nPenggunaan: Balas Ke Sticker/Gambar/Gif.\n"
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙:`.mmf2 Teks Atas Teks Bawah`\
+        \nPenggunaan: Balas Ke Sticker/Gambar/Gif."
 })

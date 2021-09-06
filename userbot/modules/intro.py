@@ -81,11 +81,11 @@ async def typewriter(typew):
 CMD_HELP.update({
     "intro":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.saya`\
-\n↳ : Intro saja.\
+\nPenggunaan: Intro saja.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kamu`\
-\n↳ : Kamu iya kamu.\
+\nPenggunaan: Kamu iya kamu.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.smangat`\
-\n↳ : Neber stop to learn.\
+\nPenggunaan: Neber stop to learn.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aku`\
-\n : Lmao."
+\nPenggunaan: Lmao."
 })

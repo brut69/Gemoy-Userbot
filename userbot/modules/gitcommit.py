@@ -94,7 +94,7 @@ async def git_commit(file_name, mone):
 
 CMD_HELP.update({
     "gcommit":
-    ".gcommit\
-    \nUsage: Plugin Pengunggah File GITHUB untuk userbot. Otomatisasi Heroku harus Diaktifkan. Kalau tidak, Anda tidak malas, Untuk orang malas\
-\nInstruksi:- Setel Variabel GITHUB_ACCESS_TOKEN dan GIT_REPO_NAME di Heroku vars First\
-\n.commit reply_to_any_plugin juga dapat berupa jenis file apa pun. tapi untuk plugin harus di .py ."})
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gcommit`\
+    \nPenggunaan: Plugin Pengunggah File GITHUB untuk userbot. Otomatisasi Heroku harus Diaktifkan. Kalau tidak, Anda tidak malas, Untuk orang malas\
+\nInstruksi: Setel Variabel GITHUB_ACCESS_TOKEN dan GIT_REPO_NAME di Heroku vars First\
+\ncommit reply_to_any_plugin juga dapat berupa jenis file apa pun. tapi untuk plugin harus di .py"})

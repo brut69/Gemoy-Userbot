@@ -43,7 +43,7 @@ async def honkasays(event):
 
 CMD_HELP.update(
     {
-        "frog": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.frog` space <text>\
-    \n↳ : Menampilkan Pesan (text) di Sticker Animasi."
+        "honkasay": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.frog` space <text>\
+    \nPenggunaan: Menampilkan Pesan <text> di Sticker Animasi."
     }
 )

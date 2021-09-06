@@ -189,8 +189,8 @@ async def decrypt_file(megadl, file_path, temp_file_path, hex_key, hex_raw_key):
 
 CMD_HELP.update(
     {
-        "mega": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.mega <MEGA.nz link>`"
-        "\n↳ : Balas tautan MEGA.nz atau tempel tautan MEGA.nz Anda ke "
+        "mega": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mega <MEGA.nz link>`"
+        "\nPenggunaan: Balas tautan MEGA.nz atau tempel tautan MEGA.nz Anda ke"
         "unduh file ke server userbot Anda."
     }
 )

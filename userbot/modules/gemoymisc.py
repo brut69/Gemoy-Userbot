@@ -1029,36 +1029,36 @@ async def _(event):
     await event.edit(f"`{ALIVE_NAME} Telah Mengembalikan Ke Akun Utama.`")
 
 CMD_HELP.update({
-    "misc":
+    "gmisc":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.app`\
-\n↳ : ketik `.app namaapp` Dan Dapatkan Detail Informasi App.\
+\nPenggunaan: ketik `.app <nama app>` Dan Dapatkan Detail Informasi App.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.undlt`\
-\n↳ : urungkan pesan yang dihapus tetapi Anda harus menjadi admin.\
+\nPenggunaan: urungkan pesan yang dihapus tetapi Anda harus menjadi admin.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.calc`\
-\n↳ : `.calc <term1><operator><term2>\nUntuk eg .calc 02*02 Atau 99*99 (Angka Nol Penting) (Minimal Dua Suku Dan Dua Digit).\
+\nPenggunaan: `.calc <term1><operator><term2>\nUntuk eg .calc 02*02 Atau 99*99 (Angka Nol Penting) (Minimal Dua Suku Dan Dua Digit).\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.remove`\
-\n↳ : gunakan di grup .remove d atau y atau m atau w atau o atau q atau r.\n(d=AkunTerhapus y=userstatsempty m=userstatsmonth w=userstatsweek o=userstatsoffline q=userstatsonline r=userstatsrecently).\
+\nPenggunaan: gunakan di grup .remove d atau y atau m atau w atau o atau q atau r.\n(d=AkunTerhapus y=userstatsempty m=userstatsmonth w=userstatsweek o=userstatsoffline q=userstatsonline r=userstatsrecently).\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.xcd`\
-\n↳ : Ketik xcd <query>.ps:Aku Sangat Bosan:v\
+\nPenggunaan: Ketik xcd <query>.ps:Aku Sangat Bosan:v\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.grab` <count>\
-\n↳ : Balas Ke Pesan Pengguna Ketik `.grab` Atau `.grab <count>` Untuk Mengambil Foto Profil.\
+\nPenggunaan: Balas Ke Pesan Pengguna Ketik `.grab` Atau `.grab <count>` Untuk Mengambil Foto Profil.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rnupload` filename.extenstion\
-\n↳ : Balas Ke Sticker Dan Ketik .rnupload xyz.jpg\
+\nPenggunaan: Balas Ke Sticker Dan Ketik .rnupload xyz.jpg\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.res`\
-\n↳ : Ketik Username Akun,Channel,Group Atau Bot Bersama .res Dan Check Batasan\
+\nnPenggunaan: Ketik Username Akun,Channel,Group Atau Bot Bersama `.res` Dan Check Batasan\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.watch` <movie/tv>\
-\n↳ : Mengetahui Detail Tentang Film.\
+\nPenggunaan: Mengetahui Detail Tentang Film.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.weeb` <text>\
-\n↳ : Teks Weebify.\
+\nPenggunaan: Teks Weebify.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: Ketik (`.bold <Teks>`,`.cur <Teks>`,`.curbold <Teks>`,`.medi <Teks>`,`.medbold <Teks>`,`.doublestruck <Teks>`)\
-\n↳ : Buat Teks <Bold,Cursive,Cursivebold,Medival,Medivalbold,Gayishbold>\
+\nPenggunaan: Buat Teks <Bold,Cursive,Cursivebold,Medival,Medivalbold,Gayishbold>\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.randompp`\
-\n↳ : Otomatis Mengganti Foto Profile Mu Untuk Stop ini Ketik .restart.\
+\nPenggunaan: Otomatis Mengganti Foto Profile Mu Untuk Stop ini Ketik .restart.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.glitch` Balas Ke Media\
-\n↳ : Memberikan Glitch (Gif , Stickers , Gambar, Video) Ke Gif Dan Level Glitch 1 - 8.\
+\nPenggunaan: Memberikan Glitch (Gif , Stickers , Gambar, Video) Ke Gif Dan Level Glitch 1 - 8.\
 Jika Tidak Memberikan Level Otomatis Default Ke Level 2\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.glitchs` Balas Ke Media\
-\n↳ : Memberikan Glitch (Gif , Stickers , Gambar, Video) Ke Sticker Dan Level Glitch 1 to 8.\
+\nPenggunaan: Memberikan Glitch (Gif , Stickers , Gambar, Video) Ke Sticker Dan Level Glitch 1 to 8.\
 Jika Tidak Memberikan Level Otomatis Default Ke Level 2."
 })
 
@@ -1066,9 +1066,9 @@ Jika Tidak Memberikan Level Otomatis Default Ke Level 2."
 CMD_HELP.update(
     {
         "clone": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.clone` <username>.\
-        \n↳ : Mulai Mengaktifkan Clonning Ke Seseorang\
-        \n\n  •  **Syntax :** `.rclone` Untuk Mengembalikan\
-        \n↳ : Mengembalikan Kloning, Dan Kembali Keakun Utama.\
+        \nPenggunaan: Mulai Mengaktifkan Clonning Ke Seseorang\
+        \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rclone` Untuk Mengembalikan\
+        \nPenggunaan: Mengembalikan Kloning, Dan Kembali Ke Akun Utama.\
     "
     }
 )

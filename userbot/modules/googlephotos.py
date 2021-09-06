@@ -291,3 +291,11 @@ def file_ops(file_path):
     mime_type = mime_type if mime_type else "text/plain"
     file_name = file_path.split("/")[-1]
     return file_name, mime_type, file_size
+    
+    
+    
+CMD_HELP.update({
+    "gphoto":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gphoto`"
+    "\nPenggunaan: Upload ke Google Photos"
+})
