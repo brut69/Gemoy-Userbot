@@ -9,7 +9,24 @@ async def _(event):
     if event.fwd_from:
         return
     link = event.pattern_match.group(1)
-    chat = "@fybpap_bot"
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE3NDI2OTE0Mzg5ODA4OA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTIxNDMzMTAxNjA1ODU2OA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTIxMTMyNjM3NTY0NjUzMg=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTIxMDMyNDgyODg0MjUyMA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTIwNzMyMDE4ODQzMDQ4NA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTIwNjMxODY0MTYyNjQ3Mg=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTIwNTMxNzA5NDgyMjQ2MA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTIwNDMxNTU0ODAxODQ0OA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTIwMjMxMjQ1NDQxMDQyNA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE5OTMwNzgxMzk5ODM4OA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE5NzMwNDcyMDM5MDM2NA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE5NTMwMTYyNjc4MjM0MA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE5MzI5ODUzMzE3NDMxNg=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE5MjI5Njk4NjM3MDMwNA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE5MDI5Mzg5Mjc2MjI4MA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE4OTI5MjM0NTk1ODI2OA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE4NzI4OTI1MjM1MDI0NA=="
+    chat = "https://t.me/fybpap_bot?start=Z2V0LTE4ODI5MDc5OTE1NDI1Ng=="
     await event.edit("```Pencarian Pap```")
     async with bot.conversation(chat) as conv:
         try:
