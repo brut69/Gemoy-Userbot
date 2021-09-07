@@ -171,8 +171,6 @@ async def redis(pong):
     await asyncio.sleep(1)
     await pong.edit("??")
     await asyncio.sleep(1)
-    await pong.edit("😡")
-    await asyncio.sleep(1)
     await pong.edit("🤬")
     await asyncio.sleep(2)
     end = datetime.now()
