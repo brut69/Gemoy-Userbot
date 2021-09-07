@@ -1,12 +1,7 @@
-from asyncio import sleep
-import re
-import random
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-import os
-from PIL import Image
 
-from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, bot
+from userbot import CMD_HELP, bot
 from userbot import bot, CMD_HELP
 from userbot.events import register
 
