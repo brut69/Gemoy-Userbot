@@ -28,10 +28,12 @@
     },
     "HEROKU_APP_NAME": {
       "description": "Nama App heroku, Nama App yang paling pertama",
+      "value": "",
       "required": true
     },
     "HEROKU_API_KEY": {
       "description": "Heroku API KEY mu, dapatkan dari web 'https://dashboard.heroku.com/account'",
+      "value": "",
       "required": true
     },
     "BOTLOG": {
@@ -51,6 +53,7 @@
     },
     "GENIUS_ACCESS_TOKEN": {
       "description": "Token Akses Klien dari https://genius.com/api-clients.",
+      "value": "",
       "required": false
     },
     "GENIUS_API_TOKEN": {
@@ -59,11 +62,12 @@
     },
     "MONGO_URI": {
       "description": "URL Atlas MongoDB Anda, Dapatkan panduan Anda dari https://telegra.ph/Mongo-DB-12-24.",
-      "value": "mongodb+srv://",
+      "value": "",
       "required": false
     },
     "GITHUB_ACCESS_TOKEN": {
       "description": "GITHUB_ACCESS_TOKEN Anda, dapatkan dari 'https://github.com/settings/tokens'",
+      "value": "",
       "required": false
     },
     "GIT_REPO_NAME": {
@@ -92,10 +96,12 @@
     },
     "YOUTUBE_API_KEY": {
       "description": "Kunci API Data YouTube untuk perintah .yt. Dapatkan dari https://console.cloud.google.com",
+      "value": "",
       "required": false
     },
     "OCR_SPACE_API_KEY": {
       "description": "Kunci API OCR untuk perintah .ocr. Dapatkan dari https://ocr.space/ocrapi",
+      "value": "",
       "required": false
     },
     "REM_BG_API_KEY": {
@@ -104,11 +110,12 @@
     },
     "REDIS_URI": {
       "description": "URL titik akhir redis, dari redislabs.com",
-      "value": "redis-00000",
+      "value": "",
       "required": false
     },
     "REDIS_PASSWORD": {
       "description": "Kata sandi titik akhir redis, dari redislabs.com",
+      "value": "",
       "required": false
     },
     "ANTI_SPAMBOT": {
@@ -131,6 +138,7 @@
     },
     "G_DRIVE_FOLDER_ID": {
       "description": "Buat folder dan letakkan id folder itu di sini. periksa tautan folder untuk id.",
+      "value": "",
       "required": false
     },
     "HEROKU_MEMEZ": {
@@ -140,32 +148,37 @@
     },
     "LASTFM_API": {
       "description": "Kunci API untuk modul Last.FM. Dapatkan satu dari - https://www.last.fm/api/account/create",
+      "value": "",
       "required": false
     },
     "LASTFM_SECRET": {
       "description": "Kunci RAHASIA untuk modul Last.FM. Dapatkan satu dari - https://www.last.fm/api/account/create",
+      "value": "",
       "required": false
     },
     "LASTFM_USERNAME": {
       "description": "Last.FM Nama pengguna",
+      "value": "",
       "required": false
     },
     "LASTFM_PASSWORD": {
       "description": "Last.FM Kata sandi",
+      "value": "",
       "required": false
     },
     "BIO_PREFIX": {
       "description": "Awalan untuk Bio Modul Last.FM.",
+      "value": "",
       "required": false
     },
     "DEFAULT_BIO": {
-      "description": "Bawaan Bio Mu.",
+      "description": "Bawaan Bio Mu Telegram.",
       "value": "𝙃𝙚𝙡𝙡𝙤, 𝙋𝙚𝙧𝙠𝙚𝙣𝙖𝙡𝙠𝙖𝙣 𝙖𝙠𝙪 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
       "required": false
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "value": "@Ur Name",
+      "value": "Nama Telegram Kamu atau Username",
       "required": false
     },
     "GEMOY_TEKS_KUSTOM": {
@@ -185,14 +198,17 @@
     },
     "G_DRIVE_DATA": {
       "description": "Masukkan data autentikasi Google Drive, sebagai struktur JSON.",
+      "value": "",
       "required": false
     },
     "G_PHOTOS_CLIENT_ID": {
       "description": "dapatkan id klien dari https://j.mp/39lWQQm",
+      "value": "",
       "required": false
     },
     "G_PHOTOS_CLIENT_SECRET": {
       "description": "dapatkan rahasia klien dari https://j.mp/39lWQQm",
+      "value": "",
       "required": false
     },
     "BITLY_TOKEN": {
@@ -225,6 +241,7 @@
     },
     "DEEZER_ARL_TOKEN": {
       "description": "Masukkan TOKEN ARL DEEZER Anda https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken",
+      "value": "",
       "required": false
     },
     "UPSTREAM_REPO_URL": {
@@ -234,10 +251,12 @@
     },
     "BOT_TOKEN": {
       "description": "Setel ini untuk mengaktifkan pembantu bot sebaris. dapatkan token dari @BotFather",
+      "value": "",
       "required": false
     },
     "BOT_USERNAME": {
       "description": "Nama pengguna bot yang Anda buat dengan @BotFather",
+      "value": "",
       "required": false
     }
   },
