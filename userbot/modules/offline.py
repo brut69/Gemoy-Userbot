@@ -188,14 +188,14 @@ async def _(event):
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
-                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**"
+                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄"
                     )
                 else:
                     await bot.send_message(
-                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**", file=pic
+                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄", file=pic
                     )
             except BaseException:
-                await bot.send_message(event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**")
+                await bot.send_message(event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄")
         await event.delete()
         try:
             if reason and pic:
@@ -215,11 +215,11 @@ async def _(event):
             elif pic:
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(BOTLOG_CHATID, file=pic)
-                    await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n**👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**")
+                    await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄")
                 else:
-                    await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n**👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**\n", file=pic)
+                    await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄\n", file=pic)
             else:
-                await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n**👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**")
+                await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄")
         except Exception as e:
             BOTLOG_CHATIDger.warn(str(e))
 
