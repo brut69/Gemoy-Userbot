@@ -230,14 +230,14 @@ async def amireallyalive(alive):
     output = (
         f"\n__**{GEMOY_TEKS_KUSTOM}**__\n"
         f"╭────────────────────────\n"
-        f"├[• 👑 [𝗚𝗘𝗠𝗢𝗬 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](t.me/dunottagme) \n"
-        f"├[• 🥇 `{DEFAULTUSER}` \n"
-        f"├[• 👤 `@{user.username}` \n"
+        f"├• 👑  [𝗚𝗘𝗠𝗢𝗬 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](t.me/dunottagme) \n"
+        f"├• 🥇  `{DEFAULTUSER}` \n"
+        f"├• 👤  `@{user.username}` \n"
         f"├────────────────────────\n"
-        f"├[•⚙️ `Telethon :`Ver {version.__version__} \n"
-        f"├[•🦖 `Python   :`Ver {python_version()} \n"
-        f"├[•🤖 `Bot Ver  :`{BOT_VER} \n"
-        f"├[•📂 `Modules  :`{len(modules)} \n"
+        f"├• ⚙️  `Telethon :`Ver {version.__version__} \n"
+        f"├• 🦖  `Python   :`Ver {python_version()} \n"
+        f"├• 🤖  `Bot Ver  :`{BOT_VER} \n"
+        f"├• 📂  `Modules  :`{len(modules)} \n"
         f"╰────────────────────────")
     if ALIVE_LOGO:
         try:
