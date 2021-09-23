@@ -244,9 +244,25 @@ async def pingme(pong):
     await pong.edit("🧘 𝐆 𝐄 𝐌 𝐎 𝐘 𝐔 𝐒 𝐄 𝐑 𝐁 𝐎 𝐓 **𝘗𝘖𝘕𝘎 ❕**\n`%sms`" % (duration))
 
 
+@register(outgoing=True, pattern="^.kping$")
+async def redis(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("📢 TOTT...")
+    await pong.edit("📢 TOOTT...")
+    await pong.edit("🥵 MISI MAU NGENTOOTT...")
+    await pong.edit("👉👈")
+    await asyncio.sleep(2)
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"**🥲 KONTOLL NYA BEUH COK !!** \n**🤏 PANJANG SI KONTOLL** : `%sms`\n**🥵 DURASI MAIN KONTOLL** : `{uptime}`\n**🤤 EMPU NYA KONTOL** :`{ALIVE_NAME}`" % (duration))
+
+
+
 CMD_HELP.update({
     "pinger":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.lping` | `.gemping` | `.pings` | `.sping`\
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.kping` | `.lping` | `.gemping` | `.pings` | `.sping`\
          \nPenggunaan: Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.speed`\
          \nPenggunaan: Untuk Menunjukkan Kecepatan Jaringan Anda.\
