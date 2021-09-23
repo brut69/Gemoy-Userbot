@@ -249,14 +249,24 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("📢 TOTT...")
-    await pong.edit("📢 TOOTT...")
-    await pong.edit("🥵 MISI MAU NGENTOOTT...")
+    await pong.edit("📢 𝙏𝙊𝙏𝙏...")
+    await pong.edit("📢 𝙏𝙊𝙊𝙏𝙏...")
+    await pong.edit("💦 𝘾𝙍𝙊𝙊𝙏𝙏...")
+    await pong.edit("💦💦 𝙉𝙂𝙀𝙉...𝙏𝙊𝙊𝙏𝙏...")
+    await pong.edit("🥵🥵🥵 𝙈𝙄𝙎𝙄 𝙈𝘼𝙐 𝙉𝙂𝙀𝙉𝙏𝙊𝙊𝙏𝙏...")
+    await asyncio.sleep(1)
+    await pong.edit("8==𝗗")
+    await pong.edit("8====𝗗")
+    await pong.edit("8=====𝗗")
+    await pong.edit("8======𝗗")
+    await pong.edit("8========𝗗")
+    await pong.edit("8==========𝗗")
     await pong.edit("👉👈")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**🥲 KONTOLL NYA BEUH COK !!** \n**🤏 PANJANG SI KONTOLL** : `%sms`\n**🥵 DURASI MAIN KONTOLL** : `{uptime}`\n**🤤 EMPU NYA KONTOL** :`{ALIVE_NAME}`" % (duration))
+    await pong.edit(f"**🥲 𝐊𝐎𝐍𝐓𝐎𝐋𝐋 𝐍𝐘𝐀 𝐁𝐄𝐔𝐇 𝐂𝐎𝐊 !!** \n**🤏 𝙿𝙰𝙽𝙹𝙰𝙽𝙶 𝚂𝙸 𝙺𝙾𝙽𝚃𝙾𝙻𝙻** : `%sms`\n**🥵 𝙳𝚄𝚁𝙰𝚂𝙸 𝙼𝙰𝙸𝙽 𝙺𝙾𝙽𝚃𝙾𝙻𝙻** : `{uptime}`\n**🤤 𝙴𝙼𝙿𝚄 𝙽𝚈𝙰 𝙺𝙾𝙽𝚃𝙾𝙻𝙻** :`{ALIVE_NAME}`" % (duration))
+
 
 
 CMD_HELP.update({
