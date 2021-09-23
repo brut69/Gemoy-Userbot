@@ -1848,7 +1848,6 @@ async def koc(e):
         await e.edit("😭😭😭😭")
 
 
-
 @register(outgoing=True, pattern="^.gas$")
 async def gas(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
@@ -1868,8 +1867,8 @@ async def gas(e):
 async def shrugger(shg):
     r"""¯\_(ツ)_/¯"""
     await shg.edit(choice(SHGS))
-    
-    
+
+
 @register(outgoing=True, pattern=r"^\.(?:penis|dick)\s?(.)?")
 async def emoji_penis(e):
     emoji = e.pattern_match.group(1)
