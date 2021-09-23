@@ -824,6 +824,23 @@ GAMBAR_TENGKORAK = """
 ░░░░░░▐▌░░░░░░░░░█░
 """
 
+GAMBAR_KONTL = """
+⣠⡶⠚⠛⠲⢄⡀
+⣼⠁ ⠀⠀⠀ ⠳⢤⣄
+⢿⠀⢧⡀⠀⠀⠀⠀⠀⢈⡇
+⠈⠳⣼⡙⠒⠶⠶⠖⠚⠉⠳⣄
+⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄
+⠀⠀⠀⠘⣆ ⠀⠀⠀⠀ ⠀⠈⠓⢦⣀
+⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⢤
+⠀⠀⠀⠀⠀⠀⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧
+⠀⠀⠀⠀⠀⠀⠀⡴⠋⠓⠦⣤⡀⠀⠀⠀⠀⠀⠀⠀⠈⣇
+⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄
+⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
+⠀⠀⠀⠀⠀⠀⢹⡄⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃
+⠀⠀⠀⠀⠀⠀⠀⠙⢦⣀⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⢦⣀⣀⣀⣀⣠⡴⠚⠁⠉⠉⠉
+"""
+
 GAMBAR_LOPE2 = """
 _♥__♥_____♥__♥___ Put This
 _♥_____♥_♥_____♥__ Heart
@@ -1515,7 +1532,7 @@ async def let_me_google_that_for_you(lmgtfy_q):
 @register(outgoing=True, pattern=r"^\.sayhi$")
 async def sayhi(e):
     await e.edit(
-        "\n💰💰????💰💰💰💰💰💰💰💰"
+        "\n💰💰??💰💰💰💰💰💰💰💰💰"
         "\n💰🔷💰💰💰🔷💰💰🔷🔷🔷💰"
         "\n💰🔷💰💰💰🔷💰💰💰🔷💰💰"
         "\n💰🔷💰💰💰🔷💰💰💰🔷💰💰"
@@ -1831,6 +1848,7 @@ async def koc(e):
         await e.edit("😭😭😭😭")
 
 
+
 @register(outgoing=True, pattern="^.gas$")
 async def gas(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
@@ -1850,6 +1868,24 @@ async def gas(e):
 async def shrugger(shg):
     r"""¯\_(ツ)_/¯"""
     await shg.edit(choice(SHGS))
+    
+    
+@register(outgoing=True, pattern=r"^\.(?:penis|dick)\s?(.)?")
+async def emoji_penis(e):
+    emoji = e.pattern_match.group(1)
+    titid = GAMBAR_TITIT
+    if emoji:
+        titid = titid.replace('🌟', emoji)
+    await e.edit(titid)
+
+
+@register(outgoing=True, pattern=r"^\.(?:kntl|kontol)\s?(.)?")
+async def emoji_kontl(e):
+    emoji = e.pattern_match.group(1)
+    kontl = GAMBAR_KONTL
+    if emoji:
+        kontl = kontl.replace('😂', emoji)
+    await e.edit(kontl)
 
 
 @register(outgoing=True, pattern=r"^\.lope$")
@@ -1939,7 +1975,7 @@ CMD_HELP.update(
         "\nPenggunaan: Biar saya Google itu untuk Anda dengan cepat!"
         "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.decide` [Alternatif: (.yes, .no, .maybe)]"
         "\nPenggunaan: Buat keputusan cepat."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nou` `.bot` `.rock` `.gey` `.tf` `.paw` `.tai` `.nih`"
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nou` `.kntl` `.penis` `.bot` `.rock` `.gey` `.tf` `.paw` `.tai` `.nih`"
         "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fag` `.gtfo`; `.stfu` `.lol` `.lool` `.fail` `.leave`"
         "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.iwi` `.sayhi` `.koc` `.gas` `.earth` `.love` `.rain`"
         "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lope` `.lopes` `.emo` `.fuck` `.skull` `.aku` `.monyet`\nPenggunaan: Cobain Semua dah"})

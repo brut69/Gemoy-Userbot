@@ -23,8 +23,8 @@ async def gcast(event):
     await kk.edit(f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**")
 
 
-@register(outgoing=True, pattern=r"^\.gucast(?: |$)(.*)")
-async def gucast(event):
+@register(outgoing=True, pattern=r"^\.gbcast(?: |$)(.*)")
+async def gbcast(event):
     xx = event.pattern_match.group(1)
     if not xx:
         return await event.edit("`Berikan beberapa teks untuk Siaran Global`")
@@ -48,7 +48,7 @@ CMD_HELP.update(
     {
         "broadcast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gcast`\
          \nPenggunaan: Mengirim Pesan Group Secara Global.\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gucast`\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gbcast`\
          \nPenggunaan: Mengirim Pesan Pribadi Secara Global"
     }
 )
