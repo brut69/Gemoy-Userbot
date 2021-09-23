@@ -259,7 +259,6 @@ async def redis(pong):
     await pong.edit(f"**🥲 KONTOLL NYA BEUH COK !!** \n**🤏 PANJANG SI KONTOLL** : `%sms`\n**🥵 DURASI MAIN KONTOLL** : `{uptime}`\n**🤤 EMPU NYA KONTOL** :`{ALIVE_NAME}`" % (duration))
 
 
-
 CMD_HELP.update({
     "pinger":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.kping` | `.lping` | `.gemping` | `.pings` | `.sping`\
