@@ -621,7 +621,7 @@ async def _(event):
         await event.edit("**JANGAN BANYAK BANYAK**")
     if (x == 75):
         await event.edit("**BABAYY MWAHHH🥰😘**")
-        
+
 
 CMD_HELP.update({
     "memes4":
