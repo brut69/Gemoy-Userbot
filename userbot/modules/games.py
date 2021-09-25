@@ -104,8 +104,8 @@ CMD_HELP.update({
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.truth`\
 \nPenggunaan: Tantangan kejujuran.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dare`\
-\nPenggunaan: Tantangan lain.
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spill`
-    \nPenggunaan: Spill pertanyaan.
-    \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.f100`
-    \nPenggunaan: Kuis Family 100."})
+\nPenggunaan: Tantangan lain.\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spill`\
+\nPenggunaan: Spill pertanyaan.\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.f100`\
+\nPenggunaan: Kuis Family 100."})
