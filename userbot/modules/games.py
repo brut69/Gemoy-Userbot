@@ -39,8 +39,8 @@ async def _(event):
     tap = await bot.inline_query(botusername, modr)
     await tap[0].click(event.chat_id)
     await event.delete()
-
-
+    
+    
 @register(outgoing=True, pattern=r"^\.truth(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -52,8 +52,8 @@ async def _(event):
     tap = await bot.inline_query(botusername, honest)
     await tap[0].click(event.chat_id)
     await event.delete()
-
-
+    
+    
 @register(outgoing=True, pattern=r"^\.dare(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -65,8 +65,8 @@ async def _(event):
     tap = await bot.inline_query(botusername, dare)
     await tap[0].click(event.chat_id)
     await event.delete()
-
-
+    
+    
 @register(outgoing=True, pattern=r"^\.spill(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -78,8 +78,8 @@ async def _(event):
     tap = await bot.inline_query(botusername, spill)
     await tap[0].click(event.chat_id)
     await event.delete()
-
-
+    
+    
 @register(outgoing=True, pattern=r"^\.f100(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
@@ -91,7 +91,8 @@ async def _(event):
     tap = await bot.inline_query(botusername, family)
     await tap[0].click(event.chat_id)
     await event.delete()
-
+    
+    
 
 CMD_HELP.update({
     "games": "\
@@ -105,7 +106,7 @@ CMD_HELP.update({
 \nPenggunaan: Tantangan kejujuran.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dare`\
 \nPenggunaan: Tantangan lain.
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spill`
-    \nPenggunaan: Spill pertanyaan.
-    \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.f100`
-    \nPenggunaan: Kuis Family 100."})
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spill`\
+\nPenggunaan: Spill pertanyaan.\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.f100`\
+\nPenggunaan: Kuis Family 100."})
