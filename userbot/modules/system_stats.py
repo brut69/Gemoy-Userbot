@@ -293,7 +293,7 @@ async def amireallyalive(alive):
         f"• [𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
         f"• [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗣𝘂𝗯𝗹𝗶𝗰 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
         f"• [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗣𝗨𝗕𝗟𝗜𝗖 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
-        f"• [𝙂𝘼𝙈𝙊𝙉 𝙁𝘼𝙈𝙎](https://t.me/Repentblckcrcle")
+        f"• [𝙂𝘼𝙈𝙊𝙉 𝙁𝘼𝙈𝙎](https://t.me/Repentblckcrcle)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -343,11 +343,11 @@ async def redis(alive):
         f"⚆ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
         f"⚆ **{GEMOY_TEKS_KUSTOM}** \n"
         f"⚆ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
-        f"⚆ [𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
+        f"⚆ [𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
         f"⚆ [𝗙𝗢𝗟𝗟𝗢𝗪 𝗠𝗬 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](https://instagram.com/liiii04_) \n"
         f"⚆ [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
         f"⚆ [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
-        f"⚆ [𝙂𝘼𝙈𝙊𝙉 𝙁𝘼𝙈𝙎](https://t.me/Repentblckcrcle")
+        f"⚆ [𝙂𝘼𝙈𝙊𝙉 𝙁𝘼𝙈𝙎](https://t.me/Repentblckcrcle)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
