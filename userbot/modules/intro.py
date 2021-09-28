@@ -1,3 +1,21 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 from time import sleep
 from userbot import CMD_HELP
 from userbot.events import register
@@ -6,7 +24,7 @@ from userbot.events import register
 @register(outgoing=True, pattern='^.saya(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Hemblo 👋 Perkenalkan Namaku 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 `")
+    await typew.edit("`Hemblo 👋 Perkenalkan Namaku 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏`")
     sleep(3)
     await typew.edit("`Tinggal Di Mars`")
     sleep(1)
@@ -57,7 +75,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("`Jaga diri, Jaga kesehatan`")
     sleep(2)
-    await typew.edit("`Dalam semangat, syukur dan keceriaan 🥰`")
+    await typew.edit("`Dalam semangat, syukur dan keceriaan 😇`")
 
 # Create by myself @localheart
 
@@ -65,7 +83,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.aku(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Aku 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏`")
+    await typew.edit("`Aku 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏")
     sleep(3)
     await typew.edit("`Jangan Nakal kamu yah`")
     sleep(2)

@@ -28,7 +28,7 @@ async def koc(e):
         await e.edit("SAYANG")
         await e.edit("KAMU")
         await e.edit("I LOVE YOUUUU")
-        await e.edit("MY BABY")
+        await e.edit("MY BABOUU")
         await e.edit("💕💞💘💝")
         await e.edit("💘💕💞💝")
         await e.edit("SAYANG KAMU💞")
@@ -427,7 +427,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`Ya Modal Apa kek`")
     sleep(1)
-    await typew.edit("`Belajar Sholat`")
+    await typew.edit("`Belajar Ngaji`")
     sleep(1)
     await typew.edit("`Perbaiki Diri Dari Sekarang`")
     sleep(1)
@@ -441,7 +441,7 @@ async def typewriter(typew):
 async def _(event):
     event.pattern_match.group(1)
     await event.edit(
-        " **Hay Semua** 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 🤪 \n"
+        " **Hay Semua** 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🤖 \n"
         " **Userbot Digunakan Untuk bersenang-senang dan manage grup mu** \n"
         " __Seru Lho Jadi Pengguna Userbot__ 🎉 \n"
         " **Dengan Berbagai Macam Plugins Dan Perintah di Dalamnya** \n"
@@ -459,9 +459,11 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("`Ketika Waktumu Habis`")
     sleep(1)
-    await typew.edit("`Tambah Aja 5000`")
+    await typew.edit("`Tambah Aja 3000`")
     sleep(1)
-    await typew.edit("`Bercanda`")
+    await typew.edit("`Mayan Tambah Sejam`")
+    sleep(1)
+    await typew.edit("`LoL Kek`")
 # Create by myself @localheart
 
 
@@ -555,8 +557,6 @@ async def typewriter(typew):
     await typew.edit("`KASIAN ORTUNYAA GAPEDULIII 🤣`")
     sleep(1)
     await typew.edit("`MAAF YA, CANDAA BEBANNNN`")
-    sleep(1)
-    await typew.edit("`CAUSE EMANG BEBANMU DISINI`")
     sleep(1)
     await typew.edit("`𝗧𝗔𝗣𝗜 𝗕𝗢𝗢𝗡𝗚 🤪`")
 # Create by myself @localheart

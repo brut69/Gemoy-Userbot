@@ -1,3 +1,21 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 from userbot.events import register
 from userbot import CMD_HELP, bot
 
@@ -30,7 +48,7 @@ async def gbcast(event):
         return await event.edit("`Berikan beberapa teks untuk Siaran Global`")
     tt = event.text
     msg = tt[7:]
-    kk = await event.edit("`Sedang Mengirim pesan secara global...`")
+    kk = await event.edit("`Sedang Mengirim pesan secara global...📢`")
     er = 0
     done = 0
     async for x in bot.iter_dialogs():

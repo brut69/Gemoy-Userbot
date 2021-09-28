@@ -1,5 +1,21 @@
 # Ported By @VckyouuBitch From Geez-Projects
 # Fixes BUGS, HEHE USAHA MEMANG TIDAK MENGHIANATI HASIL:)
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 import os
@@ -423,8 +439,8 @@ async def carbon_api(e):
 
 CMD_HELP.update({
     "carbon":
-    "Command : `.carbon` <Text/Reply>\
-    \nUsage : atau anda juga bisa ketik .crb1 atau 2,3,4,5 untuk mengganti warna background anda.\
-    \n\nCommand : .krblang <text>\
-    \nUsage : Percantik kode Anda menggunakan carbon.now.sh\nUse .krblang <text> untuk mengatur bahasa untuk kode Anda."
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.carbon` <Text/Reply>\
+    \nPenggunaan: atau anda juga bisa ketik .crb1 atau 2,3,4,5 untuk mengganti warna background anda.\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.krblang` <text>\
+    \nPenggunaan: Percantik kode Anda menggunakan carbon.now.sh\nUse .krblang <text> untuk mengatur bahasa untuk kode Anda."
 })

@@ -1,3 +1,19 @@
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 import asyncio
 
 from telethon.tl.functions.channels import EditBannedRequest
@@ -37,7 +53,7 @@ async def _(event):
     except Exception as e:  # pylint:disable=C0103,W0703
         no_admin_privilege_message = await event.client.send_message(
             entity=event.chat_id,
-            message="""**Automatic AntiFlooder**
+            message="""**Automatic AntiFlood**
 [User](tg://user?id={}) Membanjiri obrolan.
 
 `{}`""".format(
@@ -50,7 +66,7 @@ async def _(event):
     else:
         await event.client.send_message(
             entity=event.chat_id,
-            message="""**Automatic AntiFlooder**
+            message="""**Automatic AntiFlood**
 [User](tg://user?id={}) Membanjiri obrolan.
 **Aksi:** Saya membisukan dia""".format(
                 event.message.from_id

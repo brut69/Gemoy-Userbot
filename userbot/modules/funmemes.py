@@ -1,6 +1,24 @@
 # all plugins are imported from bothub,x-tra-telegram by @heyworld
 # Don't edit or you gay
-# credits: spechide,ravana69,mkaraniya & me
+# credits: spechide,ravana69,mkaraniya & meme
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 import asyncio
 from collections import deque
 
@@ -24,7 +42,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "eye":
+    if input_str == "mata":
 
         await event.edit(input_str)
 
@@ -52,7 +70,7 @@ async def _(event):
             await event.edit(animation_chars[i % 103])
 
 
-@register(outgoing=True, pattern=r"^\.earth(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.bumi(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -63,7 +81,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@bot.on(events.NewMessage(pattern=r"\.bombs", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.bom", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -103,23 +121,23 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "gift":
+    if input_str == "beri":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜",
-            "⬛⬜⬜⬜⬜\n👇⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜",
-            "⬛⬛⬜⬜⬜\n⬜👇⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜",
-            "⬛⬛⬛⬜⬜\n⬜⬜👇⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜",
-            "⬛⬛⬛⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜",
-            "⬛⬛⬛⬛⬜\n⬜⬜⬜⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜",
-            "⬛⬛⬛⬛⬜\n⬜⬜⬜⬛⬜\n⬜⬜⬜⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜",
-            "⬛⬛⬛⬛⬜\n⬜⬜⬜⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜\n⬜⬜⬜⬜⬜",
-            "⬛⬛⬛⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
-            "⬛⬛⬛⬜⬜\n⬜⬜👇⬜⬜\n⬜⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
-            "⬛⬛⬜⬜⬜\n⬜👇⬜⬜⬜\n⬜[🎁](https://github.com/sahyam2019/OpenUserBot)⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
-            "⬛⬜⬜⬜⬜\n👇⬜⬜⬜⬜\n[🎁](https://github.com/sahyam2019/OpenUserBot)⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
+            "⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜",
+            "⬛⬜⬜⬜⬜\n👇⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜",
+            "⬛⬛⬜⬜⬜\n⬜👇⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜",
+            "⬛⬛⬛⬜⬜\n⬜⬜👇⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜",
+            "⬛⬛⬛⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜",
+            "⬛⬛⬛⬛⬜\n⬜⬜⬜⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜",
+            "⬛⬛⬛⬛⬜\n⬜⬜⬜⬛⬜\n⬜⬜⬜⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜",
+            "⬛⬛⬛⬛⬜\n⬜⬜⬜⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜\n⬜⬜⬜⬜⬜",
+            "⬛⬛⬛⬛⬜\n⬜⬜⬜👇⬜\n⬜⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
+            "⬛⬛⬛⬜⬜\n⬜⬜👇⬜⬜\n⬜⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
+            "⬛⬛⬜⬜⬜\n⬜👇⬜⬜⬜\n⬜[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
+            "⬛⬜⬜⬜⬜\n👇⬜⬜⬜⬜\n[🎁](https://github.com/brut-ctrl/GemoyUserbot)⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
             "⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
             "⬜⬜⬜⬜\n⬜⬜⬜⬜\n⬜⬜⬜⬜\n⬜⬜⬜⬜",
             "⬜⬜⬜\n⬜⬜⬜\n⬜⬜⬜",
@@ -147,7 +165,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "police":
+    if input_str == "polpp":
 
         await event.edit(input_str)
 
@@ -163,7 +181,7 @@ async def _(event):
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
             "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-            "OUB **Police is Chasing you now**",
+            "KABOOR !! **Pol PP Mengejarmu sekarang**",
         ]
 
         animation_interval = 0.3
@@ -221,7 +239,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "Macos":
+    if input_str == "hacos":
 
         await event.edit(input_str)
 
@@ -259,7 +277,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "Windows":
+    if input_str == "pc":
 
         await event.edit(input_str)
 
@@ -274,7 +292,7 @@ async def _(event):
             "`Loading Windows 10... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Loading Windows 10... 84%\n█████████████████████▒▒▒▒ `",
             "`Loading Windows 10... 100%\n█████████████████████████ `",
-            "`Welcome...\n\nStock OS: Symbian OS\nCurrent OS: Windows 10`\n\n**My PC Specs:**\n\n **CPU:** __2.9GHz Intel Core i9-8950HK (hexa-core, 12MB cache, up to 4.8GHz)__\n\n**Graphics:** __Nvidia GeForce GTX 1080 OC (8GB GDDR5X)__\n\n**RAM:** __32GB DDR4 (2,666MHz)__\n\n**Screen:** __17.3-inch, QHD (2,560 x 1,440) 120Hz G-Sync__\n\n**Storage:** __512GB PCIe SSD, 1TB HDD (7,200 rpm)__\n\n**Ports:** __2 x USB 3.0, 1 x USB-C 3.0, 1 x USB-C (Thunderbolt 3), HDMI, mini DisplayPort, Ethernet, headphone jack, microphone jack__\n\n**Connectivity:** __Killer 1550 802.11ac Wi-Fi, Bluetooth 5.0__\n\n**Camera:** __Alienware FHD camera, Tobii IR Eye-tracking with Windows Hello__\n\n**Size:** __16.7 x 13.1 x 1.18 inches (42.4 x 33.2 x 2.99cm; W x D x H)__",
+            "`Welcome...\n\nStock OS: Symbian OS\nCurrent OS: Windows 10`\n\n**My PC Specs:**\n\n **CPU:** __2.9GHz Intel Core i9-8950HK (hexa-core, 12MB cache, up to 8.8GHz)__\n\n**Graphics:** __Nvidia GeForce GTX 1080 OC (16GB GDDR5X)__\n\n**RAM:** __256GB DDR4 (4,666MHz)__\n\n**Screen:** __17.3-inch, QHD (2,560 x 1,440) 140Hz G-Sync__\n\n**Storage:** __12TB PCIe SSD, 128TB HDD (9,200 rpm)__\n\n**Ports:** __2 x USB 3.0, 1 x USB-C 3.0, 1 x USB-C (Thunderbolt 3), HDMI, mini DisplayPort, Ethernet, headphone jack, microphone jack__\n\n**Connectivity:** __Killer 1550 802.11ac Wi-Fi, Bluetooth 5.0__\n\n**Camera:** __Alienware FHD camera, Tobii IR Eye-tracking with Windows Hello__\n\n**Size:** __16.7 x 13.1 x 1.18 inches (42.4 x 33.2 x 2.99cm; W x D x H)__",
         ]
 
         animation_interval = 0.5
@@ -297,7 +315,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "Linux":
+    if input_str == "linux":
 
         await event.edit(input_str)
 
@@ -335,7 +353,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "Stock":
+    if input_str == "stock":
 
         await event.edit(input_str)
 
@@ -517,7 +535,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "hypno":
+    if input_str == "hypo":
 
         await event.edit(input_str)
 
@@ -867,7 +885,7 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@register(outgoing=True, pattern="^.plane(?: |$)(.*)")
+@register(outgoing=True, pattern="^.pesawat(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -984,7 +1002,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "fadmin":
+    if input_str == "fadmins":
 
         await event.edit(input_str)
 
@@ -1046,11 +1064,11 @@ async def _(event):
             "⬛⬆️↗️\n⬛🔄➡️\n↙️⬇️↘️",
             "⬛⬆️↗️\n⬅️🔄➡️\n↙️⬇️↘️",
             "↖️⬆️↗️\n⬅️🔄➡️\n↙️⬇️↘️",
-            "**Pesan Obrolan Diekspor Ke** `./Inpu/`",
-            "**Pesan Obrolan Diekspor Ke** `./Inpu/homework/`",
-            "**Pesan Obrolan Diekspor Ke** `./Inpu/homework/groupchat.txt`",
-            "__Legend meninggalkan obrolan ini.....! Sampai jumpa..__",
-            "__Legend meninggalkan obrolan ini.....! Sampai jumpa..__,"
+            "**Pesan Obrolan Diekspor Ke** `./cache/`",
+            "**Pesan Obrolan Diekspor Ke** `./cache/homework/`",
+            "**Pesan Obrolan Diekspor Ke** `./cache/homework/logchat.txt`",
+            "__Legend meninggalkan obrolan ini.....! 👋 Sampai jumpa..__",
+            "__Legend meninggalkan obrolan ini.....! 👋 Sampai jumpa..__,"
         ]
 
         animation_interval = 1
@@ -1073,7 +1091,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "snake":
+    if input_str == "ulo":
 
         await event.edit(input_str)
 
@@ -1123,7 +1141,7 @@ async def _(event):
     if event.fwd_from:
         return
     input_str = event.pattern_match.group(1)
-    if input_str == "think":
+    if input_str == "mikir":
         await event.edit(input_str)
         animation_chars = [
             "THINKING",
@@ -1180,11 +1198,11 @@ async def _(event):
     if input_str == "wtf":
         await event.edit(input_str)
         animation_chars = [
-            "What",
-            "What The",
-            "What The F",
-            "What The F Brah",
-            "What The F Brah\nhttps://telegra.ph//file/f3b760e4a99340d331f9b.jpg",
+            "__What__",
+            "__What The__",
+            "__What The 𝗙__",
+            "__What The 𝗙 Bra__",
+            "__What The 𝗙 Bra__\nhttps://telegra.ph//file/f3b760e4a99340d331f9b.jpg",
         ]
 
         animation_interval = 0.3
@@ -1204,7 +1222,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "music":
+    if input_str == "musik":
 
         await event.edit(input_str)
 
@@ -1287,7 +1305,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "human":
+    if input_str == "wong":
 
         await event.edit(input_str)
 
@@ -1330,7 +1348,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "load":
+    if input_str == "muat":
 
         await event.edit(input_str)
 
@@ -1356,7 +1374,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "square":
+    if input_str == "kotak":
 
         await event.edit(input_str)
 
@@ -1408,7 +1426,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "round":
+    if input_str == "ronde":
 
         await event.edit(input_str)
 
@@ -1434,7 +1452,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "heart":
+    if input_str == "ati":
 
         await event.edit(input_str)
 
@@ -1460,7 +1478,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "anim":
+    if input_str == "hode":
 
         await event.edit(input_str)
 
@@ -1496,7 +1514,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "fnl":
+    if input_str == "kong":
 
         await event.edit(input_str)
 
@@ -1506,7 +1524,7 @@ async def _(event):
             "😁🏽",
             "😁🏼",
             "‎😁",
-            "**Geng Semok & Indah Ada Di Belakangmu....**",
+            "**🥵 Bokong Semok & Indah Ada Di Pantatmu....**",
         ]
 
         animation_interval = 2
@@ -1529,12 +1547,12 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "monkey":
+    if input_str == "lu":
 
         await event.edit(input_str)
 
         animation_chars = ["🐵", "🙉", "🙈", "🙊",
-                           "🖕‎🐵🖕", "**OPPA MONEKEYY Style....**"]
+                           "🖕‎🐵🖕", "**PAPPIIH MONKEYY Style....**"]
 
         animation_interval = 2
 
@@ -1556,7 +1574,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "hand":
+    if input_str == "tgn":
 
         await event.edit(input_str)
 
@@ -1635,7 +1653,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "wupload":
+    if input_str == "wup":
 
         await event.edit(input_str)
 
@@ -1717,17 +1735,17 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "memes": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.eye`\
+        "memes": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mata`\
 \nPenggunaan: Lihat Sendiri.\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.earth`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bumi`\
 \nPenggunaan: Memutar Bumi 🌎🌎\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bombs`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bom`\
 \nPenggunaan: Bom Telegram🤣🤣\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.think`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mikir`\
 \nPenggunaan: hmmm berpikir\
-\n\n`.gotm` atau `.gott`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gotm` atau `.gott`\
 \nPenggunaan: dapatkan sucks🤣\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.snake`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ulo`\
 \nPenggunaan: Lihat Sendiri\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.call`\
 \nPenggunaan: Memanggil Owner Telegram \
@@ -1737,22 +1755,22 @@ CMD_HELP.update(
 \nPenggunaan: Memulai Percakapan\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wtf`\
 \nPenggunaan: Lihat Sendiri\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.load`,`.up`,`.square`,`.round`,`.heart`,`.monkey`,`.anim`,`.hand`,`.fnl`,`.cnt`,`.kiss`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.load`,`.up`,`.kotak`,`.ronde`,`.ati`,`.lu`,`.anim`,`.tgn`,`.fnl`,`.cnt`,`.kiss`,`hacos`\
 \nPenggunaan: Lihat Sendiri\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.human`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wong`\
 \nPenggunaan: Tidak Ada Yang Menarik\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wupload`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.wup`\
 \nPenggunaan: meh\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.music`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.musik`\
 \nPenggunaan: music player\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fleave`\
 \nPenggunaan: Keluar boong an\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fadmin`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fadmins`\
 \nPenggunaan: Jadi Admin Fake\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gift`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.beri`\
 \nPenggunaan: Memberi Hadiah Tapi Aku Tidak Mau Member Tau Apa Dalamnya!\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.police`\
-\nPenggunaan: Waktunya Ke Penjara\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.polpp`\
+\nPenggunaan: Waktunya Penggusuran\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kill`\
 \nPenggunaan: Untuk Membunuh Musuh Secara Online\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.os`\
@@ -1765,7 +1783,7 @@ CMD_HELP.update(
 \nPenggunaan: Untuk Hack Telegram:v\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dump`\
 \nPenggunaan: xD\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hypno`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hypo`\
 \nPenggunaan: Ah Sial Mataku 👀\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whatsapp`\
 \nPenggunaan: Untuk Hack Whatsapp:v \
@@ -1773,7 +1791,7 @@ CMD_HELP.update(
 \nPenggunaan: System Solar Kita Yang Cantik 🌞🌞\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.quickheal` atau `.sqh` atau `.vquickheal`\
 \nPenggunaan: Virus Ditemukan, Hapus Itu Menggunakan Ini:v\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.plane`\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pesawat`\
 \nPenggunaan: Untuk Berkeliling Di Satu Tempat✈️\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.jio`\
 \nPenggunaan: Jaringan Mu Lambat?? Boost Menggunakan Ini\

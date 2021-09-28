@@ -1,8 +1,28 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 """Globally Ban users from all the
 Group Administrations bots where you are SUDO
 Available Commands:
 .gban REASON
 .ungban REASON"""
+
+
 import asyncio
 from userbot.events import register
 from userbot import ALIVE_NAME, G_BAN_LOGGER_GROUP, bot

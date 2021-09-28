@@ -5,9 +5,22 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 # Fixes by Github/ArnabXD | Telegram/Arnab431
-# Ported to Gemoy-Userbot
-# @dunottagme
-# © 2021
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 from userbot import CMD_HELP
@@ -67,7 +80,7 @@ PICTURE_ILU = """
 ╔══╗
 ╚╗╔╝
 ╔╝(¯`v´¯)
-╚══`.¸.YOU
+╚══`.¸.𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏
 """
 
 PICTURE_BIGLOVE = """
@@ -420,7 +433,7 @@ async def emoji_glop11(e):
 
 
 CMD_HELP.update({
-    "gemoylop":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.glop` `.glop1` `.glop2` `.glop3` `.glop4`\n`.glop5` `.glop6` `.glop7` `.glop8` `.glop9` `.glop10` `.glop11`\n`.pagi` `.mlm` `.night` `.lov`\nPenggunaan: Gemoy Userbot lope yu bhaaks."
+    "gamonlop":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.glop` `.glop1` `.glop2` `.glop3` `.glop4`\n`.glop5` `.glop6` `.glop7` `.glop8` `.glop9` `.glop10` `.glop11`\n`.pagi` `.mlm` `.night` `.lov`\nPenggunaan: 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 lope yu bhaaks."
 }
 )

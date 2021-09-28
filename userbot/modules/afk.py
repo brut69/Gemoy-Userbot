@@ -1,3 +1,20 @@
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 """ Userbot module which contains afk-related commands """
 
 from datetime import datetime
@@ -24,10 +41,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞",
-    f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞",
-    f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞",
-    f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞",
+    f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞",
+    f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞",
+    f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞",
+    f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞",
 ]
 
 
@@ -62,7 +79,7 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n📢 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 : {AFKREASON}")
+        await afk_e.edit(f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n📢 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉 : {AFKREASON}")
     else:
         await afk_e.edit("🔴 𝘼 𝙁 𝙆\n📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄\n")
     if user.last_name:
@@ -70,7 +87,7 @@ async def set_afk(afk_e):
     else:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n**🔴 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞 🔴**")
+        await afk_e.client.send_message(BOTLOG_CHATID, "💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n**🔴 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞 🔴**")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
@@ -173,7 +190,7 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n⏰ 𝗦𝗘𝗝𝗔𝗞: {afk_since}\n📢 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉: {AFKREASON}")
+                        await mention.reply(f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n⏰ 𝗦𝗘𝗝𝗔𝗞: {afk_since}\n📢 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉: {AFKREASON}")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
@@ -240,7 +257,7 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)} Detik`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n⏰ 𝗦𝗘𝗝𝗔𝗞: {afk_since}\n📢 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉: {AFKREASON}")
+                    await sender.reply(f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n⏰ 𝗦𝗘𝗝𝗔𝗞: {afk_since}\n📢 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉: {AFKREASON}")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
                 USERS.update({sender.sender_id: 1})
@@ -248,7 +265,7 @@ async def afk_on_pm(sender):
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n⏰ 𝗦𝗘𝗝𝗔𝗞: {afk_since}\n📢 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉: {AFKREASON}")
+                        await sender.reply(f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n👤 {ALIVE_NAME} 𝗦𝗘𝗗𝗔𝗡𝗚 𝗔𝗙𝗞\n⏰ 𝗦𝗘𝗝𝗔𝗞: {afk_since}\n📢 𝘿𝙄𝙆𝘼𝙍𝙀𝙉𝘼𝙆𝘼𝙉: {AFKREASON}")
                     else:
                         await sender.reply(str(choice(AFKSTR)))
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
