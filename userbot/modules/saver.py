@@ -1,3 +1,20 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
@@ -11,7 +28,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-@register(outgoing=True, pattern="^.igsaver ?(.*)")
+@register(outgoing=True, pattern="^.igsave ?(.*)")
 async def igsaver(event):
     if event.fwd_from:
         return
@@ -54,5 +71,5 @@ async def igsaver(event):
             await event.delete()
 
 
-CMD_HELP.update({"igsaver": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.igsaver`"
+CMD_HELP.update({"igsaver": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.igsave`"
                  "\nPenggunaan: Download Postingan di Instagram, Silahkan Salin Link Postingan Instagram Yang Ingin Anda Download Lalu Kirim Link, atau Reply dan Ketik `.igsaver`"})

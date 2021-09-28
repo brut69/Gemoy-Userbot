@@ -1,3 +1,21 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 from random import randint
 from time import sleep
 from os import execl
@@ -59,7 +77,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩....`")
+    await event.edit("`Menon-aktifkan 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏...`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -70,12 +88,12 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩...`")
+    await event.edit("`Restarting 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 Telah Di Restart`")
+                                        "`𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -87,7 +105,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[𝙌𝙪𝙚𝙚𝙣 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙍𝙚𝙥𝙤](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/README.md)"
+        "\n[𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 𝙍𝙚𝙥𝙤](https://github.com/brut69/Gemoy-Userbot/blob/Gemoy-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -111,8 +129,8 @@ async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
         "━━━━━━━━━━━━━━━━━━━━\n"
-        "               🛠️ 𝗥 𝗘 𝗣 𝗢 🛠️\n"
-        "          [𝗚𝗘𝗠𝗢𝗬-𝗨𝗦𝗘𝗥𝗕𝗢𝗧](https://github.com/brut69/Gemoy-Userbot)\n"
+        "               🧑‍💻️ 𝗥 𝗘 𝗣 𝗢 🧑‍💻 \n"
+        "          [𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot)\n"
         "                  `𝖭𝗈𝗈𝖻𝖾𝗅𝗈𝗉𝖾𝗋`\n"
         "             [𝗗𝗼𝗻 𝘁 𝗧𝗼𝘂𝗰𝗵 𝗠𝗲](t.me/dunottagme)\n"
         "━━━━━━━━━━━━━━━━━━━━"

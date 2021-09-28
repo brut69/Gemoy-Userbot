@@ -1,3 +1,19 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 from time import sleep
@@ -190,8 +206,7 @@ async def _(event):
         await event.edit(input_str)
 
         animation_chars = [
-            "**Skuy kenalin Dev 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 dulu yook.**"
-            "** Yusuf mungkin terkenalnya. Nama lain untuk di Dev 𝙍𝙊𝙈 adalah @brut69 dari 𝙍𝘼𝙎𝙏𝘼𝙈𝙊𝘿69**"
+            "**Skuy kenalin Dev 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 dulu yook.**"
             "**Mo kepoin lebih lanjut sabi sih**"
             "**Silakan PM ke @dunottagme or @jsminebot**"
             "**Untuk bot Music yang bisa dipakai sabi @RemMusic_bot @RinMusicOS_bot @CallMusicPlusBot**"

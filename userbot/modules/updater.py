@@ -1,3 +1,21 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 """
 This module updates the userbot based on upstream revision
 """
@@ -52,8 +70,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         heroku_applications = heroku.apps()
         if HEROKU_APP_NAME is None:
             await event.edit(
-                '`🦖 𝙃𝙀𝙍𝙊𝙆𝙐: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏.`'
+                '`🧑‍💻 𝙃𝙀𝙍𝙊𝙆𝙐: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
+                ' untuk dapat deploy perubahan terbaru dari 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏.`'
             )
             repo.__del__()
             return
@@ -66,8 +84,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 f'{txt}\n`Kredensial Heroku tidak valid untuk deploy QueenGemoy-Userbot dyno.`'
             )
             return repo.__del__()
-        await event.edit('`🦖 𝙃𝙀𝙍𝙊𝙆𝙐:'
-                         '\n🔴 Sedang MengUpdate 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Mohon Menunggu 2-5 Menit`'
+        await event.edit('`🧑‍💻 𝙃𝙀𝙍𝙊𝙆𝙐:'
+                         '\n🔴 Sedang MengUpdate 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Mohon Menunggu 2-5 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -91,17 +109,17 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`🛠️ 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Berhasil Di Deploy!\n" "🟠 Restart 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Mohon Tunggu Sebentar....`")
+            await event.edit("`👨‍🔧 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Berhasil Di Deploy!\n" "🟠 Restart 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Mohon Tunggu Sebentar....`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`🟢 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Berhasil Di Update`")
+                "`🟢 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Berhasil Di Update‼️`")
 
     else:
-        await event.edit('`🦖 𝙃𝙀𝙍𝙊𝙆𝙐:'
+        await event.edit('`🧑‍💻 𝙃𝙀𝙍𝙊𝙆𝙐:'
                          '\nHarap Siapkan Variabel` **HEROKU_API_KEY** `.`'
                          )
         await asyncio.sleep(10)
@@ -115,9 +133,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**🟢 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏** `Berhasil Di Update❕`')
+    await event.edit('**🟢 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏** `Berhasil Di Update❕`')
     await asyncio.sleep(1)
-    await event.edit('**🟠 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏** `Di Restart..`')
+    await event.edit('**🟠 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏** `Di Restart..`')
     await asyncio.sleep(1)
     await event.edit('`Mohon Menunggu Beberapa Detik....`')
     await asyncio.sleep(10)
@@ -126,7 +144,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**☑️ 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Telah Di Perbarui❕**")
+            "**☑️ 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Telah Di Perbarui❕**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -188,13 +206,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n☑️ 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Sudah Versi Terbaru 🤪\n')
+            f'\n☑️ 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Sudah Versi Terbaru‼️\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**❕Pembaruan Untuk 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏 :\n\n🛠️ Pembaruan Data :**\n`{changelog}`'
+        changelog_str = f'**❕Pembaruan Untuk 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 :\n\n👨‍🔧 Pembaruan Data :**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`📝 Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -208,18 +226,18 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏.__')
+        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏.__')
 
     if force_update:
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('` Proses Update 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Loading....1%`')
-        await event.edit('` Proses Update 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Loading....20%`')
-        await event.edit('` Proses Update 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Loading....35%`')
-        await event.edit('` Proses Update 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Loading....77%`')
-        await event.edit('` Proses Update 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Updating...90%`')
-        await event.edit('` Proses Update 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Mohon Tunggu Sebentar....100%`')
+        await event.edit('` Proses Update 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Loading....1%`')
+        await event.edit('` Proses Update 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Loading....20%`')
+        await event.edit('` Proses Update 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Loading....35%`')
+        await event.edit('` Proses Update 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Loading....77%`')
+        await event.edit('` Proses Update 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Updating...90%`')
+        await event.edit('` Proses Update 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏, Mohon Tunggu Sebentar....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
@@ -234,8 +252,8 @@ async def upstream(event):
 CMD_HELP.update({
     "updatebot":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update`"
-    "\nPenggunaan: Untuk Melihat Pembaruan Terbaru 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏."
+    "\nPenggunaan: Untuk Melihat Pembaruan Terbaru 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update now`"
-    "\nPenggunaan: Memperbarui 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏."
+    "\nPenggunaan: Memperbarui 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `.update deploy`"
-    "\nPenggunaan: Full Update dari Repo Men-Deploy Ulang 𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏."})
+    "\nPenggunaan: Full Update dari Repo Men-Deploy Ulang 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏."})

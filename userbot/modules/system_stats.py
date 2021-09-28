@@ -3,6 +3,23 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 """ Userbot module for getting information about the server. """
 
 
@@ -164,14 +181,14 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**🥱**𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Versi:** \n "
-            f"heads/Gemoy-Userbot-0-x634i7u1"
-            "\n**😴**Revisi:**\n "
+            "**🧑‍💻**𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Version:** \n "
+            f"heads/Gemoy-Userbot-0-x27hf92"
+            "\n**👨‍🔧**Revisi:**\n "
             f"{revout}"
         )
     else:
         await event.edit(
-            "Sayang sekali anda tidak memiliki git, Anda Menjalankan Bot - 'v1.beta.4'!"
+            "Sayang sekali anda tidak memiliki git, Anda Menjalankan Bot - 'v1.beta.9'!"
         )
 
 
@@ -223,19 +240,19 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:gemoyalive)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:gamon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
         f"\n__**{GEMOY_TEKS_KUSTOM}**__\n"
         f"╭────────────────────────\n"
-        f"├• 👑  [𝗚𝗘𝗠𝗢𝗬 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](t.me/dunottagme) \n"
+        f"├• 👑  [𝙂𝘼𝙈𝙊𝙉 𝙉𝙊𝙊𝘽𝙀𝙇𝙊𝙋𝙀𝙍](t.me/dunottagme) \n"
         f"├• 🥇  `{DEFAULTUSER}` \n"
         f"├• 👤  `@{user.username}` \n"
         f"├────────────────────────\n"
         f"├• ⚙️  `Telethon :`Ver {version.__version__} \n"
-        f"├• 🦖  `Python   :`Ver {python_version()} \n"
+        f"├• 🧑‍💻  `Python   :`Ver {python_version()} \n"
         f"├• 🤖  `Bot Ver  :`{BOT_VER} \n"
         f"├• 📂  `Modules  :`{len(modules)} \n"
         f"╰────────────────────────")
@@ -259,24 +276,24 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:gemoy)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:ong)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤ    🤪 𝙂 𝙀 𝙈 𝙊 𝙔  -  𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 🤪 **\n"
+        f"**ㅤ   🧑‍💻  𝙂 𝘼 𝙈 𝙊 𝙉   𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏  🧑‍💻 **\n"
         f"════════════════════════════\n"
-        f"═⟩⟩ 🥱 • `ᴏᴡɴᴇʀ    :`[𝙂 𝙀 𝙈 𝙊 𝙔](t.me/dunottagme) \n"
+        f"═⟩⟩ 🥱 • `ᴏᴡɴᴇʀ    :`[𝙂𝘼𝙈𝙊𝙉 𝙉𝙊𝙊𝘽](t.me/dunottagme) \n"
         f"═⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10 \n"
         f"═⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__} \n"
-        f"═⟩⟩ 🦖 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} \n"
+        f"═⟩⟩ 🧑‍💻 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} \n"
         f"═⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER} \n"
         f"═⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} \n"
         f"════════════════════════════\n"
-        f"• [𝙂𝙀𝙈𝙊𝙔-𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
+        f"• [𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
         f"• [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗣𝘂𝗯𝗹𝗶𝗰 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
         f"• [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗣𝗨𝗕𝗟𝗜𝗖 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
-        f"• [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang)")
+        f"• [𝙂𝘼𝙈𝙊𝙉 𝙁𝘼𝙈𝙎](https://t.me/Repentblckcrcle")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -312,25 +329,25 @@ async def redis(alive):
     await alive.edit("🥱")
     await asyncio.sleep(2)
     output = (
-        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
-        f"     😴 𝙂 𝙀 𝙈 𝙊 𝙔  -  𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏 😴 \n"
-        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
-        f"◈ 🥱 `Owner    :`[𝙂 𝙀 𝙈 𝙊 𝙔 - 𝘽 𝙊 𝙏](t.me/dunottagme) \n"
-        f"◈ 🤴 `Name     :`{DEFAULTUSER} \n"
-        f"◈ 🔎 `Username :`@{user.username} \n"
-        f"◈ ⚙️ `Telethon :`v. {version.__version__} \n"
-        f"◈ 🦖 `Python   :`v. {python_version()} \n"
-        f"◈ 🛠️ `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
-        f"◈ 🤖 `Bot Ver  :`v. {BOT_VER} \n"
-        f"◈ 📂 `Modules  :`{len(modules)} Modules \n"
-        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
-        f"◈ **{GEMOY_TEKS_KUSTOM}** \n"
-        f"◈ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
-        f"◈ [𝙂𝙀𝙈𝙊𝙔-𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
-        f"◈ [𝗙𝗢𝗟𝗟𝗢𝗪 𝗠𝗬 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](https://Instagram.com/intan_hepy) \n"
-        f"◈ [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
-        f"◈ [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
-        f"◈ [𝗚𝗘𝗠𝗢𝗬-𝗧𝗘𝗔𝗠](https://t.me/fantaestheticgang)")
+        f"⚆ ━━━━━━━━━⚆ _ ⚆━━━━━━━━━ ◈\n"
+        f"     🧑‍💻  𝙂 𝘼 𝙈 𝙊 𝙉   𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏  🧑‍💻 \n"
+        f"⚆ ━━━━━━━━━⚆ _ ⚆━━━━━━━━━ ◈\n"
+        f"⚆ 🥱 `Dev     :`[𝙂𝘼𝙈𝙊𝙉 𝙉𝙊𝙊𝘽](t.me/dunottagme) \n"
+        f"⚆ 🤴 `Name     :`{DEFAULTUSER} \n"
+        f"⚆ 🔎 `Username :`@{user.username} \n"
+        f"⚆ ⚙️ `Telethon :`v. {version.__version__} \n"
+        f"⚆ 🧑‍💻 `Python   :`v. {python_version()} \n"
+        f"⚆ 🛠️ `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"⚆ 🤖 `Bot Ver  :`v. {BOT_VER} \n"
+        f"⚆ 📂 `Modules  :`{len(modules)} Modules \n"
+        f"⚆ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
+        f"⚆ **{GEMOY_TEKS_KUSTOM}** \n"
+        f"⚆ ━━━━━━━━━ ♡ - ♡ ━━━━━━━━━ ◈\n"
+        f"⚆ [𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏](https://github.com/brut69/Gemoy-Userbot) \n"
+        f"⚆ [𝗙𝗢𝗟𝗟𝗢𝗪 𝗠𝗬 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](https://instagram.com/liiii04_) \n"
+        f"⚆ [𝗚𝗡𝗨 𝗚𝗲𝗻𝗲𝗿𝗮𝗹 𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝘃3.0](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
+        f"⚆ [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘 𝗟𝗜𝗖𝗘𝗡𝗦𝗘 1.𝗱](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
+        f"⚆ [𝙂𝘼𝙈𝙊𝙉 𝙁𝘼𝙈𝙎](https://t.me/Repentblckcrcle")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -381,7 +398,7 @@ CMD_HELP.update({
 })
 
 CMD_HELP.update({
-    "alive": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.gemoy`"
+    "alive": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.ong` or `.gamon`"
     "\nPenggunaan: Untuk melihat apakah bot Anda berfungsi atau tidak."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
     "\nPenggunaan: Ubah 'pengguna' menjadi teks yang Anda inginkan."

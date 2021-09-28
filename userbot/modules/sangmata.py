@@ -1,10 +1,28 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP
 from userbot.events import register
 from asyncio.exceptions import TimeoutError
 
 
-@register(outgoing=True, pattern=r"^\.sm(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.sgm(?: |$)(.*)")
 async def lastname(steal):
     if steal.fwd_from:
         return
@@ -56,6 +74,6 @@ async def lastname(steal):
 
 
 CMD_HELP.update({
-    "sangmata": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sm`\
+    "sangmata": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sgm`\
           \nPenggunaan: Mendapatkan Riwayat Nama Pengguna."
 })

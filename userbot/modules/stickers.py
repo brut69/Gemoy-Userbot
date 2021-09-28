@@ -3,6 +3,22 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 
 import io
 import math
@@ -348,10 +364,10 @@ async def sticker_to_png(sticker):
 
 CMD_HELP.update(
     {
-        "getsticker": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kang | .tikel [emoji('s)]?`"
+        "getsticker": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kang | .tikel <emoji>`"
         "\nPenggunaan: Balas .tikel Ke Sticker Atau Gambar Untuk Menambahkan Ke Pack Mu "
         "\nBisa Memilih Emoji Sesuai Pilihanmu."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kang | .tikel  (emoji['s]]?` [nomer]?"
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kang | .tikel <emoji>` <nomer>"
         "\nPenggunaan: Ambil Sticker/Gambar Ke Pack Baru Mu.\nDan Bisa Pilih Emoji Sticker Mu."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stkrinfo`"
         "\nPenggunaan: Dapatkan Informasi Pack Sticker."

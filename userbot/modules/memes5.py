@@ -1,3 +1,21 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 from time import sleep
 from userbot import CMD_HELP, bot
 from userbot.events import register
@@ -10,32 +28,32 @@ async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("BEEEIIBYYYYYY... 💕")
         sleep(1)
-        await e.edit("💝💘💓💗")
+        await e.edit("❤️💛💚💙")
         sleep(1)
-        await e.edit("💞💕💗💘")
+        await e.edit("💜🧡🖤🤍")
         sleep(1)
-        await e.edit("💝💘💓💗")
+        await e.edit("❤️💛💚💙")
         sleep(1)
-        await e.edit("💞💕💗💘")
+        await e.edit("💜🧡🖤🤍")
         sleep(1)
-        await e.edit("💘💞💗💕")
+        await e.edit("❤️💛💚💙")
         sleep(1)
-        await e.edit("💘💞💕💗")
+        await e.edit("💜🧡🖤🤍")
         sleep(1)
         await e.edit("HMM...😔😔")
         sleep(1)
-        await e.edit("💝💘💓💗")
-        await e.edit("💞💕💗💘")
-        await e.edit("💘💞💕💗")
-        await e.edit("BYY.. 🥲")
+        await e.edit("❤️💛💚💙")
+        await e.edit("💜🧡🖤🤍")
+        await e.edit("💚💙🤍❤️")
+        await e.edit("SAY... 🥲")
         sleep(1)
         await e.edit("AKU😔")
         sleep(1)
         await e.edit("KANGEN 👉👈 😟😟")
         sleep(1)
-        await e.edit("💘💘💘💘")
+        await e.edit("💟💟💟💟")
         sleep(1)
-        await e.edit("BYY..")
+        await e.edit("YANK...")
         sleep(1)
         await e.edit("KANGEN..😔")
         sleep(1)
@@ -47,11 +65,11 @@ async def koc(e):
         sleep(1)
         await e.edit("I MISS YOU")
         sleep(1)
-        await e.edit("😘🥰😘")
+        await e.edit("😘🥵😘")
         sleep(1)
-        await e.edit("BEIBY")
+        await e.edit("OUCH...")
         sleep(1)
-        await e.edit("TAKE CARE DISANA BY 🥰")
+        await e.edit("AYO COD 🥵")
 
 
 @register(outgoing=True, pattern='^.orgil(?: |$)(.*)')
@@ -412,7 +430,7 @@ async def _(event):
             "`Mengirim Cintaku.. 52%\n  █████████████▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Mengirim Cintaku.. 84%\n  █████████████████████▒▒▒▒▒ `",
             "`Mengirim Cintaku.. 100%\n██████████CINTAKU██████████ `",
-            f"`Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You By 💞`"]
+            f"`Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You Too ❤️`"]
 
         for i in animation_ttl:
 
@@ -620,7 +638,7 @@ async def _(event):
     if (x == 74):
         await event.edit("**JANGAN BANYAK BANYAK**")
     if (x == 75):
-        await event.edit("**BABAYY MWAHHH🥰😘**")
+        await event.edit("**BABAYY MWAHHH 😂😘**")
 
 
 CMD_HELP.update({

@@ -1,7 +1,25 @@
 # Copyright (C) 2020 TeamUltroid
 # Ported by VckyGanss
 # Recode by @Vckyouuu
-# FromVT-Userbot
+# FromVT-UserbotFromVT-Userbot
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 
 import os
 import asyncio
@@ -107,10 +125,10 @@ async def on_afk(event):
         msg = None
         if reason:
             message_to_reply = (
-                f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n**👤 {ALIVE_NAME} sᴇᴅᴀɴɢ 🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n"
+                f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n**👤 {ALIVE_NAME} sᴇᴅᴀɴɢ 🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n"
                 f"**📢 ʀᴇᴀsᴏɴ :** `{reason}`")
         else:
-            message_to_reply = f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝙚𝙢𝙤𝙮\n**👤 {ALIVE_NAME} sᴇᴅᴀɴɢ 🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**"
+            message_to_reply = f"💌 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏\n**👤 {ALIVE_NAME} sᴇᴅᴀɴɢ 🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**"
         try:
             if pic.endswith((".tgs", ".webp")):
                 msg = await event.reply(file=pic)
@@ -173,40 +191,40 @@ async def _(event):
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
-                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`"
+                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`"
                     )
                 else:
                     await bot.send_message(
-                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`", file=pic
+                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`", file=pic
                     )
             except BaseException:
                 await bot.send_message(
-                    event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`"
+                    event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`"
                 )
         else:
             try:
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
-                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄"
+                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿"
                     )
                 else:
                     await bot.send_message(
-                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄", file=pic
+                        event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿", file=pic
                     )
             except BaseException:
-                await bot.send_message(event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄")
+                await bot.send_message(event.chat_id, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿")
         await event.delete()
         try:
             if reason and pic:
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(BOTLOG_CHATID, file=pic)
                     await bot.send_message(
-                        BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`"
+                        BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`"
                     )
                 else:
                     await bot.send_message(
-                        BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`", file=pic
+                        BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n**👤 {ALIVE_NAME} 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿**\n**📢 ʀᴇᴀsᴏɴ :** `{reason}`", file=pic
                     )
             elif reason:
                 await bot.send_message(
@@ -215,11 +233,11 @@ async def _(event):
             elif pic:
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(BOTLOG_CHATID, file=pic)
-                    await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄")
+                    await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿")
                 else:
-                    await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄\n", file=pic)
+                    await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿\n", file=pic)
             else:
-                await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘿𝙄𝘾𝘼𝙍𝙄")
+                await bot.send_message(BOTLOG_CHATID, f"**🔴 𝗢𝗙𝗙𝗟𝗜𝗡𝗘 🔴**\n👤 {ALIVE_NAME} 📢 𝙅𝘼𝙉𝙂 𝘽𝘼𝘾𝙊𝘿")
         except Exception as e:
             BOTLOG_CHATIDger.warn(str(e))
 

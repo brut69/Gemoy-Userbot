@@ -1,3 +1,21 @@
+#
+# Gemoy-Userbot (Telegram Userbot Project )
+# Copyright (C) 2021 @dunottagme
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 from platform import uname
 from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
@@ -113,48 +131,55 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GC NYA AJA KEK SAMPAH!! PALAGI OWN NYA BAU BANGKE KONTOL!!!**")
+    
+    
+@register(outgoing=True, pattern='^.gcm(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**DAH GC MISKIN, OWN NYA SONGONG PULAK. DIIH**")
+
 
 
 CMD_HELP.update({
     "salam2":
-    ".aslm\
+    "`.aslm`\
 \nPenggunaan:\
-\n\n.wslm\
+\n\n`.wslm`\
 \nPenggunaan:\
-\n\n.gjj\
+\n\n`.gjj`\
 \nPenggunaan:\
-\n\n.gjm\
+\n\n`.gjm`\
 \nPenggunaan:\
-\n\n.gjb\
+\n\n`.gjb`\
 \nPenggunaan:\
-\n\n.yb\
+\n\n`.yb`\
 \nPenggunaan:\
-\n\n.gjk\
+\n\n`.gjk` `.gcm`\
 \nPenggunaan:"
 })
 
 CMD_HELP.update({
     "salam3":
-    ".dih\
+    "`.dih`\
 \nPenggunaan:\
-\n\n.bsl\
+\n\n`.bsl`\
 \nPenggunaan:\
-\n\n.hai\
+\n\n`.hai`\
 \nPenggunaan:\
-\n\n.eh\
+\n\n`.eh`\
 \nPenggunaan:\
-\n\n.em\
+\n\n`.em`\
 \nPenggunaan:\
-\n\n.gls\
+\n\n`.gls`\
 \nPenggunaan:\
-\n\n.hey\
+\n\n`.hey`\
 \nPenggunaan:\
-\n\n.loh\
+\n\n`.loh`\
 \nPenggunaan:\
-\n\n.ucp\
+\n\n`.ucp`\
 \nPenggunaan:\
-\n\n.m\
+\n\n`.m`\
 \nPenggunaan:\
-\n\n.k\
+\n\n`.k`\
 \nPenggunaan:"
 })
