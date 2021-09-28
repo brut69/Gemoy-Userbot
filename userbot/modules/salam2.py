@@ -131,12 +131,13 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GC NYA AJA KEK SAMPAH!! PALAGI OWN NYA BAU BANGKE KONTOL!!!**")
-
-
+    
+    
 @register(outgoing=True, pattern='^.gcm(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**DAH GC MISKIN, OWN NYA SONGONG PULAK. DIIH**")
+
 
 
 CMD_HELP.update({
