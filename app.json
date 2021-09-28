@@ -1,6 +1,6 @@
 {
-  "name": "🤪 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏",
-  "description": "𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Telegram.",
+  "name": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏",
+  "description": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏 Telegram.",
   "logo": "https://telegra.ph/file/6f95912d305ad85457f39.jpg",
   "keywords": [
     "telegram",
@@ -11,15 +11,15 @@
   ],
   "repository": "https://github.com/brut69/Gemoy-Userbot.git",
   "telegram": "https://t.me/dunottagme",
-  "success_url": "https://t.me/fantaestheticgang",
+  "success_url": "https://t.me/TeamUltroid",
   "stack": "container",
   "env": {
     "API_KEY": {
-      "description": "Dapatkan Api Key di web my.telegram.org.",
+      "description": "Dapatkan Api Key di web my.telegram.org. Atau Dapatkan di @apiscrapperbot.",
       "required": true
     },
     "API_HASH": {
-      "description": "Dapatkan Api Hash Di Web my.telegram.org.",
+      "description": "Dapatkan Api Hash Di Web my.telegram.org. Atau Dapatkan di @apiscrapperbot.",
       "required": true
     },
      "STRING_SESSION": {
@@ -51,10 +51,12 @@
     },
     "GENIUS_ACCESS_TOKEN": {
       "description": "Token Akses Klien dari https://genius.com/api-clients.",
+      "value": "vDhUmdo_ufwIvEymMeMY65IedjWaVm1KPupdx0L",
       "required": false
     },
     "GENIUS_API_TOKEN": {
       "description": "Pada dasarnya sama dengan GENIUS_API_TOKEN.",
+      "value": "vDhUmdo_ufwIvEymMeMY65IedjWaVm1KPupdx0L",
       "required": false
     },
     "MONGO_URI": {
@@ -76,12 +78,13 @@
       "required": true
     },
     "TZ_NUMBER": {
-      "description": "Ubah nilai ini jika negara Anda memiliki beberapa Zona Waktu. Indonesia 3 Zona",
+      "description": "Ubah nilai ini jika negara Anda memiliki beberapa Zona Waktu. Indonesia Memiliki 3 Zona Waktu",
       "value": "3",
       "required": false
     },
     "OPEN_WEATHER_MAP_APPID": {
       "description": "Dapatkan APPID Anda sendiri (kunci API) dari https://api.openweathermap.org/data/2.5/weather",
+      "value": "5ed2fcba931692ec6bd0a8a3f8d84936",
       "required": false
     },
     "PM_AUTO_BAN": {
@@ -91,22 +94,27 @@
     },
     "YOUTUBE_API_KEY": {
       "description": "Kunci API Data YouTube untuk perintah .yt. Dapatkan dari https://console.cloud.google.com",
+      "value": "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg",
       "required": false
     },
     "OCR_SPACE_API_KEY": {
       "description": "Kunci API OCR untuk perintah .ocr. Dapatkan dari https://ocr.space/ocrapi",
+      "value": "12dc42a0ff88957",
       "required": false
     },
     "REM_BG_API_KEY": {
       "description": "Kunci API untuk perintah .rbg. Dapatkan dari https://www.remove.bg/api",
+      "value": "GPLyodhzj3uY2fnJbSsnKek8",
       "required": false
     },
     "REDIS_URI": {
       "description": "URL titik akhir redis, dari redislabs.com",
+      "value": "redis-14079.c1.us-west-2-2.ec2.cloud.redislabs.com:14079",
       "required": false
     },
     "REDIS_PASSWORD": {
       "description": "Kata sandi titik akhir redis, dari redislabs.com",
+      "value": "diUtERdBEcxaB9COUcws488U2hYJL6gR",
       "required": false
     },
     "ANTI_SPAMBOT": {
@@ -116,7 +124,7 @@
     },
     "ANTI_SPAMBOT_SHOUT": {
       "description": "Laporkan robot spam ke @admin dalam grup setelah mereka bergabung, untuk berjaga-jaga jika Anda tidak memiliki kekuatan admin untuk menendang sendiri.",
-      "value": "False",
+      "value": "True",
       "required": false
     },
     "TMP_DOWNLOAD_DIRECTORY": {
@@ -138,6 +146,7 @@
     },
     "LASTFM_API": {
       "description": "Kunci API untuk modul Last.FM. Dapatkan satu dari - https://www.last.fm/api/account/create",
+      "value": "73d42d9c93626709dc2679d491d472bf",
       "required": false
     },
     "LASTFM_SECRET": {
@@ -158,7 +167,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Bawaan Bio Mu.",
-      "value": "𝙃𝙚𝙡𝙡𝙤, 𝙋𝙚𝙧𝙠𝙚𝙣𝙖𝙡𝙠𝙖𝙣 𝙖𝙠𝙪 𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
+      "value": "👋 𝙃𝙚𝙡𝙡𝙤, 𝙋𝙚𝙧𝙠𝙚𝙣𝙖𝙡𝙠𝙖𝙣 𝙖𝙠𝙪 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
       "required": false
     },
     "ALIVE_NAME": {
@@ -168,7 +177,7 @@
     },
     "GEMOY_TEKS_KUSTOM": {
       "description": "Kustom Pesan Alive Mu Untuk Perintah .gemoy",
-      "value": "𝙂𝙚𝙢𝙤𝙮-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
+      "value": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
       "required": false
     },
     "S_PACK_NAME": {
@@ -177,7 +186,7 @@
       "required": false
     },
     "ALIVE_LOGO": {
-      "description": "Photo profil bot Mu.",
+      "description": "Photo profil bot Kamu. Atau ganti dengan mengunggah di @telegraph",
       "value": "https://telegra.ph/file/6f95912d305ad85457f39.jpg",
       "required": false
     },
@@ -195,19 +204,21 @@
     },
     "BITLY_TOKEN": {
       "description": "Kunci API Bit.ly Anda, dapatkan dari 'https://bitly.com/a/sign_up'",
+      "value": "o_1fpd9299vp",
       "required": false
     },
     "UB_BLACK_LIST_CHAT": {
       "description": "Lmao, idk about this.",
-      "value": "𝗪𝗮𝗶𝘁... 𝗪𝗵𝗮𝘁 ?? 𝗟𝗺𝗮𝗼",
+      "value": "𝙍𝙄𝙋 𝙛𝙤𝙧 𝙔𝙤𝙪",
       "required": false
     },
     "LYDIA_API_KEY": {
       "description": "Modul ini Membutuhkan API CoffeeHouse agar berfungsi. jadi Bergabunglah dengan https://telegram.dog/IntellivoidDev dan kirim #activateapi dan ikuti instruksi.",
+      "value": "632740cd2395c73b58275b54ff57a02b607a9f8a4bbc0e37a24e7349a098f95eaa6569e22e2d90093e9c1a9cc253380a218bfc2b7af2e407494502f6fb76f97e",
       "required": false
     },
     "WEATHER_DEFCITY": {
-      "description": "Tetapkan kota default untuk modul cuaca userbot.",
+      "description": "Tetapkan kota default kamu untuk modul cuaca userbot.",
       "value": "Surakarta",
       "required": false
     },
@@ -227,7 +238,7 @@
     "UPSTREAM_REPO_URL": {
       "description": "Jika Anda memelihara Fork, tambahkan URL repo Anda di sini guna Pembaruan bot Kamu.",
       "value": "https://github.com/brut69/Gemoy-Userbot",
-      "required": false
+      "required": true
     },
     "BOT_TOKEN": {
       "description": "Setel ini untuk mengaktifkan pembantu bot sebaris. dapatkan token dari @BotFather",

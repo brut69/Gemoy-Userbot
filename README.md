@@ -1,6 +1,6 @@
-## 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏
+## 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏
 
-**Gemoy-Userbot** adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+**𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏** adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 ```
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
@@ -17,10 +17,10 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 ### **Disclaimer**
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
-   Gemoy-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+   𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏 digunakan untuk membantu aktifitas akun anda di telegram
    Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
       ! Hati hati dalam penggunaan pada repository ini !
-   Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
+   Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng-Gban anda 
   Jangan pernah sekali sekali menyalah gunakan repository ini
 ```
 
@@ -35,14 +35,14 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brut69/Gemoy-Userbot.git)
 
 ### **Generate String Using Replit** ⤵️
-[![GenerateStringName](https://img.shields.io/badge/repl.it-QueenGemoyUserbot-magentablue)](https://repl.it/@brut69/getStringName)
+[![GenerateStringName](https://img.shields.io/badge/repl.it-GamonUserbot-magentablue)](https://repl.it/@brut69/getStringName)
 
 
 ### **Credits**
 
 `Thanks For all` 🥰
 
-*   [FantaestheticGang](https://t.me/fantaestheticgang) - Telegram Group Support
+*   [TeamUltroid](https://t.me/TheUltroid)
 *   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
 *   [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
 *   [Mkaraniya](https://github.com/mkaraniya) & [Dev73](https://github.com/Devp73) - OpenUserBot
@@ -65,7 +65,7 @@ Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang sa
 
 
 ### **Stay Support** 🚀
-*   [GemoyUserbot-Dev](https://t.me/dunoottagme) - **Noobeloper**
+*   [GamonUserbot-Dev](https://t.me/dunottagme) - **Noobeloper**
 *   [LonamiWebs](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
 
 
