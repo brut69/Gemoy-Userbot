@@ -2,7 +2,7 @@
 # Ported By Vcky @VckyouuBitch
 # Copyright (c) 2021 Geez - Projects
 # Geez - Projects https://github.com/Vckyou/Geez-UserBot
-# 
+#
 # Gemoy-Userbot (Telegram Userbot Project )
 # Copyright (C) 2021 @dunottagme
 

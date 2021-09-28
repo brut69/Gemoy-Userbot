@@ -23,6 +23,7 @@ from userbot import CMD_HELP
 
 # Port from @VckyouuBitch
 
+
 @register(outgoing=True, pattern="^.ip(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
