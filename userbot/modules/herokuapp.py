@@ -114,7 +114,7 @@ async def variable(var):
             return True
 
 
-@register(outgoing=True, pattern=r'^.set var (\w*) ([\s\S]*)')
+@register(outgoing=True, pattern=r'^.setvar (\w*) ([\s\S]*)')
 async def set_var(var):
     await var.edit("`Sedang Menyetel Config Vars ヅ`")
     variable = var.pattern_match.group(1)
@@ -236,12 +236,12 @@ async def _(dyno):
 
 CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.usage`"
                  "\nPenggunaan: Check Quota Dyno Heroku"
-                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set var <NEW VAR> <VALUE>`"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.setvar <NEW VAR> <VALUE>`"
                  "\nPenggunaan: Tambahkan Variabel Baru Atau Memperbarui Variabel"
-                 "\nSetelah Menyetel Variabel Tersebut, Geez-Userbot Akan Di Restart."
+                 "\nSetelah Menyetel Variabel Tersebut, Bot Akan Di Restart."
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get var atau .get var <VAR>`"
                  "\nPenggunaan: Dapatkan Variabel Yang Ada, !!PERINGATAN!! Gunakanlah Di Grup Privasi Anda."
                  "\nIni Mengembalikan Semua Informasi Pribadi Anda, Harap berhati-hati."
-                 "\n\n??𝙤𝙢𝙢𝙖𝙣𝙙: `.del var <VAR>`"
+                 "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.del var <VAR>`"
                  "\nPenggunaan: Menghapus Variabel Yang Ada"
                  "\nSetelah Menghapus Variabel, Bot Akan Di Restart."})
