@@ -220,7 +220,7 @@ BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "Gemoy-Userbot")
 
 # Bot Version
-BOT_VER = os.environ.get("BOT_VER", "1.0")
+BOT_VER = os.environ.get("BOT_VER", "1.4")
 
 # Default .alive Username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -372,7 +372,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... 🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰 Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```💣 𝘽𝙤𝙤𝙢𝙗𝙨 🔥 \n🧑‍💻 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 𝙃𝙖𝙨 𝙍𝙞𝙨𝙚𝙣 𝙙𝙪𝙙𝙚 ⚡```")
     return
 
 with bot:
@@ -410,8 +410,8 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = sorted(helpable_modules)
     modules = [
         custom.Button.inline(
-            "{} {} 🔰".format(
-                "🔰", x), data="ub_modul_{}".format(x))
+            "{} {} 🧑‍💻".format(
+                "🧑‍💻", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -460,7 +460,7 @@ with bot:
             try:
                 tgbotusername = BOT_USERNAME
                 if tgbotusername is not None:
-                    results = await event.client.inline_query(tgbotusername, "@Gemoy-Project")
+                    results = await event.client.inline_query(tgbotusername, "@Gamon-Project")
                     await results[0].click(
                         event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
                     )
@@ -483,13 +483,13 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**QueenGemoy - Project**\nKalo mau tau lebih lanjut silahkan Join Ke \n**𝙌𝙪𝙚𝙚𝙣 𝙂𝙚𝙢𝙤𝙮 𝙋𝙧𝙤𝙟𝙚𝙘𝙩** Dibawah Ini.\n",
+                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**🧑‍💻 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏**\nKalo mau tau lebih lanjut silahkan Join Ke \n**⚡ 𝙂𝘼𝙈𝙊𝙉 𝙁𝘼𝙈𝙎** Dibawah Ini.\n",
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/queengemoy_project"),
+                                       "t.me/punyamipan"),
                             Button.url("🚨 Group support",
-                                       "t.me/fantaestheticgang")],
+                                       "t.me/Repentblckcrcle")],
                         [Button.url("👤 Development",
                                     "t.me/dunottagme")],
                     ]
@@ -526,33 +526,33 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@Gemoy-Project"):
+                    "@Gamon-Project"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=gemoylogo,
                     link_preview=False,
-                    text=f"🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `1.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : brut69 **".format(
+                    text=f"🧑‍💻 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧑‍💻\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Version :** `1.4`\n⚡ **Plugins :** `{len(plugins)}`\n\n⚡ **Dev : @dunottagme **".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari 🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰 ",
+                    "Bantuan Dari 🧑‍💻 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧑‍💻",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " 🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰",
-                    text="""**🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰\n\n Anda Bisa Membuat Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    "🧑‍💻 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧑‍💻",
+                    text="""**🧑‍💻 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧑‍💻\n\n Anda Bisa Membuat Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "🥰 𝙂𝙀𝙈𝙊𝙔 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🥰",
+                                "🧑‍💻 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧑‍💻",
                                 "https://github.com/brut69/Gemoy-Userbot"),
                             custom.Button.url(
-                                "OWNER",
+                                "NOOBELOPER",
                                 "t.me/dunottagme")]],
                     link_preview=False,
                 )
@@ -589,9 +589,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/queengemoy_project"),
+                                       "t.me/punyamipan"),
                             Button.url("🚨 Group support",
-                                       "t.me/fantaestheticgang")],
+                                       "t.me/Repentblckcrcle")],
                         [Button.inline("Open Menu", data="nepo")],
                         [custom.Button.inline(
                             "Close", b"close")],
