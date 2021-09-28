@@ -1,4 +1,4 @@
-# 
+#
 # Gemoy-Userbot (Telegram Userbot Project )
 # Copyright (C) 2021 @dunottagme
 

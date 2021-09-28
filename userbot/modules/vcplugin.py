@@ -6,7 +6,7 @@
 #
 # Ported by @mrismanaziz
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
-# 
+#
 # Gemoy-Userbot (Telegram Userbot Project )
 # Copyright (C) 2021 @dunottagme
 

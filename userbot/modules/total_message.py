@@ -22,6 +22,8 @@ from userbot import CMD_HELP, bot
 #
 # Port By @VckyouuBitch From GeezProject
 #
+
+
 @register(outgoing=True, pattern=r"^\.tmsg (.*)")
 async def _(event):
     k = await event.get_reply_message()
