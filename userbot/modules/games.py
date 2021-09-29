@@ -66,28 +66,16 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    link = event.pattern_match.group(1)
     botusername = "@truthordaresbot"
-    truth = "/truth"
-    await event.edit()
-    async with bot.conversation(chat) as conv:
-        try:
-    response = conv.wait_event(
-                events.NewMessage(
-                    incoming=True,
-                    from_users=424466890))
-            await bot.send_message(link, botusername, truth)
-            response = await response
-        except YouBlockedUserError:
-            await event.reply("```Buka blokir @truthordaresbot dan coba lagi```")
-        return
-        if response.text.startswith(
-                "**Maaf saya tidak bisa mendapatkan apa-apa dari **"):
-            await event.edit("```Saya pikir ini bukan tautan yang benar```")
-        else:
-            await event.delete()
-            await bot.send_message(event.chat_id, response.message)
-        
+    honest = "/truth"
+    if event.reply_to_msg_id:
+        await event.get_reply_message()
+    await bot.send_message(botusername, dare)
+    response = await response
+    await bot.get_response()
+    await event.delete()
+    await bot.send_message(event.chat_id, response.message)
+
 
 @register(outgoing=True, pattern=r"^\.dare(?: |$)(.*)")
 async def _(event):
@@ -95,24 +83,12 @@ async def _(event):
         return
     botusername = "@truthordaresbot"
     dare = "/dare"
-    await event.edit()
-    async with bot.conversation(chat) as conv:
-        try:
-    response = conv.wait_event(
-                events.NewMessage(
-                    incoming=True,
-                    from_users=424466890))
-            await bot.send_message(link, botusername, dare)
-            response = await response
-        except YouBlockedUserError:
-            await event.reply("```Buka blokir @truthordaresbot dan coba lagi```")
-        return
-        if response.text.startswith(
-                "**Maaf saya tidak bisa mendapatkan apa-apa dari **"):
-            await event.edit("```Saya pikir ini bukan tautan yang benar```")
-        else:
-            await event.delete()
-            await bot.send_message(event.chat_id, response.message)
+    if event.reply_to_msg_id:
+        await event.get_reply_message()
+    tap = await bot.send_message(botusername, dare)
+    await bot.get_response()
+    await tap[0].click(event.chat_id)
+    await event.delete()
 
 
 @register(outgoing=True, pattern=r"^\.spill(?: |$)(.*)")

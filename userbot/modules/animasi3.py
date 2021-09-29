@@ -30,8 +30,6 @@ from asyncio import sleep
 from collections import deque
 from random import choice, getrandbits, randint
 
-
-from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP, ALIVE_NAME
 from userbot.events import register
 from userbot.modules.admin import get_user_from_event
@@ -657,56 +655,16 @@ async def shrugger(shg):
     await shg.edit(choice(SHGS))
 
 
-@register(outgoing=True, pattern=r"^\.truth(?: |$)(.*)")
-async def _(event):
-	if event.fwd_from:
-        return
-    link = event.pattern_match.group(1)
-    truth = "@truthordaresbot"
-    await event.edit()
-    async with bot.conversation(chat) as conv:
-        try:
-            response = conv.wait_event(
-                events.NewMessage(
-                    incoming=True,
-                    from_users=424466890))
-            await bot.send_message(truth, link)
-            response = await response
-        except YouBlockedUserError:
-            await event.reply("```Buka blokir @truthordaresbot dan coba lagi```")
-            return
-        if response.text.startswith(
-                "**Maaf saya tidak bisa mendapatkan apa-apa dari **"):
-            await event.edit("```Saya pikir ini bukan tautan yang benar```")
-        else:
-            await event.delete()
-            await bot.send_message(event.chat_id, response.message)
-            
+@register(outgoing=True, pattern=r"^\.truth$")
+async def truth(truth):
+    """ Test Kejujuran !! """
+    await truth.edit(choice(TRUTH_STR))
 
-@register(outgoing=True, pattern=r"^\.dare(?: |$)(.*)")
-async def _(event):
-	if event.fwd_from:
-        return
-    link = event.pattern_match.group(1)
-    dare = "@truthordaresbot"
-    await event.edit()
-    async with bot.conversation(chat) as conv:
-        try:
-            response = conv.wait_event(
-                events.NewMessage(
-                    incoming=True,
-                    from_users=424466890))
-            await bot.send_message(dare, link)
-            response = await response
-        except YouBlockedUserError:
-            await event.reply("```Buka blokir @truthordaresbot dan coba lagi```")
-            return
-        if response.text.startswith(
-                "**Maaf saya tidak bisa mendapatkan apa-apa dari **"):
-            await event.edit("```Saya pikir ini bukan tautan yang benar```")
-        else:
-            await event.delete()
-            await bot.send_message(event.chat_id, response.message)
+
+@register(outgoing=True, pattern=r"^\.dare$")
+async def dare(dare):
+    """ Pertanyaan Menantang !! """
+    await dare.edit(choice(DARE_STR))
 
 
 @register(outgoing=True, pattern=r"^\.spill$")
