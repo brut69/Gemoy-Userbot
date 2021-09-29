@@ -30,6 +30,8 @@ from asyncio import sleep
 from collections import deque
 from random import choice, getrandbits, randint
 
+from telethon import events
+from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP, ALIVE_NAME
 from userbot.events import register
 from userbot.modules.admin import get_user_from_event
@@ -142,55 +144,86 @@ DARE_STR = [
 
 
 SPILL_STR = [
-    "Menurutmu kemana kamu akan pergi?",
-    "Hah? Apa? Apakah mereka lolos?",
-    "ZZzzZZzz... Hah? Apa? Oh, hanya mereka lagi, lupakan.",
-    "Kembali kesini!",
-    "Tidak terlalu cepat...",
-    "Awas ke dinding!",
-    "Jangan tinggalkan aku sendiri dengan mereka !!",
-    "Kamu lari, kamu mati.",
-    "Bercanda, aku ada dimana-mana",
-    "Kamu akan menyesali itu ...",
-    "Kamu juga bisa mencoba /kickme, kudengar itu menyenangkan.",
-    "Ganggu orang lain, tidak ada yang peduli.",
-    "Kamu bisa lari, tapi kamu tidak bisa bersembunyi.",
-    "Apakah hanya itu yang kamu punya?",
-    "Saya di belakang Anda...",
-    "Anda punya teman!",
-    "Kita bisa melakukan ini dengan cara mudah, atau cara sulit.",
-    "Anda tidak mengerti, bukan?",
-    "Ya, sebaiknya kau lari!",
-    "Tolong, ingatkan saya apakah saya peduli?",
-    "Aku akan lari lebih cepat jika jadi kamu.",
-    "Itu pasti droid yang kami cari.",
-    "Semoga peluang selalu menguntungkan Anda.",
-    "Kata-kata terakhir yang terkenal.",
-    "Dan mereka menghilang selamanya, tidak pernah terlihat lagi.",
-    "Oh, lihat aku! Saya sangat keren, saya bisa lari dari bot orang ini",
-    "Ya ya, cukup ketuk /kickme.",
-    "Ini, ambil cincin ini dan pergilah ke Mordor saat kamu melakukannya.",
-    "Legenda mengatakan, mereka masih berjalan...",
-    "Tidak seperti Harry Potter, orang tuamu tidak bisa melindungimu dariku.",
-    "Ketakutan menyebabkan kemarahan. Kemarahan mengarah pada kebencian. Kebencian menyebabkan penderitaan. Jika Anda terus berlari dalam ketakutan, Anda mungkin"
-    "jadilah Vader berikutnya.",
-    "Beberapa kalkulasi nanti, saya telah memutuskan minat saya pada kejahatan Anda tepat 0.",
-    "Legenda mengatakan, mereka masih berjalan.",
-    "Teruskan, kami tidak yakin kami menginginkanmu di sini.",
-    "Kamu seorang penyihir- Oh. Tunggu. Kamu bukan Harry, terus bergerak.",
-    "JANGAN BERLARI DI SINI!",
-    "Hasta la vista, sayang.",
-    "Siapa yang membiarkan anjing keluar?",
-    "Ini lucu, karena tidak ada yang peduli.",
-    "Ah, sayang sekali, Aku suka yang itu.",
-    "Terus terang, sayangku, aku tidak peduli.",
-    "Milkshake saya membawa semua anak laki-laki ke halaman... Jadi lari lebih cepat!",
-    "Anda tidak bisa MENANGANI kebenaran!",
-    "Dahulu kala, di galaksi yang sangat jauh... Seseorang akan peduli tentang itu, Tapi sekarang tidak lagi.",
-    "Hei, lihat mereka! Mereka lari dari palu yang tak terelakkan... Manis.",
-    "Han menembak lebih dulu, Aku juga.",
-    "Apa yang kamu kejar, kelinci putih?",
-    "Seperti yang dikatakan The Doctor... LARI!",
+    "spill menurutmu kemana kamu akan pergi?",
+    "spill hal apa yg paling menegangkan yg pernah lu lakuin?",
+    "spill kang ngadu?",
+    "spill cogan?",
+    "spill cecan?",
+    "spill yang lemotnya meresahkan?",
+    "spill chat teruwu sama gebetan!",
+    "spill sebut orang yang pernah bully lu?! Gausah pake insial, gass aja namanya!",
+    "spill moodmaker lu!",
+    "spill orang yang bikin lu ketawa tiap liat layar hp!",
+    "spill nama orang yang bikin lu lu nyaman meski cuma virtual!",
+    "spill orang yang lu harepin jadi masa depan lu!",
+    "spill orng yg udah lu anggap keluarga sendiri!",
+    "spill hewan yang paling lu benci!",
+    "Spill ada niatan buat mau balikan gak sama mantan! Kasi alasannya kenapa?",
+    "spill orang yang paling berkesan di SMP!",
+    "spill orang yang paling berkesan di SMA!",
+    "spill alasan apa bisa putus sama mantan terakhir ini?",
+    "spill nama yang bikin kamu nangis mulu jika inget!",
+    "spill diantara kalian disini yang paling jorok!",
+    "spill diantara kalian disini yang paling kepoan",
+    "",
+    "spill stiker favorit di telegram",
+    "spill nama orang yang gag bisa di percaya disini!",
+    "spill akun tiktok yang lu pegang sekarang punya siapa aja!",
+    "spill nama nama yang pernah lu suka disini!",
+    "spill film favorit",
+    "spill lebih suka yang panjang tapi kecil atau pendek tapi gede",
+    "spill potong bulu ketiak berapa kali seminggu?",
+    "spill bias lu sape!",
+    "spill kalian kalo mandi apa yang pertama kalian lakukan"
+    "spill kriteria tipe idaman lu banget!",
+    "spill orang yang suka dicurhatin",
+    "spill punya pet ngga!",
+    "spill orang yang paling lu gak bisa lupain sampe sekarang",
+    "spill nama mantan lu!",
+    "spill orang yang pernah nyakitin lu! Karna apa?",
+    "spill pernah bucin ke orang yang salah ga! siapa",
+    "spill lagi baper sama siapa?",
+    "spill tipe cowo/cewe/calon idaman!",
+    "spill style outfit favorit",
+    "spill yang sering baperan disini",
+    "spill siapa yg paling nyebelin!",
+    "spill keluar ddalem apa diluar!",
+    "spill perasaan lu kalo dicuekin!",
+    "spill nama gebetan lu sekarang!",
+    "spill perasaan lu saat pertama kali nonton film 18++",
+    "spill pernah hilang rasa sama cowo atau cewe!",
+    "spill berapa liter kamu minum air putih sehari!",
+    "spill hal hal yang kamu lakukan klo lagi gabut",
+    "spill kontak ter favorit",
+"spill SS beranda IG mu",
+"spill SS beranda chat Whatsapp mu",
+"spill SS gc telegram mu",
+"spill orang yang paling jarang nimbrung di gc ini",
+"spill teman paling julid",
+"spill punya gebetan berapa?",
+"spill kenapa cewe sering bilang Gpapa",
+"spill base twt favorit!",
+"spill orang yang sering buat lu senyum senyum sendiri klo lagi chat-an",
+"spill orang yang paling lo benci walaupun dia udah minta maaf",
+"spill nama teman se-grup yang bodoamat sama cewe/cowo?",
+"spill suka coklat atau susu? Atau susu yang kecoklatan?",
+"spill berapa waktu yang lu habisin buat main hp",
+"spill pernah confess ke org yg lu sayang? Sebutin namanya!",
+"spill orang yang paling sabar",
+"spill siapa nama doi lu sekarang",
+"spill orang yang jomblo abadi",
+"spill siapa orang yang paling perhatian?",
+"spill merk teh kalian",
+"spill susu kesukaan kalian",
+"spill aib yang paling bikin lo malu",
+"spill pernah benci banget sama orang? Apa alasannya?",
+"spill barang yang di kasih doi",
+"spill yang suka odading mang oleh",
+"spill orang tercuek",
+"spill tempat favorite kalau lagi hunting",
+"spill umur kamu",
+"spill nama lengkap kamu",
+"spill nama yg menurutmu interesting bgt!",
 ]
 
 
@@ -655,16 +688,56 @@ async def shrugger(shg):
     await shg.edit(choice(SHGS))
 
 
-@register(outgoing=True, pattern=r"^\.truth$")
-async def truth(truth):
-    """ Test Kejujuran !! """
-    await truth.edit(choice(TRUTH_STR))
+@register(outgoing=True, pattern=r"^\.truth(?: |$)(.*)")
+async def _(event):
+	if event.fwd_from:
+        return
+    link = event.pattern_match.group(1)
+    truth = "@truthordaresbot"
+    await event.edit()
+    async with bot.conversation(chat) as conv:
+        try:
+            response = conv.wait_event(
+                events.NewMessage(
+                    incoming=True,
+                    from_users=424466890))
+            await bot.send_message(truth, link)
+            response = await response
+        except YouBlockedUserError:
+            await event.reply("```Buka blokir @truthordaresbot dan coba lagi```")
+            return
+        if response.text.startswith(
+                "**Maaf saya tidak bisa mendapatkan apa-apa dari **"):
+            await event.edit("```Saya pikir ini bukan tautan yang benar```")
+        else:
+            await event.delete()
+            await bot.send_message(event.chat_id, response.message)
+            
 
-
-@register(outgoing=True, pattern=r"^\.dare$")
-async def dare(dare):
-    """ Pertanyaan Menantang !! """
-    await dare.edit(choice(DARE_STR))
+@register(outgoing=True, pattern=r"^\.dare(?: |$)(.*)")
+async def _(event):
+	if event.fwd_from:
+        return
+    link = event.pattern_match.group(1)
+    dare = "@truthordaresbot"
+    await event.edit()
+    async with bot.conversation(chat) as conv:
+        try:
+            response = conv.wait_event(
+                events.NewMessage(
+                    incoming=True,
+                    from_users=424466890))
+            await bot.send_message(dare, link)
+            response = await response
+        except YouBlockedUserError:
+            await event.reply("```Buka blokir @truthordaresbot dan coba lagi```")
+            return
+        if response.text.startswith(
+                "**Maaf saya tidak bisa mendapatkan apa-apa dari **"):
+            await event.edit("```Saya pikir ini bukan tautan yang benar```")
+        else:
+            await event.delete()
+            await bot.send_message(event.chat_id, response.message)
 
 
 @register(outgoing=True, pattern=r"^\.spill$")
@@ -1204,7 +1277,7 @@ async def koc(e):
         await e.edit("8✊===D💦💦💦💦")
         await e.edit("8===✊D💦💦💦💦💦")
         await e.edit("8==✊=D💦💦💦💦💦💦")
-        await e.edit("8=✊==D💦💦💦💦💦💦💦")
+        await e.edit("8=✊==D💦💦💦??💦💦💦")
         await e.edit("8✊===D💦💦💦💦💦💦💦💦")
         await e.edit("8===✊D💦💦💦💦💦💦💦💦💦")
         await e.edit("8==✊=D💦💦💦💦💦💦💦💦💦💦")
