@@ -16,8 +16,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-import math
-import random
 
 from userbot import CMD_HELP, bot
 from userbot.events import register
@@ -118,7 +116,6 @@ async def _(event):
     await event.delete()
 
 
-
 CMD_HELP.update({
     "games": "\
 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.xogame`\
@@ -127,8 +124,7 @@ CMD_HELP.update({
 \nPenggunaan: Dapatkan applikasi mod\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whisp <teks> <username/ID>`\
 \nPenggunaan: Berikan pesan rahasia."
-    })
-
+})
 
 
 CMD_HELP.update({
@@ -141,4 +137,4 @@ CMD_HELP.update({
 \nPenggunaan: Spill pertanyaan.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.f100`\
 \nPenggunaan: Kuis Family 100."
-    })
+})
