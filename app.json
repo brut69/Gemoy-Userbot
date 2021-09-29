@@ -1,6 +1,6 @@
 {
-  "name": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏",
-  "description": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏 Telegram.",
+  "name": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏",
+  "description": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 Telegram.",
   "logo": "https://telegra.ph/file/6f95912d305ad85457f39.jpg",
   "keywords": [
     "telegram",
@@ -89,7 +89,7 @@
     },
     "PM_AUTO_BAN": {
       "description": "Pengalihan Fitur Larangan Otomatis PM. Juga dikenal sebagai modul 'bleep blop, this is a bot...'.",
-      "value": "True",
+      "value": "False",
       "required": true
     },
     "YOUTUBE_API_KEY": {
@@ -167,7 +167,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Bawaan Bio Mu.",
-      "value": "👋 𝙃𝙚𝙡𝙡𝙤, 𝙋𝙚𝙧𝙠𝙚𝙣𝙖𝙡𝙠𝙖𝙣 𝙖𝙠𝙪 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
+      "value": "👋 𝙃𝙚𝙡𝙡𝙤, 𝙋𝙚𝙧𝙠𝙚𝙣𝙖𝙡𝙠𝙖𝙣 𝙖𝙠𝙪 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
       "required": false
     },
     "ALIVE_NAME": {
@@ -177,7 +177,7 @@
     },
     "GEMOY_TEKS_KUSTOM": {
       "description": "Kustom Pesan Alive Mu Untuk Perintah .gemoy",
-      "value": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍-𝘽𝙊𝙏 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
+      "value": "𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 @",
       "required": false
     },
     "S_PACK_NAME": {
@@ -242,7 +242,7 @@
     },
     "BOT_TOKEN": {
       "description": "Setel ini untuk mengaktifkan pembantu bot sebaris. dapatkan token dari @BotFather",
-      "required": false
+      "required": true
     },
     "BOT_USERNAME": {
       "description": "Nama pengguna bot yang Anda buat dengan @BotFather",
