@@ -662,7 +662,7 @@ async def _(event):
 	if event.fwd_from:
         return
     link = event.pattern_match.group(1)
-    truth = "@Spillgame_bot"
+    truth = "@truthordaresbot"
     await event.edit()
     async with bot.conversation(chat) as conv:
         try:
@@ -688,7 +688,7 @@ async def _(event):
 	if event.fwd_from:
         return
     link = event.pattern_match.group(1)
-    dare = "@Spillgame_bot"
+    dare = "@truthordaresbot"
     await event.edit()
     async with bot.conversation(chat) as conv:
         try:
