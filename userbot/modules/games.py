@@ -16,6 +16,9 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
+import math
+import random
+
 from userbot import CMD_HELP, bot
 from userbot.events import register
 
@@ -63,15 +66,28 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
+    link = event.pattern_match.group(1)
     botusername = "@truthordaresbot"
-    honest = "/truth"
-    if event.reply_to_msg_id:
-        await event.get_reply_message()
-    tap = await bot.send_message(botusername, honest)
-    await bot.get_response()
-    await tap[0].click(event.chat_id)
-    await event.delete()
-
+    truth = "/truth"
+    await event.edit()
+    async with bot.conversation(chat) as conv:
+        try:
+    response = conv.wait_event(
+                events.NewMessage(
+                    incoming=True,
+                    from_users=424466890))
+            await bot.send_message(link, botusername, truth)
+            response = await response
+        except YouBlockedUserError:
+            await event.reply("```Buka blokir @truthordaresbot dan coba lagi```")
+        return
+        if response.text.startswith(
+                "**Maaf saya tidak bisa mendapatkan apa-apa dari **"):
+            await event.edit("```Saya pikir ini bukan tautan yang benar```")
+        else:
+            await event.delete()
+            await bot.send_message(event.chat_id, response.message)
+        
 
 @register(outgoing=True, pattern=r"^\.dare(?: |$)(.*)")
 async def _(event):
@@ -79,12 +95,24 @@ async def _(event):
         return
     botusername = "@truthordaresbot"
     dare = "/dare"
-    if event.reply_to_msg_id:
-        await event.get_reply_message()
-    tap = await bot.send_message(botusername, dare)
-    await bot.get_response()
-    await tap[0].click(event.chat_id)
-    await event.delete()
+    await event.edit()
+    async with bot.conversation(chat) as conv:
+        try:
+    response = conv.wait_event(
+                events.NewMessage(
+                    incoming=True,
+                    from_users=424466890))
+            await bot.send_message(link, botusername, dare)
+            response = await response
+        except YouBlockedUserError:
+            await event.reply("```Buka blokir @truthordaresbot dan coba lagi```")
+        return
+        if response.text.startswith(
+                "**Maaf saya tidak bisa mendapatkan apa-apa dari **"):
+            await event.edit("```Saya pikir ini bukan tautan yang benar```")
+        else:
+            await event.delete()
+            await bot.send_message(event.chat_id, response.message)
 
 
 @register(outgoing=True, pattern=r"^\.spill(?: |$)(.*)")
@@ -115,6 +143,7 @@ async def _(event):
     await event.delete()
 
 
+
 CMD_HELP.update({
     "games": "\
 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.xogame`\
@@ -123,7 +152,8 @@ CMD_HELP.update({
 \nPenggunaan: Dapatkan applikasi mod\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whisp <teks> <username/ID>`\
 \nPenggunaan: Berikan pesan rahasia."
-})
+    })
+
 
 
 CMD_HELP.update({
@@ -136,4 +166,4 @@ CMD_HELP.update({
 \nPenggunaan: Spill pertanyaan.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.f100`\
 \nPenggunaan: Kuis Family 100."
-})
+    })
