@@ -318,36 +318,36 @@ async def amireallyalive(alive):
 async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑...__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑...__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑..__")
-    await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
-    await alive.edit("🥱")
-    await asyncio.sleep(2)
+    await alive.edit("__̶🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・__")
+    await alive.edit("__̶🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・・__")
+    await alive.edit("__̶🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・・・__")
+    await alive.edit("__̶🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・__")
+    await alive.edit("__̶🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・・__")
+    await alive.edit("__̶🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・・・__")
+    await alive.edit("__🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・__")
+    await alive.edit("__̶🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・・__")
+    await alive.edit("__̶🧑‍💻 S̶̶Y̶̶S̶̶T̶̶E̶̶M̶ ̶E̶̶R̶̶R̶̶O̶̶R̶・・・__")
+    await alive.edit("⚡")
+    await asyncio.sleep(1)
     output = (
         f"⚆ ━━━━━━━━━⚆ _ ⚆━━━━━━━━━ ⚆\n"
         f"     🧑‍💻  𝙂 𝘼 𝙈 𝙊 𝙉   𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏  🧑‍💻 \n"
         f"⚆ ━━━━━━━━━⚆ _ ⚆━━━━━━━━━ ⚆\n"
-        f"⚆ 🥱 `Dev     :`[𝙉𝙊𝙊𝘽𝙀𝙇𝙊𝙋𝙀𝙍](t.me/dunottagme) \n"
-        f"⚆ 🤴 `Name     :`{DEFAULTUSER} \n"
-        f"⚆ 🔎 `Username :`@{user.username} \n"
-        f"⚆ ⚙️ `Telethon :`v. {version.__version__} \n"
-        f"⚆ 🧑‍💻 `Python   :`v. {python_version()} \n"
-        f"⚆ 🛠️ `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
-        f"⚆ 🤖 `Bot Ver  :`v. {BOT_VER} \n"
-        f"⚆ 📂 `Modules  :`{len(modules)} Modules \n"
+        f"⚆ 👨‍🔧 `Dev     :` [𝙉𝙊𝙊𝘽𝙀𝙇𝙊𝙋𝙀𝙍](t.me/dunottagme) \n"
+        f"⚆ 🤴 `Name     :` {DEFAULTUSER} \n"
+        f"⚆ 🔎 `Username :` @{user.username} \n"
+        f"⚆ ⚙️ `Telethon :` v. {version.__version__} \n"
+        f"⚆ 🧑‍💻 `Python   :` v. {python_version()} \n"
+        f"⚆ 🛠️ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
+        f"⚆ 🤖 `Bot Ver  :` v. {BOT_VER} \n"
+        f"⚆ 📂 `Modules  :` {len(modules)} Modules \n"
         f"⚆ ━━━━━━━━━⚆ _ ⚆━━━━━━━━━ ⚆\n"
         f"⚆ **{GEMOY_TEKS_KUSTOM}** \n"
         f"⚆ ━━━━━━━━━⚆ _ ⚆━━━━━━━━━ ⚆\n"
-        f"⚆ [𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀](https://github.com/brut69/Gemoy-Userbot) \n"
-        f"⚆ [𝗙𝗢𝗟𝗟𝗢𝗪 𝗜𝗚](https://instagram.com/liiii04_) \n"
-        f"⚆ [𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝗚𝗡𝗨](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
-        f"⚆ [𝗥𝗔𝗣𝗛𝗜𝗘𝗟𝗦𝗖𝗔𝗣𝗘](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/resources/LICENSE) \n"
-        f"⚆ [𝙅𝙊𝙄𝙉 𝙂𝙍𝙊𝙐𝙋](https://t.me/Repentblckcrcle)")
+        f"⚆ 🧲  `Source Code :` [𝗚𝗶𝘁𝗵𝘂𝗯 𝗥𝗲𝗽𝗼](https://github.com/brut69/Gemoy-Userbot) \n"
+        f"⚆ ⭐ `Instagram :` [𝗙𝗼𝗹𝗹𝗼𝘄 𝗠𝗲](https://instagram.com/liiii04_) \n"
+        f"⚆ ✍️ `Lisensi :` [𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝗚𝗡𝗨](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
+        f"⚆ 🫂 `Group Support :` [𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗿𝗼𝘂𝗽(https://t.me/Repentblckcrcle)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

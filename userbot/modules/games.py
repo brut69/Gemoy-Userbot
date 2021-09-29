@@ -15,6 +15,10 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+
+import math
+import random
+
 from userbot import CMD_HELP, bot
 from userbot.events import register
 
@@ -63,10 +67,11 @@ async def _(event):
     if event.fwd_from:
         return
     botusername = "@truthordaresbot"
-    honest = "truth"
+    honest = "/truth"
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    tap = await bot.inline_query(botusername, honest)
+    tap = await bot.send_message(botusername, honest)
+    await bot.get_response()
     await tap[0].click(event.chat_id)
     await event.delete()
 
@@ -76,10 +81,11 @@ async def _(event):
     if event.fwd_from:
         return
     botusername = "@truthordaresbot"
-    dare = "dare"
+    dare = "/dare"
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    tap = await bot.inline_query(botusername, dare)
+    tap = await bot.send_message(botusername, dare)
+    await bot.get_response()
     await tap[0].click(event.chat_id)
     await event.delete()
 
@@ -89,10 +95,11 @@ async def _(event):
     if event.fwd_from:
         return
     botusername = "@Spillgame_bot"
-    spill = "spill"
+    spill = "/spill"
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    tap = await bot.inline_query(botusername, spill)
+    tap = await bot.send_message(botusername, spill)
+    await bot.get_response()
     await tap[0].click(event.chat_id)
     await event.delete()
 
@@ -102,12 +109,14 @@ async def _(event):
     if event.fwd_from:
         return
     botusername = "@Familys100_bot"
-    family = "next"
+    family = "/next"
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    tap = await bot.inline_query(botusername, family)
+    tap = await bot.send_message(botusername, family)
+    await bot.get_response()
     await tap[0].click(event.chat_id)
     await event.delete()
+
 
 
 CMD_HELP.update({
@@ -117,12 +126,19 @@ CMD_HELP.update({
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mod <nama app>`\
 \nPenggunaan: Dapatkan applikasi mod\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.whisp <teks> <username/ID>`\
-\nPenggunaan: Berikan pesan rahasia\
-\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.truth`\
+\nPenggunaan: Berikan pesan rahasia."
+    })
+
+
+
+CMD_HELP.update({
+    "games2": "\
+𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.truth`\
 \nPenggunaan: Tantangan kejujuran.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dare`\
 \nPenggunaan: Tantangan lain.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spill`\
 \nPenggunaan: Spill pertanyaan.\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.f100`\
-\nPenggunaan: Kuis Family 100."})
+\nPenggunaan: Kuis Family 100."
+    })

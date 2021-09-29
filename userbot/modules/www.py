@@ -178,7 +178,7 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("𝑀𝑒𝑚𝑢𝑙𝑎𝑖 𝑇𝑒𝑠𝑡 𝐽𝑎𝑟𝑖𝑛𝑔𝑎𝑛..")
+    await pong.edit("𝘔𝘦𝘮𝘶𝘭𝘢𝘪 𝘛𝘦𝘴𝘵 𝘒𝘦𝘤𝘦𝘱𝘢𝘵𝘢𝘯 𝘑𝘢𝘳𝘪𝘯𝘨𝘢𝘯....")
     await asyncio.sleep(1)
     await pong.edit("𝘔𝘰𝘩𝘰𝘯 𝘔𝘦𝘯𝘶𝘯𝘨𝘨𝘶....")
     await asyncio.sleep(1)
@@ -281,14 +281,14 @@ async def redis(pong):
     await pong.edit("8========𝗗")
     await pong.edit("8==========𝗗")
     await pong.edit("👉👈")
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**✨ 𝙆𝙊𝙉𝙏𝙊𝙇 𝙂𝘼𝙈𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 !!** \n**🤏 𝙿𝙰𝙽𝙹𝙰𝙽𝙶 𝚂𝙸 𝙺𝙾𝙽𝚃𝙾𝙻𝙻** : `%sms`\n**🥵 𝙳𝚄𝚁𝙰𝚂𝙸 𝙼𝙰𝙸𝙽 𝙺𝙾𝙽𝚃𝙾𝙻𝙻** : `{uptime}`\n**🤤 𝙴𝙼𝙿𝚄 𝙽𝚈𝙰 𝙺𝙾𝙽𝚃𝙾𝙻𝙻** :`{ALIVE_NAME}`" % (duration))
 
 
 CMD_HELP.update({
-    "pinger":
+    "ping":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.kping` | `.lping` | `.mping` | `.pings` | `.sping`\
          \nPenggunaan: Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.speed`\
