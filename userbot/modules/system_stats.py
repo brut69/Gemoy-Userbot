@@ -283,7 +283,7 @@ async def amireallyalive(alive):
     output = (
         f"**ㅤ   🧑‍💻  𝙂 𝘼 𝙈 𝙊 𝙉   𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏  🧑‍💻 **\n"
         f"════════════════════════════\n"
-        f"═⟩⟩ 🥱 • `ᴅᴇᴠ    :`[𝙉𝙊𝙊𝘽𝙀𝙇𝙊𝙋𝙀𝙍](t.me/dunottagme) \n"
+        f"═⟩⟩ 🥱 • `ᴅᴇᴠ        :`[𝙉𝙊𝙊𝘽𝙀𝙇𝙊𝙋𝙀𝙍](t.me/dunottagme) \n"
         f"═⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10 \n"
         f"═⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__} \n"
         f"═⟩⟩ 🧑‍💻 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} \n"
@@ -333,7 +333,7 @@ async def redis(alive):
         f"⚆ ━━━━━━━━━⚆ _ ⚆━━━━━━━━━ ⚆\n"
         f"     🧑‍💻  𝙂 𝘼 𝙈 𝙊 𝙉   𝙐 𝙎 𝙀 𝙍 𝘽 𝙊 𝙏  🧑‍💻 \n"
         f"⚆ ━━━━━━━━━⚆ _ ⚆━━━━━━━━━ ⚆\n"
-        f"⚆ 👨‍🔧 `Dev     :` [𝙉𝙊𝙊𝘽𝙀𝙇𝙊𝙋𝙀𝙍](t.me/dunottagme) \n"
+        f"⚆ 👨‍🔧 `Dev           :` [𝙉𝙊𝙊𝘽𝙀𝙇𝙊𝙋𝙀𝙍](t.me/dunottagme) \n"
         f"⚆ 🤴 `Name     :` {DEFAULTUSER} \n"
         f"⚆ 🔎 `Username :` @{user.username} \n"
         f"⚆ ⚙️ `Telethon :` v. {version.__version__} \n"
@@ -347,7 +347,7 @@ async def redis(alive):
         f"⚆ 🧲  `Source Code :` [𝗚𝗶𝘁𝗵𝘂𝗯 𝗥𝗲𝗽𝗼](https://github.com/brut69/Gemoy-Userbot) \n"
         f"⚆ ⭐ `Instagram :` [𝗙𝗼𝗹𝗹𝗼𝘄 𝗠𝗲](https://instagram.com/liiii04_) \n"
         f"⚆ ✍️ `Lisensi :` [𝗟𝗶𝗰𝗲𝗻𝘀𝗲 𝗚𝗡𝗨](https://raw.githubusercontent.com/brut69/Gemoy-Userbot/Gemoy-Userbot/LICENSE) \n"
-        f"⚆ 🫂 `Group Support :` [𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗿𝗼𝘂𝗽(https://t.me/Repentblckcrcle)")
+        f"⚆ 🫂 `Group Support :` [𝗝𝗼𝗶𝗻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗿𝗼𝘂𝗽](https://t.me/Repentblckcrcle)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

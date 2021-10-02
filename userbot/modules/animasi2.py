@@ -1112,8 +1112,8 @@ async def faces(ii):
     await ii.edit(reply_text)
 
 
-@register(outgoing=True, pattern=r"^\.hai$")
-async def sayhi(e):
+@register(outgoing=True, pattern=r"^\.hii$")
+async def hii(e):
     await e.edit(
         "\n✨✨✨✨✨✨✨✨✨✨✨✨"
         "\n✨❤️❤️✨✨❤️❤️✨✨❤️❤️✨"
@@ -1626,7 +1626,7 @@ CMD_HELP.update(
         "\nPenggunaan: animasi bulan kensar."
         "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.clock`"
         "\nPenggunaan: animasi jam kensar."
-        "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hai`"
+        "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hii`"
         "\nPenggunaan: Salam semua!"
         "\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.coinflip <heads/tails>`"
         "\nPenggunaan: Lempar koin !!"
