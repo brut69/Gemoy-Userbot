@@ -232,9 +232,8 @@ CMD_HELP.update({
 \nPenggunaan: Membatalkan Global Banned"})
 
 
-
 CMD_HELP.update({
-     "gbanbot": "𝙋𝙡𝙪𝙜𝙞𝙣: `Global Banned Bot`\
+    "gbanbot": "𝙋𝙡𝙪𝙜𝙞𝙣: `Global Banned Bot`\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gbanb`\
 \nPenggunaan: Melakukan Banned Bot Secara Global Ke Semua Grup Dimana Anda Sebagai Admin\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ungbanb`\
