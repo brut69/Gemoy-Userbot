@@ -49,7 +49,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("`Terjadi Kesalahan... Mohon Lapor Ke Grup` @GeezSupportGroup", str(err))
+            return await event.edit("`Terjadi Kesalahan... Mohon Lapor Ke Grup` @Repentblckcrcle", str(err))
     return user_obj, extra
 
 
@@ -229,4 +229,8 @@ CMD_HELP.update({
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gban`\
 \nPenggunaan: Melakukan Banned Secara Global Ke Semua Grup Dimana Anda Sebagai Admin\
 \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ungban`\
-\nPenggunaan: Membatalkan Global Banned"})
+\nPenggunaan: Membatalkan Global Banned
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gbanb`\
+\nPenggunaan: Melakukan Banned Bot Secara Global Ke Semua Grup Dimana Anda Sebagai Admin\
+\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ungbanb`\
+\nPenggunaan: Membatalkan Global Banned bot"})
