@@ -18,8 +18,7 @@ from telethon.tl import types
 from telethon.utils import get_display_name
 from youtubesearchpython import VideosSearch
 
-from userbot import CMD_HANDLER as cmd
-from userbot import CMD_HELP, bot, call_py
+from userbot import CMD_HELP, call_py
 from userbot.events import register
 from userbot.utils import edit_or_reply
 from userbot.utils.queues.queues import (
@@ -228,7 +227,8 @@ async def vc_vplay(event):
             if hm == 0:
                 await xnxx.edit(f"`{ytlink}`")
             elif chat_id in QUEUE:
-                pos = add_to_queue(chat_id, songname, ytlink, url, "Video", RESOLUSI)
+                pos = add_to_queue(
+                    chat_id, songname, ytlink, url, "Video", RESOLUSI)
                 await xnxx.edit(
                     f"💡 **Video Ditambahkan Ke antrian »** `#{pos}`\n\n**🏷 Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n🎧 **Atas permintaan:** {from_user}"
                 )
@@ -239,7 +239,13 @@ async def vc_vplay(event):
                         AudioVideoPiped(ytlink, HighQualityAudio(), hmmm),
                         stream_type=StreamType().pulse_stream,
                     )
-                    add_to_queue(chat_id, songname, ytlink, url, "Video", RESOLUSI)
+                    add_to_queue(
+                        chat_id,
+                        songname,
+                        ytlink,
+                        url,
+                        "Video",
+                        RESOLUSI)
                     await xnxx.edit(
                         f"**🏷 Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n💡 **Status:** `Sedang Memutar Video`\n🎧 **Atas permintaan:** {from_user}",
                         link_preview=False,
@@ -296,7 +302,8 @@ async def vc_vplay(event):
             if hm == 0:
                 await xnxx.edit(f"`{ytlink}`")
             elif chat_id in QUEUE:
-                pos = add_to_queue(chat_id, songname, ytlink, url, "Video", RESOLUSI)
+                pos = add_to_queue(
+                    chat_id, songname, ytlink, url, "Video", RESOLUSI)
                 await xnxx.edit(
                     f"💡 **Video Ditambahkan Ke antrian »** `#{pos}`\n\n🏷 **Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n🎧 **Atas permintaan:** {from_user}"
                 )
@@ -307,7 +314,13 @@ async def vc_vplay(event):
                         AudioVideoPiped(ytlink, HighQualityAudio(), hmmm),
                         stream_type=StreamType().pulse_stream,
                     )
-                    add_to_queue(chat_id, songname, ytlink, url, "Video", RESOLUSI)
+                    add_to_queue(
+                        chat_id,
+                        songname,
+                        ytlink,
+                        url,
+                        "Video",
+                        RESOLUSI)
                     await xnxx.edit(
                         f"🏷 **Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n💡 **Status:** `Sedang Memutar Video`\n🎧 **Atas permintaan:** {from_user}",
                         link_preview=False,
@@ -405,7 +418,8 @@ async def vc_playlist(event):
                 hmm = chat_queue[x][0]
                 hmmm = chat_queue[x][2]
                 hmmmm = chat_queue[x][3]
-                PLAYLIST = PLAYLIST + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`"
+                PLAYLIST = PLAYLIST + "\n" + \
+                    f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`"
             await edit_or_reply(event, PLAYLIST, link_preview=False)
     else:
         await edit_or_reply(event, "**Tidak Sedang Memutar Streaming**")
@@ -420,7 +434,7 @@ async def stream_end_handler(_, u: Update):
 
 CMD_HELP.update(
     {
-        "vcplugin": 
+        "vcplugin":
         "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `vcplugin`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `play` <Judul Lagu/Link YT>\
         \nPenggunaan: Untuk Memutar Lagu di voice chat group dengan akun kamu\
