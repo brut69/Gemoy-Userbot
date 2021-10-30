@@ -18,8 +18,9 @@ from telethon.tl import types
 from telethon.utils import get_display_name
 from youtubesearchpython import VideosSearch
 
+from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot, call_py
-from userbot.events import man_cmd
+from userbot.events import register
 from userbot.utils import edit_or_reply
 from userbot.utils.queues.queues import (
     QUEUE,
@@ -114,7 +115,7 @@ async def skip_current_song(chat_id):
     return [songname, link, type]
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"play(?:\s|$)([\s\S]*)"))
+@register(outgoing=True, pattern=r"play(?:\s|$)([\s\S]*)")
 async def vc_play(event):
     title = event.pattern_match.group(1)
     replied = await event.get_reply_message()
@@ -128,9 +129,9 @@ async def vc_play(event):
         or not replied
         and not title
     ):
-        await edit_or_reply(event, "**Silahkan Masukan Judul Lagu**")
+        await edit_or_reply(event, "**Berikan Judul lagu atau Artis yang ingin diputar**")
     elif replied and not replied.audio and not replied.voice or not replied:
-        botman = await edit_or_reply(event, "`Searching...`")
+        botman = await edit_or_reply(event, "`⏳ Searching . . .`")
         query = event.text.split(maxsplit=1)[1]
         search = ytsearch(query)
         if search == 0:
@@ -147,7 +148,7 @@ async def vc_play(event):
             elif chat_id in QUEUE:
                 pos = add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                 await botman.edit(
-                    f"💡 **Lagu Ditambahkan Ke antrian »** `#{pos}`\n\n**🏷 Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n🎧 **Atas permintaan:** {from_user}"
+                    f"📢 **Lagu Ditambahkan Ke antrian »** `#{pos}`\n\n**🏷 Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n🎧 **Atas permintaan:** {from_user}"
                 )
             else:
                 try:
@@ -167,7 +168,7 @@ async def vc_play(event):
                     await botman.edit(f"`{ep}`")
 
     else:
-        botman = await edit_or_reply(replied, "`Downloading`")
+        bot = await edit_or_reply(replied, "`Downloading`")
         dl = await replied.download_media()
         link = replied.link
         if replied.audio:
@@ -176,7 +177,7 @@ async def vc_play(event):
             songname = "Voice Note"
         if chat_id in QUEUE:
             pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
-            await botman.edit(
+            await bot.edit(
                 f"💡 **Lagu Ditambahkan Ke antrian »** `#{pos}`\n\n**🏷 Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n🎧 **Atas permintaan:** {from_user}"
             )
         else:
@@ -194,7 +195,7 @@ async def vc_play(event):
             )
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"vplay(?:\s|$)([\s\S]*)"))
+@register(outgoing=True, pattern=r"vplay(?:\s|$)([\s\S]*)")
 async def vc_vplay(event):
     title = event.pattern_match.group(1)
     replied = await event.get_reply_message()
@@ -210,7 +211,7 @@ async def vc_vplay(event):
     ):
         return await edit_or_reply(event, "**Silahkan Masukan Judul Video**")
     if replied and not replied.video and not replied.document:
-        xnxx = await edit_or_reply(event, "`Searching...`")
+        xnxx = await edit_or_reply(event, "`⏳ Searching . . .`")
         query = event.text.split(maxsplit=1)[1]
         search = ytsearch(query)
         RESOLUSI = 720
@@ -227,8 +228,7 @@ async def vc_vplay(event):
             if hm == 0:
                 await xnxx.edit(f"`{ytlink}`")
             elif chat_id in QUEUE:
-                pos = add_to_queue(
-                    chat_id, songname, ytlink, url, "Video", RESOLUSI)
+                pos = add_to_queue(chat_id, songname, ytlink, url, "Video", RESOLUSI)
                 await xnxx.edit(
                     f"💡 **Video Ditambahkan Ke antrian »** `#{pos}`\n\n**🏷 Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n🎧 **Atas permintaan:** {from_user}"
                 )
@@ -239,13 +239,7 @@ async def vc_vplay(event):
                         AudioVideoPiped(ytlink, HighQualityAudio(), hmmm),
                         stream_type=StreamType().pulse_stream,
                     )
-                    add_to_queue(
-                        chat_id,
-                        songname,
-                        ytlink,
-                        url,
-                        "Video",
-                        RESOLUSI)
+                    add_to_queue(chat_id, songname, ytlink, url, "Video", RESOLUSI)
                     await xnxx.edit(
                         f"**🏷 Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n💡 **Status:** `Sedang Memutar Video`\n🎧 **Atas permintaan:** {from_user}",
                         link_preview=False,
@@ -287,7 +281,7 @@ async def vc_vplay(event):
                 link_preview=False,
             )
     else:
-        xnxx = await edit_or_reply(event, "`Searching...`")
+        xnxx = await edit_or_reply(event, "`⏳ Searching . . .`")
         query = event.text.split(maxsplit=1)[1]
         search = ytsearch(query)
         RESOLUSI = 720
@@ -302,8 +296,7 @@ async def vc_vplay(event):
             if hm == 0:
                 await xnxx.edit(f"`{ytlink}`")
             elif chat_id in QUEUE:
-                pos = add_to_queue(
-                    chat_id, songname, ytlink, url, "Video", RESOLUSI)
+                pos = add_to_queue(chat_id, songname, ytlink, url, "Video", RESOLUSI)
                 await xnxx.edit(
                     f"💡 **Video Ditambahkan Ke antrian »** `#{pos}`\n\n🏷 **Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n🎧 **Atas permintaan:** {from_user}"
                 )
@@ -314,13 +307,7 @@ async def vc_vplay(event):
                         AudioVideoPiped(ytlink, HighQualityAudio(), hmmm),
                         stream_type=StreamType().pulse_stream,
                     )
-                    add_to_queue(
-                        chat_id,
-                        songname,
-                        ytlink,
-                        url,
-                        "Video",
-                        RESOLUSI)
+                    add_to_queue(chat_id, songname, ytlink, url, "Video", RESOLUSI)
                     await xnxx.edit(
                         f"🏷 **Judul:** [{songname}]({url})\n**👥 Chat ID:** `{chat_id}`\n💡 **Status:** `Sedang Memutar Video`\n🎧 **Atas permintaan:** {from_user}",
                         link_preview=False,
@@ -329,7 +316,7 @@ async def vc_vplay(event):
                     await xnxx.edit(f"`{ep}`")
 
 
-@bot.on(man_cmd(outgoing=True, pattern="end$"))
+@register(outgoing=True, pattern="end$")
 async def vc_end(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -343,7 +330,7 @@ async def vc_end(event):
         await edit_or_reply(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"skip(?:\s|$)([\s\S]*)"))
+@register(outgoing=True, pattern=r"skip(?:\s|$)([\s\S]*)")
 async def vc_skip(event):
     chat_id = event.chat_id
     if len(event.text.split()) < 2:
@@ -374,7 +361,7 @@ async def vc_skip(event):
             await event.edit(DELQUE)
 
 
-@bot.on(man_cmd(outgoing=True, pattern="pause$"))
+@register(outgoing=True, pattern="pause$")
 async def vc_pause(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -387,7 +374,7 @@ async def vc_pause(event):
         await edit_or_reply(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@bot.on(man_cmd(outgoing=True, pattern="resume$"))
+@register(outgoing=True, pattern="resume$")
 async def vc_resume(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -400,7 +387,7 @@ async def vc_resume(event):
         await edit_or_reply(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@bot.on(man_cmd(outgoing=True, pattern="playlist$"))
+@register(outgoing=True, pattern="playlist$")
 async def vc_playlist(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -418,8 +405,7 @@ async def vc_playlist(event):
                 hmm = chat_queue[x][0]
                 hmmm = chat_queue[x][2]
                 hmmmm = chat_queue[x][3]
-                PLAYLIST = PLAYLIST + "\n" + \
-                    f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`"
+                PLAYLIST = PLAYLIST + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`"
             await edit_or_reply(event, PLAYLIST, link_preview=False)
     else:
         await edit_or_reply(event, "**Tidak Sedang Memutar Streaming**")
@@ -434,7 +420,7 @@ async def stream_end_handler(_, u: Update):
 
 CMD_HELP.update(
     {
-        "vcplugin":
+        "vcplugin": 
         "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `vcplugin`\
         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `play` <Judul Lagu/Link YT>\
         \nPenggunaan: Untuk Memutar Lagu di voice chat group dengan akun kamu\
