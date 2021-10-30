@@ -3,7 +3,6 @@ FROM vckyouuu/geezprojects:buster
 
 RUN git clone -b Gemoy-Userbot https://github.com/brut69/Gemoy-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
-RUN pip install --upgrade pip setuptoolssetuptools
 
 COPY ./sample_config.env ./config.env* /root/userbot/
 
