@@ -6,7 +6,6 @@ from googletrans import Translator
 from telethon import events
 from telethon.tl.types import User
 
-from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, LOGS, bot
 from userbot.events import man_cmd
 from userbot.modules.sql_helper.tede_chatbot_sql import is_tede, rem_tede, set_tede
@@ -72,8 +71,8 @@ async def tede_chatbot(event):
 
 CMD_HELP.update(
     {
-        "chatbot": 
-      "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `chatbot`\
+        "chatbot":
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `chatbot`\
       \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `chatbot` <on/off>\
       \nPenggunaan: Untuk membalas chat dengan chatbot AI.\
       "
