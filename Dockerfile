@@ -1,6 +1,8 @@
 # We're using Ubuntu 20.10
 FROM vckyouuu/geezprojects:buster
 
+RUN apt update && apt upgrade -y
+RUN apt install git curl python3-pip ffmpeg -y
 RUN git clone -b Gemoy-Userbot https://github.com/brut69/Gemoy-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 
