@@ -23,7 +23,7 @@ from telethon.utils import get_display_name
 from youtubesearchpython import VideosSearch
 
 #from userbot import CMD_HANDLER as cmd
-from userbot import CMD_HELP, call_py
+from userbot import CMD_HELP, bot
 from userbot.events import register
 from userbot.utils import edit_or_reply
 from userbot.utils.queues.queues import (
