@@ -1,6 +1,5 @@
 # We're using Ubuntu 20.10
-# FROM vckyouuu/geezprojects:buster
-FROM mrismanaziz/man-userbot:buster
+FROM vckyouuu/geezprojects:buster
 
 RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip ffmpeg -y
