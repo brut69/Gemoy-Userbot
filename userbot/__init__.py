@@ -344,11 +344,10 @@ try:
         auto_reconnect=True,
         connection_retries=None,
     )
-    )
 except Exception as e:
     print(f"STRING_SESSION - {e}")
     quit()
-call_py=PyTgCalls(bot)
+call_py = PyTgCalls(bot)
 
 
 async def check_botlog_chatid():
