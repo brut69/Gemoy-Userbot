@@ -35,6 +35,7 @@ from datetime import datetime
 from redis import StrictRedis
 from dotenv import load_dotenv
 from requests import get
+from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sync import TelegramClient, custom, events
 from telethon.sessions import StringSession
 from telethon import Button, events, functions, types
@@ -339,6 +340,10 @@ try:
         session=session,
         api_id=API_KEY,
         api_hash=API_HASH,
+        connection=ConnectionTcpAbridged,
+        auto_reconnect=True,
+        connection_retries=None,
+    )
     )
 except Exception as e:
     print(f"STRING_SESSION - {e}")
