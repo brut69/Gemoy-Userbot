@@ -26,6 +26,7 @@ from sys import version_info
 from logging import basicConfig, getLogger, INFO, DEBUG
 from distutils.util import strtobool as sb
 from math import ceil
+from pathlib import Path
 
 from pylast import LastFMNetwork, md5
 from pySmartDL import SmartDL
@@ -222,7 +223,7 @@ BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "Gemoy-Userbot")
 
 # Bot Version
-BOT_VER = os.environ.get("BOT_VER", "1.4")
+BOT_VER = os.environ.get("BOT_VER", "1.7")
 
 # Default .alive Username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -334,7 +335,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "ManUserBot"
+    session = "GamonUserbot"
 try:
     bot = TelegramClient(
         session=session,
