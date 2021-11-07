@@ -21,7 +21,9 @@ import hashlib
 import asyncio
 import shlex
 import os
+import ffmpeg
 from os.path import basename
+from os import path
 import os.path
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
@@ -34,7 +36,10 @@ from typing import Optional
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator, DocumentAttributeFilename
 from userbot import SUDO_USERS
+from userbot.utils.format import md_to_text, paste_message
 from youtube_dl import YoutubeDL
+from youtube_search import YoutubeSearch
+
 
 
 async def md5(fname: str) -> str:
@@ -324,16 +329,16 @@ async def media_to_pic(event, reply):
         im.save(file)
     await runcmd(f"rm -rf '{media}'")
     return [event, file, mediatype]
-
+    
     ydl_opts = {
-        "format": "bestaudio[ext=m4a]",
-        "geo-bypass": True,
-        "noprogress": True,
-        "user-agent": "Mozilla/5.0 (Linux; Android 7.0; k960n_mt6580_32_n) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36",
-        "extractor-args": "youtube:player_client=all",
-        "nocheckcertificate": True,
-        "outtmpl": "downloads/%(id)s.%(ext)s",
-    }
+    "format": "bestaudio[ext=m4a]",
+    "geo-bypass": True,
+    "noprogress": True,
+    "user-agent": "Mozilla/5.0 (Linux; Android 7.0; k960n_mt6580_32_n) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36",
+    "extractor-args": "youtube:player_client=all",
+    "nocheckcertificate": True,
+    "outtmpl": "downloads/%(id)s.%(ext)s",
+}
 ydl = YoutubeDL(ydl_opts)
 
 
