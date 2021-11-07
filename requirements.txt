@@ -113,6 +113,8 @@ pendulum
 opencv-python
 yt-dlp
 youtube-dl
+youtube_dl
 youtube-search
 youtube-search-python
+youtube_search
 zipfile38
